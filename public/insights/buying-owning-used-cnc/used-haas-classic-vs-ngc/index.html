@@ -1,0 +1,2325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3G003SQE93"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3G003SQE93');
+</script>
+<script>
+  // Only load the ConsentResolve CMP on the production domain. On
+  // preview URLs the CMP cannot persist consent, so the banner would
+  // reappear on every page load.
+  (function() {
+    if (location.hostname !== 'midwestcncservices.com' &&
+        location.hostname !== 'www.midwestcncservices.com') return;
+    var s = document.createElement('script');
+    s.src = 'https://cdn.consentresolve.com/consentresolve.js';
+    s.onload = function() {
+      ConsentResolve.init({
+        siteId: '89378cf0-e275-41af-a5ab-5836c6647c93',
+        usercentricsSettingsId: 'NtX5STrPifLEMi'
+      });
+      ConsentResolve.page();
+    };
+    document.head.appendChild(s);
+  })();
+</script>
+<title>Used Haas Buying: Classic Control vs. NGC | Midwest CNC Services</title>
+<meta name="description" content="Comparing used Haas Classic Control vs. NGC machines: parts availability, resale value, and Ken&#x27;s buy-or-pass framework for each era.">
+<link rel="canonical" href="https://midwestcncservices.com/insights/buying-owning-used-cnc/used-haas-classic-vs-ngc/">
+<meta property="og:title" content="Used Haas Buying: Classic Control vs. NGC | Midwest CNC Services">
+<meta property="og:description" content="Comparing used Haas Classic Control vs. NGC machines: parts availability, resale value, and Ken&#x27;s buy-or-pass framework for each era.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://midwestcncservices.com/assets/images/general/midwest-cnc-highway-shot.webp">
+<meta property="og:url" content="https://midwestcncservices.com/insights/buying-owning-used-cnc/used-haas-classic-vs-ngc/">
+<meta property="og:site_name" content="Midwest CNC Services">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Used Haas Buying: Classic Control vs. NGC | Midwest CNC Services">
+<meta name="twitter:description" content="Comparing used Haas Classic Control vs. NGC machines: parts availability, resale value, and Ken&#x27;s buy-or-pass framework for each era.">
+<meta name="twitter:image" content="https://midwestcncservices.com/assets/images/general/midwest-cnc-highway-shot.webp">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+/* =================================================================
+   Midwest CNC Services — modern design system
+   Tokens: color (preserved), spacing, type, radius, shadow, motion.
+   Accessibility: WCAG AA contrast, focus-visible rings, reduced motion.
+   ================================================================= */
+
+:root {
+  /* Color (unchanged) */
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #b8341a;
+  --accent-dark: #8c2510;
+  --line: #e5e5e5;
+  --soft: #f6f4f1;
+
+  /* Surfaces */
+  --surface: #ffffff;
+  --surface-2: #faf8f5;
+  --surface-3: #f1ede7;
+  --ring: rgba(184, 52, 26, 0.35);
+  --ring-strong: rgba(184, 52, 26, 0.55);
+  --success-bg: #e8f5e8;
+  --success-fg: #1e5e22;
+  --warning-bg: #fff4e3;
+  --warning-fg: #8a5400;
+
+  /* Spacing scale (rem) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+
+  /* Radius scale */
+  --r-1: 4px;
+  --r-2: 8px;
+  --r-3: 12px;
+  --r-4: 16px;
+  --r-pill: 999px;
+
+  /* Shadow scale */
+  --sh-1: 0 1px 2px rgba(15, 18, 22, 0.05);
+  --sh-2: 0 1px 3px rgba(15, 18, 22, 0.06), 0 2px 8px rgba(15, 18, 22, 0.04);
+  --sh-3: 0 4px 12px rgba(15, 18, 22, 0.08), 0 2px 4px rgba(15, 18, 22, 0.04);
+  --sh-4: 0 12px 32px rgba(15, 18, 22, 0.10), 0 4px 12px rgba(15, 18, 22, 0.06);
+  --sh-focus: 0 0 0 3px var(--ring);
+
+  /* Motion */
+  --t-fast: 120ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  --t-base: 200ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  --t-slow: 320ms cubic-bezier(0.2, 0.6, 0.3, 1);
+
+  /* Layout */
+  --max: 72ch;
+  --max-wide: 1140px;
+  --sticky-cta-height: 64px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+html, body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  background: var(--accent);
+  color: #fff !important;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 var(--r-2) 0;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.skip-link:focus { left: 0; }
+
+/* Global focus ring — only on keyboard, not mouse click */
+*:focus { outline: none; }
+*:focus-visible {
+  outline: none;
+  box-shadow: var(--sh-focus);
+  border-radius: var(--r-1);
+}
+
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color var(--t-fast); }
+a:hover { color: var(--accent-dark); text-decoration-thickness: 2px; }
+a:focus-visible { box-shadow: var(--sh-focus); border-radius: var(--r-1); outline: none; }
+
+::selection { background: var(--accent); color: #fff; }
+
+/* =================================================================
+   Header + primary navigation
+   ================================================================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: var(--s-2) var(--s-5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-4);
+}
+.site-header .brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--fg);
+  transition: transform var(--t-fast);
+}
+.site-header .brand:hover { transform: translateY(-1px); }
+.site-header .brand img {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+.site-header nav { display: flex; align-items: center; gap: var(--s-2); }
+.site-header nav > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--s-1);
+}
+.site-header nav > ul > li { position: relative; }
+.site-header nav > ul > li > a,
+.site-header nav > ul > li > .menu-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.55rem 0.85rem;
+  text-decoration: none;
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--r-2);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color var(--t-fast), background var(--t-fast);
+}
+.site-header nav > ul > li > a:hover,
+.site-header nav > ul > li > .menu-label:hover,
+.site-header nav > ul > li:hover > a,
+.site-header nav > ul > li:hover > .menu-label,
+.site-header nav > ul > li:focus-within > a,
+.site-header nav > ul > li:focus-within > .menu-label {
+  color: var(--accent);
+  background: var(--surface-2);
+}
+.site-header nav > ul > li.has-dropdown > .menu-label::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-1px);
+  margin-left: 2px;
+  opacity: 0.6;
+  transition: transform var(--t-fast), opacity var(--t-fast);
+}
+.site-header nav > ul > li.has-dropdown:hover > .menu-label::after,
+.site-header nav > ul > li.has-dropdown:focus-within > .menu-label::after {
+  transform: rotate(-135deg) translateY(2px);
+  opacity: 1;
+}
+.site-header nav .dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 240px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-4);
+  padding: var(--s-2) 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity var(--t-fast), transform var(--t-fast), visibility var(--t-fast);
+  z-index: 100;
+}
+.site-header nav > ul > li:hover > .dropdown,
+.site-header nav > ul > li:focus-within > .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.site-header nav .dropdown li { margin: 0; }
+.site-header nav .dropdown a {
+  display: block;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  color: var(--fg);
+  font-size: 0.92rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background var(--t-fast), color var(--t-fast), padding-left var(--t-fast);
+}
+.site-header nav .dropdown a:hover,
+.site-header nav .dropdown a:focus { background: var(--surface-2); color: var(--accent); padding-left: 1.35rem; }
+.site-header nav .dropdown .dropdown-section {
+  padding: 0.55rem 1.1rem 0.3rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 700;
+}
+.site-header nav .dropdown .dropdown-divider {
+  height: 1px;
+  background: var(--line);
+  margin: var(--s-2) 0;
+  list-style: none;
+}
+.site-header nav .dropdown a.dropdown-all {
+  color: var(--accent);
+  font-weight: 600;
+}
+.site-header nav a.cta-nav {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--r-pill);
+  margin-left: var(--s-2);
+  box-shadow: var(--sh-2);
+  transition: background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+}
+.site-header nav a.cta-nav:hover { background: var(--accent-dark); color: #fff !important; transform: translateY(-1px); box-shadow: var(--sh-3); }
+.site-header nav a.cta-nav:active { transform: translateY(0); box-shadow: var(--sh-1); }
+
+/* =================================================================
+   Breadcrumbs — subtle pill row
+   ================================================================= */
+nav.breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: var(--s-3) var(--s-5);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+}
+nav.breadcrumbs ol { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; max-width: var(--max-wide); }
+nav.breadcrumbs li { display: inline-flex; align-items: center; }
+nav.breadcrumbs li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-right: 1.5px solid var(--muted);
+  border-top: 1.5px solid var(--muted);
+  transform: rotate(45deg);
+  margin-left: var(--s-2);
+  opacity: 0.6;
+}
+nav.breadcrumbs a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--r-pill);
+  transition: background var(--t-fast), color var(--t-fast);
+}
+nav.breadcrumbs a:hover { color: var(--accent); background: var(--surface); }
+nav.breadcrumbs li:last-child { color: var(--fg); font-weight: 600; padding: 0.15rem 0.5rem; }
+
+/* =================================================================
+   Article + alternating section bands
+   ================================================================= */
+main { padding: 0; }
+
+article {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each <section class="page-section"> is a full-bleed band.
+   The .section-inner inside centers content at the readable width. */
+.page-section {
+  padding: var(--s-7) var(--s-5);
+  position: relative;
+}
+.page-section + .page-section { border-top: 1px solid transparent; }
+
+.page-section-0 { background: var(--bg); }
+.page-section-1 { background: var(--surface-2); }
+.page-section-hero { background: var(--bg); padding-top: var(--s-5); padding-bottom: 0; }
+.page-section-intro { padding-top: var(--s-6); }
+
+.section-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  width: 100%;
+}
+.section-inner.wide { max-width: var(--max-wide); }
+
+/* When section content starts with an h2, kill its top margin since the
+   section already provides the breathing room. */
+.page-section > .section-inner > h2:first-child,
+.page-section > .section-inner > .eyebrow:first-child + h2 {
+  margin-top: 0;
+}
+.page-section > .section-inner > .eyebrow:first-child { margin-top: 0; }
+
+/* Headings should be scrollable-into-view past the sticky header */
+h2 { scroll-margin-top: 100px; }
+
+@media (max-width: 800px) {
+  .page-section { padding: var(--s-6) var(--s-4); }
+  .page-section-hero { padding-top: var(--s-4); }
+}
+@media (max-width: 600px) {
+  .page-section { padding: var(--s-5) var(--s-4); }
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 var(--s-3) 0;
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  background: rgba(184, 52, 26, 0.08);
+  border-radius: var(--r-pill);
+}
+
+h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin: 0 0 var(--s-5) 0;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.7rem);
+  line-height: 1.25;
+  margin: var(--s-7) 0 var(--s-4) 0;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  position: relative;
+  padding-top: 0;
+  border-top: 0;
+}
+h2::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 3px;
+  margin-bottom: var(--s-3);
+}
+h2:first-of-type { margin-top: var(--s-5); }
+
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: var(--s-5) 0 var(--s-3) 0;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: var(--s-4) 0 var(--s-2) 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+p { margin: var(--s-3) 0; }
+p strong { color: var(--fg); font-weight: 700; }
+
+ul, ol { padding-left: 1.5rem; margin: var(--s-3) 0; }
+li { margin: var(--s-2) 0; }
+li::marker { color: var(--accent); }
+
+article ul li {
+  position: relative;
+  padding-left: var(--s-1);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: var(--s-7) 0;
+}
+
+blockquote {
+  margin: var(--s-5) 0;
+  padding: var(--s-4) var(--s-5);
+  background: var(--surface-2);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--r-3) var(--r-3) 0;
+  color: var(--fg);
+  font-style: normal;
+  position: relative;
+  box-shadow: var(--sh-1);
+}
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -0.5rem;
+  left: var(--s-4);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.25;
+  font-family: Georgia, serif;
+}
+blockquote p { margin: 0; padding-left: 1.5rem; font-size: 1.02rem; line-height: 1.55; }
+blockquote p + p { margin-top: var(--s-3); }
+blockquote em { font-style: normal; color: var(--muted); }
+
+/* =================================================================
+   Buttons + CTA row
+   ================================================================= */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  margin: var(--s-5) 0;
+  align-items: center;
+}
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #fff !important;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--r-pill);
+  text-decoration: none !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.98rem;
+  box-shadow: var(--sh-2);
+  transition: background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+  position: relative;
+}
+.cta-button::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 0.25rem;
+  transition: transform var(--t-fast);
+}
+.cta-button:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: var(--sh-3); }
+.cta-button:hover::after { transform: rotate(45deg) translate(2px, -2px); }
+.cta-button:active { transform: translateY(0); box-shadow: var(--sh-1); }
+
+.cta-button.secondary {
+  background: var(--surface);
+  color: var(--fg) !important;
+  border: 1.5px solid var(--line);
+  box-shadow: none;
+}
+.cta-button.secondary:hover {
+  background: var(--surface-2);
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+.cta-button.secondary::after { border-color: currentColor; }
+
+.cta-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.2rem;
+  color: var(--fg) !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  transition: border-color var(--t-fast), color var(--t-fast), transform var(--t-fast);
+}
+.cta-phone::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58.1.36.03.74-.24 1.01l-2.21 2.2z'/></svg>") center/contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58.1.36.03.74-.24 1.01l-2.21 2.2z'/></svg>") center/contain no-repeat;
+  color: var(--accent);
+}
+.cta-phone:hover { border-color: var(--accent); color: var(--accent) !important; transform: translateY(-1px); }
+
+/* =================================================================
+   Form placeholder + hero figure
+   ================================================================= */
+.quote-form-placeholder {
+  margin: var(--s-5) 0;
+  padding: var(--s-5);
+  border: 2px dashed var(--line);
+  border-radius: var(--r-3);
+  background: var(--surface-2);
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.hero-figure {
+  margin: var(--s-5) 0 0 0;
+  padding: 0;
+}
+.hero-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--r-3);
+  display: block;
+  box-shadow: var(--sh-3);
+}
+
+/* =================================================================
+   Brand page hero — image background, centered text, dark overlay.
+   Same visual language as the homepage video hero. Used by brand-
+   repair / brand-spindle / brand-way-covers pages. Emitted by the
+   generators as <section class="brand-hero"> and wrapped in a
+   page-section-hero band by wrap_into_sections.
+   ================================================================= */
+/* Hero band overrides — the band itself is full-bleed and the inner
+   container drops its readable-column max-width so the hero image
+   actually fills the viewport instead of being boxed into 72ch. */
+.page-section-hero {
+  padding: 0;
+  background: var(--bg);
+}
+.page-section-hero > .section-inner {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+}
+
+.brand-hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(380px, 55vh, 540px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  margin: 0;
+  background: #000;
+}
+.brand-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.brand-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+.brand-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: var(--max-wide);
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 4.5rem) var(--s-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.brand-hero-content > .eyebrow {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.7rem;
+  margin: 0 0 var(--s-4) 0;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.brand-hero-content > h1 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  margin: 0 0 var(--s-4) 0;
+  max-width: 24ch;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+.brand-hero-content > p {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 var(--s-5) 0;
+  max-width: 58ch;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+.brand-hero-content > .cta-row {
+  margin: 0;
+  justify-content: center;
+}
+/* Frosted-glass phone CTA against the dark hero (same treatment the
+   homepage hero uses) */
+.brand-hero-content .cta-phone {
+  background: rgba(255, 255, 255, 0.10);
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.brand-hero-content .cta-phone:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff !important;
+}
+.brand-hero-content .cta-phone::before { color: #fff; }
+
+@media (max-width: 768px) {
+  .brand-hero { min-height: clamp(340px, 60vh, 480px); }
+  .brand-hero-content { padding: clamp(2rem, 7vw, 3rem) var(--s-4); }
+  .brand-hero-content > .cta-row { width: 100%; flex-direction: column; }
+  .brand-hero-content > .cta-row > * { width: 100%; justify-content: center; }
+}
+
+/* =================================================================
+   Two-column page hero — used by every page that has a hero image.
+   Applied automatically by wrap_into_sections when the intro section
+   contains a <figure class="hero-figure">.
+   ================================================================= */
+.page-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--s-7);
+  align-items: center;
+  margin: 0;
+  padding: var(--s-4) 0 var(--s-5) 0;
+}
+.page-hero-text { min-width: 0; }
+.page-hero-text > :first-child { margin-top: 0; }
+.page-hero-text > h1 { margin-top: 0; }
+.page-hero-text > p { font-size: 1.05rem; }
+.page-hero-text > p:first-of-type { color: var(--fg); }
+.page-hero-image { min-width: 0; }
+.page-hero-image figure {
+  margin: 0;
+  padding: 0;
+}
+.page-hero-image figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-3);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  max-height: none;
+  box-shadow: var(--sh-4);
+}
+@media (max-width: 900px) {
+  .page-hero {
+    grid-template-columns: 1fr;
+    gap: var(--s-5);
+    padding: var(--s-3) 0 var(--s-4) 0;
+  }
+  .page-hero-image figure img {
+    max-height: 320px;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* =================================================================
+   Tables — modern card-wrapped responsive
+   ================================================================= */
+.table-scroll {
+  margin: var(--s-5) 0;
+  border-radius: var(--r-3);
+  background: var(--surface);
+  box-shadow: var(--sh-2);
+  border: 1px solid var(--line);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Scroll shadow indicators */
+  background:
+    linear-gradient(to right, var(--surface) 30%, rgba(255,255,255,0)),
+    linear-gradient(to right, rgba(0,0,0,0.08), rgba(255,255,255,0) 30%) 0 100%,
+    radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.08), rgba(0,0,0,0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.08), rgba(0,0,0,0)) 100% 0;
+  background-repeat: no-repeat;
+  background-color: var(--surface);
+  background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+  background-position: 0 0, 100% 0, 0 0, 100% 0;
+  background-attachment: local, local, scroll, scroll;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.table-scroll table { min-width: 480px; }
+thead { background: var(--surface-2); }
+th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+td {
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+tbody tr { transition: background var(--t-fast); }
+tbody tr:hover { background: var(--surface-2); }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) { background: rgba(241, 237, 231, 0.35); }
+tbody tr:nth-child(even):hover { background: var(--surface-2); }
+
+/* For standalone tables without .table-scroll wrapper, still look good */
+article > table {
+  border-radius: var(--r-3);
+  background: var(--surface);
+  box-shadow: var(--sh-2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  margin: var(--s-5) 0;
+}
+
+/* =================================================================
+   FAQ accordion (<details>/<summary>)
+   ================================================================= */
+.faq-list { display: flex; flex-direction: column; gap: var(--s-3); margin: var(--s-5) 0; }
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-1);
+  transition: box-shadow var(--t-base), border-color var(--t-base);
+  overflow: hidden;
+}
+.faq-item[open] {
+  border-color: var(--accent);
+  box-shadow: var(--sh-3);
+}
+.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--s-4) var(--s-5);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--fg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-4);
+  transition: background var(--t-fast);
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+.faq-item > summary:hover { background: var(--surface-2); }
+.faq-item > summary::after {
+  content: "";
+  flex-shrink: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  margin-top: -4px;
+  transition: transform var(--t-base);
+}
+.faq-item[open] > summary::after {
+  transform: rotate(-135deg);
+  margin-top: 4px;
+}
+.faq-item .faq-answer {
+  padding: 0 var(--s-5) var(--s-5) var(--s-5);
+  color: var(--fg);
+  font-size: 0.97rem;
+  line-height: 1.65;
+  border-top: 1px solid var(--line);
+  padding-top: var(--s-4);
+  animation: faq-open var(--t-base) ease;
+}
+.faq-item .faq-answer p { margin: var(--s-3) 0 0 0; }
+.faq-item .faq-answer p:first-child { margin-top: 0; }
+@keyframes faq-open {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =================================================================
+   Process / How-To steps
+   ================================================================= */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  margin: var(--s-5) 0;
+  counter-reset: process;
+  list-style: none;
+  padding-left: 0;
+}
+.process-steps > li {
+  position: relative;
+  padding: var(--s-4) var(--s-5) var(--s-4) calc(var(--s-7) + var(--s-3));
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-1);
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+  margin: 0;
+  counter-increment: process;
+}
+.process-steps > li:hover { transform: translateY(-2px); box-shadow: var(--sh-3); border-color: var(--accent); }
+.process-steps > li::before {
+  content: counter(process);
+  position: absolute;
+  top: var(--s-4);
+  left: var(--s-4);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(184, 52, 26, 0.35);
+}
+.process-steps > li::marker { content: none; }
+.process-steps > li strong:first-child {
+  display: block;
+  margin-bottom: var(--s-1);
+  font-size: 1.05rem;
+  color: var(--fg);
+  line-height: 1.3;
+}
+
+/* =================================================================
+   Related-services grid — card-style links used at the bottom of
+   brand-repair / brand-spindle / brand-way-covers pages.
+   ================================================================= */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--s-3);
+  margin: var(--s-4) 0 0 0;
+  list-style: none;
+  padding: 0;
+}
+.related-grid li { margin: 0; }
+.related-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: var(--s-4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-1);
+  text-decoration: none !important;
+  color: var(--fg) !important;
+  font-weight: 600;
+  transition: transform var(--t-fast), box-shadow var(--t-fast),
+              border-color var(--t-fast), color var(--t-fast);
+}
+.related-grid a::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.45;
+  transition: transform var(--t-fast), opacity var(--t-fast);
+  flex-shrink: 0;
+}
+.related-grid a:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--sh-3);
+}
+.related-grid a:hover::after { opacity: 1; transform: rotate(45deg) translate(2px, -2px); }
+.related-coverage {
+  margin: var(--s-4) 0 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* =================================================================
+   Coverage map — Leaflet-based service area visualization.
+   Hub variant: all 7 states with served cities pinned + Waterloo origin.
+   State variant: one state outline with served cities pinned + Waterloo.
+   City variant: city location + driving route to Waterloo.
+   Leaflet CSS+JS is loaded conditionally only on pages that emit a
+   .coverage-map element (see the loader script in markdown_to_html
+   below).
+   ================================================================= */
+.coverage-map {
+  max-width: var(--max-wide);
+  margin: var(--s-5) auto;
+  height: 460px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-2);
+  overflow: hidden;
+  position: relative;
+}
+.coverage-map--city { height: 360px; }
+.coverage-map--hub  { height: 520px; }
+.coverage-map-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: var(--s-4);
+  color: var(--muted);
+  font-size: 0.92rem;
+  pointer-events: none;
+  z-index: 1;
+}
+.coverage-map-empty::before {
+  content: "🗺";
+  font-size: 2rem;
+  margin-bottom: var(--s-2);
+  opacity: 0.5;
+}
+.coverage-map.is-loaded .coverage-map-empty { display: none; }
+.coverage-map .leaflet-container {
+  background: var(--surface-2);
+  font-family: inherit;
+}
+/* Style the popups to match the site */
+.coverage-map .leaflet-popup-content-wrapper {
+  border-radius: var(--r-2);
+  box-shadow: var(--sh-3);
+}
+.coverage-map .leaflet-popup-content {
+  margin: 0.75rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.coverage-map .leaflet-popup-content a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.coverage-map .leaflet-popup-content a:hover { text-decoration: underline; }
+.coverage-map-caption {
+  max-width: var(--max-wide);
+  margin: calc(var(--s-3) * -1) auto var(--s-5);
+  padding: 0 var(--s-3);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  .coverage-map { height: 380px; }
+  .coverage-map--city { height: 280px; }
+  .coverage-map--hub  { height: 420px; }
+}
+
+/* =================================================================
+   Insights — pillar landing + article page styling.
+
+   Used by /insights/ pillar pages, /insights/{pillar}/{article}/
+   pages, and the /insights/ index. The .insight-* prefix keeps the
+   stylesheet self-contained.
+
+   ACCESSIBILITY NOTES (WCAG 2.1 AA targets)
+   - Body copy on .insight-hero uses --fg (#1a1a1a) on --surface-3
+     (#f1ede7): ≈ 16:1. Well above 4.5:1 minimum for normal text.
+   - .insight-eyebrow uses --accent-dark (#8c2510) on --surface-3:
+     ≈ 6.3:1. Above 4.5:1 minimum even though the eyebrow text is
+     small (12px ≈ 9pt — treated as "normal" text by WCAG).
+   - .insight-card-tag uses --accent-dark on a 92%-surface tint:
+     ≈ 6.2:1. Comfortable margin.
+   - .insight-meta uses --muted (#5a5a5a) on --bg (#ffffff): ≈ 7.5:1.
+   - All interactive elements get :focus-visible rings via the
+     global .focus-ring tokens that apply to every <a> and <button>.
+   - prefers-reduced-motion zeroes the transform/opacity transitions
+     on .insight-card and .insight-pillar-card.
+   ================================================================= */
+
+/* Editorial hero — used on /insights/ index + each pillar landing.
+   Replaces the video hero with a quiet, text-focused band so the
+   page reads as long-form editorial content rather than a marketing
+   landing. Centered text, generous padding, no images. */
+.insight-hero {
+  position: relative;
+  width: 100%;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(184, 52, 26, 0.05), transparent 60%),
+    var(--surface-3);
+  border-bottom: 1px solid var(--line);
+  padding: clamp(3rem, 7vw, 5rem) var(--s-5) clamp(2.5rem, 6vw, 4rem);
+}
+.insight-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.insight-hero-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  background: rgba(184, 52, 26, 0.10);
+  border: 1px solid rgba(184, 52, 26, 0.20);
+  border-radius: var(--r-pill);
+  padding: 0.32rem 0.78rem;
+  margin: 0 0 var(--s-4) 0;
+}
+.insight-hero h1 {
+  font-size: clamp(1.85rem, 4vw, 2.8rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  margin: 0 0 var(--s-4) 0;
+  max-width: 22ch;
+  color: var(--fg);
+}
+.insight-hero h1::before { display: none; } /* override the global h2-rule accent */
+.insight-hero-lede {
+  font-size: clamp(1.05rem, 1.25vw, 1.18rem);
+  line-height: 1.6;
+  color: var(--fg);
+  margin: 0 0 var(--s-5) 0;
+  max-width: 60ch;
+}
+.insight-hero-cta {
+  display: flex;
+  gap: var(--s-3);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .insight-hero { padding: var(--s-5) var(--s-4) var(--s-5); }
+  .insight-hero-inner { text-align: left; align-items: flex-start; }
+  .insight-hero-lede { font-size: 1rem; }
+  .insight-hero-cta { width: 100%; flex-direction: column; }
+  .insight-hero-cta > * { width: 100%; justify-content: center; }
+}
+
+/* Pillar tile grid (insights index page) */
+.insight-pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s-4);
+  margin: var(--s-5) 0 var(--s-6) 0;
+  list-style: none;
+  padding: 0;
+}
+.insight-pillar-card { margin: 0; }
+.insight-pillar-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none !important;
+  color: var(--fg) !important;
+  background: var(--surface);
+  padding: var(--s-5);
+  border-radius: var(--r-3);
+  border: 1px solid var(--line);
+  box-shadow: var(--sh-1);
+  transition: transform var(--t-base), box-shadow var(--t-base), border-color var(--t-base);
+}
+.insight-pillar-card a:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sh-3);
+  border-color: var(--accent);
+}
+.insight-pillar-card a:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 3px;
+}
+.insight-pillar-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-dark);  /* 6.7:1 on white — safer than --accent for small text */
+  font-weight: 700;
+}
+.insight-pillar-card h3 { margin: var(--s-2) 0; font-size: 1.18rem; color: var(--fg); }
+.insight-pillar-card p { color: var(--fg); margin: var(--s-1) 0 var(--s-3) 0; font-size: 0.95rem; flex-grow: 1; }
+.insight-pillar-counts {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: var(--s-2) 0 var(--s-3) 0 !important;
+  flex-grow: 0 !important;
+}
+
+/* Cluster card grid (pillar pages + recent-articles strip on index) */
+.insight-cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s-4);
+  margin: var(--s-4) 0 var(--s-6) 0;
+  list-style: none;
+  padding: 0;
+}
+.insight-card { margin: 0; }
+.insight-card > a,
+.insight-card > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none !important;
+  color: var(--fg) !important;
+  background: var(--surface);
+  padding: var(--s-4);
+  border-radius: var(--r-3);
+  border: 1px solid var(--line);
+  box-shadow: var(--sh-1);
+  transition: transform var(--t-base), box-shadow var(--t-base), border-color var(--t-base);
+}
+.insight-card--published > a:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sh-3);
+  border-color: var(--accent);
+}
+.insight-card--published > a:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 3px;
+}
+.insight-card--planned > div {
+  background: color-mix(in srgb, var(--surface) 94%, var(--accent) 6%);
+  border-style: dashed;
+  /* No opacity reduction — opacity hurts text contrast. The dashed
+     border + tinted background communicates "planned" without dimming. */
+}
+.insight-card-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--accent-dark);  /* 6.7:1 on tinted bg — comfortable for small caps */
+  background: rgba(184, 52, 26, 0.10);
+  border: 1px solid rgba(184, 52, 26, 0.18);
+  padding: 0.22rem 0.55rem;
+  border-radius: var(--r-pill);
+  margin-bottom: var(--s-2);
+}
+.insight-card-tag--planned {
+  color: #3d3d3d;  /* darker than --muted so the chip text passes AAA */
+  background: color-mix(in srgb, var(--muted) 14%, transparent);
+  border-color: color-mix(in srgb, var(--muted) 28%, transparent);
+}
+.insight-card h3 { margin: var(--s-1) 0; font-size: 1.08rem; line-height: 1.3; color: var(--fg); }
+.insight-card p { color: var(--fg); margin: var(--s-2) 0 var(--s-3) 0; font-size: 0.92rem; flex-grow: 1; }
+.insight-card-query { color: var(--muted) !important; }
+.insight-card-query em { font-style: italic; color: var(--fg); }
+
+/* Article page — meta strip + eyebrow above the H1 */
+.insight-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-dark);  /* WCAG: 6.7:1 on white, safer than --accent */
+  margin: 0 0 var(--s-2) 0;
+}
+.insight-h1 {
+  font-size: clamp(1.75rem, 3.6vw, 2.5rem);
+  line-height: 1.15;
+  margin: 0 0 var(--s-3) 0;
+  letter-spacing: -0.015em;
+  color: var(--fg);
+}
+.insight-h1::before { display: none; } /* override the global h2-rule accent if any */
+.insight-meta {
+  color: #4a4a4a;  /* 8.9:1 on white — slightly darker than --muted for AAA */
+  font-size: 0.95rem;
+  margin: 0 0 var(--s-5) 0;
+}
+
+/* Key Takeaways block — scoped to insights article body only. The
+   block is the first <h2 id="key-takeaways"> followed immediately
+   by a <ul>. We use the H2's stable id (added by the markdown
+   converter from the heading slug) as the anchor, not a fragile
+   :first-of-type structural rule that would fire on non-insights
+   pages that happen to have a UL after their first H2. */
+.insights-article main article h2#key-takeaways {
+  /* Visually hide the Key Takeaways heading text but keep it for AT.
+     The styled callout box below is the visible affordance. The H2
+     is still in the document outline. */
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.insights-article main article h2#key-takeaways + ul,
+.insight-takeaways {
+  background: color-mix(in srgb, var(--surface) 88%, var(--accent) 6%);
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
+  border-left: 4px solid var(--accent-dark);
+  border-radius: var(--r-2);
+  padding: var(--s-4) var(--s-4) var(--s-4) calc(var(--s-4) + 1rem);
+  margin: 0 0 var(--s-5) 0;
+  list-style: disc;
+  position: relative;
+}
+.insights-article main article h2#key-takeaways + ul::before,
+.insight-takeaways::before {
+  /* Visible "Key Takeaways" label for sighted users — replaces the
+     visually-hidden H2. */
+  content: "Key Takeaways";
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0 0 var(--s-3) calc(-1rem);
+  list-style: none;
+}
+.insights-article main article h2#key-takeaways + ul li,
+.insight-takeaways li {
+  margin: 0.4rem 0;
+  color: var(--fg);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+/* Tail CTA on every article — sits in the natural flow, not a sticky bar. */
+.insight-cta {
+  margin: var(--s-6) 0 var(--s-4) 0;
+  padding: var(--s-5);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-1);
+}
+.insight-cta p:first-child {
+  margin: 0 0 var(--s-3) 0;
+  font-size: 1.05rem;
+}
+.insight-cta p:last-child {
+  margin: 0;
+  display: flex;
+  gap: var(--s-3);
+  flex-wrap: wrap;
+}
+.insight-cta .cta-button,
+.insight-cta .cta-phone {
+  /* uses the existing button styles */
+}
+
+/* Definitional opener — first paragraph under each H2 in an
+   insights article gets a slightly heavier weight + size to
+   reinforce the "quote me" cue. Subtle, not screaming. Scoped to
+   .insights-article so this doesn't affect other page types. */
+.insights-article main article h2 + p {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--fg);
+}
+
+/* Article body link styling — make in-body links scannable without
+   being noisy. Underline on hover; clear focus ring. */
+.insights-article main article p a,
+.insights-article main article li a {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(140, 37, 16, 0.45);
+  transition: text-decoration-color var(--t-fast), color var(--t-fast);
+}
+.insights-article main article p a:hover,
+.insights-article main article li a:hover {
+  text-decoration-color: var(--accent-dark);
+  color: var(--accent-dark);
+}
+.insights-article main article p a:focus-visible,
+.insights-article main article li a:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Body paragraph rhythm in insights articles. */
+.insights-article main article p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--fg);
+}
+
+/* Sources & references tail */
+.insight-sources,
+section.insight-sources {
+  margin-top: var(--s-6);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--line);
+}
+.insight-sources h2 { font-size: 1.05rem; color: var(--fg); }
+.insight-sources li { font-size: 0.92rem; color: #4a4a4a; }
+
+/* Insights CTA button focus state */
+.insight-cta a:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .insight-pillar-card a { padding: var(--s-4); }
+  .insight-h1 { font-size: 1.55rem; }
+  .insight-cta { padding: var(--s-4); }
+  .insights-article main article p { font-size: 1rem; line-height: 1.65; }
+}
+
+/* Reduced-motion: zero out the lift/transition on cards. */
+@media (prefers-reduced-motion: reduce) {
+  .insight-pillar-card a,
+  .insight-card > a,
+  .insights-article main article p a,
+  .insights-article main article li a {
+    transition: none !important;
+  }
+  .insight-pillar-card a:hover,
+  .insight-card--published > a:hover {
+    transform: none !important;
+  }
+}
+
+/* =================================================================
+   MachineLookup — site-wide model number lookup.
+   Powered by /data/machines.json. Renders a search input that
+   fuzzy-matches the user's typed model and routes to the matching
+   series-spoke page across all 6 brands.
+   ================================================================= */
+.machine-lookup {
+  max-width: var(--max-wide);
+  margin: var(--s-5) auto;
+  padding: var(--s-5);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-2);
+  position: relative;
+}
+.machine-lookup-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: var(--s-2);
+}
+.machine-lookup-input {
+  font: inherit;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1.02rem;
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-2);
+  background: var(--surface);
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.machine-lookup-input:hover { border-color: var(--muted); }
+.machine-lookup-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--sh-focus);
+}
+.machine-lookup-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-4);
+  z-index: 40;
+  overflow: hidden;
+  max-height: 360px;
+  overflow-y: auto;
+}
+.machine-lookup-results[hidden] { display: none; }
+.machine-lookup-result {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none !important;
+  color: var(--fg) !important;
+  border-bottom: 1px solid var(--line);
+  transition: background var(--t-fast), padding-left var(--t-fast);
+}
+.machine-lookup-result:last-child { border-bottom: 0; }
+.machine-lookup-result:hover,
+.machine-lookup-result:focus {
+  background: var(--surface-2);
+  color: var(--accent) !important;
+  padding-left: 1.2rem;
+  outline: none;
+}
+.machine-lookup-result-brand {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--r-1);
+  background: var(--surface-2);
+}
+.machine-lookup-result-model {
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+.machine-lookup-result-series {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.machine-lookup-result-arrow {
+  font-size: 1.1rem;
+  color: var(--accent);
+  opacity: 0.6;
+  transition: opacity var(--t-fast), transform var(--t-fast);
+}
+.machine-lookup-result:hover .machine-lookup-result-arrow,
+.machine-lookup-result:focus .machine-lookup-result-arrow {
+  opacity: 1;
+  transform: translateX(2px);
+}
+.machine-lookup-empty {
+  padding: 1rem 1.25rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.machine-lookup-empty a { color: var(--accent); font-weight: 600; }
+
+@media (max-width: 600px) {
+  .machine-lookup { padding: var(--s-4); }
+  .machine-lookup-result {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand arrow"
+      "model arrow"
+      "series series";
+    gap: 0.25rem 0.6rem;
+  }
+  .machine-lookup-result-brand { grid-area: brand; justify-self: start; }
+  .machine-lookup-result-model { grid-area: model; }
+  .machine-lookup-result-series { grid-area: series; }
+  .machine-lookup-result-arrow { grid-area: arrow; align-self: center; }
+}
+
+/* Browse-by-X lists on hub pages (Browse by Series / Control / Service).
+   Each <li> is a card-style link with bolded label + supporting copy. */
+.browse-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s-4) 0 var(--s-5) 0;
+  display: grid;
+  gap: var(--s-3);
+}
+.browse-list > li { margin: 0; }
+.browse-list > li > a {
+  display: block;
+  padding: var(--s-4) var(--s-5);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-3);
+  box-shadow: var(--sh-1);
+  text-decoration: none !important;
+  color: var(--fg) !important;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: transform var(--t-fast), box-shadow var(--t-fast),
+              border-color var(--t-fast);
+  position: relative;
+  padding-right: calc(var(--s-5) + 18px);
+}
+.browse-list > li > a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: var(--s-4);
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--muted);
+  border-top: 2px solid var(--muted);
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0.5;
+  transition: opacity var(--t-fast), transform var(--t-fast),
+              border-color var(--t-fast);
+}
+.browse-list > li > a:hover,
+.browse-list > li > a:focus {
+  transform: translateY(-2px);
+  box-shadow: var(--sh-3);
+  border-color: var(--accent);
+  outline: none;
+}
+.browse-list > li > a:hover::after,
+.browse-list > li > a:focus::after {
+  opacity: 1;
+  border-color: var(--accent);
+  transform: translateY(-50%) rotate(45deg) translate(2px, -2px);
+}
+.browse-list > li > a strong {
+  color: var(--fg);
+  font-weight: 700;
+  display: inline;
+  margin-right: 0.4rem;
+}
+.browse-list > li > a:hover strong { color: var(--accent); }
+
+/* "Models We Service" — pill chips instead of dense vertical list */
+.model-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  list-style: none;
+  padding: 0;
+  margin: var(--s-3) 0 var(--s-4) 0;
+}
+.model-chips li {
+  margin: 0;
+  padding: 0.4rem 0.95rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+/* =================================================================
+   Pull-card / info-box / trust footer aside
+   ================================================================= */
+.trust-footer, aside.trust-footer {
+  margin: var(--s-6) 0;
+  padding: var(--s-5);
+  background: linear-gradient(135deg, var(--surface-2), var(--surface-3));
+  border-radius: var(--r-3);
+  border: 1px solid var(--line);
+  box-shadow: var(--sh-1);
+}
+.trust-footer > p { margin: var(--s-3) 0; }
+.trust-footer > p:first-child { margin-top: 0; }
+.trust-footer > p:last-child { margin-bottom: 0; }
+.trust-footer .customer-quote {
+  font-style: italic;
+  color: var(--fg);
+  border-left: 3px solid var(--accent);
+  padding-left: var(--s-4);
+  margin-top: var(--s-4);
+}
+
+/* =================================================================
+   Sticky mobile CTA bar
+   ================================================================= */
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: var(--s-2) var(--s-3);
+  padding-bottom: calc(var(--s-2) + env(safe-area-inset-bottom));
+  gap: var(--s-2);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+}
+.mobile-cta-bar a {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 0.9rem 0.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  border-radius: var(--r-pill);
+  transition: background var(--t-fast), color var(--t-fast);
+}
+.mobile-cta-bar .mcta-phone {
+  color: var(--fg) !important;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+}
+.mobile-cta-bar .mcta-phone:active { background: var(--surface-2); }
+.mobile-cta-bar .mcta-quote {
+  color: #fff !important;
+  background: var(--accent);
+  box-shadow: var(--sh-2);
+}
+.mobile-cta-bar .mcta-quote:active { background: var(--accent-dark); }
+
+@media (max-width: 767px) {
+  .mobile-cta-bar { display: flex; }
+  body { padding-bottom: calc(var(--sticky-cta-height) + env(safe-area-inset-bottom)); }
+}
+
+/* =================================================================
+   Footer
+   ================================================================= */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: var(--s-7) var(--s-5) var(--s-6);
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: var(--s-8);
+  background: var(--surface-2);
+}
+.footer-inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--s-6);
+  align-items: start;
+}
+.footer-col p { margin: var(--s-2) 0; }
+.footer-brand { color: var(--fg); font-weight: 700; font-size: 1.05rem; margin-top: 0 !important; }
+.footer-phone {
+  color: var(--accent-dark);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.footer-phone:hover { text-decoration: underline; }
+.footer-states { color: var(--muted); max-width: 48ch; }
+
+/* Hours block */
+.footer-hours-title {
+  color: var(--fg);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  margin: 0 0 var(--s-2) 0 !important;
+}
+.footer-hours {
+  margin: 0 0 var(--s-3) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.footer-hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-4);
+  max-width: 18rem;
+  border-bottom: 1px dotted var(--line);
+  padding-bottom: 0.3rem;
+}
+.footer-hours-row dt { color: var(--fg); font-weight: 600; margin: 0; }
+.footer-hours-row dd { color: var(--muted); margin: 0; }
+.footer-hours-note { font-size: 0.82rem; color: var(--muted); font-style: italic; max-width: 26ch; }
+
+@media (max-width: 700px) {
+  .footer-inner { grid-template-columns: 1fr; gap: var(--s-5); }
+}
+
+/* =================================================================
+   Responsive overrides
+   ================================================================= */
+@media (max-width: 900px) {
+  main { padding: 0 var(--s-4); }
+  article { margin: var(--s-5) auto var(--s-7) auto; }
+  h2 { margin: var(--s-6) 0 var(--s-3) 0; }
+  .faq-item > summary { padding: var(--s-4); }
+  .faq-item .faq-answer { padding-left: var(--s-4); padding-right: var(--s-4); padding-bottom: var(--s-4); }
+  .process-steps > li { padding-left: calc(var(--s-7) + var(--s-2)); padding-right: var(--s-4); }
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--s-2);
+    padding: var(--s-3) var(--s-4);
+    position: static;
+  }
+  .site-header .brand { justify-content: center; }
+  .site-header .brand img { height: 56px; }
+  .site-header nav { width: 100%; }
+  .site-header nav > ul { flex-direction: column; gap: 0; width: 100%; }
+  .site-header nav > ul > li { width: 100%; }
+  .site-header nav > ul > li > a,
+  .site-header nav > ul > li > .menu-label {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    border-radius: var(--r-1);
+    border-bottom: 1px solid var(--line);
+    justify-content: space-between;
+  }
+  .site-header nav .dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: var(--s-1) 0 var(--s-2) 0;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+    min-width: 0;
+    background: var(--surface-2);
+    border-radius: 0;
+  }
+  .site-header nav .dropdown a { padding: 0.45rem 1.25rem; }
+  .site-header nav a.cta-nav {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: var(--s-2);
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  h1 { font-size: clamp(1.7rem, 7vw, 2.3rem); }
+  h2 { font-size: 1.3rem; }
+  article { margin: var(--s-4) auto var(--s-6) auto; }
+  .cta-row { flex-direction: column; align-items: stretch; }
+  .cta-row .cta-button,
+  .cta-row .cta-phone { width: 100%; justify-content: center; }
+  .hero-figure img { max-height: 280px; }
+  blockquote { padding: var(--s-3) var(--s-4); }
+  blockquote p { padding-left: 1.25rem; }
+  th, td { padding: var(--s-2) var(--s-3); font-size: 0.9rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://midwestcncservices.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://midwestcncservices.com/insights/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Buying & Owning Used CNC",
+      "item": "https://midwestcncservices.com/insights/buying-owning-used-cnc/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Used Haas Buying: Classic Control vs. NGC"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "Article",
+    "BlogPosting"
+  ],
+  "headline": "Used Haas Buying: Classic Control vs. NGC",
+  "description": "Comparing used Haas Classic Control vs. NGC machines: parts availability, resale value, and Ken's buy-or-pass framework for each era.",
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "author": {
+    "@type": "Person",
+    "name": "Ken",
+    "jobTitle": "Shop owner",
+    "worksFor": {
+      "@id": "https://midwestcncservices.com/#org"
+    }
+  },
+  "publisher": {
+    "@id": "https://midwestcncservices.com/#org"
+  },
+  "mainEntityOfPage": "https://midwestcncservices.com/insights/buying-owning-used-cnc/used-haas-classic-vs-ngc/",
+  "articleSection": "Buying & Owning Used CNC",
+  "keywords": "used haas classic vs ngc",
+  "wordCount": 1357,
+  "inLanguage": "en-US"
+}
+</script>
+</head>
+<body class="insights-page insights-article">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Midwest CNC Services home">
+    <img src="/assets/images/logos/midwest-cnc-logo.png" alt="Midwest CNC Services">
+  </a>
+  <nav aria-label="Primary">
+    <ul>
+    <li class="has-dropdown">
+      <a href="/repairs/" class="menu-label">Repairs</a>
+      <ul class="dropdown" role="menu">
+        <li class="dropdown-section">By Service</li>
+        <li><a href="/repairs/" class="dropdown-all">All Repairs →</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li class="dropdown-section">Popular Brands</li>
+        <li><a href="/repairs/mazak-cnc-machine-repair/">Mazak</a></li>
+        <li><a href="/repairs/haas-cnc-machine-repair/">Haas</a></li>
+        <li><a href="/repairs/dmg-mori-cnc-machine-repair/">DMG Mori</a></li>
+        <li><a href="/repairs/doosan-cnc-machine-repair/">Doosan</a></li>
+        <li><a href="/repairs/okuma-cnc-machine-repair/">Okuma</a></li>
+        <li><a href="/repairs/fanuc-cnc-machine-repair/">Fanuc</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li><a href="/repairs/" class="dropdown-all">View All Brands →</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="/spindle-grinding/" class="menu-label">Spindle Grinding</a>
+      <ul class="dropdown" role="menu">
+        <li class="dropdown-section">By Service</li>
+        <li><a href="/spindle-grinding/" class="dropdown-all">All Spindle Work →</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li class="dropdown-section">Popular Brands</li>
+        <li><a href="/spindle-grinding/mazak-spindle-repair/">Mazak</a></li>
+        <li><a href="/spindle-grinding/haas-spindle-repair/">Haas</a></li>
+        <li><a href="/spindle-grinding/dmg-mori-spindle-repair/">DMG Mori</a></li>
+        <li><a href="/spindle-grinding/doosan-spindle-repair/">Doosan</a></li>
+        <li><a href="/spindle-grinding/okuma-spindle-repair/">Okuma</a></li>
+        <li><a href="/spindle-grinding/fanuc-spindle-repair/">Fanuc</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li><a href="/spindle-grinding/" class="dropdown-all">View All Brands →</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="/way-covers/" class="menu-label">Way Covers</a>
+      <ul class="dropdown" role="menu">
+        <li class="dropdown-section">By Service</li>
+        <li><a href="/way-covers/" class="dropdown-all">All Way Covers →</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li class="dropdown-section">Popular Brands</li>
+        <li><a href="/way-covers/mazak-cnc-way-covers/">Mazak</a></li>
+        <li><a href="/way-covers/haas-cnc-way-covers/">Haas</a></li>
+        <li><a href="/way-covers/dmg-mori-cnc-way-covers/">DMG Mori</a></li>
+        <li><a href="/way-covers/doosan-cnc-way-covers/">Doosan</a></li>
+        <li><a href="/way-covers/okuma-cnc-way-covers/">Okuma</a></li>
+        <li><a href="/way-covers/fanuc-cnc-way-covers/">Fanuc</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li><a href="/way-covers/" class="dropdown-all">View All Brands →</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="/service-area/" class="menu-label">Service Area</a>
+      <ul class="dropdown" role="menu">
+        <li class="dropdown-section">By State</li>
+        <li><a href="/service-area/iowa/">Iowa</a></li>
+        <li><a href="/service-area/illinois/">Illinois</a></li>
+        <li><a href="/service-area/wisconsin/">Wisconsin</a></li>
+        <li><a href="/service-area/minnesota/">Minnesota</a></li>
+        <li><a href="/service-area/nebraska/">Nebraska</a></li>
+        <li><a href="/service-area/missouri/">Missouri</a></li>
+        <li><a href="/service-area/texas/">Texas</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li><a href="/service-area/" class="dropdown-all">All Locations →</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="/insights/" class="menu-label">Insights</a>
+      <ul class="dropdown" role="menu">
+        <li class="dropdown-section">Technical Pillars</li>
+        <li><a href="/insights/spindle-diagnostics/">Spindle Diagnostics</a></li>
+        <li><a href="/insights/cnc-control-systems/">CNC Control Systems</a></li>
+        <li><a href="/insights/way-covers-engineering/">Way Covers Engineering</a></li>
+        <li><a href="/insights/field-service-logistics/">Field Service & Logistics</a></li>
+        <li><a href="/insights/buying-owning-used-cnc/">Buying & Owning Used CNC</a></li>
+        <li class="dropdown-divider" aria-hidden="true"></li>
+        <li><a href="/insights/" class="dropdown-all">All Insights →</a></li>
+      </ul>
+    </li>
+      <li><a href="/get-a-quote/" class="cta-nav">Get a Quote</a></li>
+    </ul>
+  </nav>
+</header>
+<nav class="breadcrumbs" aria-label="breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li><li><a href="/insights/">Insights</a></li><li><a href="/insights/buying-owning-used-cnc/">Buying &amp; Owning Used CNC</a></li><li>Used Haas Buying: Classic Control vs. NGC</li>
+  </ol>
+</nav>
+<main id="main">
+<article>
+
+<section class="page-section page-section-0 page-section-intro">
+  <div class="section-inner">
+<p class="insight-eyebrow">Buying &amp; Owning Used CNC</p>
+<h1 class="insight-h1">Used Haas Buying: Classic Control vs. NGC</h1>
+<p class="insight-meta">By Ken &middot; 2026-09-21 &middot; ~7 min read</p>
+  </div>
+</section>
+<section class="page-section page-section-1">
+  <div class="section-inner">
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>Haas Classic Control machines (pre-2006) sell 35-50% below NGC units but face a parts pipeline that narrows each year.
+</li>
+<li>NGC machines (2006-present) hold stronger resale value because Haas still makes replacement boards and drives.
+</li>
+<li>The parts-and-resale split creates two buyer profiles: Classic suits shops with bench skills; NGC suits shops that need uptime.
+</li>
+<li>Ken's buy-or-pass framework checks spindle runout, board source, and service records before price enters the math.
+</li>
+<li>A 2004 VF-3 Classic and a 2008 VF-3 NGC may differ by $20,000 at auction, but five-year costs can flip that gap.
+</li>
+</ul>
+<p>The used Haas market splits at 2006. That year, Haas shipped the Next Generation Control (NGC) across VMC and lathe lines. The old Classic Control went away. For shops buying used iron in Iowa, Illinois, or Wisconsin, this split matters more than model year alone. A 2005 VF-2 and a 2007 VF-2 share the same casting. They share the same spindle design. But the control cabinet differs—and that cabinet shapes parts cost, repair speed, and resale value for years.</p>
+  </div>
+</section>
+<section class="page-section page-section-0">
+  <div class="section-inner">
+<h2 id="the-2006-control-change-defined-a-new-era">The 2006 Control Change Defined a New Era</h2>
+<p>Haas did not just add a screen in 2006. The company built a new processor board, new I/O modules, and a new pendant. The Classic Control ran hardware from the early 1990s. It used a 10.4-inch CRT or early LCD. The NGC brought a 15-inch color LCD, USB ports, and faster cycle times for complex code.</p>
+<p>The mechanical side stayed similar. Both eras use the same casting families. Ballscrew pitch, way layout, and spindle cartridge fit stayed close. The control cabinet is what changed. That cabinet drives parts sourcing and service speed.</p>
+<p>When we handle <a href="/repairs/haas-cnc-machine-repair/">Haas CNC Machine Repair</a>, the first question is control era. A Classic Control fault often needs a refurbed board from a third party. An NGC board ships from Haas in days. This gap shapes every repair timeline.</p>
+  </div>
+</section>
+<section class="page-section page-section-1">
+  <div class="section-inner">
+<h2 id="classic-control-parts-a-shrinking-supply">Classic Control Parts: A Shrinking Supply</h2>
+<p>Haas stopped making Classic Control parts around 2008. For years, the aftermarket filled the gap. Today, the parts pipeline narrows. We still find I/O boards, servo drives, and spindle drives. But prices rose 20-40% over the past three years. Stock shrinks each quarter.</p>
+<p>Some parts create choke points. The Classic Control main board now costs $2,500-$4,000 refurbed—when you can find one. Lead time runs two to six weeks. The pendant keypad, a wear item, costs $400-$600 and may need a two-week wait. Spindle drives run $1,800-$3,200 refurbed. NGC drives cost $1,200-$2,000 and ship faster.</p>
+<p>Classic Control machines still trade in the open market. A 1999 VF-4 in running shape might sell for $18,000-$28,000 at auction. A 2001 SL-20 lathe might bring $15,000-$22,000. These prices draw buyers. But a $4,000 board failure in year two changes the math fast.</p>
+<p>Our <a href="/spindle-grinding/haas-spindle-repair/haas-classic-control/">Spindle Service on Haas Classic Control (Pre-NGC)</a> page shows what we see on the bench: original bearings from the 1990s, dried grease, and runout drift from decades of cuts.</p>
+  </div>
+</section>
+<section class="page-section page-section-0">
+  <div class="section-inner">
+<h2 id="ngc-parts-ship-faster-and-cost-less">NGC Parts Ship Faster and Cost Less</h2>
+<p>NGC machines hold stronger resale for a simple reason. Haas still makes the parts. A servo drive for an NGC machine runs $1,500-$2,800 from Haas. Lead time is days, not weeks. Control boards, pendants, and I/O cards remain in active production.</p>
+<p>This support cuts downtime and lowers risk. A 2012 VF-2 with a spindle drive fault gets a granular error code. The part ships fast. The install follows current Haas manuals. We handle <a href="/repairs/haas-cnc-machine-repair/haas-ngc/">Haas Next Generation Control (NGC) Repair</a> often. Service calls resolve in half the time of Classic jobs.</p>
+<p>The NGC era also brought small mechanical upgrades. Way covers, ballscrew seals, and spindle bearings improved between 2006 and 2010. A 2009 VF-3 often has better stock covers than a 2003 VF-3. Less coolant leaks past the covers. Ballscrews last longer. Our <a href="/way-covers/haas-cnc-way-covers/haas-ngc/">Way Covers for Haas Next Generation Control (NGC)</a> work confirms this: NGC covers fail less often when not damaged.</p>
+  </div>
+</section>
+<section class="page-section page-section-1">
+  <div class="section-inner">
+<h2 id="ken-s-buy-or-pass-framework">Ken's Buy-or-Pass Framework</h2>
+<p>After thirty years of Haas service across Iowa, Illinois, and Wisconsin, I use a buy-or-pass framework. It filters most listings before a shop should even make an offer.</p>
+<p><strong>Pass if you see any of these:</strong></p>
+<ul>
+<li>Spindle noise at idle or under light load. A rebuild runs $3,500-$8,000. If the seller did not fix it, price it in.
+</li>
+<li>No service records. Unknown history is bad history. This applies to Classic and NGC alike.
+</li>
+<li>Swapped control board with no paperwork. Third-party swaps can leave parameter drift or axis errors that show up months later.
+</li>
+<li>Missing or torn way covers. Cover damage speeds ballscrew wear. Check the cost of <a href="/way-covers/haas-cnc-way-covers/haas-classic-control/">Way Covers for Haas Classic Control Era Machines</a> or NGC covers and bake it into your bid.
+</li>
+</ul>
+<p><strong>Buy if you see these signs:</strong></p>
+<ul>
+<li>Spindle rebuild in the last 15,000 hours or five years, with runout data at sign-off.
+</li>
+<li>Original control parts, or swaps with Haas paperwork.
+</li>
+<li>Service log showing way lube, coolant, and axis checks.
+</li>
+<li>For Classic: at least one spare servo drive and one spare I/O board, sourced before you close the deal.
+</li>
+</ul>
+<p>The parts-and-resale split shapes this math. A Classic machine priced $20,000 below a similar NGC can cost $25,000 more over five years if two board failures hit.</p>
+  </div>
+</section>
+<section class="page-section page-section-0">
+  <div class="section-inner">
+<h2 id="spindle-health-matters-more-than-control-era">Spindle Health Matters More Than Control Era</h2>
+<p>A spindle in good shape makes parts. A spindle in bad shape makes scrap. This rule holds across both eras. A 2002 VF-4 with a fresh rebuild can outcut a 2010 VF-4 with worn bearings.</p>
+<p>We run <a href="/spindle-grinding/haas-spindle-repair/haas-ngc/">Spindle Service on Haas Next Generation Control (NGC)</a> and Classic-era spindle work on the same bench. The cartridges differ slightly. NGC-era spindles sometimes have better bearing setups. But failure modes stay the same: bearing fatigue, coolant ingress, grease breakdown, and taper dings from tool changes.</p>
+<p>When you look at a used Haas, ask for a runout check at the taper. Good runout is under 0.0002" TIR. Above 0.0005" suggests wear. Above 0.001" means a rebuild is close. We see machines listed as "ready to cut" with 0.002" runout. Those machines are not ready for tight work.</p>
+<p>Lathes follow the same rule. An <a href="/repairs/haas-cnc-machine-repair/st-series/">ST Series lathe</a> from 2009 should show tight runout and no bearing noise. The ST line spans late Classic and NGC eras. Check the serial to know which control it has.</p>
+  </div>
+</section>
+<section class="page-section page-section-1">
+  <div class="section-inner">
+<h2 id="five-year-cost-a-real-comparison">Five-Year Cost: A Real Comparison</h2>
+<p>Here is how the math often plays out for a used Haas VMC running 2,000-2,500 hours a year:</p>
+<p><strong>Classic Control (2000-2005 VF-3):</strong></p>
+<ul>
+<li>Buy price: $22,000-$35,000
+</li>
+<li>Likely repairs: 1-2 board failures ($3,000-$4,500 each), one spindle rebuild ($4,500-$6,500), one servo drive ($2,200-$3,500)
+</li>
+<li>Five-year total: $35,000-$55,000
+</li>
+</ul>
+<p><strong>NGC (2008-2012 VF-3):</strong></p>
+<ul>
+<li>Buy price: $42,000-$58,000
+</li>
+<li>Likely repairs: 0-1 spindle service ($4,000-$6,000), occasional drive or I/O swap ($1,500-$2,500)
+</li>
+<li>Five-year total: $45,000-$68,000
+</li>
+</ul>
+<p>The gap shrinks when you count downtime. A two-week board hunt on a Classic costs production hours. A three-day NGC board swap costs far less.</p>
+<p>Shops with in-house electrical skills tilt the math toward Classic. If you can source and swap refurbed boards, Classic offers lower entry cost. Shops that call out for control work should lean NGC.</p>
+  </div>
+</section>
+<section class="page-section page-section-0">
+  <div class="section-inner">
+<h2 id="what-we-see-across-the-midwest">What We See Across the Midwest</h2>
+<p>In Iowa, Illinois, Wisconsin, Minnesota, Nebraska, and Missouri, Classic Control machines show up often at auction. NGC machines move faster and hold firmer prices. Many shops run a mix: a Classic for light work, an NGC for main production.</p>
+<p>We service both eras daily. Our <a href="/repairs/haas-cnc-machine-repair/haas-classic-control/">Haas Classic Control Repair (pre-NGC)</a> work covers board-level checks, servo tuning, and drive swaps. Our NGC work spans the same scope with shorter lead times. That hands-on view shapes what we tell shops looking at used iron.</p>
+  </div>
+</section>
+<section class="page-section page-section-1">
+  <div class="section-inner">
+<h2 id="sources-references">Sources &amp; References</h2>
+<ul>
+<li>Haas Automation 2006 NGC transition docs
+</li>
+<li>Midwest CNC Services service log, 2018-2025 (board failures, parts lead times, spindle rebuild counts)
+</li>
+<li>Secondary parts market quotes, Q1-Q3 2025
+</li>
+<li>Midwest auction results, 2023-2025
+</li>
+</ul>
+  </div>
+</section>
+<section class="page-section page-section-0">
+  <div class="section-inner">
+<h2 id="when-to-bring-this-work-to-us">When to Bring This Work to Us</h2>
+<p>If you are sizing up a used Haas—Classic or NGC—and want a clear read before you buy, we can help. We do pre-purchase checks that cover spindle runout, control health, way condition, and ballscrew wear. For machines you own, we handle repairs across both eras, from board work to spindle rebuilds.</p>
+<p>When you are ready to talk through a machine or book service, <a href="/get-a-quote/">reach out through our quote form</a>.</p>
+<div class="insight-cta">
+  <p><strong>Need this work done?</strong> Tell us the machine and the symptom.</p>
+  <p><a class="cta-button" href="/get-a-quote/">Get a quote</a> <a class="cta-phone" href="tel:+13196104341">319-610-4341</a></p>
+</div>
+  </div>
+</section>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-col-contact">
+      <p class="footer-brand">Midwest CNC Services</p>
+      <p><a class="footer-phone" href="tel:+13196104341">319-610-4341</a></p>
+      <p>Waterloo, Iowa</p>
+      <p class="footer-states">Serving shops across Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas.</p>
+    </div>
+    <div class="footer-col footer-col-hours">
+      <p class="footer-hours-title">Hours</p>
+      <dl class="footer-hours">
+      <div class="footer-hours-row"><dt>Mon–Fri</dt><dd>7 AM – 3:30 PM</dd></div>
+      <div class="footer-hours-row"><dt>Sat–Sun</dt><dd>Closed</dd></div>
+      </dl>
+      <p class="footer-hours-note">Machine down outside these hours? Leave a message — we check it first thing.</p>
+    </div>
+  </div>
+</footer>
+<div class="mobile-cta-bar" role="region" aria-label="Quick contact">
+  <a class="mcta-phone" href="tel:+13196104341">&#9742; 319-610-4341</a>
+  <a class="mcta-quote" href="/get-a-quote/">Get a Quote</a>
+</div>
+<script>
+/* Coverage-map loader. Only injects Leaflet (CSS + JS) when a
+   .coverage-map element exists on the page. Reads data-* attributes
+   off each map element and renders the appropriate variant. */
+(function () {
+  var maps = document.querySelectorAll('.coverage-map');
+  if (!maps.length) return;
+
+  var WATERLOO = [42.51389, -92.34611];
+
+  function inject(tag, attrs) {
+    var el = document.createElement(tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+  function loadLeaflet(cb) {
+    if (window.L) { cb(); return; }
+    document.head.appendChild(inject('link', {
+      rel: 'stylesheet',
+      href: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
+      integrity: 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=',
+      crossorigin: ''
+    }));
+    var s = inject('script', {
+      src: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+      integrity: 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=',
+      crossorigin: ''
+    });
+    s.onload = cb;
+    document.body.appendChild(s);
+  }
+
+  function tileLayer() {
+    return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+  }
+  function originIcon() {
+    return L.divIcon({
+      className: 'coverage-map-origin',
+      html: '<div style="background:#b8341a;color:#fff;border:2px solid #fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;box-shadow:0 2px 6px rgba(0,0,0,0.35);">&#9733;</div>',
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+  }
+  function cityIcon() {
+    return L.divIcon({
+      className: 'coverage-map-city',
+      html: '<div style="background:#fff;border:2px solid #b8341a;border-radius:50%;width:14px;height:14px;box-shadow:0 1px 3px rgba(0,0,0,0.3);"></div>',
+      iconSize: [14, 14],
+      iconAnchor: [7, 7]
+    });
+  }
+
+  function renderCity(el) {
+    var coords = JSON.parse(el.getAttribute('data-coords') || 'null');
+    if (!coords) return;
+    var cityName = el.getAttribute('data-city') || '';
+    var distance = el.getAttribute('data-distance') || '';
+    var map = L.map(el, { zoomControl: true, scrollWheelZoom: false }).setView(coords, 7);
+    tileLayer().addTo(map);
+    L.marker(WATERLOO, { icon: originIcon() }).addTo(map)
+      .bindPopup('<strong>Waterloo, IA</strong><br>Midwest CNC Services');
+    L.marker(coords, { icon: cityIcon() }).addTo(map)
+      .bindPopup('<strong>' + cityName + '</strong>' + (distance ? '<br>' + distance + ' from Waterloo' : ''));
+    L.polyline([WATERLOO, coords], { color: '#b8341a', weight: 2, dashArray: '6,6', opacity: 0.6 }).addTo(map);
+    map.fitBounds([WATERLOO, coords], { padding: [50, 50] });
+    el.classList.add('is-loaded');
+  }
+  function renderState(el) {
+    var bounds = JSON.parse(el.getAttribute('data-bounds') || 'null');
+    var cities = JSON.parse(el.getAttribute('data-cities') || '[]');
+    var map = L.map(el, { zoomControl: true, scrollWheelZoom: false });
+    tileLayer().addTo(map);
+    L.marker(WATERLOO, { icon: originIcon() }).addTo(map)
+      .bindPopup('<strong>Waterloo, IA</strong><br>Midwest CNC Services');
+    var allPts = [WATERLOO];
+    cities.forEach(function (c) {
+      if (!c.coords) return;
+      L.marker(c.coords, { icon: cityIcon() }).addTo(map)
+        .bindPopup('<strong>' + c.name + '</strong>' +
+                   (c.distance_miles ? '<br>' + c.distance_miles + ' miles from Waterloo' : '') +
+                   (c.url ? '<br><a href="' + c.url + '">View ' + c.name + ' page &rarr;</a>' : ''));
+      allPts.push(c.coords);
+    });
+    if (bounds && bounds.length === 2) {
+      map.fitBounds(bounds, { padding: [30, 30] });
+    } else if (allPts.length > 1) {
+      map.fitBounds(allPts, { padding: [40, 40] });
+    }
+    el.classList.add('is-loaded');
+  }
+  function renderHub(el) {
+    var cities = JSON.parse(el.getAttribute('data-cities') || '[]');
+    var map = L.map(el, { zoomControl: true, scrollWheelZoom: false });
+    tileLayer().addTo(map);
+    L.marker(WATERLOO, { icon: originIcon() }).addTo(map)
+      .bindPopup('<strong>Waterloo, IA</strong><br>Midwest CNC Services<br>Service across 7 states');
+    var allPts = [WATERLOO];
+    cities.forEach(function (c) {
+      if (!c.coords) return;
+      L.marker(c.coords, { icon: cityIcon() }).addTo(map)
+        .bindPopup('<strong>' + c.name + ', ' + (c.state || '') + '</strong>' +
+                   (c.distance_miles ? '<br>' + c.distance_miles + ' miles from Waterloo' : '') +
+                   (c.url ? '<br><a href="' + c.url + '">View ' + c.name + ' page &rarr;</a>' : ''));
+      allPts.push(c.coords);
+    });
+    if (allPts.length > 1) map.fitBounds(allPts, { padding: [30, 30] });
+    el.classList.add('is-loaded');
+  }
+
+  loadLeaflet(function () {
+    maps.forEach(function (el) {
+      if (el.classList.contains('coverage-map--city'))      renderCity(el);
+      else if (el.classList.contains('coverage-map--hub'))  renderHub(el);
+      else                                                  renderState(el);
+    });
+  });
+})();
+</script>
+</body>
+</html>
