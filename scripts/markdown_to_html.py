@@ -346,6 +346,16 @@ def md_body_to_html(body):
 
 # ---------- Shared <head> snippets (analytics, social cards) ----------
 
+# Third-party tracking pixel injected as the first child of <head> on
+# every page by all three generators. Positioned above the charset/
+# viewport meta per the user's install instruction. Charset is still
+# well within the first 1024 bytes required by the HTML5 spec.
+TRACKING_HEAD = (
+    '<script async="async" '
+    'src="https://mm-uxrv.com/js/mm_3b1133e8-9d62-4d76-bca2-ed8b11f21cf9-40876802.js">'
+    '</script>'
+)
+
 # Google Analytics (GA4) + ConsentResolve CMP. Plain (non-f) string so
 # the JS braces don't collide with f-string parsing. Injected into the
 # <head> of every page by all three generators (this module,
@@ -2595,6 +2605,7 @@ def render_html(fm, body_html):
     return f"""<!doctype html>
 <html lang="en">
 <head>
+{TRACKING_HEAD}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {ANALYTICS_HEAD}

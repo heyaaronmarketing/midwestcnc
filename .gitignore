@@ -31,3 +31,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Portfolio case study — stays local only (per 2026-10-20 user ask)
+CASE-STUDY.md

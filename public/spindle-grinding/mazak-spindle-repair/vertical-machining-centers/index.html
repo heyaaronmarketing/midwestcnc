@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script async="async" src="https://mm-uxrv.com/js/mm_3b1133e8-9d62-4d76-bca2-ed8b11f21cf9-40876802.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Google tag (gtag.js) -->
@@ -12,7 +13,25 @@
 
   gtag('config', 'G-3G003SQE93');
 </script>
-<script src="https://cdn.consentresolve.com/consentresolve.js"></script><script>ConsentResolve.init({siteId:'89378cf0-e275-41af-a5ab-5836c6647c93',usercentricsSettingsId:'NtX5STrPifLEMi'});ConsentResolve.page();</script>
+<script>
+  // Only load the ConsentResolve CMP on the production domain. On
+  // preview URLs the CMP cannot persist consent, so the banner would
+  // reappear on every page load.
+  (function() {
+    if (location.hostname !== 'midwestcncservices.com' &&
+        location.hostname !== 'www.midwestcncservices.com') return;
+    var s = document.createElement('script');
+    s.src = 'https://cdn.consentresolve.com/consentresolve.js';
+    s.onload = function() {
+      ConsentResolve.init({
+        siteId: '89378cf0-e275-41af-a5ab-5836c6647c93',
+        usercentricsSettingsId: 'NtX5STrPifLEMi'
+      });
+      ConsentResolve.page();
+    };
+    document.head.appendChild(s);
+  })();
+</script>
 <title>Mazak VTC + VCN Spindle Repair &amp; Grinding | Midwest CNC Services</title>
 <meta name="description" content="Mazak VTC + VCN Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on.">
 <link rel="canonical" href="https://midwestcncservices.com/spindle-grinding/mazak-spindle-repair/vertical-machining-centers/">
@@ -1912,7 +1931,7 @@ section.insight-sources {
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="/" aria-label="Midwest CNC Services home">
-    <img src="/assets/images/logos/midwest-cnc-logo.webp" alt="Midwest CNC Services">
+    <img src="/assets/images/logos/midwest-cnc-logo.png" alt="Midwest CNC Services">
   </a>
   <nav aria-label="Primary">
     <ul>

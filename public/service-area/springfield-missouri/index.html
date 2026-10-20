@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script async="async" src="https://mm-uxrv.com/js/mm_3b1133e8-9d62-4d76-bca2-ed8b11f21cf9-40876802.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Google tag (gtag.js) -->
@@ -12,7 +13,25 @@
 
   gtag('config', 'G-3G003SQE93');
 </script>
-<script src="https://cdn.consentresolve.com/consentresolve.js"></script><script>ConsentResolve.init({siteId:'89378cf0-e275-41af-a5ab-5836c6647c93',usercentricsSettingsId:'NtX5STrPifLEMi'});ConsentResolve.page();</script>
+<script>
+  // Only load the ConsentResolve CMP on the production domain. On
+  // preview URLs the CMP cannot persist consent, so the banner would
+  // reappear on every page load.
+  (function() {
+    if (location.hostname !== 'midwestcncservices.com' &&
+        location.hostname !== 'www.midwestcncservices.com') return;
+    var s = document.createElement('script');
+    s.src = 'https://cdn.consentresolve.com/consentresolve.js';
+    s.onload = function() {
+      ConsentResolve.init({
+        siteId: '89378cf0-e275-41af-a5ab-5836c6647c93',
+        usercentricsSettingsId: 'NtX5STrPifLEMi'
+      });
+      ConsentResolve.page();
+    };
+    document.head.appendChild(s);
+  })();
+</script>
 <title>CNC Repair &amp; Service in Springfield, Missouri | Midwest CNC Services</title>
 <meta name="description" content="CNC machine repair, spindle work, and replacement way covers for shops in Springfield, Missouri. 462 miles from our Waterloo, IA shop. Call 319-610-4341.">
 <link rel="canonical" href="https://midwestcncservices.com/service-area/springfield-missouri/">
@@ -1726,12 +1745,58 @@ section.insight-sources {
   padding: var(--s-7) var(--s-5) var(--s-6);
   color: var(--muted);
   font-size: 0.92rem;
-  text-align: center;
   margin-top: var(--s-8);
   background: var(--surface-2);
 }
-.site-footer p { margin: var(--s-2) 0; }
-.site-footer p:first-child { color: var(--fg); font-weight: 600; font-size: 1rem; }
+.footer-inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--s-6);
+  align-items: start;
+}
+.footer-col p { margin: var(--s-2) 0; }
+.footer-brand { color: var(--fg); font-weight: 700; font-size: 1.05rem; margin-top: 0 !important; }
+.footer-phone {
+  color: var(--accent-dark);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.footer-phone:hover { text-decoration: underline; }
+.footer-states { color: var(--muted); max-width: 48ch; }
+
+/* Hours block */
+.footer-hours-title {
+  color: var(--fg);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  margin: 0 0 var(--s-2) 0 !important;
+}
+.footer-hours {
+  margin: 0 0 var(--s-3) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.footer-hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-4);
+  max-width: 18rem;
+  border-bottom: 1px dotted var(--line);
+  padding-bottom: 0.3rem;
+}
+.footer-hours-row dt { color: var(--fg); font-weight: 600; margin: 0; }
+.footer-hours-row dd { color: var(--muted); margin: 0; }
+.footer-hours-note { font-size: 0.82rem; color: var(--muted); font-style: italic; max-width: 26ch; }
+
+@media (max-width: 700px) {
+  .footer-inner { grid-template-columns: 1fr; gap: var(--s-5); }
+}
 
 /* =================================================================
    Responsive overrides
@@ -2270,58 +2335,52 @@ section.insight-sources {
   max-width: 60ch;
 }
 
-/* CTA row in the hero — phone is the primary visual element; the
-   "or" + form-jump is secondary. */
-.quote-hero-cta {
+/* Dominant call banner — the primary action on this page. Full-width
+   (capped), large tap target. Built for a stressed owner on a phone in
+   the shop: the call button is the loudest thing above the form. */
+.quote-call-banner {
   display: flex;
   align-items: center;
-  gap: var(--s-4);
-  flex-wrap: wrap;
   justify-content: center;
-}
-.quote-hero-phone {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-3);
+  gap: var(--s-4);
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto var(--s-3);
   background: var(--accent);
   color: #fff !important;
   text-decoration: none !important;
-  padding: 0.95rem 1.4rem;
+  padding: 1.15rem 1.5rem;
   border-radius: var(--r-3);
-  box-shadow: var(--sh-2);
+  box-shadow: var(--sh-3);
   transition: background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
 }
-.quote-hero-phone:hover {
+.quote-call-banner:hover {
   background: var(--accent-dark);
-  transform: translateY(-1px);
-  box-shadow: var(--sh-3);
+  transform: translateY(-2px);
+  box-shadow: var(--sh-4);
 }
-.quote-hero-phone:focus-visible {
+.quote-call-banner:focus-visible {
   outline: 3px solid var(--accent-dark);
   outline-offset: 3px;
 }
-.quote-hero-phone-icon {
-  font-size: 1.5rem;
+.quote-call-banner-icon {
+  font-size: 2rem;
   line-height: 1;
+  flex-shrink: 0;
 }
-.quote-hero-phone-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; }
-.quote-hero-phone-label {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.88;
-}
-.quote-hero-phone-number {
+.quote-call-banner-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.15; }
+.quote-call-banner-main {
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.01em;
 }
-.quote-hero-or {
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+.quote-call-banner-sub {
+  font-size: 0.85rem;
+  opacity: 0.92;
+  margin-top: 0.12rem;
 }
 .quote-hero-jumplink {
+  display: inline-block;
   color: var(--accent-dark);
   text-decoration: underline;
   text-decoration-color: rgba(140, 37, 16, 0.45);
@@ -2337,27 +2396,132 @@ section.insight-sources {
   border-radius: 2px;
 }
 
-/* Two-column layout — form on the left, supporting cards on the right. */
-.quote-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
-  gap: var(--s-6);
-  max-width: var(--max-wide);
-  margin: 0 auto;
-  padding: 0 var(--s-5) var(--s-6);
-  align-items: start;
+/* Mobile: the call banner goes truly full-width and even bigger —
+   this is the in-the-shop scenario the page is designed around. */
+@media (max-width: 600px) {
+  .quote-call-banner {
+    max-width: none;
+    padding: 1.25rem 1rem;
+  }
+  .quote-call-banner-main { font-size: 1.3rem; }
 }
 
-/* Form column — the form itself sits on a card background to ground it. */
-.quote-form-modern {
+@media (prefers-reduced-motion: reduce) {
+  .quote-call-banner { transition: none !important; }
+  .quote-call-banner:hover { transform: none !important; }
+}
+
+/* Single-column layout — the whole quote body lives inside one
+   .page-section-hero band whose .section-inner is uncapped (max-width:
+   none, padding: 0), so .quote-layout is the element that re-establishes
+   the 1140px content width + horizontal gutter. The form card, intro
+   checklist, and "What happens next" timeline all stack inside it at
+   full width. */
+.quote-layout {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: var(--s-6) var(--s-5);
+}
+@media (max-width: 700px) {
+  .quote-layout { padding: var(--s-5) var(--s-4); }
+}
+
+/* Intro checklist at the top of the form — sets expectations for
+   what to have handy before filling out the fields. */
+.quote-form-intro {
+  padding: var(--s-4) var(--s-5);
+  background: color-mix(in srgb, var(--surface) 90%, var(--accent) 5%);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--line));
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r-2);
+}
+.quote-form-intro-title {
+  margin: 0 0 var(--s-2) 0;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--fg);
+}
+.quote-form-intro-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--fg);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.quote-form-intro-list li { margin: 0.28rem 0; }
+
+/* "What happens next" — 3-step timeline as a horizontal grid inside
+   the form card, below the submit button. Stacks on narrow. */
+.quote-next-steps {
+  margin-top: var(--s-4);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--line);
+}
+.quote-next-steps-title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+  margin: 0 0 var(--s-4) 0;
+}
+.quote-next-steps-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-5);
+}
+.quote-next-steps-grid li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+}
+.quote-next-steps-num {
+  width: 34px;
+  height: 34px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.98rem;
+  flex-shrink: 0;
+}
+.quote-next-steps-grid strong {
+  display: block;
+  color: var(--fg);
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+.quote-next-steps-grid span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+@media (max-width: 780px) {
+  .quote-next-steps-grid { grid-template-columns: 1fr; gap: var(--s-3); }
+}
+
+/* Form card — full width of the wide band, sits on a surface card
+   with generous padding so fields have real breathing room. Overrides
+   the legacy .quote-form rule (max-width: 560px) which is otherwise
+   still applied because the form carries both classes. */
+.quote-form.quote-form-modern {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r-3);
   box-shadow: var(--sh-2);
-  padding: clamp(var(--s-4), 3vw, var(--s-6));
+  padding: clamp(var(--s-5), 4vw, var(--s-8));
+  margin: 0;
+  max-width: none;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--s-5);
+  gap: var(--s-7);
 }
 
 /* Field-section grouping — uses <fieldset> for semantics; no
@@ -2368,35 +2532,50 @@ section.insight-sources {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--s-3);
+  gap: var(--s-4);
 }
 .form-section-title {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent-dark);
   padding: 0;
-  margin: 0 0 var(--s-1) 0;
+  margin: 0 0 var(--s-2) 0;
 }
 
-/* Two-column field rows on desktop, stacked on mobile. */
+/* Single-column field rows — every field gets its own line at the
+   full form width. No internal columns anywhere in the quote form. */
 .form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--s-3);
-}
-@media (max-width: 600px) {
-  .form-row { grid-template-columns: 1fr; }
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
 }
 
-/* Reuse the existing .quote-form input/textarea/select styles but
-   tighten label rhythm slightly for the modern layout. */
-.quote-form-modern .field { display: flex; flex-direction: column; gap: 0.35rem; }
-.quote-form-modern .field-label { font-weight: 600; font-size: 0.92rem; color: var(--fg); }
+/* Scale up the form for the wider column. Larger inputs, labels,
+   and textarea give the form appropriate weight in the layout. */
+.quote-form-modern .field { display: flex; flex-direction: column; gap: 0.45rem; }
+.quote-form-modern .field label,
+.quote-form-modern .field-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--fg);
+}
+.quote-form-modern input,
+.quote-form-modern textarea,
+.quote-form-modern select {
+  font: inherit;
+  font-size: 1.02rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--r-2);
+}
+.quote-form-modern textarea {
+  min-height: 15rem;
+  line-height: 1.55;
+}
 .quote-form-modern .field-hint {
-  margin: 0.3rem 0 0 0;
-  font-size: 0.82rem;
+  margin: 0.4rem 0 0 0;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -2561,11 +2740,12 @@ section.insight-sources {
   font: inherit;
   background: var(--accent);
   color: #fff;
-  padding: 1.05rem 1.6rem;
+  padding: 1.25rem 1.8rem;
   border: 0;
   border-radius: var(--r-2);
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.005em;
   cursor: pointer;
   align-self: stretch;
   box-shadow: var(--sh-2);
@@ -2687,31 +2867,17 @@ section.insight-sources {
   margin: 0 !important;
 }
 
-/* Below 960px — collapse to single column. Sidebar moves below form.
-   The phone CTA stays in the hero so it is always reachable. */
-@media (max-width: 960px) {
-  .quote-layout {
-    grid-template-columns: 1fr;
-    gap: var(--s-5);
-  }
-}
-
 @media (max-width: 600px) {
   .quote-hero { padding: var(--s-5) var(--s-4) var(--s-4); }
   .quote-hero-inner { text-align: left; align-items: flex-start; }
-  .quote-hero-cta { width: 100%; flex-direction: column; align-items: stretch; gap: var(--s-3); }
-  .quote-hero-or { display: none; }
-  .quote-hero-phone { justify-content: center; }
-  .quote-hero-jumplink { text-align: center; }
+  .quote-hero-jumplink { text-align: center; width: 100%; }
   .quote-form-modern { padding: var(--s-4); }
 }
 
 /* Reduced-motion: drop the lift effect on buttons/links. */
 @media (prefers-reduced-motion: reduce) {
-  .quote-hero-phone,
   .quote-submit,
   .quote-card-phone { transition: none !important; }
-  .quote-hero-phone:hover,
   .quote-submit:hover { transform: none !important; }
 }
 
@@ -2870,7 +3036,7 @@ body.form-submitted .quote-helpers { display: none; }
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <a class="brand" href="/" aria-label="Midwest CNC Services home">
-    <img src="/assets/images/logos/midwest-cnc-logo.webp" alt="Midwest CNC Services">
+    <img src="/assets/images/logos/midwest-cnc-logo.png" alt="Midwest CNC Services">
   </a>
   <nav aria-label="Primary">
     <ul>
@@ -3077,8 +3243,22 @@ body.form-submitted .quote-helpers { display: none; }
 </article>
 </main>
 <footer class="site-footer">
-  <p>Midwest CNC Services · 319-610-4341 · Waterloo, Iowa</p>
-  <p>Serving shops across Iowa, Illinois, Minnesota, Wisconsin, Nebraska, Missouri, and Texas.</p>
+  <div class="footer-inner">
+    <div class="footer-col footer-col-contact">
+      <p class="footer-brand">Midwest CNC Services</p>
+      <p><a class="footer-phone" href="tel:+13196104341">319-610-4341</a></p>
+      <p>Waterloo, Iowa</p>
+      <p class="footer-states">Serving shops across Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas.</p>
+    </div>
+    <div class="footer-col footer-col-hours">
+      <p class="footer-hours-title">Hours</p>
+      <dl class="footer-hours">
+      <div class="footer-hours-row"><dt>Mon–Fri</dt><dd>7 AM – 3:30 PM</dd></div>
+      <div class="footer-hours-row"><dt>Sat–Sun</dt><dd>Closed</dd></div>
+      </dl>
+      <p class="footer-hours-note">Machine down outside these hours? Leave a message — we check it first thing.</p>
+    </div>
+  </div>
 </footer>
 <div class="mobile-cta-bar" role="region" aria-label="Quick contact">
   <a class="mcta-phone" href="tel:+13196104341">☎ 319-610-4341</a>
