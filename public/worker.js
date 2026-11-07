@@ -82,8 +82,31 @@ export default {
       return new Response("Method not allowed", { status: 405 });
     }
 
+    if (url.pathname === "/api/case-study.json") {
+      if (request.method === "GET") return handleCaseStudyJson(env);
+      return new Response("Method not allowed", { status: 405 });
+    }
+
     if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
       return handleAdmin(request, env, url);
+    }
+
+    // Trailing-slash normalization — 301 Permanent Redirect so Google
+    // consolidates ranking signals. Cloudflare Workers Static Assets
+    // defaults to a 307 Temporary Redirect, which Google does not treat
+    // as permanent — resulting in duplicate URLs ranking separately.
+    //
+    // Scope: GET/HEAD only, extensionless paths (never /foo.webp or /foo.xml),
+    // and not already-slashed. Preserves query string + fragment.
+    if (
+      (request.method === "GET" || request.method === "HEAD") &&
+      !url.pathname.endsWith("/") &&
+      !url.pathname.slice(url.pathname.lastIndexOf("/")).includes(".")
+    ) {
+      return Response.redirect(
+        url.origin + url.pathname + "/" + url.search + url.hash,
+        301,
+      );
     }
 
     return env.ASSETS.fetch(request);
@@ -390,6 +413,11 @@ async function handleAdmin(request, env, url) {
   }
   if (path === "/admin/export.csv") {
     return handleAdminExport(env);
+  }
+  if (path === "/admin/case-study") {
+    if (method === "GET") return handleCaseStudyAdminPage(env);
+    if (method === "POST") return handleCaseStudyUpload(request, env, url);
+    return new Response("Method not allowed", { status: 405 });
   }
   const detailMatch = path.match(/^\/admin\/quote\/(\d+)$/);
   if (detailMatch) {
@@ -728,6 +756,7 @@ function renderLayout(title, body, opts = {}) {
     <header class="admin-nav">
       <span class="brand">Midwest CNC — Admin</span>
       <a href="/admin">Leads</a>
+      <a href="/admin/case-study">Case Study</a>
       <a href="/admin/export.csv">Export CSV</a>
       <span class="spacer"></span>
       <a href="/admin/logout">Sign out</a>
@@ -874,4 +903,387 @@ function formatDate(iso) {
     year: "numeric", month: "short", day: "numeric",
     hour: "numeric", minute: "2-digit",
   });
+}
+
+// =====================================================================
+// Case study data — /api/case-study.json + /admin/case-study
+// =====================================================================
+// Public JSON endpoint consumed by heyaaronmarketing.com case study
+// pages. Data lives in D1 (gsc_daily, gsc_queries, gsc_pages, ai_daily).
+// Admin page lets Aaron paste CSV exports from GSC + the AI Performance
+// Overview to refresh the data until API crons are wired up.
+// =====================================================================
+
+const CASE_STUDY_SCHEMA = `
+CREATE TABLE IF NOT EXISTS cs_gsc_daily (
+  date TEXT PRIMARY KEY,
+  clicks INTEGER NOT NULL DEFAULT 0,
+  impressions INTEGER NOT NULL DEFAULT 0,
+  ctr REAL NOT NULL DEFAULT 0,
+  position REAL NOT NULL DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS cs_gsc_queries (
+  query TEXT PRIMARY KEY,
+  clicks INTEGER NOT NULL DEFAULT 0,
+  impressions INTEGER NOT NULL DEFAULT 0,
+  ctr REAL NOT NULL DEFAULT 0,
+  position REAL NOT NULL DEFAULT 0,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS cs_gsc_pages (
+  page TEXT PRIMARY KEY,
+  clicks INTEGER NOT NULL DEFAULT 0,
+  impressions INTEGER NOT NULL DEFAULT 0,
+  ctr REAL NOT NULL DEFAULT 0,
+  position REAL NOT NULL DEFAULT 0,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS cs_ai_daily (
+  date TEXT PRIMARY KEY,
+  citations INTEGER NOT NULL DEFAULT 0,
+  cited_pages INTEGER NOT NULL DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS cs_meta (
+  k TEXT PRIMARY KEY,
+  v TEXT,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+`;
+
+async function ensureCaseStudySchema(env) {
+  if (!env.DB) return false;
+  await env.DB.exec(CASE_STUDY_SCHEMA.replace(/\n/g, " ")).catch(() => {});
+  return true;
+}
+
+async function handleCaseStudyJson(env) {
+  if (!env.DB) {
+    return jsonResponse({ error: "database not configured" }, 503);
+  }
+  await ensureCaseStudySchema(env);
+
+  const [daily, queries, pages, ai, metaRows, leadRow] = await Promise.all([
+    env.DB.prepare("SELECT date, clicks, impressions, position FROM cs_gsc_daily ORDER BY date").all(),
+    env.DB.prepare("SELECT query, clicks, position FROM cs_gsc_queries WHERE clicks > 0 ORDER BY clicks DESC LIMIT 25").all(),
+    env.DB.prepare("SELECT page, clicks, impressions, position FROM cs_gsc_pages WHERE clicks > 0 ORDER BY clicks DESC LIMIT 25").all(),
+    env.DB.prepare("SELECT date, citations, cited_pages FROM cs_ai_daily ORDER BY date").all(),
+    env.DB.prepare("SELECT k, v FROM cs_meta").all(),
+    env.DB.prepare("SELECT COUNT(*) AS total, SUM(email_sent) AS delivered FROM quotes").first().catch(() => null),
+  ]);
+
+  const meta = {};
+  for (const row of metaRows.results || []) meta[row.k] = row.v;
+
+  const dailyRows = daily.results || [];
+  const gsc = summarizeGsc(dailyRows);
+  const aiRows = ai.results || [];
+  const aiSummary = summarizeAi(aiRows);
+
+  return jsonResponse({
+    schema_version: "1.0",
+    slug: "midwestcnc",
+    last_updated: new Date().toISOString(),
+    data_as_of: meta.data_as_of || null,
+    client: {
+      name: "Midwest CNC Services",
+      industry: "CNC machine repair · spindle rebuild · way covers",
+      location: "Waterloo, Iowa",
+      service_area_states: 7,
+      website: "https://midwestcncservices.com",
+      launched: "2026-07-06",
+    },
+    headline_stats: [
+      { label: "Google clicks, last 90d", value: gsc.last90.clicks, delta_pct: gsc.delta.clicks_pct },
+      { label: "AI citations, last 30d", value: aiSummary.last30.citations, delta_pct: aiSummary.delta.citations_pct },
+      { label: "Avg Google rank, last 90d", value: round(gsc.last90.position, 1), delta: round(gsc.last90.position - gsc.prior90.position, 1) },
+      { label: "Total pages indexed", value: 297 },
+    ],
+    google_search: {
+      window_days: 90,
+      clicks: gsc.last90.clicks,
+      impressions: gsc.last90.impressions,
+      avg_position: round(gsc.last90.position, 1),
+      queries_ranking: (queries.results || []).length,
+      prior_window: {
+        clicks: gsc.prior90.clicks,
+        impressions: gsc.prior90.impressions,
+        avg_position: round(gsc.prior90.position, 1),
+      },
+      top_queries: (queries.results || []).slice(0, 10).map((q) => ({
+        query: q.query, clicks: q.clicks, position: round(q.position, 1),
+      })),
+      top_pages: (pages.results || []).slice(0, 10).map((p) => ({
+        page: p.page, clicks: p.clicks, position: round(p.position, 1),
+      })),
+      daily: dailyRows.map((d) => ({ date: d.date, clicks: d.clicks, impressions: d.impressions })),
+      source: "Google Search Console",
+      updated: meta.gsc_updated || null,
+    },
+    ai_search: {
+      window_days: 30,
+      total_citations: aiSummary.last30.citations,
+      pages_cited: aiSummary.last30.pages,
+      best_day: aiSummary.best_day,
+      monthly: aiSummary.monthly,
+      daily: aiRows.map((d) => ({ date: d.date, citations: d.citations, cited_pages: d.cited_pages })),
+      source: "Google Search Console — AI Performance Overview",
+      updated: meta.ai_updated || null,
+    },
+    leads: {
+      total_submissions: leadRow ? (leadRow.total || 0) : 0,
+      emails_delivered: leadRow ? (leadRow.delivered || 0) : 0,
+      source: "Cloudflare D1 (quotes table)",
+    },
+    site_structure: {
+      pages: 297,
+      schema_nodes: 1768,
+      faq_qa_pairs: 442,
+      insight_articles_auto_drafted: 22,
+      image_size_savings_pct: 86,
+      broken_links: 0,
+    },
+    capabilities_shown: [
+      "Durable → Cloudflare Workers rebuild",
+      "D1 lead database + admin UI with HMAC session cookies",
+      "GitHub Actions weekly AI-drafted articles with 12 quality gates",
+      "llms.txt + 442 FAQ Q&A pairs + 1,768 schema nodes",
+      "Full form pipeline (Turnstile + Resend + D1 + Reply-To routing)",
+    ],
+  });
+}
+
+function jsonResponse(obj, status = 200) {
+  return new Response(JSON.stringify(obj, null, 2), {
+    status,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "public, max-age=300, s-maxage=300",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+    },
+  });
+}
+
+function round(n, dp) {
+  if (n === null || n === undefined || !isFinite(n)) return null;
+  const f = Math.pow(10, dp);
+  return Math.round(n * f) / f;
+}
+
+function summarizeGsc(rows) {
+  if (!rows.length) {
+    return {
+      last90:  { clicks: 0, impressions: 0, position: 0 },
+      prior90: { clicks: 0, impressions: 0, position: 0 },
+      delta:   { clicks_pct: 0, impressions_pct: 0 },
+    };
+  }
+  const last90 = totals(rows.slice(-90));
+  const prior90 = totals(rows.slice(-180, -90));
+  return {
+    last90, prior90,
+    delta: {
+      clicks_pct: prior90.clicks ? Math.round(((last90.clicks - prior90.clicks) / prior90.clicks) * 100) : null,
+      impressions_pct: prior90.impressions ? Math.round(((last90.impressions - prior90.impressions) / prior90.impressions) * 100) : null,
+    },
+  };
+}
+
+function totals(rows) {
+  if (!rows.length) return { clicks: 0, impressions: 0, position: 0 };
+  let c = 0, i = 0, p = 0;
+  for (const r of rows) { c += r.clicks; i += r.impressions; p += r.position; }
+  return { clicks: c, impressions: i, position: p / rows.length };
+}
+
+function summarizeAi(rows) {
+  if (!rows.length) {
+    return {
+      last30: { citations: 0, pages: 0 },
+      delta: { citations_pct: null },
+      best_day: null,
+      monthly: [],
+    };
+  }
+  const last30 = rows.slice(-30);
+  const prior30 = rows.slice(-60, -30);
+  const sumC = (rs) => rs.reduce((a, r) => a + r.citations, 0);
+  const l30 = sumC(last30);
+  const p30 = sumC(prior30);
+  const bestDay = rows.reduce((best, r) => (r.citations > (best?.citations || 0) ? r : best), null);
+  const byMonth = {};
+  for (const r of rows) {
+    const m = r.date.slice(0, 7);
+    if (!byMonth[m]) byMonth[m] = { month: m, citations: 0, days: 0 };
+    byMonth[m].citations += r.citations;
+    byMonth[m].days += 1;
+  }
+  return {
+    last30: { citations: l30, pages: Math.max(...last30.map((r) => r.cited_pages), 0) },
+    delta: { citations_pct: p30 ? Math.round(((l30 - p30) / p30) * 100) : null },
+    best_day: bestDay
+      ? { date: bestDay.date, citations: bestDay.citations, cited_pages: bestDay.cited_pages }
+      : null,
+    monthly: Object.values(byMonth),
+  };
+}
+
+// ---------- Admin case-study page ----------
+
+async function handleCaseStudyAdminPage(env) {
+  if (!env.DB) {
+    return htmlResponse(renderLayout("Case Study", `<p>DB not configured.</p>`));
+  }
+  await ensureCaseStudySchema(env);
+  const [daily, ai, meta] = await Promise.all([
+    env.DB.prepare("SELECT COUNT(*) AS n, MIN(date) AS first, MAX(date) AS last FROM cs_gsc_daily").first(),
+    env.DB.prepare("SELECT COUNT(*) AS n, MIN(date) AS first, MAX(date) AS last FROM cs_ai_daily").first(),
+    env.DB.prepare("SELECT k, v FROM cs_meta").all(),
+  ]);
+  const metaMap = {};
+  for (const r of meta.results || []) metaMap[r.k] = r.v;
+
+  const body = `
+    <p><a href="/admin">&larr; All leads</a></p>
+    <h1>Case Study Data</h1>
+    <p style="color:var(--muted);">
+      Powers <code>/api/case-study.json</code>. Paste CSV exports below to refresh.
+    </p>
+
+    <div class="detail">
+      <h2>Current data</h2>
+      <dl class="kv">
+        <dt>GSC daily rows</dt>  <dd>${daily?.n || 0} ${daily?.first ? `(${daily.first} → ${daily.last})` : ""}</dd>
+        <dt>AI daily rows</dt>   <dd>${ai?.n || 0} ${ai?.first ? `(${ai.first} → ${ai.last})` : ""}</dd>
+        <dt>Data as of</dt>      <dd>${esc(metaMap.data_as_of || "never")}</dd>
+        <dt>Live JSON</dt>       <dd><a href="/api/case-study.json" target="_blank">/api/case-study.json</a></dd>
+      </dl>
+
+      <form class="update-form" method="POST" action="/admin/case-study" enctype="multipart/form-data">
+        <label for="csv_type">Which CSV is this?</label>
+        <select id="csv_type" name="csv_type">
+          <option value="gsc_chart">GSC — Chart.csv (daily clicks/impressions/CTR/position)</option>
+          <option value="gsc_queries">GSC — Queries.csv (query / clicks / impressions / CTR / position)</option>
+          <option value="gsc_pages">GSC — Pages.csv (page / clicks / impressions / CTR / position)</option>
+          <option value="ai_overview">AI Performance Overview (Date / Citations / Cited Pages)</option>
+        </select>
+
+        <label for="csv_text">Paste CSV content here:</label>
+        <textarea id="csv_text" name="csv_text" placeholder="Copy the CSV file contents and paste here.&#10;First row = headers, same as GSC exports."></textarea>
+
+        <button type="submit" class="btn">Upload &amp; refresh</button>
+      </form>
+    </div>
+  `;
+  return htmlResponse(renderLayout("Case Study — Admin", body));
+}
+
+async function handleCaseStudyUpload(request, env, url) {
+  await ensureCaseStudySchema(env);
+  const form = await request.formData().catch(() => null);
+  if (!form) return new Response("Bad request", { status: 400 });
+  const csvType = (form.get("csv_type") || "").toString();
+  const csvText = (form.get("csv_text") || "").toString().trim();
+  if (!csvText) {
+    return htmlResponse(renderLayout("Case Study", `<p>No CSV content.</p><p><a href="/admin/case-study">Back</a></p>`));
+  }
+
+  const rows = parseCsv(csvText);
+  if (rows.length < 2) {
+    return htmlResponse(renderLayout("Case Study", `<p>CSV had no data rows.</p><p><a href="/admin/case-study">Back</a></p>`));
+  }
+  const header = rows[0].map((h) => h.toLowerCase().trim());
+  const dataRows = rows.slice(1);
+  let inserted = 0;
+
+  if (csvType === "gsc_chart") {
+    const stmts = dataRows
+      .filter((r) => r[0])
+      .map((r) => env.DB.prepare(
+        "INSERT INTO cs_gsc_daily (date, clicks, impressions, ctr, position) VALUES (?, ?, ?, ?, ?) " +
+        "ON CONFLICT(date) DO UPDATE SET clicks=excluded.clicks, impressions=excluded.impressions, ctr=excluded.ctr, position=excluded.position"
+      ).bind(r[0], intOr0(r[1]), intOr0(r[2]), pctOr0(r[3]), floatOr0(r[4])));
+    await env.DB.batch(stmts);
+    inserted = stmts.length;
+  } else if (csvType === "gsc_queries") {
+    await env.DB.exec("DELETE FROM cs_gsc_queries");
+    const stmts = dataRows
+      .filter((r) => r[0])
+      .map((r) => env.DB.prepare(
+        "INSERT OR REPLACE INTO cs_gsc_queries (query, clicks, impressions, ctr, position) VALUES (?, ?, ?, ?, ?)"
+      ).bind(r[0], intOr0(r[1]), intOr0(r[2]), pctOr0(r[3]), floatOr0(r[4])));
+    await env.DB.batch(stmts);
+    inserted = stmts.length;
+  } else if (csvType === "gsc_pages") {
+    await env.DB.exec("DELETE FROM cs_gsc_pages");
+    const stmts = dataRows
+      .filter((r) => r[0])
+      .map((r) => env.DB.prepare(
+        "INSERT OR REPLACE INTO cs_gsc_pages (page, clicks, impressions, ctr, position) VALUES (?, ?, ?, ?, ?)"
+      ).bind(r[0], intOr0(r[1]), intOr0(r[2]), pctOr0(r[3]), floatOr0(r[4])));
+    await env.DB.batch(stmts);
+    inserted = stmts.length;
+  } else if (csvType === "ai_overview") {
+    const stmts = dataRows
+      .filter((r) => r[0])
+      .map((r) => env.DB.prepare(
+        "INSERT INTO cs_ai_daily (date, citations, cited_pages) VALUES (?, ?, ?) " +
+        "ON CONFLICT(date) DO UPDATE SET citations=excluded.citations, cited_pages=excluded.cited_pages"
+      ).bind(normalizeDate(r[0]), intOr0(r[1]), intOr0(r[2])));
+    await env.DB.batch(stmts);
+    inserted = stmts.length;
+  } else {
+    return new Response("Unknown csv_type", { status: 400 });
+  }
+
+  const now = new Date().toISOString();
+  const metaKey = csvType.startsWith("gsc_") ? "gsc_updated" : "ai_updated";
+  await env.DB.prepare(
+    "INSERT INTO cs_meta (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v=excluded.v, updated_at=CURRENT_TIMESTAMP"
+  ).bind(metaKey, now).run();
+  await env.DB.prepare(
+    "INSERT INTO cs_meta (k, v) VALUES ('data_as_of', ?) ON CONFLICT(k) DO UPDATE SET v=excluded.v, updated_at=CURRENT_TIMESTAMP"
+  ).bind(now).run();
+
+  return new Response(null, {
+    status: 303,
+    headers: { Location: new URL(`/admin/case-study?uploaded=${inserted}`, url).toString() },
+  });
+}
+
+function parseCsv(text) {
+  // Minimal RFC-4180 parser: handles quoted fields with embedded commas/quotes.
+  const rows = [];
+  let row = [], field = "", inQuotes = false, i = 0;
+  while (i < text.length) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"' && text[i + 1] === '"') { field += '"'; i += 2; continue; }
+      if (c === '"') { inQuotes = false; i++; continue; }
+      field += c; i++; continue;
+    }
+    if (c === '"') { inQuotes = true; i++; continue; }
+    if (c === ',') { row.push(field); field = ""; i++; continue; }
+    if (c === '\r') { i++; continue; }
+    if (c === '\n') { row.push(field); rows.push(row); row = []; field = ""; i++; continue; }
+    field += c; i++;
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  return rows.filter((r) => r.length > 1 || (r.length === 1 && r[0]));
+}
+
+function intOr0(v) { const n = parseInt(String(v || "").replace(/,/g, ""), 10); return isNaN(n) ? 0 : n; }
+function floatOr0(v) { const n = parseFloat(String(v || "").replace(/,/g, "")); return isNaN(n) ? 0 : n; }
+function pctOr0(v) {
+  const s = String(v || "").replace(/,/g, "").replace("%", "").trim();
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : (n > 1 ? n / 100 : n);
+}
+function normalizeDate(v) {
+  // Accepts "YYYY-MM-DD", "M/D/YYYY", "M/D/YYYY 12:00:00 AM" → YYYY-MM-DD
+  const s = String(v || "").trim().split(" ")[0];
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (m) return `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+  return s;
 }

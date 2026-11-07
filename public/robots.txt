@@ -1,3 +1,83 @@
+# Midwest CNC Services — robots.txt
+# Default: allow all crawlers.
 User-agent: *
 Allow: /
+
+# ----- AI crawlers (explicit allow-list) ----------------------------------
+# Many AI engines look for their own user-agent in robots.txt before
+# ingesting a page. Naming each one explicitly is a trust signal that
+# this site welcomes citation + grounding by AI search engines.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google — separate from Googlebot, specifically for AI products (Gemini,
+# AI Overviews grounding). Robots directives for Google-Extended do NOT
+# affect search indexing; they only govern AI product usage.
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Amazon Nova / Alexa+
+User-agent: Amazonbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (used by many downstream LLM training + grounding pipelines)
+User-agent: CCBot
+Allow: /
+
+# Bytedance (Doubao / Volcano Ark)
+User-agent: Bytespider
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Diffbot (Perplexity + others use it for grounding)
+User-agent: Diffbot
+Allow: /
+
+# ----- Sitemap ------------------------------------------------------------
 Sitemap: https://midwestcncservices.com/sitemap.xml
