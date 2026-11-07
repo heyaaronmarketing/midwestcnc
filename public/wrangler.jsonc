@@ -19,5 +19,10 @@
       "database_name": "midwestcnc-leads",
       "database_id": "bf690c6e-eca6-4033-b1de-db5d375c5ffb"
     }
-  ]
+  ],
+  "triggers": {
+    "crons": [
+      "0 13 * * 1"
+    ]
+  }
 }

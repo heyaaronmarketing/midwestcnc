@@ -68,6 +68,15 @@ CREATE INDEX IF NOT EXISTS idx_quotes_created_at ON quotes(created_at DESC);
 `;
 
 export default {
+  // Weekly cron: pulls Google Search Console (and later Bing WMT) data
+  // into the case-study D1 tables. Cron schedule set in wrangler.jsonc:
+  // 0 13 * * 1 → Monday 13:00 UTC = 7 AM Central (CST, 8 AM CDT).
+  //
+  // Also callable ad-hoc from the admin page's "Refresh now" button.
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(runCaseStudyRefresh(env, { source: "cron", trigger: event.cron }));
+  },
+
   async fetch(request, env) {
     const url = new URL(request.url);
 
@@ -418,6 +427,14 @@ async function handleAdmin(request, env, url) {
     if (method === "GET") return handleCaseStudyAdminPage(env);
     if (method === "POST") return handleCaseStudyUpload(request, env, url);
     return new Response("Method not allowed", { status: 405 });
+  }
+  if (path === "/admin/case-study/refresh") {
+    if (method !== "POST") return new Response("Method not allowed", { status: 405 });
+    const result = await runCaseStudyRefresh(env, { source: "manual" });
+    return new Response(null, {
+      status: 303,
+      headers: { Location: new URL(`/admin/case-study?refreshed=1`, url).toString() },
+    });
   }
   const detailMatch = path.match(/^\/admin\/quote\/(\d+)$/);
   if (detailMatch) {
@@ -1147,17 +1164,26 @@ async function handleCaseStudyAdminPage(env) {
     <p><a href="/admin">&larr; All leads</a></p>
     <h1>Case Study Data</h1>
     <p style="color:var(--muted);">
-      Powers <code>/api/case-study.json</code>. Paste CSV exports below to refresh.
+      Powers <code>/api/case-study.json</code>. Weekly cron (Mon 7 AM Central)
+      pulls GSC + Bing automatically. Paste CSVs below for one-off AI
+      Overview refreshes or manual catch-up.
     </p>
 
     <div class="detail">
       <h2>Current data</h2>
       <dl class="kv">
-        <dt>GSC daily rows</dt>  <dd>${daily?.n || 0} ${daily?.first ? `(${daily.first} → ${daily.last})` : ""}</dd>
-        <dt>AI daily rows</dt>   <dd>${ai?.n || 0} ${ai?.first ? `(${ai.first} → ${ai.last})` : ""}</dd>
-        <dt>Data as of</dt>      <dd>${esc(metaMap.data_as_of || "never")}</dd>
-        <dt>Live JSON</dt>       <dd><a href="/api/case-study.json" target="_blank">/api/case-study.json</a></dd>
+        <dt>GSC daily rows</dt>   <dd>${daily?.n || 0} ${daily?.first ? `(${daily.first} → ${daily.last})` : ""}</dd>
+        <dt>AI daily rows</dt>    <dd>${ai?.n || 0} ${ai?.first ? `(${ai.first} → ${ai.last})` : ""}</dd>
+        <dt>GSC last updated</dt> <dd>${esc(metaMap.gsc_updated || "never")} ${metaMap.gsc_last_error ? `<span class="email-badge fail">error</span> <small style="color:var(--muted);">${esc(metaMap.gsc_last_error)}</small>` : ""}</dd>
+        <dt>Bing last updated</dt><dd>${esc(metaMap.bing_updated || "never")} ${metaMap.bing_last_error ? `<span class="email-badge fail">error</span> <small style="color:var(--muted);">${esc(metaMap.bing_last_error)}</small>` : ""}</dd>
+        <dt>Data as of</dt>       <dd>${esc(metaMap.data_as_of || "never")}</dd>
+        <dt>Live JSON</dt>        <dd><a href="/api/case-study.json" target="_blank">/api/case-study.json</a></dd>
       </dl>
+
+      <form method="POST" action="/admin/case-study/refresh" style="margin-top:16px;">
+        <button type="submit" class="btn">Refresh GSC + Bing now</button>
+        <small style="color:var(--muted);margin-left:12px;">Pulls latest 90 days. Runs automatically every Monday.</small>
+      </form>
 
       <form class="update-form" method="POST" action="/admin/case-study" enctype="multipart/form-data">
         <label for="csv_type">Which CSV is this?</label>
@@ -1286,4 +1312,202 @@ function normalizeDate(v) {
   const m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
   if (m) return `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
   return s;
+}
+
+// =====================================================================
+// Case-study refresh — pulls GSC + Bing via their APIs on cron
+// =====================================================================
+// Called by scheduled() weekly, and by POST /admin/case-study/refresh
+// for manual triggering. Each source is independent — one failing does
+// not block the other. Errors are written to cs_meta.last_error_<src>
+// so the admin page can show them.
+// =====================================================================
+
+const GSC_PROPERTY = "sc-domain:midwestcncservices.com";
+const BING_SITE_URL = "https://midwestcncservices.com";
+
+async function runCaseStudyRefresh(env, meta = {}) {
+  await ensureCaseStudySchema(env);
+  const results = { source: meta.source || "manual", started: new Date().toISOString() };
+
+  try {
+    const g = await pullGsc(env);
+    results.gsc = g;
+    await setMeta(env, "gsc_updated", new Date().toISOString());
+    await setMeta(env, "gsc_last_error", "");
+  } catch (e) {
+    results.gsc = { error: String(e && e.message || e) };
+    await setMeta(env, "gsc_last_error", results.gsc.error);
+    console.log("GSC pull failed:", results.gsc.error);
+  }
+
+  try {
+    const b = await pullBing(env);
+    results.bing = b;
+    await setMeta(env, "bing_updated", new Date().toISOString());
+    await setMeta(env, "bing_last_error", "");
+  } catch (e) {
+    results.bing = { error: String(e && e.message || e) };
+    await setMeta(env, "bing_last_error", results.bing.error);
+    console.log("Bing pull failed:", results.bing.error);
+  }
+
+  await setMeta(env, "data_as_of", new Date().toISOString());
+  results.finished = new Date().toISOString();
+  return results;
+}
+
+async function setMeta(env, k, v) {
+  await env.DB.prepare(
+    "INSERT INTO cs_meta (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v=excluded.v, updated_at=CURRENT_TIMESTAMP"
+  ).bind(k, v).run();
+}
+
+// ---------- GSC ----------
+
+async function pullGsc(env) {
+  if (!env.GSC_SERVICE_ACCOUNT_JSON) {
+    return { skipped: "GSC_SERVICE_ACCOUNT_JSON not set" };
+  }
+  const sa = JSON.parse(env.GSC_SERVICE_ACCOUNT_JSON);
+  const token = await mintGoogleAccessToken(sa, "https://www.googleapis.com/auth/webmasters.readonly");
+
+  const today = new Date();
+  const start = new Date(today.getTime() - 90 * 86400000);
+  const fmt = (d) => d.toISOString().slice(0, 10);
+  const startDate = fmt(start);
+  const endDate = fmt(today);
+
+  const daily = await gscQuery(token, { startDate, endDate, dimensions: ["date"], rowLimit: 500 });
+  const queries = await gscQuery(token, { startDate, endDate, dimensions: ["query"], rowLimit: 1000 });
+  const pages = await gscQuery(token, { startDate, endDate, dimensions: ["page"], rowLimit: 1000 });
+
+  // Upsert daily (preserves older rows outside the 90-day window)
+  if (daily.rows?.length) {
+    const stmts = daily.rows.map((r) => env.DB.prepare(
+      "INSERT INTO cs_gsc_daily (date, clicks, impressions, ctr, position) VALUES (?, ?, ?, ?, ?) " +
+      "ON CONFLICT(date) DO UPDATE SET clicks=excluded.clicks, impressions=excluded.impressions, ctr=excluded.ctr, position=excluded.position"
+    ).bind(r.keys[0], r.clicks, r.impressions, r.ctr, r.position));
+    await env.DB.batch(stmts);
+  }
+
+  // Replace queries + pages (they're a point-in-time top-N snapshot)
+  if (queries.rows?.length) {
+    await env.DB.exec("DELETE FROM cs_gsc_queries");
+    const stmts = queries.rows.map((r) => env.DB.prepare(
+      "INSERT INTO cs_gsc_queries (query, clicks, impressions, ctr, position) VALUES (?, ?, ?, ?, ?)"
+    ).bind(r.keys[0], r.clicks, r.impressions, r.ctr, r.position));
+    await env.DB.batch(stmts);
+  }
+  if (pages.rows?.length) {
+    await env.DB.exec("DELETE FROM cs_gsc_pages");
+    const stmts = pages.rows.map((r) => env.DB.prepare(
+      "INSERT INTO cs_gsc_pages (page, clicks, impressions, ctr, position) VALUES (?, ?, ?, ?, ?)"
+    ).bind(r.keys[0], r.clicks, r.impressions, r.ctr, r.position));
+    await env.DB.batch(stmts);
+  }
+
+  return {
+    daily_rows: daily.rows?.length || 0,
+    query_rows: queries.rows?.length || 0,
+    page_rows: pages.rows?.length || 0,
+    window: `${startDate} → ${endDate}`,
+  };
+}
+
+async function gscQuery(token, body) {
+  const url =
+    "https://searchconsole.googleapis.com/webmasters/v3/sites/" +
+    encodeURIComponent(GSC_PROPERTY) + "/searchAnalytics/query";
+  const resp = await fetch(url, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!resp.ok) {
+    const t = await resp.text();
+    throw new Error(`GSC ${resp.status}: ${t.slice(0, 300)}`);
+  }
+  return resp.json();
+}
+
+async function mintGoogleAccessToken(sa, scope) {
+  const now = Math.floor(Date.now() / 1000);
+  const header = { alg: "RS256", typ: "JWT" };
+  const claims = {
+    iss: sa.client_email,
+    scope,
+    aud: "https://oauth2.googleapis.com/token",
+    exp: now + 3600,
+    iat: now,
+  };
+  const b64url = (bytes) => b64UrlEncode(typeof bytes === "string" ? new TextEncoder().encode(bytes) : bytes);
+  const hb = b64url(JSON.stringify(header));
+  const cb = b64url(JSON.stringify(claims));
+  const signingInput = `${hb}.${cb}`;
+
+  // Import PEM private key
+  const pem = sa.private_key
+    .replace("-----BEGIN PRIVATE KEY-----", "")
+    .replace("-----END PRIVATE KEY-----", "")
+    .replace(/\s+/g, "");
+  const der = Uint8Array.from(atob(pem), (c) => c.charCodeAt(0));
+  const key = await crypto.subtle.importKey(
+    "pkcs8", der, { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" }, false, ["sign"],
+  );
+  const sigBytes = new Uint8Array(await crypto.subtle.sign("RSASSA-PKCS1-v1_5", key, new TextEncoder().encode(signingInput)));
+  const jwt = `${signingInput}.${b64url(sigBytes)}`;
+
+  const tokResp = await fetch("https://oauth2.googleapis.com/token", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+      assertion: jwt,
+    }).toString(),
+  });
+  if (!tokResp.ok) {
+    throw new Error(`OAuth exchange failed ${tokResp.status}: ${(await tokResp.text()).slice(0, 300)}`);
+  }
+  const tok = await tokResp.json();
+  return tok.access_token;
+}
+
+// ---------- Bing ----------
+
+async function pullBing(env) {
+  if (!env.BING_API_KEY) {
+    return { skipped: "BING_API_KEY not set" };
+  }
+  // Bing Webmaster Tools API v1. GetRankAndTrafficStats returns daily
+  // clicks + impressions for the site. GetQueryStats returns top queries.
+  const base =
+    "https://ssl.bing.com/webmaster/api.svc/json/" +
+    "GetRankAndTrafficStats?siteUrl=" + encodeURIComponent(BING_SITE_URL) +
+    "&apikey=" + encodeURIComponent(env.BING_API_KEY);
+  const resp = await fetch(base);
+  if (!resp.ok) {
+    throw new Error(`Bing ${resp.status}: ${(await resp.text()).slice(0, 300)}`);
+  }
+  const data = await resp.json();
+  const stats = (data && data.d) || [];
+  // Upsert into cs_bing_daily (table created lazily below)
+  await env.DB.exec(
+    "CREATE TABLE IF NOT EXISTS cs_bing_daily (" +
+    "date TEXT PRIMARY KEY, clicks INTEGER NOT NULL DEFAULT 0, " +
+    "impressions INTEGER NOT NULL DEFAULT 0, position REAL NOT NULL DEFAULT 0);"
+  );
+  if (stats.length) {
+    const stmts = stats.map((s) => {
+      // Bing returns "Date":"/Date(1234567890000)/" epoch-ms
+      const ms = parseInt(String(s.Date).replace(/[^0-9]/g, ""), 10);
+      const date = new Date(ms).toISOString().slice(0, 10);
+      return env.DB.prepare(
+        "INSERT INTO cs_bing_daily (date, clicks, impressions, position) VALUES (?, ?, ?, ?) " +
+        "ON CONFLICT(date) DO UPDATE SET clicks=excluded.clicks, impressions=excluded.impressions, position=excluded.position"
+      ).bind(date, s.Clicks || 0, s.Impressions || 0, s.AvgImpressionPosition || 0);
+    });
+    await env.DB.batch(stmts);
+  }
+  return { bing_daily_rows: stats.length };
 }
