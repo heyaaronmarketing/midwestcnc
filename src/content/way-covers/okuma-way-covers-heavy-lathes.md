@@ -1,6 +1,6 @@
 ---
-title: "Okuma LAW / LFS Heavy Way Covers | Midwest CNC Services"
-meta_description: "Okuma LAW / LFS Heavy Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Okuma LAW / LFS Heavy Way Covers"
+meta_description: "Replacement way covers for the Okuma LAW / LFS Heavy Lathes. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Okuma LAW / LFS Heavy Way Covers"
 slug: "okuma-way-covers-heavy-lathes"
 page_type: "cnc_spindle"

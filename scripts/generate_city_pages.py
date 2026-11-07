@@ -890,7 +890,7 @@ def render_city_page(city_research_slug, city, state, brand_index):
         (name, None),
     ])
 
-    title = f"CNC Repair & Service in {name}, {state_name} | Midwest CNC Services"
+    title = f"{name} CNC Repair & Service | Midwest CNC Services"
     description = (
         f"CNC machine repair, spindle work, and replacement way covers for "
         f"shops in {name}, {state_name}. {distance['miles']} miles from "

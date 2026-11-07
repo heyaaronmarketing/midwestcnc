@@ -1,5 +1,5 @@
 ---
-title: "Fadal CNC Machine Repair | Midwest CNC Services"
+title: "Fadal CNC Machine Repair"
 meta_description: "Expert Fadal CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Fadal CNC Machine Repair & Service"
 slug: "fadal"

@@ -1,6 +1,6 @@
 ---
-title: "Doosan Puma Way Covers | Midwest CNC Services"
-meta_description: "Doosan Puma Horizontal Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Doosan Puma Way Covers"
+meta_description: "Replacement way covers for the Doosan Puma Horizontal Turning. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Doosan Puma Way Covers"
 slug: "doosan-way-covers-puma"
 page_type: "cnc_spindle"

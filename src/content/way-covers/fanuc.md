@@ -1,5 +1,5 @@
 ---
-title: "Fanuc CNC Way Covers | Midwest CNC Services"
+title: "Fanuc CNC Way Covers"
 meta_description: "Expert Fanuc way cover replacement across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Fanuc CNC Way Cover Replacement"
 slug: "fanuc"

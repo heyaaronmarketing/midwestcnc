@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Haas Next Generation Control (NGC) Era Machines | Midwest CNC Services"
-meta_description: "Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Haas Next Generation Control (NGC) Era Machines"
+meta_description: "Replacement way covers across the Midwest. Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Haas Next Generation Control (NGC) Era Machines"
 slug: "haas-way-covers-haas-ngc"
 page_type: "cnc_spindle"

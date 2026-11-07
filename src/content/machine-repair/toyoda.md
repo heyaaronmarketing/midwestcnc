@@ -1,5 +1,5 @@
 ---
-title: "Toyoda CNC Machine Repair | Midwest CNC Services"
+title: "Toyoda CNC Machine Repair"
 meta_description: "Expert Toyoda CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Toyoda CNC Machine Repair & Service"
 slug: "toyoda"

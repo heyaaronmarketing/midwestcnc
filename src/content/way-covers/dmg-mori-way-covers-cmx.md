@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori CMX / CMX U Way Covers | Midwest CNC Services"
-meta_description: "DMG Mori CMX Entry & 5-Sided repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "DMG Mori CMX / CMX U Way Covers"
+meta_description: "Replacement way covers for the DMG Mori CMX Entry & 5-Sided. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "DMG Mori CMX / CMX U Way Covers"
 slug: "dmg-mori-way-covers-cmx"
 page_type: "cnc_spindle"

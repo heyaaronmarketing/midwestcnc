@@ -1,5 +1,5 @@
 ---
-title: "Niigata Spindle Repair | Midwest CNC Services"
+title: "Niigata Spindle Repair"
 meta_description: "Expert Niigata spindle repair across the Midwest. 4–5 weeks on most rebuilds. Experienced field technicians."
 h1: "Niigata Spindle Repair & Rebuilds"
 slug: "niigata"

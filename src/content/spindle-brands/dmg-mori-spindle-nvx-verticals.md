@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori NVX / NV / NVD Vertical Spindle Repair & Grinding | Midwest CNC Services"
-meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "DMG Mori NVX / NV / NVD Vertical Spindle Repair & Grinding"
+meta_description: "Spindle rebuild and regrind for the DMG Mori NVX / NV / NVD Verticals. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
 h1: "DMG Mori NVX / NV / NVD Vertical Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-nvx-verticals"
 page_type: "cnc_spindle"

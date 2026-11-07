@@ -1,6 +1,6 @@
 ---
-title: "Spindle Service on Fanuc Series 16i / 18i / 21i | Midwest CNC Services"
-meta_description: "Series 16i / 18i / 21i control repair across the Midwest. Roughly 1995 through 2010. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Spindle Service on Fanuc Series 16i / 18i / 21i"
+meta_description: "Spindle rebuild and regrind across the Midwest. Series 16i / 18i / 21i control repair across the Midwest. Roughly 1995 through 2010. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Fanuc Series 16i / 18i / 21i"
 slug: "fanuc-spindle-series-16i-18i-21i"
 page_type: "cnc_spindle"

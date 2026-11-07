@@ -1,6 +1,6 @@
 ---
-title: "Doosan DNM Way Covers | Midwest CNC Services"
-meta_description: "Doosan DNM Vertical Machining repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Doosan DNM Way Covers"
+meta_description: "Replacement way covers for the Doosan DNM Vertical Machining. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Doosan DNM Way Covers"
 slug: "doosan-way-covers-dnm-verticals"
 page_type: "cnc_spindle"

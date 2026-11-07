@@ -1,5 +1,5 @@
 ---
-title: "Mori Seiki Spindle Repair | Midwest CNC Services"
+title: "Mori Seiki Spindle Repair"
 meta_description: "Expert Mori Seiki spindle repair across the Midwest. 3–5 weeks on most rebuilds. Experienced field technicians."
 h1: "Mori Seiki Spindle Repair & Rebuilds"
 slug: "mori-seiki"

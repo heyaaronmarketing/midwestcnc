@@ -1,5 +1,5 @@
 ---
-title: "Johnford Spindle Repair | Midwest CNC Services"
+title: "Johnford Spindle Repair"
 meta_description: "Expert Johnford spindle repair across the Midwest. 3–4 weeks on most rebuilds. Experienced field technicians."
 h1: "Johnford Spindle Repair & Rebuilds"
 slug: "johnford"

@@ -1,6 +1,6 @@
 ---
-title: "Haas VF Series Way Covers | Midwest CNC Services"
-meta_description: "Haas VF Series Vertical Mills repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Haas VF Series Way Covers"
+meta_description: "Replacement way covers for the Haas VF Series Vertical Mills. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Haas VF Series Way Covers"
 slug: "haas-way-covers-vf-series"
 page_type: "cnc_spindle"

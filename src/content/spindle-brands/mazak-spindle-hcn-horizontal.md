@@ -1,6 +1,6 @@
 ---
-title: "Mazak HCN Horizontal Spindle Repair & Grinding | Midwest CNC Services"
-meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Mazak HCN Horizontal Spindle Repair & Grinding"
+meta_description: "Spindle rebuild and regrind for the Mazak HCN Horizontals. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
 h1: "Mazak HCN Horizontal Spindle Repair & Grinding"
 slug: "mazak-spindle-hcn-horizontal"
 page_type: "cnc_spindle"

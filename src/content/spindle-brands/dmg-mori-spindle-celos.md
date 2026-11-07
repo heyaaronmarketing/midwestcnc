@@ -1,6 +1,6 @@
 ---
-title: "CELOS Spindle Workflow on DMG Mori | Midwest CNC Services"
-meta_description: "CELOS HMI Layer control repair across the Midwest. CELOS from 2014, CELOS X current. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "CELOS Spindle Workflow on DMG Mori"
+meta_description: "Spindle rebuild and regrind across the Midwest. CELOS HMI Layer control repair across the Midwest. CELOS from 2014, CELOS X current. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "CELOS Spindle Workflow on DMG Mori"
 slug: "dmg-mori-spindle-celos"
 page_type: "cnc_spindle"

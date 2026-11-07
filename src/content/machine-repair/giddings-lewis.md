@@ -1,5 +1,5 @@
 ---
-title: "Giddings & Lewis CNC Machine Repair | Midwest CNC Services"
+title: "Giddings & Lewis CNC Machine Repair"
 meta_description: "Expert Giddings & Lewis CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Giddings & Lewis CNC Repair"
 slug: "giddings-lewis"

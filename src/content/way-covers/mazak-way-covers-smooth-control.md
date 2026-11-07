@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Mazatrol Smooth Era Machines | Midwest CNC Services"
-meta_description: "Mazatrol Smooth control repair across the Midwest. 2013 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Mazatrol Smooth Era Machines"
+meta_description: "Replacement way covers across the Midwest. Mazatrol Smooth control repair across the Midwest. 2013 through present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Mazatrol Smooth Era Machines"
 slug: "mazak-way-covers-smooth-control"
 page_type: "cnc_spindle"

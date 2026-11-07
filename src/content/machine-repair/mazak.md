@@ -1,5 +1,5 @@
 ---
-title: "Mazak CNC Machine Repair | Midwest CNC Services"
+title: "Mazak CNC Machine Repair"
 meta_description: "Expert Mazak CNC machine repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Mazak CNC Machine Repair & Service"
 slug: "mazak"

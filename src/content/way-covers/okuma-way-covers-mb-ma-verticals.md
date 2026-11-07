@@ -1,6 +1,6 @@
 ---
-title: "Okuma MB / MA Way Covers | Midwest CNC Services"
-meta_description: "Okuma MB / MA Vertical Machining repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Okuma MB / MA Way Covers"
+meta_description: "Replacement way covers for the Okuma MB / MA Vertical Machining. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Okuma MB / MA Way Covers"
 slug: "okuma-way-covers-mb-ma-verticals"
 page_type: "cnc_spindle"

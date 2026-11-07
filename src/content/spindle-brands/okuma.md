@@ -1,5 +1,5 @@
 ---
-title: "Okuma Spindle Repair | Midwest CNC Services"
+title: "Okuma Spindle Repair"
 meta_description: "Expert Okuma spindle repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Okuma Spindle Repair & Rebuilds"
 slug: "okuma"

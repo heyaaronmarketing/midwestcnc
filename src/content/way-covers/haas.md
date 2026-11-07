@@ -1,5 +1,5 @@
 ---
-title: "Haas CNC Way Covers | Midwest CNC Services"
+title: "Haas CNC Way Covers"
 meta_description: "Expert Haas way cover replacement across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Haas CNC Way Cover Replacement"
 slug: "haas"

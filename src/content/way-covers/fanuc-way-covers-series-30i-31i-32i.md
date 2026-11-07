@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Series 30i / 31i / 32i / 35i Era Machines | Midwest CNC Services"
-meta_description: "Series 30i / 31i / 32i control repair across the Midwest. 2008 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Series 30i / 31i / 32i / 35i Era Machines"
+meta_description: "Replacement way covers across the Midwest. Series 30i / 31i / 32i control repair across the Midwest. 2008 through present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Series 30i / 31i / 32i / 35i Era Machines"
 slug: "fanuc-way-covers-series-30i-31i-32i"
 page_type: "cnc_spindle"

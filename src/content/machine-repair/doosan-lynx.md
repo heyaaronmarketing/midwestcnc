@@ -1,5 +1,5 @@
 ---
-title: "Doosan Lynx Compact Turning Repair | Midwest CNC Services"
+title: "Doosan Lynx Compact Turning Repair"
 meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Lynx Compact Turning Repair"
 slug: "doosan-lynx"

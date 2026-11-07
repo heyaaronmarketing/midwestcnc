@@ -1,5 +1,5 @@
 ---
-title: "Hurco CNC Machine Repair | Midwest CNC Services"
+title: "Hurco CNC Machine Repair"
 meta_description: "Expert Hurco CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Hurco CNC Machine Repair & Service"
 slug: "hurco"

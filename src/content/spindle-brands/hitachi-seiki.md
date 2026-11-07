@@ -1,5 +1,5 @@
 ---
-title: "Hitachi Seiki Spindle Repair | Midwest CNC Services"
+title: "Hitachi Seiki Spindle Repair"
 meta_description: "Expert Hitachi Seiki spindle repair across the Midwest — keeping legacy machines running. 5–7 weeks on most rebuilds. Experienced field technicians."
 h1: "Hitachi Seiki Spindle Repair"
 slug: "hitachi-seiki"

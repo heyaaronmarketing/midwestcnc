@@ -1,5 +1,5 @@
 ---
-title: "Hurco Spindle Repair | Midwest CNC Services"
+title: "Hurco Spindle Repair"
 meta_description: "Expert Hurco spindle repair across the Midwest. 2–3 weeks on most rebuilds. Experienced field technicians."
 h1: "Hurco Spindle Repair & Rebuilds"
 slug: "hurco"

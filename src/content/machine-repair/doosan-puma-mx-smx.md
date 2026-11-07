@@ -1,5 +1,5 @@
 ---
-title: "Doosan Puma MX / SMX Multitasking Repair | Midwest CNC Services"
+title: "Doosan Puma MX / SMX Multitasking Repair"
 meta_description: "Doosan Puma MX / SMX Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Puma MX / SMX Multitasking Repair"
 slug: "doosan-puma-mx-smx"

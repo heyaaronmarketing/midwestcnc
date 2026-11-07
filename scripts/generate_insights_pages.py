@@ -274,7 +274,7 @@ def render_pillar_page(pillar: dict, published: List[dict]) -> str:
     ]
 
     return _wrap_page(
-        title=f"{title} | Midwest CNC Services",
+        title=title,
         meta_desc=summary[:160],
         canonical=canonical,
         schema_blocks=schema_blocks,
@@ -346,7 +346,7 @@ def render_article_page(pillar: dict, article: dict, md_body: str) -> str:
         schema_blocks.append(faq)
 
     return _wrap_page(
-        title=f"{title} | Midwest CNC Services",
+        title=title,
         meta_desc=description[:160],
         canonical=canonical,
         schema_blocks=schema_blocks,

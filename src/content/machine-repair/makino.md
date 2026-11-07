@@ -1,5 +1,5 @@
 ---
-title: "Makino CNC Machine Repair | Midwest CNC Services"
+title: "Makino CNC Machine Repair"
 meta_description: "Expert Makino CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Makino CNC Machine Repair & Service"
 slug: "makino"

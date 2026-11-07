@@ -1,5 +1,5 @@
 ---
-title: "Giddings & Lewis CNC Way Covers | Midwest CNC Services"
+title: "Giddings & Lewis CNC Way Covers"
 meta_description: "Replacement Giddings & Lewis CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Giddings & Lewis CNC Way Cover Replacement"
 slug: "giddings-lewis"

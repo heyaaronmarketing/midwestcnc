@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori NLX / ALX Way Covers | Midwest CNC Services"
-meta_description: "DMG Mori NLX / ALX Universal Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "DMG Mori NLX / ALX Way Covers"
+meta_description: "Replacement way covers for the DMG Mori NLX / ALX Universal Turning. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "DMG Mori NLX / ALX Way Covers"
 slug: "dmg-mori-way-covers-nlx-turning"
 page_type: "cnc_spindle"

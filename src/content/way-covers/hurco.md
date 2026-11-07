@@ -1,5 +1,5 @@
 ---
-title: "Hurco CNC Way Covers | Midwest CNC Services"
+title: "Hurco CNC Way Covers"
 meta_description: "Replacement Hurco CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Hurco CNC Way Cover Replacement"
 slug: "hurco"

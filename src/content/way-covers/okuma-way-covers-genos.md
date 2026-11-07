@@ -1,6 +1,6 @@
 ---
-title: "Okuma Genos Way Covers | Midwest CNC Services"
-meta_description: "Okuma Genos 'Affordable Excellence' repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Okuma Genos Way Covers"
+meta_description: "Replacement way covers for the Okuma Genos 'Affordable Excellence'. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Okuma Genos Way Covers"
 slug: "okuma-way-covers-genos"
 page_type: "cnc_spindle"

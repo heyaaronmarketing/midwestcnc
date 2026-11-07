@@ -1,6 +1,6 @@
 ---
-title: "Okuma MULTUS Way Covers | Midwest CNC Services"
-meta_description: "Okuma MULTUS B-Axis Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Okuma MULTUS Way Covers"
+meta_description: "Replacement way covers for the Okuma MULTUS B-Axis Multitasking. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Okuma MULTUS Way Covers"
 slug: "okuma-way-covers-multus"
 page_type: "cnc_spindle"

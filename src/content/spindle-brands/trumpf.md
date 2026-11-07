@@ -1,6 +1,6 @@
 ---
-title: "Trumpf Laser & Punch Service | Midwest CNC Services"
-meta_description: "Trumpf laser and punch service across the Midwest. Optics service, resonator work on older CO2 systems, cooling-related faults, and punch press maintenance. Experienced field technicians."
+title: "Trumpf Laser & Punch Service"
+meta_description: "Spindle rebuild and regrind across the Midwest. Trumpf laser and punch service across the Midwest. Optics service, resonator work on older CO2 systems, cooling-related faults, and punch press maintenance. Experienced field technicians."
 h1: "Trumpf Laser & Punch Service"
 slug: "trumpf"
 page_type: "laser_punch_service"

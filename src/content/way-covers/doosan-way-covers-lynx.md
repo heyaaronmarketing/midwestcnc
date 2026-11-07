@@ -1,6 +1,6 @@
 ---
-title: "Doosan Lynx Way Covers | Midwest CNC Services"
-meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Doosan Lynx Way Covers"
+meta_description: "Replacement way covers for the Doosan Lynx Compact Turning. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Doosan Lynx Way Covers"
 slug: "doosan-way-covers-lynx"
 page_type: "cnc_spindle"

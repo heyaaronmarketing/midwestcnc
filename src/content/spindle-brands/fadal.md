@@ -1,5 +1,5 @@
 ---
-title: "Fadal Spindle Repair | Midwest CNC Services"
+title: "Fadal Spindle Repair"
 meta_description: "Expert Fadal spindle repair across the Midwest — keeping legacy machines running. 3–4 weeks on most rebuilds. Experienced field technicians."
 h1: "Fadal Spindle Repair & Rebuilds"
 slug: "fadal"

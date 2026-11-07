@@ -1,5 +1,5 @@
 ---
-title: "Toyoda CNC Way Covers | Midwest CNC Services"
+title: "Toyoda CNC Way Covers"
 meta_description: "Replacement Toyoda CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Toyoda CNC Way Cover Replacement"
 slug: "toyoda"

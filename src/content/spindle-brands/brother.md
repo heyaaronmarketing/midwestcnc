@@ -1,5 +1,5 @@
 ---
-title: "Brother Spindle Repair | Midwest CNC Services"
+title: "Brother Spindle Repair"
 meta_description: "Expert Brother spindle repair across the Midwest. 3–4 weeks on most rebuilds. Experienced field technicians."
 h1: "Brother Spindle Repair & Rebuilds"
 slug: "brother"

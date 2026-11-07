@@ -1,5 +1,5 @@
 ---
-title: "Brother CNC Machine Repair | Midwest CNC Services"
+title: "Brother CNC Machine Repair"
 meta_description: "Expert Brother CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Brother CNC Machine Repair & Service"
 slug: "brother"

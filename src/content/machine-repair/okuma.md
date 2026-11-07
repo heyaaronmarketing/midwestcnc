@@ -1,5 +1,5 @@
 ---
-title: "Okuma CNC Machine Repair | Midwest CNC Services"
+title: "Okuma CNC Machine Repair"
 meta_description: "Expert Okuma CNC machine repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Okuma CNC Machine Repair & Service"
 slug: "okuma"

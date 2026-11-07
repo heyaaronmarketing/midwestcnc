@@ -1326,6 +1326,14 @@ function normalizeDate(v) {
 const GSC_PROPERTY = "sc-domain:midwestcncservices.com";
 const BING_SITE_URL = "https://midwestcncservices.com";
 
+// IndexNow — Microsoft/Bing + Yandex + others' push-crawl protocol.
+// Instead of waiting for crawlers to discover new/updated URLs, we
+// POST a list of URLs to the IndexNow API and participating engines
+// re-crawl within minutes. Key verification file lives at
+// public/<KEY>.txt and must return the key with no whitespace or BOM.
+const INDEXNOW_KEY = "4f95325123d5ab94c51aeb25a7a78a21";
+const INDEXNOW_HOST = "midwestcncservices.com";
+
 async function runCaseStudyRefresh(env, meta = {}) {
   await ensureCaseStudySchema(env);
   const results = { source: meta.source || "manual", started: new Date().toISOString() };
@@ -1352,9 +1360,55 @@ async function runCaseStudyRefresh(env, meta = {}) {
     console.log("Bing pull failed:", results.bing.error);
   }
 
+  try {
+    const inx = await pingIndexNow(env);
+    results.indexnow = inx;
+    await setMeta(env, "indexnow_updated", new Date().toISOString());
+    await setMeta(env, "indexnow_last_error", "");
+  } catch (e) {
+    results.indexnow = { error: String(e && e.message || e) };
+    await setMeta(env, "indexnow_last_error", results.indexnow.error);
+    console.log("IndexNow push failed:", results.indexnow.error);
+  }
+
   await setMeta(env, "data_as_of", new Date().toISOString());
   results.finished = new Date().toISOString();
   return results;
+}
+
+// ---------- IndexNow ----------
+
+async function pingIndexNow(env) {
+  // Parse the sitemap at /sitemap.xml and push every URL to IndexNow.
+  // Bing + Yandex + Seznam.cz + Naver all participate and re-crawl
+  // within minutes. Google does not participate yet — GSC's own
+  // "URL inspection" tool is Google's equivalent (manual only).
+  const sitemapReq = new Request(`https://${INDEXNOW_HOST}/sitemap.xml`, { method: "GET" });
+  const smResp = await env.ASSETS.fetch(sitemapReq);
+  if (!smResp.ok) {
+    throw new Error(`sitemap fetch failed: ${smResp.status}`);
+  }
+  const xml = await smResp.text();
+  const urls = Array.from(xml.matchAll(/<loc>([^<]+)<\/loc>/g)).map((m) => m[1]);
+  if (!urls.length) return { skipped: "no URLs in sitemap" };
+
+  const resp = await fetch("https://api.indexnow.org/IndexNow", {
+    method: "POST",
+    headers: { "Content-Type": "application/json; charset=utf-8" },
+    body: JSON.stringify({
+      host: INDEXNOW_HOST,
+      key: INDEXNOW_KEY,
+      keyLocation: `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`,
+      urlList: urls,
+    }),
+  });
+  // IndexNow accepted codes: 200 (ok), 202 (accepted, processing),
+  // 422 (invalid URLs — partial success). 400+ else is an error.
+  if (resp.status === 200 || resp.status === 202) {
+    return { urls_submitted: urls.length, status: resp.status };
+  }
+  const body = await resp.text().catch(() => "");
+  throw new Error(`IndexNow HTTP ${resp.status}: ${body.slice(0, 200)}`);
 }
 
 async function setMeta(env, k, v) {

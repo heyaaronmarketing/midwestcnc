@@ -1,5 +1,5 @@
 ---
-title: "Monarch Spindle Repair | Midwest CNC Services"
+title: "Monarch Spindle Repair"
 meta_description: "Expert Monarch spindle repair across the Midwest — keeping legacy machines running. 4–6 weeks on most rebuilds. Experienced field technicians."
 h1: "Monarch Spindle Repair & Rebuilds"
 slug: "monarch"

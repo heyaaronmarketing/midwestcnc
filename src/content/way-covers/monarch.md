@@ -1,5 +1,5 @@
 ---
-title: "Monarch CNC Way Covers | Midwest CNC Services"
+title: "Monarch CNC Way Covers"
 meta_description: "Replacement Monarch CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Monarch CNC Way Cover Replacement"
 slug: "monarch"

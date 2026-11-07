@@ -1,6 +1,6 @@
 ---
-title: "Haas ST Series Spindle Repair & Grinding | Midwest CNC Services"
-meta_description: "Haas ST Series Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Haas ST Series Spindle Repair & Grinding"
+meta_description: "Spindle rebuild and regrind for the Haas ST Series Lathes. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
 h1: "Haas ST Series Spindle Repair & Grinding"
 slug: "haas-spindle-st-series"
 page_type: "cnc_spindle"

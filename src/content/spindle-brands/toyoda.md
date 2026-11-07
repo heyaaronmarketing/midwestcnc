@@ -1,5 +1,5 @@
 ---
-title: "Toyoda Spindle Repair | Midwest CNC Services"
+title: "Toyoda Spindle Repair"
 meta_description: "Expert Toyoda spindle repair across the Midwest. 4–5 weeks on most rebuilds. Experienced field technicians."
 h1: "Toyoda Spindle Repair & Rebuilds"
 slug: "toyoda"

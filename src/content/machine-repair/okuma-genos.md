@@ -1,5 +1,5 @@
 ---
-title: "Okuma Genos L / Genos M Repair | Midwest CNC Services"
+title: "Okuma Genos L / Genos M Repair"
 meta_description: "Okuma Genos L / Genos M repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma Genos L / Genos M Repair"
 slug: "okuma-genos"

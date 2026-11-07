@@ -1,5 +1,5 @@
 ---
-title: "Fanuc Spindle Repair | Midwest CNC Services"
+title: "Fanuc Spindle Repair"
 meta_description: "Expert Fanuc spindle repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Fanuc Spindle Repair & Rebuilds"
 slug: "fanuc"

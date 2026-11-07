@@ -1,6 +1,6 @@
 ---
-title: "Spindle Service on Fanuc Series 0i (A / B / C / D / F) | Midwest CNC Services"
-meta_description: "Series 0i control repair across the Midwest. 2003 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Spindle Service on Fanuc Series 0i (A / B / C / D / F)"
+meta_description: "Spindle rebuild and regrind across the Midwest. Series 0i control repair across the Midwest. 2003 through present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Fanuc Series 0i (A / B / C / D / F)"
 slug: "fanuc-spindle-series-0i"
 page_type: "cnc_spindle"

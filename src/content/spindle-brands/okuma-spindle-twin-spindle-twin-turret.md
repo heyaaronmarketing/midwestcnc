@@ -1,6 +1,6 @@
 ---
-title: "Okuma Twin-Spindle / Twin-Turret Spindle Repair & Grinding | Midwest CNC Services"
-meta_description: "Okuma Twin-Spindle / Twin-Turret repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Okuma Twin-Spindle / Twin-Turret Spindle Repair & Grinding"
+meta_description: "Spindle rebuild and regrind for the Okuma Twin-Spindle / Twin-Turret. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
 h1: "Okuma Twin-Spindle / Twin-Turret Spindle Repair & Grinding"
 slug: "okuma-spindle-twin-spindle-twin-turret"
 page_type: "cnc_spindle"

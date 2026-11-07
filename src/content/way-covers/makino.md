@@ -1,5 +1,5 @@
 ---
-title: "Makino CNC Way Covers | Midwest CNC Services"
+title: "Makino CNC Way Covers"
 meta_description: "Replacement Makino CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Makino CNC Way Cover Replacement"
 slug: "makino"

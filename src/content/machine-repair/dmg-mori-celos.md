@@ -1,5 +1,5 @@
 ---
-title: "CELOS / CELOS X / Operate Service on DMG Mori | Midwest CNC Services"
+title: "CELOS / CELOS X / Operate Service on DMG Mori"
 meta_description: "CELOS HMI Layer control repair across the Midwest. CELOS from 2014, CELOS X current. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "CELOS / CELOS X / Operate Service on DMG Mori"
 slug: "dmg-mori-celos"

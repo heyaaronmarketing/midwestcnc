@@ -1,6 +1,6 @@
 ---
-title: "Haas Toolroom Lathes Way Covers | Midwest CNC Services"
-meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "Haas Toolroom Lathes Way Covers"
+meta_description: "Replacement way covers for the Haas TL and CL Toolroom Lathes. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "Haas Toolroom Lathes Way Covers"
 slug: "haas-way-covers-toolroom-lathes"
 page_type: "cnc_spindle"

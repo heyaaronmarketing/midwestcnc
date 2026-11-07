@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori NVX / NV / NVD Way Covers | Midwest CNC Services"
-meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+title: "DMG Mori NVX / NV / NVD Way Covers"
+meta_description: "Replacement way covers for the DMG Mori NVX / NV / NVD Verticals. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
 h1: "DMG Mori NVX / NV / NVD Way Covers"
 slug: "dmg-mori-way-covers-nvx-verticals"
 page_type: "cnc_spindle"

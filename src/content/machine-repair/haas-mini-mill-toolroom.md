@@ -1,5 +1,5 @@
 ---
-title: "Haas Mini Mill, Toolroom, DT, DM, and VM Repair | Midwest CNC Services"
+title: "Haas Mini Mill, Toolroom, DT, DM, and VM Repair"
 meta_description: "Haas Mini Mill / Toolroom / DT / DM / VM repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas Mini Mill, Toolroom, DT, DM, and VM Repair"
 slug: "haas-mini-mill-toolroom"
