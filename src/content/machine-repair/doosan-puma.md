@@ -1,6 +1,6 @@
 ---
 title: "Doosan Puma Horizontal Turning Repair"
-meta_description: "Doosan Puma Horizontal Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Doosan Puma Horizontal Turning repair across the Midwest. Models, failure patterns, control notes."
 h1: "Doosan Puma Horizontal Turning Repair"
 slug: "doosan-puma"
 page_type: "cnc_spindle"

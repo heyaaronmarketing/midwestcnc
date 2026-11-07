@@ -1,6 +1,6 @@
 ---
 title: "Trumpf Laser & Punch Service"
-meta_description: "Trumpf laser and punch service across the Midwest. Optics service, resonator work on older CO2 systems, cooling-related faults, and punch press maintenance. Experienced field technicians."
+meta_description: "Trumpf laser and punch service across the Midwest. Optics, resonator work on CO2 systems, cooling faults, and punch press maintenance."
 h1: "Trumpf Laser & Punch Service"
 slug: "trumpf"
 page_type: "laser_punch_service"

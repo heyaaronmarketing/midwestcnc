@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair"
-meta_description: "DMG Mori SPRINT / MULTISPRINT Swiss-Production repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair"
+title: "DMG Mori SPRINT / MULTISPRINT Repair"
+meta_description: "DMG Mori SPRINT / MULTISPRINT Swiss-Production repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori SPRINT / MULTISPRINT Repair"
 slug: "dmg-mori-sprint-multisprint"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair"
+    serviceType: "DMG Mori SPRINT / MULTISPRINT Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair</h1>
+    <h1>DMG Mori SPRINT / MULTISPRINT Repair</h1>
     <p>SPRINT and MULTISPRINT are DMG Mori&#x27;s Swiss-style and production-turning platforms — SPRINT 20/32/50/65, MULTISPRINT 25 and 36. Swiss-type platforms have their own service patterns: guide bushing wear, sub-spindle sync, and bar-feed integration are the routine work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

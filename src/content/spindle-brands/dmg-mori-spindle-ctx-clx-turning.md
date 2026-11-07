@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori CTX / CLX Turning + TC Spindle Repair & Grinding"
-meta_description: "DMG Mori CTX / CLX (incl. TC variants) repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori CTX / CLX Turning + TC Spindle Repair & Grinding"
+title: "DMG Mori CTX / CLX Turning + TC Spindle Repair"
+meta_description: "DMG Mori CTX / CLX (incl. TC variants) repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori CTX / CLX Turning + TC Spindle Repair"
 slug: "dmg-mori-spindle-ctx-clx-turning"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori CTX / CLX Turning + TC Spindle Repair & Grinding"
+    serviceType: "DMG Mori CTX / CLX Turning + TC Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori CTX / CLX Turning + TC Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori CTX / CLX Turning + TC Spindle Repair</h1>
     <p>CTX and CLX turning spindles cover entry CLX 350/450/550 through CTX 850 universal turning, plus the TC turn-mill builds (CTX Beta 800 TC, Beta 1250 TC, Gamma 2000/3000 TC). The TC variants add a B-axis milling spindle alongside the turning spindle — the B-axis becomes the high-stress component on multitasking work. Mill-turn alignment matters more here than on straight CTX turning.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

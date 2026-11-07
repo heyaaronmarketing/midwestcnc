@@ -1,6 +1,6 @@
 ---
 title: "Haas Next Generation Control (NGC) Repair"
-meta_description: "Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Haas NGC control repair across the Midwest. 2014 to present."
 h1: "Haas Next Generation Control (NGC) Repair"
 slug: "haas-haas-ngc"
 page_type: "cnc_spindle"

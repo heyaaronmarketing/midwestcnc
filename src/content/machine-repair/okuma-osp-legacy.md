@@ -1,13 +1,13 @@
 ---
-title: "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)"
-meta_description: "OSP Legacy control repair across the Midwest. Pre-2003. Common faults, parts availability, and battery/memory/parameter recovery."
-h1: "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)"
+title: "Okuma OSP Legacy Control Repair"
+meta_description: "OSP Legacy control repair across the Midwest. Pre-2003."
+h1: "Okuma OSP Legacy Control Repair"
 slug: "okuma-osp-legacy"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)"
+    serviceType: "Okuma OSP Legacy Control Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Control Generation</p>
-    <h1>Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)</h1>
+    <h1>Okuma OSP Legacy Control Repair</h1>
     <p>OSP Legacy covers Okuma&#x27;s pre-2003 controls — OSP 5000, OSP 7000, U10, U100. These machines are at the heavy-obsolescence stage; most boards are aftermarket-only, and the conversation often becomes a retrofit consultation rather than a reactive repair.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

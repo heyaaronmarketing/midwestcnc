@@ -1,6 +1,6 @@
 ---
 title: "Haas ST Series Way Covers"
-meta_description: "Haas ST Series Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Haas ST Series Lathes repair across the Midwest. Models, failure patterns, control notes."
 h1: "Haas ST Series Way Covers"
 slug: "haas-way-covers-st-series"
 page_type: "cnc_spindle"

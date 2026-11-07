@@ -1,13 +1,13 @@
 ---
-title: "Haas ST Series Spindle Repair & Grinding"
-meta_description: "Haas ST Series Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Haas ST Series Spindle Repair & Grinding"
+title: "Haas ST Series Spindle Repair"
+meta_description: "Haas ST Series Lathes repair across the Midwest. Models, failure patterns, control notes."
+h1: "Haas ST Series Spindle Repair"
 slug: "haas-spindle-st-series"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Haas ST Series Spindle Repair & Grinding"
+    serviceType: "Haas ST Series Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Haas Series Repair</p>
-    <h1>Haas ST Series Spindle Repair &amp; Grinding</h1>
+    <h1>Haas ST Series Spindle Repair</h1>
     <p>ST series lathe spindles span ST-10 through ST-55 with SSY Y-axis variants and the DS-30 dual-spindle. The line uses cartridge-style turning spindles with different bearing arrangements per size class. ST-10 and ST-20 chuckers see high-cycle bar work that wears the front bearings; ST-30 and larger see heavier axial cuts. DS-30 sub-spindles add synchronization verification after any sub-spindle service.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

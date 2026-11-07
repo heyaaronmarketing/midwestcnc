@@ -1,6 +1,6 @@
 ---
 title: "Okuma VTM Vertical Turning Repair"
-meta_description: "Okuma VTM Vertical Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Okuma VTM Vertical Turning repair across the Midwest. Models, failure patterns, control notes."
 h1: "Okuma VTM Vertical Turning Repair"
 slug: "okuma-vtm"
 page_type: "cnc_spindle"

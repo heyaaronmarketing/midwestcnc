@@ -22,7 +22,7 @@ standard CNC spindle service practice.
 # ============================================================
 _MAZAK_SPINDLE_SERIES_SPOKES = {
     "quick-turn": {
-        "title":   "Mazak Quick Turn Spindle Repair & Grinding",
+        "title":   "Mazak Quick Turn Spindle Repair",
         "slug":    "mazak-spindle-quick-turn",
         "subtitle":"Quick Turn / QTN",
         "url":     "/spindle-grinding/mazak-spindle-repair/quick-turn/",
@@ -41,7 +41,7 @@ _MAZAK_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "integrex": {
-        "title":   "Mazak Integrex Spindle Repair & Grinding",
+        "title":   "Mazak Integrex Spindle Repair",
         "slug":    "mazak-spindle-integrex",
         "subtitle":"Integrex Mill-Turn",
         "url":     "/spindle-grinding/mazak-spindle-repair/integrex/",
@@ -60,7 +60,7 @@ _MAZAK_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "variaxis": {
-        "title":   "Mazak Variaxis Spindle Repair & Grinding",
+        "title":   "Mazak Variaxis Spindle Repair",
         "slug":    "mazak-spindle-variaxis",
         "subtitle":"Variaxis 5-Axis",
         "url":     "/spindle-grinding/mazak-spindle-repair/variaxis/",
@@ -79,7 +79,7 @@ _MAZAK_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "vertical-machining-centers": {
-        "title":   "Mazak VTC + VCN Spindle Repair & Grinding",
+        "title":   "Mazak VTC + VCN Spindle Repair",
         "slug":    "mazak-spindle-vertical-machining-centers",
         "subtitle":"VTC + VCN Verticals",
         "url":     "/spindle-grinding/mazak-spindle-repair/vertical-machining-centers/",
@@ -98,7 +98,7 @@ _MAZAK_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "hcn-horizontal": {
-        "title":   "Mazak HCN Horizontal Spindle Repair & Grinding",
+        "title":   "Mazak HCN Horizontal Spindle Repair",
         "slug":    "mazak-spindle-hcn-horizontal",
         "subtitle":"HCN Horizontals",
         "url":     "/spindle-grinding/mazak-spindle-repair/hcn-horizontal/",
@@ -117,7 +117,7 @@ _MAZAK_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "turning-legacy": {
-        "title":   "Mazak Turning Legacy Spindle Repair & Grinding",
+        "title":   "Mazak Turning Legacy Spindle Repair",
         "slug":    "mazak-spindle-turning-legacy",
         "subtitle":"Slant Turn / Multiplex / Megaturn / HQR",
         "url":     "/spindle-grinding/mazak-spindle-repair/turning-legacy/",
@@ -208,7 +208,7 @@ _MAZAK_SPINDLE_CONTROL_SPOKES = {
 # ============================================================
 _HAAS_SPINDLE_SERIES_SPOKES = {
     "vf-series": {
-        "title":   "Haas VF Series Spindle Repair & Grinding",
+        "title":   "Haas VF Series Spindle Repair",
         "slug":    "haas-spindle-vf-series",
         "subtitle":"VF Series Vertical Mills",
         "url":     "/spindle-grinding/haas-spindle-repair/vf-series/",
@@ -227,7 +227,7 @@ _HAAS_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "st-series": {
-        "title":   "Haas ST Series Spindle Repair & Grinding",
+        "title":   "Haas ST Series Spindle Repair",
         "slug":    "haas-spindle-st-series",
         "subtitle":"ST Series Lathes",
         "url":     "/spindle-grinding/haas-spindle-repair/st-series/",
@@ -246,7 +246,7 @@ _HAAS_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "umc-series": {
-        "title":   "Haas UMC Series Spindle Repair & Grinding",
+        "title":   "Haas UMC Series Spindle Repair",
         "slug":    "haas-spindle-umc-series",
         "subtitle":"UMC Universal 5-Axis",
         "url":     "/spindle-grinding/haas-spindle-repair/umc-series/",
@@ -265,7 +265,7 @@ _HAAS_SPINDLE_SERIES_SPOKES = {
         ],
     },
     "ec-series": {
-        "title":   "Haas EC Series Horizontal Spindle Repair & Grinding",
+        "title":   "Haas EC Series Horizontal Spindle Repair",
         "slug":    "haas-spindle-ec-series",
         "subtitle":"EC Series Horizontals",
         "url":     "/spindle-grinding/haas-spindle-repair/ec-series/",
@@ -372,7 +372,7 @@ _HAAS_SPINDLE_CONTROL_SPOKES = {
 def _dmg_spindle_series(slug, title_suffix, subtitle, intro, failures, controls, siblings):
     """Compact builder for DMG Mori series spokes — common boilerplate."""
     return {
-        "title":   f"DMG Mori {title_suffix} Spindle Repair & Grinding",
+        "title":   f"DMG Mori {title_suffix} Spindle Repair",
         "slug":    f"dmg-mori-spindle-{slug}",
         "subtitle":subtitle,
         "url":     f"/spindle-grinding/dmg-mori-spindle-repair/{slug}/",
@@ -599,7 +599,7 @@ _DMG_MORI_SPINDLE_CONTROL_SPOKES = {
 # ============================================================
 def _doosan_spindle_series(slug, title_suffix, subtitle, intro, failures, controls, siblings):
     return {
-        "title":   f"Doosan {title_suffix} Spindle Repair & Grinding",
+        "title":   f"Doosan {title_suffix} Spindle Repair",
         "slug":    f"doosan-spindle-{slug}",
         "subtitle":subtitle,
         "url":     f"/spindle-grinding/doosan-spindle-repair/{slug}/",
@@ -741,7 +741,7 @@ _DOOSAN_SPINDLE_SERIES_SPOKES = {
 # ============================================================
 def _okuma_spindle_series(slug, title_suffix, subtitle, intro, failures, controls, siblings):
     return {
-        "title":   f"Okuma {title_suffix} Spindle Repair & Grinding",
+        "title":   f"Okuma {title_suffix} Spindle Repair",
         "slug":    f"okuma-spindle-{slug}",
         "subtitle":subtitle,
         "url":     f"/spindle-grinding/okuma-spindle-repair/{slug}/",

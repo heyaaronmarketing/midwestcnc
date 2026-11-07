@@ -1,13 +1,13 @@
 ---
-title: "Okuma Twin-Spindle / Twin-Turret Spindle Repair & Grinding"
-meta_description: "Okuma Twin-Spindle / Twin-Turret repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma Twin-Spindle / Twin-Turret Spindle Repair & Grinding"
+title: "Okuma Twin-Spindle / Twin-Turret Spindle Repair"
+meta_description: "Okuma Twin-Spindle / Twin-Turret repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma Twin-Spindle / Twin-Turret Spindle Repair"
 slug: "okuma-spindle-twin-spindle-twin-turret"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma Twin-Spindle / Twin-Turret Spindle Repair & Grinding"
+    serviceType: "Okuma Twin-Spindle / Twin-Turret Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma Twin-Spindle / Twin-Turret Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma Twin-Spindle / Twin-Turret Spindle Repair</h1>
     <p>Okuma&#x27;s twin-spindle and twin-turret platforms — 2SP-2500H, 2SP-V40, LT 200-MY through LT 300-MY, LT 2000 EX — add sub-spindle synchronization complexity to spindle service. Both spindles need to be in tolerance for the part-transfer sequences to work; rebuilding one without verifying the other isn&#x27;t standard practice. Twin-turret platforms add lower-turret considerations alongside the main spindle work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

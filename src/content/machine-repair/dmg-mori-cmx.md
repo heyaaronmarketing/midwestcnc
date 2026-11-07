@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori CMX / CMX U Repair"
-meta_description: "DMG Mori CMX Entry and 5-Sided repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori CMX Entry and 5-Sided repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori CMX / CMX U Repair"
 slug: "dmg-mori-cmx"
 page_type: "cnc_spindle"

@@ -1,6 +1,6 @@
 ---
 title: "Mazak Turning Legacy Way Covers"
-meta_description: "Mazak Slant Turn / Multiplex / Megaturn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Mazak Slant Turn / Multiplex / Megaturn repair across the Midwest. Models, failure patterns, control notes."
 h1: "Mazak Turning Legacy Way Covers"
 slug: "mazak-way-covers-turning-legacy"
 page_type: "cnc_spindle"

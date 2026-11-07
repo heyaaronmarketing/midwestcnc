@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori NVX / NV / NVD Vertical Spindle Repair & Grinding"
-meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori NVX / NV / NVD Vertical Spindle Repair & Grinding"
+title: "DMG Mori NVX / NV / NVD Vertical Spindle Repair"
+meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori NVX / NV / NVD Vertical Spindle Repair"
 slug: "dmg-mori-spindle-nvx-verticals"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori NVX / NV / NVD Vertical Spindle Repair & Grinding"
+    serviceType: "DMG Mori NVX / NV / NVD Vertical Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori NVX / NV / NVD Vertical Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori NVX / NV / NVD Vertical Spindle Repair</h1>
     <p>NVX is DMG Mori&#x27;s high-end vertical lineup — NVX 4000 through 7000 production verticals, plus the older NV 4000 and NV 5000, and NVD with DCG (Driven at the Center of Gravity) construction for high-acceleration work. Spindle wear patterns track the build class: NVX-5060 high-RPM machines wear differently than NVX-7000 large-envelope machines.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

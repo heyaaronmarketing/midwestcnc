@@ -1,6 +1,6 @@
 ---
 title: "Doosan Puma MX / SMX Way Covers"
-meta_description: "Doosan Puma MX / SMX Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Doosan Puma MX / SMX Multitasking repair across the Midwest. Models, failure patterns, control notes."
 h1: "Doosan Puma MX / SMX Way Covers"
 slug: "doosan-way-covers-puma-mx-smx"
 page_type: "cnc_spindle"

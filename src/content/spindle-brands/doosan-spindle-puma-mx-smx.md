@@ -1,13 +1,13 @@
 ---
-title: "Doosan Puma MX / SMX Multitasking Spindle Repair & Grinding"
-meta_description: "Doosan Puma MX / SMX repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan Puma MX / SMX Multitasking Spindle Repair & Grinding"
+title: "Doosan Puma MX / SMX Multitasking Spindle Repair"
+meta_description: "Doosan Puma MX / SMX repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan Puma MX / SMX Multitasking Spindle Repair"
 slug: "doosan-spindle-puma-mx-smx"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan Puma MX / SMX Multitasking Spindle Repair & Grinding"
+    serviceType: "Doosan Puma MX / SMX Multitasking Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan Puma MX / SMX Multitasking Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan Puma MX / SMX Multitasking Spindle Repair</h1>
     <p>Puma MX and SMX mill-turn spindles add a B-axis milling spindle to the turning chassis — MX 1600 through MX 3100 with T/ST/SY variants, and the newer SMX 2100/2600/3100. The B-axis milling spindle is the high-stress component on these platforms because it sees mill-turn loads at varying angles. Post-rebuild B-axis kinematic verification is mandatory.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

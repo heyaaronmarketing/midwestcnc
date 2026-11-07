@@ -1,13 +1,13 @@
 ---
-title: "Way Covers for Haas Next Generation Control (NGC) Era Machines"
-meta_description: "Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
-h1: "Way Covers for Haas Next Generation Control (NGC) Era Machines"
+title: "Way Covers for Haas NGC Era Machines"
+meta_description: "Haas NGC control repair across the Midwest. 2014 to present."
+h1: "Way Covers for Haas NGC Era Machines"
 slug: "haas-way-covers-haas-ngc"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Way Covers for Haas Next Generation Control (NGC) Era Machines"
+    serviceType: "Way Covers for Haas NGC Era Machines"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Haas Control Generation</p>
-    <h1>Way Covers for Haas Next Generation Control (NGC) Era Machines</h1>
+    <h1>Way Covers for Haas NGC Era Machines</h1>
     <p>Way covers on NGC era Haas machines are fully OEM-supported through Haas channels. Most replacements run through the OEM path because dimensions are current-spec and mounting hardware is available. Custom fabrication is an option where OEM lead time or pricing makes custom the better choice for a specific job.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

@@ -1,13 +1,13 @@
 ---
-title: "Mazak Integrex Spindle Repair & Grinding"
-meta_description: "Mazak Integrex Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak Integrex Spindle Repair & Grinding"
+title: "Mazak Integrex Spindle Repair"
+meta_description: "Mazak Integrex Mill-Turn repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak Integrex Spindle Repair"
 slug: "mazak-spindle-integrex"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak Integrex Spindle Repair & Grinding"
+    serviceType: "Mazak Integrex Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak Integrex Spindle Repair &amp; Grinding</h1>
+    <h1>Mazak Integrex Spindle Repair</h1>
     <p>Integrex multitasking machines have two spindles each — a turning spindle in the headstock and a B-axis milling spindle in the upper-tooling. The milling spindle is the higher-stress component because it sees both axial and lateral cuts under load. Bearing-pack life is shorter than on a straight VMC, and post-rebuild kinematic alignment matters more because mill-turn tolerances are tighter than on either lathe or vertical mill alone.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

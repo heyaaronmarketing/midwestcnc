@@ -1,6 +1,6 @@
 ---
 title: "Fanuc Series 0i Repair (Model A through F)"
-meta_description: "Series 0i (A/B/C/D/F) control repair across the Midwest. 2003 through present (0i-F current). Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Series 0i (A/B/C/D/F) control repair across the Midwest. 2003 through present (0i-F current)."
 h1: "Fanuc Series 0i Repair (Model A through F)"
 slug: "fanuc-series-0i"
 page_type: "cnc_spindle"

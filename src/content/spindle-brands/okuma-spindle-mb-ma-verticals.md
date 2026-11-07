@@ -1,13 +1,13 @@
 ---
-title: "Okuma MB / MA Vertical Spindle Repair & Grinding"
-meta_description: "Okuma MB / MA Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma MB / MA Vertical Spindle Repair & Grinding"
+title: "Okuma MB / MA Vertical Spindle Repair"
+meta_description: "Okuma MB / MA Verticals repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma MB / MA Vertical Spindle Repair"
 slug: "okuma-spindle-mb-ma-verticals"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma MB / MA Vertical Spindle Repair & Grinding"
+    serviceType: "Okuma MB / MA Vertical Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma MB / MA Vertical Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma MB / MA Vertical Spindle Repair</h1>
     <p>MB and MA vertical-machining spindles — MB-46V through MB-66V production, MB-4000H/5000H horizontal-spindle builds, MA-400 through MA-8000 larger-envelope platforms — are the workhorses on Okuma vertical shop floors. The platform&#x27;s in-house spindle design and thermal compensation lend predictable wear patterns: machines that have been maintained well wear at expected rates; machines pushed past their thermal compensation limits show different patterns.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

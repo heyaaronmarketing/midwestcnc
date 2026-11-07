@@ -1,13 +1,13 @@
 ---
-title: "Okuma VTM Vertical Turning Spindle Repair & Grinding"
-meta_description: "Okuma VTM repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma VTM Vertical Turning Spindle Repair & Grinding"
+title: "Okuma VTM Vertical Turning Spindle Repair"
+meta_description: "Okuma VTM repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma VTM Vertical Turning Spindle Repair"
 slug: "okuma-spindle-vtm"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma VTM Vertical Turning Spindle Repair & Grinding"
+    serviceType: "Okuma VTM Vertical Turning Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma VTM Vertical Turning Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma VTM Vertical Turning Spindle Repair</h1>
     <p>Okuma VTM vertical-turning spindles — VTM-65, VTM-100, VTM-120, VTM-180 — handle large, heavy chucked parts where vertical orientation simplifies workpiece loading. Table bearings see sustained axial load from heavy roughing cuts; the spindle proper sees cyclic radial load. The platform&#x27;s thermal stability helps with long-cycle finishing work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

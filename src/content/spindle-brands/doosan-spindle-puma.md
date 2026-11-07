@@ -1,13 +1,13 @@
 ---
-title: "Doosan Puma Horizontal Turning Spindle Repair & Grinding"
-meta_description: "Doosan Puma Horizontal Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan Puma Horizontal Turning Spindle Repair & Grinding"
+title: "Doosan Puma Horizontal Turning Spindle Repair"
+meta_description: "Doosan Puma Horizontal Turning repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan Puma Horizontal Turning Spindle Repair"
 slug: "doosan-spindle-puma"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan Puma Horizontal Turning Spindle Repair & Grinding"
+    serviceType: "Doosan Puma Horizontal Turning Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan Puma Horizontal Turning Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan Puma Horizontal Turning Spindle Repair</h1>
     <p>Puma horizontal-turning spindles are the most common Doosan spindles we see — Puma 230 through Puma 800 with M/MS/LM/LY/Y/SY/SY II configuration variants, plus the heavier 4100, 5100, 700, and 800 builds, the GT compact lineup, and the TT twin-turret builds. The spindle types scale with size class: smaller Puma 1500/2000 use lighter cartridges; Puma 4100 and 5100 have heavier-duty bearing arrangements.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

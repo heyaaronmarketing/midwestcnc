@@ -1,6 +1,6 @@
 ---
 title: "Fanuc Series 6 / 10 / 11 / 12 / 15 Repair"
-meta_description: "Series 6 through 15 control repair across the Midwest. 1980s through 2000s. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Series 6 through 15 control repair across the Midwest. 1980s through 2000s."
 h1: "Fanuc Series 6 / 10 / 11 / 12 / 15 Repair"
 slug: "fanuc-series-6-15-legacy"
 page_type: "cnc_spindle"

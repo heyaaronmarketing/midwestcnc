@@ -1,6 +1,6 @@
 ---
 title: "Doosan Lynx Compact Turning Repair"
-meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, failure patterns, control notes."
 h1: "Doosan Lynx Compact Turning Repair"
 slug: "doosan-lynx"
 page_type: "cnc_spindle"

@@ -45,6 +45,15 @@ article title.
 - [Field Service & Logistics](https://midwestcncservices.com/insights/field-service-logistics/): drive-time radius reality, ship-vs-onsite decisions, multi-state coverage
 - [Buying & Owning Used CNC](https://midwestcncservices.com/insights/buying-owning-used-cnc/): inspection checklists, era-by-era buying guides, TCO math, retrofit ROI
 
+## Full FAQ index (quotable by AI engines)
+
+Every Q&A across the site compiled into one file for efficient
+grounding. 500+ question/answer pairs covering CNC service costs,
+lead times, brand-specific failure modes, geographic coverage, and
+service-area logistics.
+
+- [llms-full.txt](https://midwestcncservices.com/llms-full.txt): every FAQPage Q&A with source URL, in plain text, grouped by page
+
 ## Sitemaps + indexes
 
 - [Sitemap](https://midwestcncservices.com/sitemap.xml)

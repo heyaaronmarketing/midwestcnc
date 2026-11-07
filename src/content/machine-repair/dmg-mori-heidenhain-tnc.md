@@ -1,6 +1,6 @@
 ---
 title: "Heidenhain TNC Repair on DMG Mori (iTNC 530, TNC 640)"
-meta_description: "Heidenhain TNC control repair across the Midwest. iTNC 530 from roughly 2001, TNC 640 from 2012. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Heidenhain TNC control repair across the Midwest. iTNC 530 from roughly 2001, TNC 640 from 2012."
 h1: "Heidenhain TNC Repair on DMG Mori (iTNC 530, TNC 640)"
 slug: "dmg-mori-heidenhain-tnc"
 page_type: "cnc_spindle"

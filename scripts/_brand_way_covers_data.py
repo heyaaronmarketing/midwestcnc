@@ -326,11 +326,11 @@ _HAAS_WC_CONTROL_SPOKES = {
         "Some Classic-era Haas way covers are still OEM-available through Haas channels; others have been discontinued and require custom fabrication. The split shifts toward custom-fab as the fleet ages.",
         "Custom fabrication to your existing cover, the OEM drawing if you have it, or measurements off the machine is the standard path for discontinued covers. The mechanical specs are well documented on Classic-era Haas so measurement coordination is straightforward. Lead time is 2 to 4 weeks.",
         [
-            ("Haas Next Generation Control (NGC) era covers",  "/way-covers/haas-cnc-way-covers/haas-ngc/"),
+            ("Haas NGC era covers",  "/way-covers/haas-cnc-way-covers/haas-ngc/"),
         ],
     ),
     "haas-ngc": _wc_control(
-        "haas", "haas-ngc", "Haas Next Generation Control (NGC)", "Haas NGC",
+        "haas", "haas-ngc", "Haas NGC", "Haas NGC",
         "2014 to present",
         "Way covers on NGC era Haas machines are fully OEM-supported through Haas channels. Most replacements run through the OEM path because dimensions are current-spec and mounting hardware is available. Custom fabrication is an option where OEM lead time or pricing makes custom the better choice for a specific job.",
         "NGC era machines include every current Haas machine — [VF Series](/way-covers/haas-cnc-way-covers/vf-series/), [ST Series](/way-covers/haas-cnc-way-covers/st-series/), all [UMC](/way-covers/haas-cnc-way-covers/umc-series/) 5-axis machines, [EC Series](/way-covers/haas-cnc-way-covers/ec-series/) horizontals, current [Mini Mill, DT, DM](/way-covers/haas-cnc-way-covers/mini-mill-toolroom/), and [TL/CL Toolroom Lathes](/way-covers/haas-cnc-way-covers/toolroom-lathes/).",
@@ -889,7 +889,7 @@ _OKUMA_WC_CONTROL_SPOKES = {
 # ============================================================
 _FANUC_WC_CONTROL_SPOKES = {
     "series-0-legacy": _wc_control(
-        "fanuc", "series-0-legacy", "Series 0 / 0M / 0T (Pre-i Legacy)", "Series 0 Legacy", "1980s through 1990s",
+        "fanuc", "series-0-legacy", "Series 0 Legacy", "Series 0 Legacy", "1980s through 1990s",
         "Way covers on Fanuc Series 0 / 0M / 0T era machines are almost universally custom-fabrication. These are deep-legacy machines from the 1980s and 1990s; OEM cover part numbers for the original integrators (Doosan, other Asian OEMs) are largely discontinued. We build to spec from existing covers, original drawings, or measurements off the machine.",
         "Series 0 era machines were built by many OEMs — older [Doosan Puma](/way-covers/doosan-cnc-way-covers/puma/) and other Asian-OEM lathes from this era. Each OEM had its own way-cover specifications, so we coordinate by machine model rather than by control generation alone.",
         [
@@ -1066,7 +1066,7 @@ WAY_COVERS_HUB_DATA = {
         "browse_control": [
             ("Haas Classic Control era",  "/way-covers/haas-cnc-way-covers/haas-classic-control/",
              "Pre-NGC through 2014. Split between OEM and custom-fab; supply thinning."),
-            ("Haas Next Generation Control (NGC) era", "/way-covers/haas-cnc-way-covers/haas-ngc/",
+            ("Haas NGC era", "/way-covers/haas-cnc-way-covers/haas-ngc/",
              "2014-present. Fully OEM-supported through Haas; custom-fab when timing favors."),
         ],
         "browse_service": [
@@ -1282,7 +1282,7 @@ WAY_COVERS_HUB_DATA = {
         "browse_series_header": "Brands that ship Fanuc controls",
         "browse_series_intro": "Fanuc is primarily a controls vendor — your machine is built by one of these OEMs and uses a Fanuc control. Way cover sourcing comes through the original integrator (Doosan, Haas, etc.). Pick the brand for series-specific cover notes, or pick a Fanuc generation below for era-based parts-availability framing.",
         "browse_control": [
-            ("Series 0 / 0M / 0T (Pre-i Legacy)", "/way-covers/fanuc-cnc-way-covers/series-0-legacy/",
+            ("Series 0 Legacy", "/way-covers/fanuc-cnc-way-covers/series-0-legacy/",
              "1980s-1990s. Custom-fab almost universally; original integrators discontinued."),
             ("Series 6 / 10 / 11 / 12 / 15",      "/way-covers/fanuc-cnc-way-covers/series-6-15-legacy/",
              "1980s-2000s. Mostly custom-fab; Series 15 sometimes has OEM through original integrator."),

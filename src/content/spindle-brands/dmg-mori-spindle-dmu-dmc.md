@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori DMU / DMC 5-Axis Spindle Repair & Grinding"
-meta_description: "DMG Mori DMU / DMC 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori DMU / DMC 5-Axis Spindle Repair & Grinding"
+title: "DMG Mori DMU / DMC 5-Axis Spindle Repair"
+meta_description: "DMG Mori DMU / DMC 5-Axis repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori DMU / DMC 5-Axis Spindle Repair"
 slug: "dmg-mori-spindle-dmu-dmc"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori DMU / DMC 5-Axis Spindle Repair & Grinding"
+    serviceType: "DMG Mori DMU / DMC 5-Axis Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori DMU / DMC 5-Axis Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori DMU / DMC 5-Axis Spindle Repair</h1>
     <p>DMU and DMC 5-axis spindles are the high-end of the DMG Mori vertical lineup — DMU 50 through DMU 340 trunnion-table machines, plus monoBLOCK and duoBLOCK builds, the DMU eVo, and DMC universal variants. Most see aerospace and mold-die finishing work where bearing pack precision is critical. RTCP and trunnion kinematic verification after spindle work is mandatory on these platforms.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

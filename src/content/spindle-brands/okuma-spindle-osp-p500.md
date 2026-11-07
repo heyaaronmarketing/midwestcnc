@@ -1,6 +1,6 @@
 ---
 title: "Spindle Service on Okuma OSP-P500"
-meta_description: "OSP-P500 control repair across the Midwest. 2020 to present. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "OSP-P500 control repair across the Midwest. 2020 to present."
 h1: "Spindle Service on Okuma OSP-P500"
 slug: "okuma-spindle-osp-p500"
 page_type: "cnc_spindle"

@@ -1324,8 +1324,7 @@ def render_amada(brand, g, brands_by_slug, brand_index):
 
     meta_desc = (
         "Amada press brake and turret punch service across the Midwest. "
-        "Hydraulic service, ram alignment, backgauge calibration, and "
-        "tooling-related troubleshooting. Experienced field technicians."
+        "Hydraulic service, ram alignment, backgauge, and tooling troubleshooting."
     )
 
     h1_text, eyebrow_text = make_h1_and_eyebrow(brand)
@@ -1421,9 +1420,8 @@ def render_trumpf(brand, g, brands_by_slug, brand_index):
     lead_pref = lead_short(ki["typical_lead_time"])
 
     meta_desc = (
-        "Trumpf laser and punch service across the Midwest. Optics service, "
-        "resonator work on older CO2 systems, cooling-related faults, and "
-        "punch press maintenance. Experienced field technicians."
+        "Trumpf laser and punch service across the Midwest. Optics, "
+        "resonator work on CO2 systems, cooling faults, and punch press maintenance."
     )
 
     h1_text, eyebrow_text = make_h1_and_eyebrow(brand)
@@ -1654,7 +1652,7 @@ _MAZAK_SERIES_SPOKES = {
         ],
     },
     "turning-legacy": {
-        "title":   "Mazak Turning Legacy Repair (Slant Turn / Multiplex / Megaturn)",
+        "title":   "Mazak Turning Legacy Repair",
         "slug":    "mazak-turning-legacy",
         "subtitle":"Slant Turn, Multiplex, Megaturn, HQR, Powermaster",
         "url":     "/repairs/mazak-cnc-machine-repair/turning-legacy/",
@@ -1676,7 +1674,7 @@ _MAZAK_SERIES_SPOKES = {
 
 _MAZAK_CONTROL_SPOKES = {
     "mazatrol-legacy": {
-        "title":   "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)",
+        "title":   "Mazatrol Legacy Control Repair",
         "slug":    "mazak-mazatrol-legacy",
         "subtitle":"Mazatrol M-2, M-32, M-Plus, Fusion 640",
         "url":     "/repairs/mazak-cnc-machine-repair/mazatrol-legacy/",
@@ -1720,7 +1718,7 @@ _MAZAK_CONTROL_SPOKES = {
         ],
     },
     "smooth-control": {
-        "title":   "Mazatrol Smooth Control Repair (SmoothX / SmoothG / SmoothAi)",
+        "title":   "Mazatrol Smooth Control Repair",
         "slug":    "mazak-smooth-control",
         "subtitle":"Mazatrol SmoothX, SmoothG, SmoothAi",
         "url":     "/repairs/mazak-cnc-machine-repair/smooth-control/",
@@ -2050,7 +2048,7 @@ _DMG_MORI_SERIES_SPOKES = {
         ],
     },
     "sprint-multisprint": {
-        "title":   "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair",
+        "title":   "DMG Mori SPRINT / MULTISPRINT Repair",
         "slug":    "dmg-mori-sprint-multisprint",
         "subtitle":"SPRINT / MULTISPRINT Swiss-Production",
         "url":     "/repairs/dmg-mori-cnc-machine-repair/sprint-multisprint/",
@@ -2496,7 +2494,7 @@ _OKUMA_CONTROL_SPOKES = {
         ],
     },
     "osp-legacy": {
-        "title":   "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)",
+        "title":   "Okuma OSP Legacy Control Repair",
         "slug":    "okuma-osp-legacy",
         "subtitle":"OSP Legacy",
         "url":     "/repairs/okuma-cnc-machine-repair/osp-legacy/",
@@ -3011,7 +3009,7 @@ def render_series_spoke(spoke_data, brand_display_name, brand_hub_url, brand_slu
     fm_lines = [
         '---',
         f'title: "{s["title"]}"',
-        f'meta_description: "{html.escape(brand_display_name)} {s["subtitle"]} repair across the Midwest. Models, common failure patterns, and the control generations they ship on."',
+        f'meta_description: "{html.escape(brand_display_name)} {s["subtitle"]} repair across the Midwest. Models, failure patterns, control notes."',
         f'h1: "{s["title"]}"',
         f'slug: "{s["slug"]}"',
         'page_type: "cnc_spindle"',
@@ -3090,7 +3088,7 @@ def render_control_spoke(spoke_data, brand_display_name, brand_hub_url):
     fm_lines = [
         '---',
         f'title: "{s["title"]}"',
-        f'meta_description: "{s["subtitle"]} control repair across the Midwest. {s["era"]}. Common faults, parts availability, and battery/memory/parameter recovery."',
+        f'meta_description: "{s["subtitle"]} control repair across the Midwest. {s["era"]}."',
         f'h1: "{s["title"]}"',
         f'slug: "{s["slug"]}"',
         'page_type: "cnc_spindle"',

@@ -1,6 +1,6 @@
 ---
 title: "Haas EC Series Horizontal Repair & Service"
-meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, failure patterns, control notes."
 h1: "Haas EC Series Horizontal Repair & Service"
 slug: "haas-ec-series"
 page_type: "cnc_spindle"

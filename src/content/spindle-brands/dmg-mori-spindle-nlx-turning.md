@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
-meta_description: "DMG Mori NLX / ALX repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
+title: "DMG Mori NLX / ALX Universal Turning Spindle Repair"
+meta_description: "DMG Mori NLX / ALX repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori NLX / ALX Universal Turning Spindle Repair"
 slug: "dmg-mori-spindle-nlx-turning"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
+    serviceType: "DMG Mori NLX / ALX Universal Turning Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori NLX / ALX Universal Turning Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori NLX / ALX Universal Turning Spindle Repair</h1>
     <p>NLX and ALX universal-turning spindles span the broadest range in the DMG Mori lineup — entry NLX-1500 chuckers through large NLX-6000 long-bed turning, plus the ALX family. The spindles use cartridge-style designs across the line with bearing arrangements scaled to spindle size. Sub-spindle synchronization verification is part of any spindle work on SY/SMC twin-spindle configurations.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

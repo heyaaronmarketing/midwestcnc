@@ -1,13 +1,13 @@
 ---
-title: "Okuma LB / LU Lathe Spindle Repair & Grinding"
-meta_description: "Okuma LB / LU Horizontal Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma LB / LU Lathe Spindle Repair & Grinding"
+title: "Okuma LB / LU Lathe Spindle Repair"
+meta_description: "Okuma LB / LU Horizontal Lathes repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma LB / LU Lathe Spindle Repair"
 slug: "okuma-spindle-lb-lu-lathes"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma LB / LU Lathe Spindle Repair & Grinding"
+    serviceType: "Okuma LB / LU Lathe Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma LB / LU Lathe Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma LB / LU Lathe Spindle Repair</h1>
     <p>Okuma LB and LU horizontal-lathe spindles span entry-production through large-bore turning — LB 200 through LB 5000 EX, LU 300 through LU 8000. Okuma builds spindles in-house under tight tolerances; the platform&#x27;s reputation for thermal stability matters for service work because the wear patterns are predictable when the machine has been well maintained. Live-tool variants add live-tool drive considerations alongside the main spindle.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

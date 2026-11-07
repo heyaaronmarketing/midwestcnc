@@ -1,6 +1,6 @@
 ---
 title: "Okuma MU 5-Axis / MCR Bridge Way Covers"
-meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, failure patterns, control notes."
 h1: "Okuma MU 5-Axis / MCR Bridge Way Covers"
 slug: "okuma-way-covers-v-bridge-mills"
 page_type: "cnc_spindle"

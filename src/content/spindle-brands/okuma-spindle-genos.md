@@ -1,13 +1,13 @@
 ---
-title: "Okuma Genos L / Genos M Spindle Repair & Grinding"
-meta_description: "Okuma Genos repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma Genos L / Genos M Spindle Repair & Grinding"
+title: "Okuma Genos L / Genos M Spindle Repair"
+meta_description: "Okuma Genos repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma Genos L / Genos M Spindle Repair"
 slug: "okuma-spindle-genos"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma Genos L / Genos M Spindle Repair & Grinding"
+    serviceType: "Okuma Genos L / Genos M Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma Genos L / Genos M Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma Genos L / Genos M Spindle Repair</h1>
     <p>Genos spindles are Okuma&#x27;s &#x27;Affordable Excellence&#x27; line — Genos L lathes (L250, L300, L3000-e, L400, L4000) and Genos M verticals (M460-VE, M560-V, M660-V). The platform&#x27;s lighter-duty spindle design shows different wear patterns than the higher-end MB/MA or MULTUS lines, particularly under sustained production cycles. Thermal management matters on Genos because the platform&#x27;s cost optimization doesn&#x27;t include the same thermal compensation hardware as higher-end machines.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

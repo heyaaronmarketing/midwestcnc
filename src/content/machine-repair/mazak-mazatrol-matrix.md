@@ -1,6 +1,6 @@
 ---
 title: "Mazatrol Matrix Control Repair (Matrix / Matrix 2)"
-meta_description: "Mazatrol Matrix and Matrix 2 control repair across the Midwest. Roughly 2005 through 2013. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Mazatrol Matrix and Matrix 2 control repair across the Midwest. Roughly 2005 through 2013."
 h1: "Mazatrol Matrix Control Repair (Matrix / Matrix 2)"
 slug: "mazak-mazatrol-matrix"
 page_type: "cnc_spindle"

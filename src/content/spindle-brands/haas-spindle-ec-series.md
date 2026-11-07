@@ -1,13 +1,13 @@
 ---
-title: "Haas EC Series Horizontal Spindle Repair & Grinding"
-meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Haas EC Series Horizontal Spindle Repair & Grinding"
+title: "Haas EC Series Horizontal Spindle Repair"
+meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, failure patterns, control notes."
+h1: "Haas EC Series Horizontal Spindle Repair"
 slug: "haas-spindle-ec-series"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Haas EC Series Horizontal Spindle Repair & Grinding"
+    serviceType: "Haas EC Series Horizontal Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Haas Series Repair</p>
-    <h1>Haas EC Series Horizontal Spindle Repair &amp; Grinding</h1>
+    <h1>Haas EC Series Horizontal Spindle Repair</h1>
     <p>EC horizontal spindles — EC-300 through EC-3000 production horizontals plus the PP pallet-pool builds — sit oriented for chip drainage to work in the spindle&#x27;s favor. The wear patterns are pallet-changer-cycle-driven: machines running heavy pallet rotation see different bearing wear than those running long single-pallet cycles. The EC-1600 and larger see the heaviest axial production cuts.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

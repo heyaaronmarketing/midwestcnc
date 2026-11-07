@@ -1,13 +1,13 @@
 ---
-title: "Haas VF Series Spindle Repair & Grinding"
-meta_description: "Haas VF Series Vertical Mills repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Haas VF Series Spindle Repair & Grinding"
+title: "Haas VF Series Spindle Repair"
+meta_description: "Haas VF Series Vertical Mills repair across the Midwest. Models, failure patterns, control notes."
+h1: "Haas VF Series Spindle Repair"
 slug: "haas-spindle-vf-series"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Haas VF Series Spindle Repair & Grinding"
+    serviceType: "Haas VF Series Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Haas Series Repair</p>
-    <h1>Haas VF Series Spindle Repair &amp; Grinding</h1>
+    <h1>Haas VF Series Spindle Repair</h1>
     <p>VF series spindles are the most common Haas spindles we see — VF-1 through VF-12 plus the YT extended-Y and SS super-speed builds. Haas uses different spindle types across the VF range: the base VF machines have moderate-RPM cartridge spindles; the SS variants have higher-RPM bearing packs that show different wear patterns under sustained production. After-spindle balance verification is a routine part of every rebuild.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

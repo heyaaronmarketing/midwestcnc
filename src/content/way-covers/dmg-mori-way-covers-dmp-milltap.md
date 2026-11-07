@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori DMP / Milltap Way Covers"
-meta_description: "DMG Mori DMP / Milltap Compact Production repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori DMP / Milltap Compact Production repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori DMP / Milltap Way Covers"
 slug: "dmg-mori-way-covers-dmp-milltap"
 page_type: "cnc_spindle"

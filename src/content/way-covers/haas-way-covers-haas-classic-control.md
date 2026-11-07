@@ -1,6 +1,6 @@
 ---
 title: "Way Covers for Haas Classic Control Era Machines"
-meta_description: "Haas Classic Control control repair across the Midwest. Through roughly 2014. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Haas Classic Control control repair across the Midwest. Through roughly 2014."
 h1: "Way Covers for Haas Classic Control Era Machines"
 slug: "haas-way-covers-haas-classic-control"
 page_type: "cnc_spindle"
@@ -62,4 +62,4 @@ Custom fabrication to your existing cover, the OEM drawing if you have it, or me
 
 ## Related
 
-<ul class="related-grid"><li><a href="/way-covers/haas-cnc-way-covers/"><span>All Haas repair</span></a></li><li><a href="/way-covers/haas-cnc-way-covers/haas-ngc/"><span>Haas Next Generation Control (NGC) era covers</span></a></li></ul>
+<ul class="related-grid"><li><a href="/way-covers/haas-cnc-way-covers/"><span>All Haas repair</span></a></li><li><a href="/way-covers/haas-cnc-way-covers/haas-ngc/"><span>Haas NGC era covers</span></a></li></ul>

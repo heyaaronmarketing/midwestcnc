@@ -21,7 +21,14 @@ on:
     #   8:47 AM CDT (summer)  — within early morning Central US
     #   7:47 AM CST (winter)  — still pre-business-hours Central US
     # Off-minute (:47) avoids the :00 / :30 fleet pile-up.
-    - cron: '47 13 * * 1'
+    # Twice daily — 7:47 AM and 3:47 PM Central (13:47 and 21:47 UTC).
+    # Off-minute (:47) avoids the :00 / :30 fleet pile-up on GitHub Actions.
+    # 76 scheduled articles ÷ 14/week = ~5.4 weeks to exhaust the schedule.
+    # When the queue runs out, each run finishes cleanly with no PR opened
+    # (the orchestrator skips if no cluster is scheduled). See
+    # scripts/insights_schedule.py to add more clusters.
+    - cron: '47 13 * * *'
+    - cron: '47 21 * * *'
   # Allow manual triggering from the Actions tab for testing or
   # ad-hoc drafting.
   workflow_dispatch:

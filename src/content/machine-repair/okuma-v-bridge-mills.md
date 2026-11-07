@@ -1,6 +1,6 @@
 ---
 title: "Okuma MU 5-Axis and MCR Bridge Mill Repair"
-meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, failure patterns, control notes."
 h1: "Okuma MU 5-Axis and MCR Bridge Mill Repair"
 slug: "okuma-v-bridge-mills"
 page_type: "cnc_spindle"

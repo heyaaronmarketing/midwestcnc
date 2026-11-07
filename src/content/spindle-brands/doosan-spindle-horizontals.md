@@ -1,13 +1,13 @@
 ---
-title: "Doosan NHM / NHP / HC Horizontal Spindle Repair & Grinding"
-meta_description: "Doosan NHM / NHP / HC repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan NHM / NHP / HC Horizontal Spindle Repair & Grinding"
+title: "Doosan NHM / NHP / HC Horizontal Spindle Repair"
+meta_description: "Doosan NHM / NHP / HC repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan NHM / NHP / HC Horizontal Spindle Repair"
 slug: "doosan-spindle-horizontals"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan NHM / NHP / HC Horizontal Spindle Repair & Grinding"
+    serviceType: "Doosan NHM / NHP / HC Horizontal Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan NHM / NHP / HC Horizontal Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan NHM / NHP / HC Horizontal Spindle Repair</h1>
     <p>Horizontal-machining spindles on NHM 4000 through 8000, NHP 4000 through 6300, and HC 400/500 sit oriented for chip drainage. Pallet-changer thermal cycling drives specific wear patterns. The larger NHM-8000 has a heavier-duty spindle to match the heavier axial cuts; smaller NHM-4000 and NHP-4000 see more pallet-cycle bearing wear.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

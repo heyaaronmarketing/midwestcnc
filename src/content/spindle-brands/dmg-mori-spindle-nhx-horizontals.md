@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori NHX / NH Horizontal Spindle Repair & Grinding"
-meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori NHX / NH Horizontal Spindle Repair & Grinding"
+title: "DMG Mori NHX / NH Horizontal Spindle Repair"
+meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori NHX / NH Horizontal Spindle Repair"
 slug: "dmg-mori-spindle-nhx-horizontals"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori NHX / NH Horizontal Spindle Repair & Grinding"
+    serviceType: "DMG Mori NHX / NH Horizontal Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori NHX / NH Horizontal Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori NHX / NH Horizontal Spindle Repair</h1>
     <p>NHX and the legacy NH horizontal spindles sit oriented for chip drainage to work in the spindle&#x27;s favor — NHX 4000 through 10000 plus the older NH 4000/5000/6300. The platform&#x27;s pallet-changer cycle creates thermal patterns at the spindle that drive specific wear. The larger NHX-8000 and 10000 see heavy axial cuts and bigger spindle bearings to match.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

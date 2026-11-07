@@ -1,6 +1,6 @@
 ---
 title: "Spindle Service on Fanuc Series 30i / 31i / 32i / 35i"
-meta_description: "Series 30i / 31i / 32i control repair across the Midwest. 2008 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Series 30i / 31i / 32i control repair across the Midwest. 2008 through present."
 h1: "Spindle Service on Fanuc Series 30i / 31i / 32i / 35i"
 slug: "fanuc-spindle-series-30i-31i-32i"
 page_type: "cnc_spindle"

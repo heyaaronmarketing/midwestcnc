@@ -1,13 +1,13 @@
 ---
-title: "Mazak Variaxis Spindle Repair & Grinding"
-meta_description: "Mazak Variaxis 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak Variaxis Spindle Repair & Grinding"
+title: "Mazak Variaxis Spindle Repair"
+meta_description: "Mazak Variaxis 5-Axis repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak Variaxis Spindle Repair"
 slug: "mazak-spindle-variaxis"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak Variaxis Spindle Repair & Grinding"
+    serviceType: "Mazak Variaxis Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak Variaxis Spindle Repair &amp; Grinding</h1>
+    <h1>Mazak Variaxis Spindle Repair</h1>
     <p>Variaxis spindles are 5-axis trunnion-table verticals — i-300 through i-800, J-series and C-series, and the legacy 500/630/730. The spindles see aerospace and mold-die work where bearing pack precision matters more than on production lathes. RTCP and kinematic alignment are part of any spindle service on this platform because 5-axis tool-tip-positioning depends on spindle geometry staying tight to the trunnion centerline.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

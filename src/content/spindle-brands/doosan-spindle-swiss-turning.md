@@ -1,13 +1,13 @@
 ---
-title: "Doosan Swiss-Type / DST Spindle Repair & Grinding"
-meta_description: "Doosan Swiss-Type / DST repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan Swiss-Type / DST Spindle Repair & Grinding"
+title: "Doosan Swiss-Type / DST Spindle Repair"
+meta_description: "Doosan Swiss-Type / DST repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan Swiss-Type / DST Spindle Repair"
 slug: "doosan-spindle-swiss-turning"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan Swiss-Type / DST Spindle Repair & Grinding"
+    serviceType: "Doosan Swiss-Type / DST Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan Swiss-Type / DST Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan Swiss-Type / DST Spindle Repair</h1>
     <p>Doosan Swiss-type spindles — SwiftTurn 32 and 38, the DST series — handle high-precision small-diameter bar work. Swiss-type spindle service interacts with guide bushing wear in ways straight turning doesn&#x27;t; the two are often companion jobs. Sub-spindle synchronization on twin-spindle Swiss platforms needs careful verification post-rebuild.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

@@ -1,13 +1,13 @@
 ---
-title: "Doosan Lynx Compact Turning Spindle Repair & Grinding"
-meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan Lynx Compact Turning Spindle Repair & Grinding"
+title: "Doosan Lynx Compact Turning Spindle Repair"
+meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan Lynx Compact Turning Spindle Repair"
 slug: "doosan-spindle-lynx"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan Lynx Compact Turning Spindle Repair & Grinding"
+    serviceType: "Doosan Lynx Compact Turning Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan Lynx Compact Turning Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan Lynx Compact Turning Spindle Repair</h1>
     <p>Lynx compact-turning spindles — Lynx 220, 2100, 2600, and 300 with a wide range of M, MS, LM, LSY, LY, LMA, MA, II variants — see the highest-cycle environment in the Doosan lineup. Small-shop bar work and bar-fed production grind through bearing-pack life faster than larger-platform production. The compact spindle design balances cost and durability; the wear pattern tracks cycle count more than load.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

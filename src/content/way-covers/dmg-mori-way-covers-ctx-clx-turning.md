@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori CTX / CLX Way Covers"
-meta_description: "DMG Mori CTX / CLX Turning + TC repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori CTX / CLX Turning + TC repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori CTX / CLX Way Covers"
 slug: "dmg-mori-way-covers-ctx-clx-turning"
 page_type: "cnc_spindle"

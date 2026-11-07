@@ -1,13 +1,13 @@
 ---
-title: "Okuma MU 5-Axis / MCR Bridge Spindle Repair & Grinding"
-meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma MU 5-Axis / MCR Bridge Spindle Repair & Grinding"
+title: "Okuma MU 5-Axis / MCR Bridge Spindle Repair"
+meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma MU 5-Axis / MCR Bridge Spindle Repair"
 slug: "okuma-spindle-v-bridge-mills"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma MU 5-Axis / MCR Bridge Spindle Repair & Grinding"
+    serviceType: "Okuma MU 5-Axis / MCR Bridge Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma MU 5-Axis / MCR Bridge Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma MU 5-Axis / MCR Bridge Spindle Repair</h1>
     <p>MU 5-axis and MCR bridge-mill spindles handle the most precise work in the Okuma lineup. MU-400V through MU-8000V are trunnion-table 5-axis machines where RTCP verification post-rebuild is mandatory. MCR-A5C and MCR-BIII bridge mills handle very large parts where bridge geometry interacts with spindle-side accuracy in ways trunnion machines don&#x27;t.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

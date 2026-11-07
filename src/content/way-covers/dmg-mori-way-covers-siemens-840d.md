@@ -1,6 +1,6 @@
 ---
 title: "Way Covers for Siemens 840D Era Machines"
-meta_description: "Siemens 840D control repair across the Midwest. Late 1990s through present. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Siemens 840D control repair across the Midwest. Late 1990s through present."
 h1: "Way Covers for Siemens 840D Era Machines"
 slug: "dmg-mori-way-covers-siemens-840d"
 page_type: "cnc_spindle"

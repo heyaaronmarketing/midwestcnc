@@ -1,6 +1,6 @@
 ---
 title: "Way Covers for Mazatrol Matrix Era Machines"
-meta_description: "Mazatrol Matrix control repair across the Midwest. Roughly 2005 through 2013. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Mazatrol Matrix control repair across the Midwest. Roughly 2005 through 2013."
 h1: "Way Covers for Mazatrol Matrix Era Machines"
 slug: "mazak-way-covers-mazatrol-matrix"
 page_type: "cnc_spindle"

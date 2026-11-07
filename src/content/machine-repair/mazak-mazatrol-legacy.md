@@ -1,13 +1,13 @@
 ---
-title: "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)"
-meta_description: "Mazatrol M-2, M-32, M-Plus, Fusion 640 control repair across the Midwest. Roughly 1981 through 2005. Common faults, parts availability, and battery/memory/parameter recovery."
-h1: "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)"
+title: "Mazatrol Legacy Control Repair"
+meta_description: "Mazatrol M-2, M-32, M-Plus, Fusion 640 control repair across the Midwest. Roughly 1981 through 2005."
+h1: "Mazatrol Legacy Control Repair"
 slug: "mazak-mazatrol-legacy"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)"
+    serviceType: "Mazatrol Legacy Control Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Control Generation</p>
-    <h1>Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)</h1>
+    <h1>Mazatrol Legacy Control Repair</h1>
     <p>Mazatrol legacy is the family of pre-Matrix controls — M-2, M-32, M-Plus, and Fusion 640 — that shipped on Mazak lathes and verticals from the early 1980s through roughly 2005. In 2026 these controls are at the obsolescence stage: most boards have gone out of OEM stock, parts come through remanufacturing specialists, and the most common service work is preventive (battery replacement, media migration) rather than reactive repair.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

@@ -1,6 +1,6 @@
 ---
 title: "Way Covers for Power Mate i Era Machines"
-meta_description: "Power Mate i control repair across the Midwest. 2000 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Power Mate i control repair across the Midwest. 2000 through present."
 h1: "Way Covers for Power Mate i Era Machines"
 slug: "fanuc-way-covers-power-mate-i"
 page_type: "cnc_spindle"

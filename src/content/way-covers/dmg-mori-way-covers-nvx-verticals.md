@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori NVX / NV / NVD Way Covers"
-meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori NVX / NV / NVD Way Covers"
 slug: "dmg-mori-way-covers-nvx-verticals"
 page_type: "cnc_spindle"

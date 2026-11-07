@@ -1,13 +1,13 @@
 ---
-title: "Doosan DVF / FM 5-Axis Vertical Spindle Repair & Grinding"
-meta_description: "Doosan DVF / FM 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan DVF / FM 5-Axis Vertical Spindle Repair & Grinding"
+title: "Doosan DVF / FM 5-Axis Vertical Spindle Repair"
+meta_description: "Doosan DVF / FM 5-Axis repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan DVF / FM 5-Axis Vertical Spindle Repair"
 slug: "doosan-spindle-5-axis-verticals"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan DVF / FM 5-Axis Vertical Spindle Repair & Grinding"
+    serviceType: "Doosan DVF / FM 5-Axis Vertical Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan DVF / FM 5-Axis Vertical Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan DVF / FM 5-Axis Vertical Spindle Repair</h1>
     <p>DVF and FM 5-axis vertical spindles run high-stress finishing on trunnion-table machines — DVF 5000, 6500, 8000 trunnion 5-axis and the FM 200/5AX Linear-motor build. Spindle work on these platforms requires full RTCP and trunnion kinematic verification post-rebuild because 5-axis tool-tip accuracy depends on spindle geometry staying tight to the trunnion centerline.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

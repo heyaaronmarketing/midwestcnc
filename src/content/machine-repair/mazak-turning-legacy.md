@@ -1,13 +1,13 @@
 ---
-title: "Mazak Turning Legacy Repair (Slant Turn / Multiplex / Megaturn)"
-meta_description: "Mazak Slant Turn, Multiplex, Megaturn, HQR, Powermaster repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak Turning Legacy Repair (Slant Turn / Multiplex / Megaturn)"
+title: "Mazak Turning Legacy Repair"
+meta_description: "Mazak Slant Turn, Multiplex, Megaturn, HQR, Powermaster repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak Turning Legacy Repair"
 slug: "mazak-turning-legacy"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak Turning Legacy Repair (Slant Turn / Multiplex / Megaturn)"
+    serviceType: "Mazak Turning Legacy Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak Turning Legacy Repair (Slant Turn / Multiplex / Megaturn)</h1>
+    <h1>Mazak Turning Legacy Repair</h1>
     <p>Mazak&#x27;s turning legacy platforms — Slant Turn 15/18/20 and Slant Turn Nexus, Multiplex 6000 through 6300, Megaturn vertical turning, HQR-150/200/250, and the Powermaster series — are still running on shop floors across the Midwest. The platforms are mechanically sound; what brings them in is control obsolescence and drive-side issues more often than spindle work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

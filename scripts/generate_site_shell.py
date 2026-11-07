@@ -2468,8 +2468,8 @@ def gen_about():
         title="About Midwest CNC Services | Waterloo, Iowa",
         description=(
             "Midwest CNC Services is based in Waterloo, Iowa, serving shops "
-            "across the Midwest and South-Central US with CNC machine repair, "
-            "spindle work, and replacement way covers."
+            "across 7 Midwest states with CNC machine repair, "
+            "spindle work, and way covers."
         ),
         canonical_path="/about/",
         schemas=schemas,
@@ -2724,13 +2724,25 @@ def gen_terms():
 
 
 def gen_404():
-    schemas = []  # No JSON-LD on the 404 itself
+    # Minimal WebPage schema so audits pass; 404 doesn't need a rich graph.
+    import json as _json
+    schemas = ['<script type="application/ld+json">' + _json.dumps({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Page Not Found",
+        "url": absolute("/404.html"),
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Midwest CNC Services",
+            "url": absolute("/"),
+        },
+    }) + '</script>']
     out_path = os.path.join(PUBLIC, "404.html")
     page_html = wrap_page(
         title="Page not found — Midwest CNC Services",
         description="The page you were looking for isn't here. Try one of our service hubs.",
         canonical=absolute("/404.html"),
-        schema_blocks="",
+        schema_blocks="\n".join(schemas),
         crumbs_html_str="",
         body_html=not_found_body(),
     )
@@ -2853,22 +2865,48 @@ def gen_robots():
 
 
 def gen_headers():
-    """Write public/_headers for Cloudflare Pages.
+    """Write public/_headers for Cloudflare Workers Static Assets.
 
-    Security headers apply to every route. We deliberately do NOT set a
-    Content-Security-Policy yet — a strict CSP would need testing against
-    every third-party script (gtag, googletagmanager, consentresolve,
-    cloudflare turnstile, unpkg leaflet, google fonts) and a wrong CSP
-    silently breaks the site. CSP is a documented follow-up.
+    CSP is report-only initially — this lets us see violations in
+    browser console + dev tools WITHOUT breaking the site if something
+    is misclassified. Switch to the enforcing header after a week of
+    clean reports. Allowlist covers every third party actually in use:
+    gtag, googletagmanager, consentresolve, mm-uxrv tracking pixel,
+    cloudflare turnstile, unpkg leaflet, google fonts.
 
     Long cache on /assets/* (images, video, fonts) since filenames are
     stable; HTML stays revalidated so content edits show immediately."""
+    csp_value = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' "
+        "https://www.googletagmanager.com "
+        "https://cdn.consentresolve.com "
+        "https://mm-uxrv.com "
+        "https://challenges.cloudflare.com "
+        "https://unpkg.com; "
+        "style-src 'self' 'unsafe-inline' "
+        "https://fonts.googleapis.com "
+        "https://unpkg.com; "
+        "font-src 'self' "
+        "https://fonts.gstatic.com; "
+        "img-src 'self' data: https:; "
+        "connect-src 'self' "
+        "https://www.google-analytics.com "
+        "https://*.google-analytics.com "
+        "https://challenges.cloudflare.com; "
+        "frame-src 'self' "
+        "https://challenges.cloudflare.com; "
+        "object-src 'none'; "
+        "base-uri 'self'; "
+        "form-action 'self'"
+    )
     out = os.path.join(PUBLIC, "_headers")
-    content = """/*
+    content = f"""/*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy-Report-Only: {csp_value}
 
 /assets/*
   Cache-Control: public, max-age=604800
@@ -2934,6 +2972,15 @@ article title.
 - [Field Service & Logistics](https://midwestcncservices.com/insights/field-service-logistics/): drive-time radius reality, ship-vs-onsite decisions, multi-state coverage
 - [Buying & Owning Used CNC](https://midwestcncservices.com/insights/buying-owning-used-cnc/): inspection checklists, era-by-era buying guides, TCO math, retrofit ROI
 
+## Full FAQ index (quotable by AI engines)
+
+Every Q&A across the site compiled into one file for efficient
+grounding. 500+ question/answer pairs covering CNC service costs,
+lead times, brand-specific failure modes, geographic coverage, and
+service-area logistics.
+
+- [llms-full.txt](https://midwestcncservices.com/llms-full.txt): every FAQPage Q&A with source URL, in plain text, grouped by page
+
 ## Sitemaps + indexes
 
 - [Sitemap](https://midwestcncservices.com/sitemap.xml)
@@ -2951,6 +2998,83 @@ respective OEM owners.
     with open(out, "w") as f:
         f.write(content)
     return out
+
+
+def gen_llms_full_txt():
+    """Full FAQ index for AI engines. Extracts every FAQPage Q&A from
+    generated HTML and compiles into a plain-text citation-ready file.
+    Per llmstxt.org convention — llms.txt is the brief index, llms-full
+    is the long-form content index."""
+    import json as _json
+    import re as _re
+    import html as _html
+
+    pages = []
+    for root, _, files in os.walk(PUBLIC):
+        for fn in files:
+            if fn != "index.html": continue
+            p = os.path.join(root, fn)
+            rel = os.path.relpath(p, PUBLIC).replace("index.html", "")
+            url = f"https://midwestcncservices.com/{rel}"
+            s = open(p).read()
+            # Title
+            tm = _re.search(r'<title>([^<]+)</title>', s)
+            title = _html.unescape(tm.group(1)) if tm else url
+            # FAQPage schemas — extract every ld+json block, test for FAQPage
+            faqs = []
+            for schema_m in _re.finditer(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                s, _re.S,
+            ):
+                body = schema_m.group(1).strip()
+                if '"FAQPage"' not in body:
+                    continue
+                try:
+                    data = _json.loads(body)
+                except _json.JSONDecodeError:
+                    continue
+                entities = data.get("mainEntity") or []
+                if not isinstance(entities, list): continue
+                for e in entities:
+                    if not isinstance(e, dict): continue
+                    q = e.get("name", "").strip()
+                    a_obj = e.get("acceptedAnswer", {})
+                    a = (a_obj.get("text", "") if isinstance(a_obj, dict) else "").strip()
+                    if q and a:
+                        faqs.append((q, a))
+            if faqs:
+                pages.append((title, url, faqs))
+
+    # Sort pages for stable output
+    pages.sort(key=lambda x: x[1])
+
+    lines = []
+    lines.append("# Midwest CNC Services — Full FAQ index for AI engines")
+    lines.append("")
+    lines.append("> Every FAQPage Q&A on midwestcncservices.com, compiled into one")
+    lines.append("> plain-text file for efficient AI grounding and citation.")
+    lines.append(">")
+    lines.append(f"> Source: {len(pages)} pages, {sum(len(f) for _,_,f in pages)} Q&A pairs.")
+    lines.append("> Updated on every site build. Cite the per-page URL as the source.")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+
+    for title, url, faqs in pages:
+        lines.append(f"## {title}")
+        lines.append(f"Source: {url}")
+        lines.append("")
+        for q, a in faqs:
+            lines.append(f"Q: {q}")
+            lines.append(f"A: {a}")
+            lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    out = os.path.join(PUBLIC, "llms-full.txt")
+    with open(out, "w") as f:
+        f.write("\n".join(lines))
+    return out, len(pages), sum(len(f) for _,_,f in pages)
 
 
 def gen_favicon():
@@ -3233,6 +3357,8 @@ def main():
     print(f"  ✓ favicon.svg")
     llms_path = gen_llms_txt()
     print(f"  ✓ llms.txt")
+    llms_full_path, n_pages, n_qa = gen_llms_full_txt()
+    print(f"  ✓ llms-full.txt  ({n_pages} pages, {n_qa} Q&A pairs)")
 
     # Copy machines.json into public/ so the MachineLookup component
     # can fetch it from /data/machines.json on the live site.

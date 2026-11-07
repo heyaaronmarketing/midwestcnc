@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori DMU / DMC 5-Axis Repair"
-meta_description: "DMG Mori DMU / DMC 5-Axis Universal and Cube repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori DMU / DMC 5-Axis Universal and Cube repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori DMU / DMC 5-Axis Repair"
 slug: "dmg-mori-dmu-dmc"
 page_type: "cnc_spindle"

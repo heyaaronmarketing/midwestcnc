@@ -1,6 +1,6 @@
 ---
 title: "Okuma MULTUS B-Axis Multitasking Repair"
-meta_description: "Okuma MULTUS B-Axis Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Okuma MULTUS B-Axis Multitasking repair across the Midwest. Models, failure patterns, control notes."
 h1: "Okuma MULTUS B-Axis Multitasking Repair"
 slug: "okuma-multus"
 page_type: "cnc_spindle"

@@ -1,6 +1,6 @@
 ---
 title: "Doosan DNM Vertical Machining Repair"
-meta_description: "Doosan DNM Vertical Machining repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Doosan DNM Vertical Machining repair across the Midwest. Models, failure patterns, control notes."
 h1: "Doosan DNM Vertical Machining Repair"
 slug: "doosan-dnm-verticals"
 page_type: "cnc_spindle"

@@ -1,13 +1,13 @@
 ---
-title: "Mazak Quick Turn Spindle Repair & Grinding"
-meta_description: "Mazak Quick Turn / QTN repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak Quick Turn Spindle Repair & Grinding"
+title: "Mazak Quick Turn Spindle Repair"
+meta_description: "Mazak Quick Turn / QTN repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak Quick Turn Spindle Repair"
 slug: "mazak-spindle-quick-turn"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak Quick Turn Spindle Repair & Grinding"
+    serviceType: "Mazak Quick Turn Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak Quick Turn Spindle Repair &amp; Grinding</h1>
+    <h1>Mazak Quick Turn Spindle Repair</h1>
     <p>Quick Turn and Quick Turn Nexus spindles are the most common Mazak spindles we see on the bench. The line uses cartridge-style turning spindles across QT-8 through QTN-450 with different bearing arrangements per size class. Smaller QT lathes use lighter-duty cartridges; QTN-300 and up have higher-RPM bearing packs that show different wear patterns. MS and MSY twin-spindle variants add sub-spindle synchronization considerations after any spindle work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

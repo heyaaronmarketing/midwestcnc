@@ -1,13 +1,13 @@
 ---
-title: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair & Grinding"
-meta_description: "Doosan Puma V / VT / VTR repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair & Grinding"
+title: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair"
+meta_description: "Doosan Puma V / VT / VTR repair across the Midwest. Models, failure patterns, control notes."
+h1: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair"
 slug: "doosan-spindle-puma-vertical-turning"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair & Grinding"
+    serviceType: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Doosan Series Repair</p>
-    <h1>Doosan Puma V / VT / VTR Vertical Turning Spindle Repair &amp; Grinding</h1>
+    <h1>Doosan Puma V / VT / VTR Vertical Turning Spindle Repair</h1>
     <p>Vertical-turning spindles on Puma V400 through V9300, VT 750/900/1100, and VTR ram-type machines handle large, heavy parts where vertical orientation simplifies workpiece loading. Spindle wear patterns are different from horizontal turning — table bearings see more axial load; the spindle proper sees more cyclic radial load on chucked work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

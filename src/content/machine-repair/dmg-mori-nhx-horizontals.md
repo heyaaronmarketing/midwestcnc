@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori NHX / NH Horizontal Repair"
-meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori NHX / NH Horizontal Repair"
 slug: "dmg-mori-nhx-horizontals"
 page_type: "cnc_spindle"

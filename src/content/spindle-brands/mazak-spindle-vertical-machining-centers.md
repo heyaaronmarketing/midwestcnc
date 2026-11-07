@@ -1,13 +1,13 @@
 ---
-title: "Mazak VTC + VCN Spindle Repair & Grinding"
-meta_description: "Mazak VTC + VCN Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak VTC + VCN Spindle Repair & Grinding"
+title: "Mazak VTC + VCN Spindle Repair"
+meta_description: "Mazak VTC + VCN Verticals repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak VTC + VCN Spindle Repair"
 slug: "mazak-spindle-vertical-machining-centers"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak VTC + VCN Spindle Repair & Grinding"
+    serviceType: "Mazak VTC + VCN Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak VTC + VCN Spindle Repair &amp; Grinding</h1>
+    <h1>Mazak VTC + VCN Spindle Repair</h1>
     <p>VTC and VCN spindles are the highest-volume Mazak spindles after Quick Turn. The two families use different spindle types — VTC long-bed machines have heavier-duty production spindles with longer rebuild intervals; VCN high-RPM machines run lighter, faster spindles that wear quicker under sustained production. The VTC-800 in particular sees long-cycle axial production that creates specific wear patterns.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

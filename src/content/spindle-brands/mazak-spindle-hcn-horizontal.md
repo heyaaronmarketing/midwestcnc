@@ -1,13 +1,13 @@
 ---
-title: "Mazak HCN Horizontal Spindle Repair & Grinding"
-meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak HCN Horizontal Spindle Repair & Grinding"
+title: "Mazak HCN Horizontal Spindle Repair"
+meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak HCN Horizontal Spindle Repair"
 slug: "mazak-spindle-hcn-horizontal"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak HCN Horizontal Spindle Repair & Grinding"
+    serviceType: "Mazak HCN Horizontal Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak HCN Horizontal Spindle Repair &amp; Grinding</h1>
+    <h1>Mazak HCN Horizontal Spindle Repair</h1>
     <p>HCN horizontal spindles sit oriented differently than their VTC and VCN cousins, and that orientation matters for service patterns. Coolant drainage works in the spindle&#x27;s favor on horizontals — fluid doesn&#x27;t pool at the spindle nose the way it can on verticals. But pallet-changer thermal cycling and B-axis indexer loads create different stress patterns. The HCN-8800 and HCN-10800 large platforms see the heaviest production cuts.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

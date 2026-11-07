@@ -1,6 +1,6 @@
 ---
 title: "Haas Classic Control Repair (pre-NGC)"
-meta_description: "Haas Classic Control control repair across the Midwest. Through roughly 2014. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Haas Classic Control control repair across the Midwest. Through roughly 2014."
 h1: "Haas Classic Control Repair (pre-NGC)"
 slug: "haas-haas-classic-control"
 page_type: "cnc_spindle"

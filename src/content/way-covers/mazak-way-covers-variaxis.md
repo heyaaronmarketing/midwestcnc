@@ -1,6 +1,6 @@
 ---
 title: "Mazak Variaxis Way Covers"
-meta_description: "Mazak Variaxis 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Mazak Variaxis 5-Axis repair across the Midwest. Models, failure patterns, control notes."
 h1: "Mazak Variaxis Way Covers"
 slug: "mazak-way-covers-variaxis"
 page_type: "cnc_spindle"

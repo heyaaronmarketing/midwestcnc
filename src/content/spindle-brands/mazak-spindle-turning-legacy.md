@@ -1,13 +1,13 @@
 ---
-title: "Mazak Turning Legacy Spindle Repair & Grinding"
-meta_description: "Mazak Slant Turn / Multiplex / Megaturn / HQR repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Mazak Turning Legacy Spindle Repair & Grinding"
+title: "Mazak Turning Legacy Spindle Repair"
+meta_description: "Mazak Slant Turn / Multiplex / Megaturn / HQR repair across the Midwest. Models, failure patterns, control notes."
+h1: "Mazak Turning Legacy Spindle Repair"
 slug: "mazak-spindle-turning-legacy"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazak Turning Legacy Spindle Repair & Grinding"
+    serviceType: "Mazak Turning Legacy Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Series Repair</p>
-    <h1>Mazak Turning Legacy Spindle Repair &amp; Grinding</h1>
+    <h1>Mazak Turning Legacy Spindle Repair</h1>
     <p>Mazak&#x27;s turning legacy spindles — Slant Turn 15/18/20 and Nexus, Multiplex 6000 through 6300, Megaturn vertical turning, HQR-150/200/250, Powermaster — are mechanically sound but increasingly parts-challenged. Bearing-pack rebuilds with current-supply parts are the standard service path; matching OEM bearings is sometimes the time-consuming step. We scope each job based on what&#x27;s currently sourceable before quoting.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

@@ -1,6 +1,6 @@
 ---
 title: "Okuma Genos Way Covers"
-meta_description: "Okuma Genos 'Affordable Excellence' repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Okuma Genos 'Affordable Excellence' repair across the Midwest. Models, failure patterns, control notes."
 h1: "Okuma Genos Way Covers"
 slug: "okuma-way-covers-genos"
 page_type: "cnc_spindle"

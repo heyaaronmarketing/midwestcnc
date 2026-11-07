@@ -1,12 +1,12 @@
 {
-  "_comment": "Insights engine pillar + cluster map. See docs/insights-engine.md for architecture. Each pillar defines a defensible topical territory; each cluster article exists for a specific reason and reinforces an existing brand/service page via internal links. Status: planned | drafted | published. Drafting cadence is rate-limited by available proprietary signal — do not generate at volume.",
+  "_comment": "Insights engine pillar + cluster map. See docs/insights-engine.md for architecture. Each pillar defines a defensible topical territory; each cluster article exists for a specific reason and reinforces an existing brand/service page via internal links. Status: planned | drafted | published. Drafting cadence is rate-limited by available proprietary signal \u2014 do not generate at volume.",
   "pillars": [
     {
       "slug": "spindle-diagnostics",
       "title": "Spindle Diagnostics & Repair Decisions",
       "h1": "CNC Spindle Diagnostics, Failure Modes, and Repair Decisions",
-      "eyebrow": "Technical Insights — Spindle",
-      "summary": "When a spindle starts misbehaving, the diagnostic gap between 'noisy bearing' and 'salvageable taper' is where money is made or lost. This pillar covers the diagnostic reasoning we use on the bench and in the field — bearing failure modes, runout measurement, vibration symptoms, rebuild-vs-replace economics, and the cost framing we walk customers through before quoting work.",
+      "eyebrow": "Technical Insights \u2014 Spindle",
+      "summary": "When a spindle starts misbehaving, the gap between 'noisy bearing' and 'salvageable taper' is where money is made or lost.",
       "consolidates_signal_for": "/spindle-grinding/",
       "expert_voice": [
         "Ken (shop owner, 30+ years on spindles)",
@@ -290,7 +290,7 @@
       "slug": "cnc-control-systems",
       "title": "CNC Control Systems",
       "h1": "CNC Control Systems: Mazatrol, Fanuc, Siemens, Heidenhain, OSP",
-      "eyebrow": "Technical Insights — Controls",
+      "eyebrow": "Technical Insights \u2014 Controls",
       "summary": "The control is often the limiting factor, not the iron. This pillar covers the diagnostic reasoning, retrofit decisions, and parts-availability reality for the five major control platforms we service. Alarm codes, generation jumps, legacy-control support, and the control-vs-mechanical fault distinction.",
       "consolidates_signal_for": "/repairs/",
       "expert_voice": [
@@ -557,7 +557,7 @@
       "slug": "way-covers-engineering",
       "title": "Way Covers Engineering",
       "h1": "Way Covers Engineering: Telescoping, Bellows, Roll-Up, and Custom",
-      "eyebrow": "Technical Insights — Way Covers",
+      "eyebrow": "Technical Insights \u2014 Way Covers",
       "summary": "Way covers are often the cheapest thing on the machine that, when it fails, makes the most expensive thing on the machine fail. This pillar covers the engineering decisions behind cover style selection, OEM-vs-custom routing, field measurement, and the lead-time realities of cover replacement across legacy and current machine generations.",
       "consolidates_signal_for": "/way-covers/",
       "expert_voice": [
@@ -826,7 +826,7 @@
       "slug": "field-service-logistics",
       "title": "Field Service & Logistics (Midwest)",
       "h1": "CNC Field Service and Logistics Across the Midwest",
-      "eyebrow": "Technical Insights — Field Service",
+      "eyebrow": "Technical Insights \u2014 Field Service",
       "summary": "Real-world coverage of a seven-state field-service footprint from Waterloo, Iowa. Drive-time radius reality, when a machine ships to us vs. when we go to the shop, what's in the service truck, and how shops in different parts of the network should think about service-call timing.",
       "consolidates_signal_for": "/service-area/",
       "expert_voice": [
@@ -1100,7 +1100,7 @@
       "slug": "buying-owning-used-cnc",
       "title": "Buying & Owning Used CNC",
       "h1": "Buying and Owning Used CNC: Inspection, Costs, and Retrofits",
-      "eyebrow": "Technical Insights — Used CNC",
+      "eyebrow": "Technical Insights \u2014 Used CNC",
       "summary": "Shops buy used iron all the time. The diligence step is where money is made or lost. This pillar covers inspection checklists by failure-prone subsystem, era-by-era buying guides for the major OEMs we service, total-cost-of-ownership math, and the retrofit-vs-replace decision for legacy machines.",
       "consolidates_signal_for": "/repairs/",
       "expert_voice": [

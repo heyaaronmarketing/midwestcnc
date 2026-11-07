@@ -1,6 +1,6 @@
 ---
 title: "DMG Mori NTX Integrated Mill-Turn Repair"
-meta_description: "DMG Mori NTX Integrated Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "DMG Mori NTX Integrated Mill-Turn repair across the Midwest. Models, failure patterns, control notes."
 h1: "DMG Mori NTX Integrated Mill-Turn Repair"
 slug: "dmg-mori-ntx"
 page_type: "cnc_spindle"

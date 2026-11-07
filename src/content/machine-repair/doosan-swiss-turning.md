@@ -1,6 +1,6 @@
 ---
 title: "Doosan Swiss-Type / DST Repair"
-meta_description: "Doosan Swiss-Type / DST repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Doosan Swiss-Type / DST repair across the Midwest. Models, failure patterns, control notes."
 h1: "Doosan Swiss-Type / DST Repair"
 slug: "doosan-swiss-turning"
 page_type: "cnc_spindle"

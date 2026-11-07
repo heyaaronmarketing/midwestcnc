@@ -1,13 +1,13 @@
 ---
-title: "Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines"
-meta_description: "Series 0 Legacy control repair across the Midwest. 1980s through 1990s. Common faults, parts availability, and battery/memory/parameter recovery."
-h1: "Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines"
+title: "Way Covers for Series 0 Legacy Era Machines"
+meta_description: "Series 0 Legacy control repair across the Midwest. 1980s through 1990s."
+h1: "Way Covers for Series 0 Legacy Era Machines"
 slug: "fanuc-way-covers-series-0-legacy"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines"
+    serviceType: "Way Covers for Series 0 Legacy Era Machines"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Fanuc Control Generation</p>
-    <h1>Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines</h1>
+    <h1>Way Covers for Series 0 Legacy Era Machines</h1>
     <p>Way covers on Fanuc Series 0 / 0M / 0T era machines are almost universally custom-fabrication. These are deep-legacy machines from the 1980s and 1990s; OEM cover part numbers for the original integrators (Doosan, other Asian OEMs) are largely discontinued. We build to spec from existing covers, original drawings, or measurements off the machine.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

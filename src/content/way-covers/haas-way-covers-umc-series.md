@@ -1,6 +1,6 @@
 ---
 title: "Haas UMC Series Way Covers"
-meta_description: "Haas UMC Universal 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Haas UMC Universal 5-Axis repair across the Midwest. Models, failure patterns, control notes."
 h1: "Haas UMC Series Way Covers"
 slug: "haas-way-covers-umc-series"
 page_type: "cnc_spindle"

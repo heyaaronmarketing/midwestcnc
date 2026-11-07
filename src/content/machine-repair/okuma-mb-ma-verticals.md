@@ -1,6 +1,6 @@
 ---
 title: "Okuma MB / MA Vertical Machining Repair"
-meta_description: "Okuma MB / MA Vertical Machining repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Okuma MB / MA Vertical Machining repair across the Midwest. Models, failure patterns, control notes."
 h1: "Okuma MB / MA Vertical Machining Repair"
 slug: "okuma-mb-ma-verticals"
 page_type: "cnc_spindle"

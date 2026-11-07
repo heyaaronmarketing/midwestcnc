@@ -1,13 +1,13 @@
 ---
-title: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair & Grinding"
-meta_description: "Okuma LAW / LFS Heavy repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair & Grinding"
+title: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair"
+meta_description: "Okuma LAW / LFS Heavy repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair"
 slug: "okuma-spindle-heavy-lathes"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair & Grinding"
+    serviceType: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma Heavy Lathes (LAW / LFS) Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma Heavy Lathes (LAW / LFS) Spindle Repair</h1>
     <p>Okuma LAW and LFS heavy-lathe spindles — LAW 1000 through 3000 heavy lathes and LFS-590 flat-bed turning — handle very large workpieces under very heavy cuts. The spindles are scaled to match: larger bore, larger bearings, heavier-duty drives. Wear patterns track the loads more than the cycle count — these machines see fewer cycles but each one matters more.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

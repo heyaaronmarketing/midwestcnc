@@ -1,6 +1,6 @@
 ---
 title: "Okuma OSP-P200 Repair"
-meta_description: "OSP-P200 control repair across the Midwest. Roughly 2003 through 2012. Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "OSP-P200 control repair across the Midwest. Roughly 2003 through 2012."
 h1: "Okuma OSP-P200 Repair"
 slug: "okuma-osp-p200"
 page_type: "cnc_spindle"

@@ -1,6 +1,6 @@
 ---
 title: "Mazak HCN Horizontal Way Covers"
-meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, failure patterns, control notes."
 h1: "Mazak HCN Horizontal Way Covers"
 slug: "mazak-way-covers-hcn-horizontal"
 page_type: "cnc_spindle"

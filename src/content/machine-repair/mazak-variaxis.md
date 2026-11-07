@@ -1,6 +1,6 @@
 ---
 title: "Mazak Variaxis Repair & Service"
-meta_description: "Mazak 5-axis trunnion verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Mazak 5-axis trunnion verticals repair across the Midwest. Models, failure patterns, control notes."
 h1: "Mazak Variaxis Repair & Service"
 slug: "mazak-variaxis"
 page_type: "cnc_spindle"

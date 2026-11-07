@@ -1,13 +1,13 @@
 ---
-title: "Okuma MULTUS B-Axis Multitasking Spindle Repair & Grinding"
-meta_description: "Okuma MULTUS Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Okuma MULTUS B-Axis Multitasking Spindle Repair & Grinding"
+title: "Okuma MULTUS B-Axis Multitasking Spindle Repair"
+meta_description: "Okuma MULTUS Multitasking repair across the Midwest. Models, failure patterns, control notes."
+h1: "Okuma MULTUS B-Axis Multitasking Spindle Repair"
 slug: "okuma-spindle-multus"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Okuma MULTUS B-Axis Multitasking Spindle Repair & Grinding"
+    serviceType: "Okuma MULTUS B-Axis Multitasking Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Okuma Series Repair</p>
-    <h1>Okuma MULTUS B-Axis Multitasking Spindle Repair &amp; Grinding</h1>
+    <h1>Okuma MULTUS B-Axis Multitasking Spindle Repair</h1>
     <p>MULTUS spindles are Okuma&#x27;s B-axis multitasking platform — MULTUS B200 through B750 (with II variants), MULTUS U3000 through U5000 large-envelope builds, plus the historic MacTurn predecessors. The B-axis milling spindle is the highest-stress component on MULTUS just as on Mazak Integrex. Okuma&#x27;s thermal compensation framework makes B-axis spindle service more predictable than on platforms without the same hardware.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

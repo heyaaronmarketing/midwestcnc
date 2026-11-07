@@ -1,6 +1,6 @@
 ---
 title: "Haas Toolroom Lathe Repair & Service"
-meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, failure patterns, control notes."
 h1: "Haas Toolroom Lathe Repair & Service"
 slug: "haas-toolroom-lathes"
 page_type: "cnc_spindle"

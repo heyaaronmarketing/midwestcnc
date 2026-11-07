@@ -1,6 +1,6 @@
 ---
 title: "Siemens 840D Repair on DMG Mori"
-meta_description: "Siemens 840D / 840D solutionline control repair across the Midwest. Late 1990s through present (solutionline current). Common faults, parts availability, and battery/memory/parameter recovery."
+meta_description: "Siemens 840D / 840D solutionline control repair across the Midwest. Late 1990s through present (solutionline current)."
 h1: "Siemens 840D Repair on DMG Mori"
 slug: "dmg-mori-siemens-840d"
 page_type: "cnc_spindle"

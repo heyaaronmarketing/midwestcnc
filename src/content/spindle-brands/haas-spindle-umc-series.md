@@ -1,13 +1,13 @@
 ---
-title: "Haas UMC Series Spindle Repair & Grinding"
-meta_description: "Haas UMC Universal 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "Haas UMC Series Spindle Repair & Grinding"
+title: "Haas UMC Series Spindle Repair"
+meta_description: "Haas UMC Universal 5-Axis repair across the Midwest. Models, failure patterns, control notes."
+h1: "Haas UMC Series Spindle Repair"
 slug: "haas-spindle-umc-series"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Haas UMC Series Spindle Repair & Grinding"
+    serviceType: "Haas UMC Series Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Haas Series Repair</p>
-    <h1>Haas UMC Series Spindle Repair &amp; Grinding</h1>
+    <h1>Haas UMC Series Spindle Repair</h1>
     <p>UMC spindles are 5-axis trunnion-table machines — UMC-350 through UMC-1600 with SS variants on several sizes. The work is 5-axis finishing where tool-tip accuracy depends on spindle geometry staying tight to the trunnion centerline. Post-rebuild RTCP verification is part of every spindle service on this platform — we don&#x27;t hand back a UMC spindle without confirming kinematic accuracy.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

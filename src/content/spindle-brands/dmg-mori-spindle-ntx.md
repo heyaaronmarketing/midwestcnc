@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori NTX Integrated Mill-Turn Spindle Repair & Grinding"
-meta_description: "DMG Mori NTX Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori NTX Integrated Mill-Turn Spindle Repair & Grinding"
+title: "DMG Mori NTX Integrated Mill-Turn Spindle Repair"
+meta_description: "DMG Mori NTX Mill-Turn repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori NTX Integrated Mill-Turn Spindle Repair"
 slug: "dmg-mori-spindle-ntx"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori NTX Integrated Mill-Turn Spindle Repair & Grinding"
+    serviceType: "DMG Mori NTX Integrated Mill-Turn Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori NTX Integrated Mill-Turn Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori NTX Integrated Mill-Turn Spindle Repair</h1>
     <p>NTX integrated mill-turn machines run two high-capability spindles each: a turning spindle in the headstock and a full B-axis milling spindle in the upper-tooling. The milling spindle is the highest-stress component on these platforms because it sees axial, lateral, and angular cuts at varying loads. After-spindle B-axis kinematic verification is mandatory — multitasking tolerances depend on it.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
-meta_description: "DMG Mori SPRINT / MULTISPRINT repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
+title: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair"
+meta_description: "DMG Mori SPRINT / MULTISPRINT repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair"
 slug: "dmg-mori-spindle-sprint-multisprint"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
+    serviceType: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair</h1>
     <p>SPRINT and MULTISPRINT spindles are Swiss-type production turning — SPRINT 20/32/50/65 and MULTISPRINT 25/36. Swiss-type spindle service has its own patterns: guide bushing wear interacts with spindle service in ways straight turning doesn&#x27;t, and the sub-spindle synchronization on twin-spindle Swiss platforms requires careful verification after any spindle work.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

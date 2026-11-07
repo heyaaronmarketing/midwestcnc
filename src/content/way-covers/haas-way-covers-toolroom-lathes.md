@@ -1,6 +1,6 @@
 ---
 title: "Haas Toolroom Lathes Way Covers"
-meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, failure patterns, control notes."
 h1: "Haas Toolroom Lathes Way Covers"
 slug: "haas-way-covers-toolroom-lathes"
 page_type: "cnc_spindle"

@@ -1,13 +1,13 @@
 ---
-title: "DMG Mori CMX / CMX U Spindle Repair & Grinding"
-meta_description: "DMG Mori CMX Entry & 5-Sided repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
-h1: "DMG Mori CMX / CMX U Spindle Repair & Grinding"
+title: "DMG Mori CMX / CMX U Spindle Repair"
+meta_description: "DMG Mori CMX Entry & 5-Sided repair across the Midwest. Models, failure patterns, control notes."
+h1: "DMG Mori CMX / CMX U Spindle Repair"
 slug: "dmg-mori-spindle-cmx"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "DMG Mori CMX / CMX U Spindle Repair & Grinding"
+    serviceType: "DMG Mori CMX / CMX U Spindle Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">DMG Mori Series Repair</p>
-    <h1>DMG Mori CMX / CMX U Spindle Repair &amp; Grinding</h1>
+    <h1>DMG Mori CMX / CMX U Spindle Repair</h1>
     <p>CMX spindles are the entry-production end of the DMG Mori lineup — CMX 600V through 1300V verticals, CMX 50U and 70U 5-axis universals, the CMX 320V compact. The platform is built for accessibility and cost; spindle wear patterns in heavy-use environments outpace the higher-end DMU and NVX machines because the bearing-pack design is lighter-duty.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>

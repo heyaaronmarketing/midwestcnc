@@ -1,6 +1,6 @@
 ---
 title: "Doosan Puma V / VT / VTR Way Covers"
-meta_description: "Doosan Puma Vertical Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
+meta_description: "Doosan Puma Vertical Turning repair across the Midwest. Models, failure patterns, control notes."
 h1: "Doosan Puma V / VT / VTR Way Covers"
 slug: "doosan-way-covers-puma-vertical-turning"
 page_type: "cnc_spindle"

@@ -1,13 +1,13 @@
 ---
-title: "Mazatrol Smooth Control Repair (SmoothX / SmoothG / SmoothAi)"
-meta_description: "Mazatrol SmoothX, SmoothG, SmoothAi control repair across the Midwest. 2013 through present. Common faults, parts availability, and battery/memory/parameter recovery."
-h1: "Mazatrol Smooth Control Repair (SmoothX / SmoothG / SmoothAi)"
+title: "Mazatrol Smooth Control Repair"
+meta_description: "Mazatrol SmoothX, SmoothG, SmoothAi control repair across the Midwest. 2013 through present."
+h1: "Mazatrol Smooth Control Repair"
 slug: "mazak-smooth-control"
 page_type: "cnc_spindle"
 schema_data:
   service:
     "@type": Service
-    serviceType: "Mazatrol Smooth Control Repair (SmoothX / SmoothG / SmoothAi)"
+    serviceType: "Mazatrol Smooth Control Repair"
     provider:
       "@id": "#org"
     areaServed:
@@ -30,7 +30,7 @@ schema_data:
   <div class="brand-hero-overlay" aria-hidden="true"></div>
   <div class="brand-hero-content">
     <p class="eyebrow">Mazak Control Generation</p>
-    <h1>Mazatrol Smooth Control Repair (SmoothX / SmoothG / SmoothAi)</h1>
+    <h1>Mazatrol Smooth Control Repair</h1>
     <p>Smooth is Mazatrol&#x27;s current generation — SmoothX on high-end multitasking and 5-axis platforms, SmoothG on production lathes and VMCs, SmoothAi on the latest Ultra and current-flagship machines. The Smooth generation is recent enough that hardware failure is uncommon; most service work is integration, networking, MTConnect setup, parameter backup, and USB media handling rather than reactive repair.</p>
     <div class="cta-row">
       <a class="cta-button" href="/get-a-quote/">Get a Quote</a>
