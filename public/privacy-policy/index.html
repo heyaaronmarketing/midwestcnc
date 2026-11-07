@@ -1794,6 +1794,26 @@ section.insight-sources {
 .footer-hours-row dd { color: var(--muted); margin: 0; }
 .footer-hours-note { font-size: 0.82rem; color: var(--muted); font-style: italic; max-width: 26ch; }
 
+.footer-credit {
+  max-width: var(--max-wide);
+  margin: var(--s-5) auto 0;
+  padding: var(--s-4) var(--s-5) 0;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.footer-credit .site-credit {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.footer-credit .site-credit a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.footer-credit .site-credit a:hover { color: var(--accent); }
+
 @media (max-width: 700px) {
   .footer-inner { grid-template-columns: 1fr; gap: var(--s-5); }
 }
@@ -3126,6 +3146,12 @@ Waterloo, Iowa<br>
       </dl>
       <p class="footer-hours-note">Machine down outside these hours? Leave a message — we check it first thing.</p>
     </div>
+  </div>
+  <div class="footer-credit">
+    <p class="site-credit">
+      Website, local SEO &amp; AI-search optimization by
+      <a href="https://aaron.chat/" title="Hey Aaron! Marketing — marketing for service businesses">Hey Aaron! Marketing</a>.
+    </p>
   </div>
 </footer>
 <div class="mobile-cta-bar" role="region" aria-label="Quick contact">
