@@ -77,8 +77,14 @@ export default {
     ctx.waitUntil(runCaseStudyRefresh(env, { source: "cron", trigger: event.cron }));
   },
 
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
+
+    // Fire-and-forget traffic logging — captures AI bot crawls and
+    // external (AI engine + search engine) referrals. Only HTML page
+    // requests; skips static assets, /api/, /admin/, /cdn-cgi/. Runs
+    // async so it never blocks the response.
+    maybeLogTraffic(request, env, ctx, url);
 
     if (url.pathname === "/api/quote") {
       if (request.method === "POST") return handleQuote(request, env);
@@ -427,6 +433,10 @@ async function handleAdmin(request, env, url) {
     if (method === "GET") return handleCaseStudyAdminPage(env);
     if (method === "POST") return handleCaseStudyUpload(request, env, url);
     return new Response("Method not allowed", { status: 405 });
+  }
+  if (path === "/admin/traffic") {
+    if (method !== "GET") return new Response("Method not allowed", { status: 405 });
+    return handleTrafficAdminPage(env);
   }
   if (path === "/admin/case-study/refresh") {
     if (method !== "POST") return new Response("Method not allowed", { status: 405 });
@@ -777,6 +787,7 @@ function renderLayout(title, body, opts = {}) {
       <span class="brand">Midwest CNC — Admin</span>
       <a href="/admin">Leads</a>
       <a href="/admin/case-study">Case Study</a>
+      <a href="/admin/traffic">Traffic</a>
       <a href="/admin/export.csv">Export CSV</a>
       <span class="spacer"></span>
       <a href="/admin/logout">Sign out</a>
@@ -982,13 +993,14 @@ async function handleCaseStudyJson(env) {
   }
   await ensureCaseStudySchema(env);
 
-  const [daily, queries, pages, ai, metaRows, leadRow] = await Promise.all([
+  const [daily, queries, pages, ai, metaRows, leadRow, traffic] = await Promise.all([
     env.DB.prepare("SELECT date, clicks, impressions, position FROM cs_gsc_daily ORDER BY date").all(),
     env.DB.prepare("SELECT query, clicks, position FROM cs_gsc_queries WHERE clicks > 0 ORDER BY clicks DESC LIMIT 25").all(),
     env.DB.prepare("SELECT page, clicks, impressions, position FROM cs_gsc_pages WHERE clicks > 0 ORDER BY clicks DESC LIMIT 25").all(),
     env.DB.prepare("SELECT date, citations, cited_pages FROM cs_ai_daily ORDER BY date").all(),
     env.DB.prepare("SELECT k, v FROM cs_meta").all(),
     env.DB.prepare("SELECT COUNT(*) AS total, SUM(email_sent) AS delivered FROM quotes").first().catch(() => null),
+    caseStudyTrafficSection(env),
   ]);
 
   const meta = {};
@@ -1101,6 +1113,7 @@ async function handleCaseStudyJson(env) {
       delivery_rate_pct: leadRow && leadRow.total ? Math.round((leadRow.delivered / leadRow.total) * 100) : null,
       source: "Cloudflare D1 (quotes table)",
     },
+    traffic_signals: traffic,
     site_structure: {
       pages: 297,
       schema_nodes: 1768,
@@ -1648,4 +1661,272 @@ async function pullBing(env) {
     await env.DB.batch(stmts);
   }
   return { bing_daily_rows: stats.length };
+}
+
+// =====================================================================
+// Server-side traffic logging — AI bot crawls + external referrals
+// =====================================================================
+// Logs every HTML page request that has either (a) a classifiable
+// AI-bot user agent or (b) an external referer from a known AI engine
+// or major search engine. Skips static assets, /api/, /admin/,
+// /cdn-cgi/ — those create noise, not signal.
+//
+// Writes are fire-and-forget via ctx.waitUntil so page response time
+// is never affected by D1 latency. Logging failures are swallowed.
+// =====================================================================
+
+const TRAFFIC_SCHEMA = `
+CREATE TABLE IF NOT EXISTS traffic_log (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts TEXT NOT NULL,
+  path TEXT NOT NULL,
+  bot TEXT,
+  referer_host TEXT,
+  country TEXT,
+  user_agent TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_traffic_ts ON traffic_log(ts DESC);
+CREATE INDEX IF NOT EXISTS idx_traffic_bot ON traffic_log(bot);
+CREATE INDEX IF NOT EXISTS idx_traffic_ref ON traffic_log(referer_host);
+`;
+
+// AI bot user-agent patterns. Order matters — more specific first.
+const AI_BOT_PATTERNS = [
+  ["GPTBot",             /GPTBot/i],
+  ["ChatGPT-User",       /ChatGPT-User/i],
+  ["OAI-SearchBot",      /OAI-SearchBot/i],
+  ["ClaudeBot",          /ClaudeBot/i],
+  ["Claude-Web",         /Claude-Web/i],
+  ["anthropic-ai",       /anthropic-ai/i],
+  ["PerplexityBot",      /PerplexityBot/i],
+  ["Perplexity-User",    /Perplexity-User/i],
+  ["Google-Extended",    /Google-Extended/i],
+  ["GoogleOther",        /GoogleOther/i],
+  ["Applebot-Extended",  /Applebot-Extended/i],
+  ["meta-externalagent", /meta-externalagent/i],
+  ["FacebookBot",        /FacebookBot/i],
+  ["Amazonbot",          /Amazonbot/i],
+  ["cohere-ai",          /cohere-ai/i],
+  ["CCBot",              /CCBot/i],
+  ["Bytespider",         /Bytespider/i],
+  ["MistralAI-User",     /MistralAI-User/i],
+  ["Diffbot",            /Diffbot/i],
+  // Traditional search bots — we track them separately but same table
+  ["Googlebot",          /Googlebot(?!-Image)/i],
+  ["Bingbot",            /Bingbot/i],
+  ["DuckDuckBot",        /DuckDuckBot/i],
+  ["YandexBot",          /YandexBot/i],
+  ["Baiduspider",        /Baiduspider/i],
+];
+
+// Referer hosts that count as AI-engine traffic. Match on hostname only.
+const AI_REFERER_HOSTS = new Set([
+  "chat.openai.com",
+  "chatgpt.com",
+  "perplexity.ai",
+  "gemini.google.com",
+  "bard.google.com",
+  "copilot.microsoft.com",
+  "claude.ai",
+  "poe.com",
+  "you.com",
+  "andisearch.com",
+  "phind.com",
+  "deepseek.com",
+  "mistral.ai",
+  "huggingface.co",
+]);
+
+function classifyBot(ua) {
+  if (!ua) return null;
+  for (const [name, pat] of AI_BOT_PATTERNS) {
+    if (pat.test(ua)) return name;
+  }
+  return null;
+}
+
+function extractRefererHost(refererHeader, selfHost) {
+  if (!refererHeader) return null;
+  try {
+    const h = new URL(refererHeader).hostname.toLowerCase().replace(/^www\./, "");
+    if (!h) return null;
+    if (h === selfHost || h.endsWith("." + selfHost)) return null;
+    return h;
+  } catch (_) {
+    return null;
+  }
+}
+
+function maybeLogTraffic(request, env, ctx, url) {
+  if (!env.DB || !ctx) return;
+  // Only HTML pages
+  const path = url.pathname;
+  if (
+    path.startsWith("/assets/") ||
+    path.startsWith("/api/") ||
+    path.startsWith("/admin") ||
+    path.startsWith("/cdn-cgi/") ||
+    path === "/favicon.svg" ||
+    path === "/robots.txt" ||
+    path === "/sitemap.xml" ||
+    path === "/llms.txt" ||
+    path.endsWith(".webp") || path.endsWith(".png") || path.endsWith(".jpg") ||
+    path.endsWith(".css") || path.endsWith(".js") || path.endsWith(".svg") ||
+    path.endsWith(".txt") || path.endsWith(".xml") || path.endsWith(".ico")
+  ) return;
+
+  const ua = request.headers.get("user-agent") || "";
+  const ref = request.headers.get("referer") || "";
+  const bot = classifyBot(ua);
+  const refererHost = extractRefererHost(ref, "midwestcncservices.com");
+
+  // Only log when there's something interesting to log
+  if (!bot && !refererHost) return;
+
+  // If referer is a known AI engine, upgrade signal visibility
+  const isAiReferer = refererHost && AI_REFERER_HOSTS.has(refererHost);
+
+  // Cloudflare provides country in request.cf
+  const country = (request.cf && request.cf.country) || null;
+
+  ctx.waitUntil(
+    (async () => {
+      try {
+        await env.DB.exec(TRAFFIC_SCHEMA.replace(/\n/g, " ")).catch(() => {});
+        await env.DB.prepare(
+          "INSERT INTO traffic_log (ts, path, bot, referer_host, country, user_agent) " +
+          "VALUES (?, ?, ?, ?, ?, ?)"
+        ).bind(
+          new Date().toISOString(),
+          path,
+          bot,
+          refererHost,
+          country,
+          ua.slice(0, 500),
+        ).run();
+      } catch (e) {
+        console.log("traffic_log insert failed:", e && e.message);
+      }
+    })()
+  );
+}
+
+// ---------- /admin/traffic ----------
+
+async function handleTrafficAdminPage(env) {
+  if (!env.DB) {
+    return htmlResponse(renderLayout("Traffic", `<p>DB not configured.</p>`));
+  }
+  await env.DB.exec(TRAFFIC_SCHEMA.replace(/\n/g, " ")).catch(() => {});
+
+  // Last 7 days of each: AI bot crawls, external referrals, top pages
+  const since = new Date(Date.now() - 7 * 86400000).toISOString();
+
+  const [botSummary, refSummary, aiRefSummary, topPages, totals] = await Promise.all([
+    env.DB.prepare(
+      "SELECT bot, COUNT(*) AS n FROM traffic_log WHERE ts > ? AND bot IS NOT NULL GROUP BY bot ORDER BY n DESC"
+    ).bind(since).all(),
+    env.DB.prepare(
+      "SELECT referer_host, COUNT(*) AS n FROM traffic_log WHERE ts > ? AND bot IS NULL AND referer_host IS NOT NULL GROUP BY referer_host ORDER BY n DESC LIMIT 25"
+    ).bind(since).all(),
+    env.DB.prepare(
+      "SELECT referer_host, COUNT(*) AS n FROM traffic_log WHERE ts > ? AND referer_host IN (" +
+      Array.from(AI_REFERER_HOSTS).map((h) => `'${h}'`).join(",") +
+      ") GROUP BY referer_host ORDER BY n DESC"
+    ).bind(since).all(),
+    env.DB.prepare(
+      "SELECT path, COUNT(*) AS n FROM traffic_log WHERE ts > ? AND bot IS NOT NULL GROUP BY path ORDER BY n DESC LIMIT 15"
+    ).bind(since).all(),
+    env.DB.prepare(
+      "SELECT " +
+      "(SELECT COUNT(*) FROM traffic_log WHERE ts > ? AND bot IS NOT NULL) AS crawls, " +
+      "(SELECT COUNT(*) FROM traffic_log WHERE ts > ? AND bot IS NULL AND referer_host IS NOT NULL) AS referrals, " +
+      "(SELECT COUNT(DISTINCT path) FROM traffic_log WHERE ts > ? AND bot IS NOT NULL) AS unique_pages_crawled, " +
+      "(SELECT COUNT(*) FROM traffic_log) AS all_time"
+    ).bind(since, since, since).first(),
+  ]);
+
+  const row = (label, n) => `
+    <tr><td>${esc(label)}</td><td style="text-align:right;font-variant-numeric:tabular-nums;">${n.toLocaleString()}</td></tr>`;
+
+  const body = `
+    <p><a href="/admin">&larr; All leads</a></p>
+    <h1>Traffic — last 7 days</h1>
+    <p style="color:var(--muted);">
+      Server-side log of AI bot crawls + external referrals.
+      Updated live per request (fire-and-forget).
+    </p>
+
+    <div class="detail">
+      <h2>Summary</h2>
+      <table class="admin-table" style="max-width:500px;">
+        <tbody>
+          ${row("AI/search bot crawl hits", totals.crawls || 0)}
+          ${row("External referrals", totals.referrals || 0)}
+          ${row("Unique pages crawled by bots", totals.unique_pages_crawled || 0)}
+          ${row("All-time logged events", totals.all_time || 0)}
+        </tbody>
+      </table>
+
+      <h2>AI bot crawls by bot (last 7d)</h2>
+      ${botSummary.results?.length ? `
+        <table class="admin-table" style="max-width:500px;">
+          <thead><tr><th>Bot</th><th style="text-align:right;">Hits</th></tr></thead>
+          <tbody>${botSummary.results.map((r) => row(r.bot, r.n)).join("")}</tbody>
+        </table>` : `<p class="empty">No bot crawls yet. Logging just started — check back in a day.</p>`}
+
+      <h2>AI engine referrals (clicks from ChatGPT/Perplexity/Gemini/etc.)</h2>
+      ${aiRefSummary.results?.length ? `
+        <table class="admin-table" style="max-width:500px;">
+          <thead><tr><th>AI engine</th><th style="text-align:right;">Clicks</th></tr></thead>
+          <tbody>${aiRefSummary.results.map((r) => row(r.referer_host, r.n)).join("")}</tbody>
+        </table>` : `<p class="empty">No AI referral clicks logged yet.</p>`}
+
+      <h2>All external referrals (last 7d, top 25)</h2>
+      ${refSummary.results?.length ? `
+        <table class="admin-table" style="max-width:600px;">
+          <thead><tr><th>Source</th><th style="text-align:right;">Visits</th></tr></thead>
+          <tbody>${refSummary.results.map((r) => row(r.referer_host, r.n)).join("")}</tbody>
+        </table>` : `<p class="empty">No external referrals logged yet.</p>`}
+
+      <h2>Top pages crawled by bots (last 7d)</h2>
+      ${topPages.results?.length ? `
+        <table class="admin-table">
+          <thead><tr><th>Path</th><th style="text-align:right;">Bot hits</th></tr></thead>
+          <tbody>${topPages.results.map((r) => `<tr><td><code>${esc(r.path)}</code></td><td style="text-align:right;font-variant-numeric:tabular-nums;">${r.n.toLocaleString()}</td></tr>`).join("")}</tbody>
+        </table>` : `<p class="empty">No bot crawls yet.</p>`}
+    </div>
+  `;
+  return htmlResponse(renderLayout("Traffic — Midwest CNC Admin", body));
+}
+
+// ---------- /api/case-study.json: ai_crawls section ----------
+// Called from handleCaseStudyJson to mix traffic data into the JSON.
+
+async function caseStudyTrafficSection(env) {
+  try {
+    await env.DB.exec(TRAFFIC_SCHEMA.replace(/\n/g, " ")).catch(() => {});
+    const since = new Date(Date.now() - 7 * 86400000).toISOString();
+    const [bots, refs, total] = await Promise.all([
+      env.DB.prepare("SELECT bot, COUNT(*) AS n FROM traffic_log WHERE ts > ? AND bot IS NOT NULL GROUP BY bot ORDER BY n DESC").bind(since).all(),
+      env.DB.prepare(
+        "SELECT referer_host, COUNT(*) AS n FROM traffic_log WHERE ts > ? AND referer_host IN (" +
+        Array.from(AI_REFERER_HOSTS).map((h) => `'${h}'`).join(",") +
+        ") GROUP BY referer_host ORDER BY n DESC"
+      ).bind(since).all(),
+      env.DB.prepare(
+        "SELECT COUNT(*) AS crawls, COUNT(DISTINCT path) AS pages FROM traffic_log WHERE ts > ? AND bot IS NOT NULL"
+      ).bind(since).first(),
+    ]);
+    return {
+      window_days: 7,
+      bot_crawls: total?.crawls || 0,
+      pages_crawled: total?.pages || 0,
+      by_bot: (bots.results || []).map((r) => ({ bot: r.bot, hits: r.n })),
+      ai_engine_referrals: (refs.results || []).map((r) => ({ engine: r.referer_host, clicks: r.n })),
+      source: "Cloudflare Worker traffic_log",
+    };
+  } catch (e) {
+    return { error: String(e && e.message || e) };
+  }
 }
