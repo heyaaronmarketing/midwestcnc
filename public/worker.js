@@ -996,8 +996,29 @@ async function handleCaseStudyJson(env) {
   const aiRows = ai.results || [];
   const aiSummary = summarizeAi(aiRows);
 
+  // All-time GSC totals — the biggest case-study numbers
+  const allTime = totals(dailyRows);
+  const firstDate = dailyRows.length ? dailyRows[0].date : null;
+  const lastDate = dailyRows.length ? dailyRows[dailyRows.length - 1].date : null;
+
+  // Headline stats — null-safe (deltas only appear when prior window exists)
+  const headline = [];
+  if (aiSummary.delta.citations_pct !== null && aiSummary.delta.citations_pct !== undefined) {
+    headline.push({ label: "AI citations, last 30d vs prior 30d", value: aiSummary.last30.citations, delta_pct: aiSummary.delta.citations_pct, source: "Bing AI Performance Overview" });
+  }
+  if (gsc.delta.clicks_pct !== null && gsc.delta.clicks_pct !== undefined) {
+    headline.push({ label: "Google clicks, last 90d vs prior 90d", value: gsc.last90.clicks, delta_pct: gsc.delta.clicks_pct, source: "Google Search Console" });
+  }
+  headline.push(
+    { label: "AI citations, all-time", value: aiSummary.total, source: "Bing AI Performance Overview" },
+    { label: "Google clicks, all-time", value: allTime.clicks, source: "Google Search Console" },
+    { label: "Google impressions, all-time", value: allTime.impressions, source: "Google Search Console" },
+    { label: "Avg Google rank, last 90d", value: round(gsc.last90.position, 1), source: "Google Search Console" },
+    { label: "Lead form submissions", value: leadRow ? (leadRow.total || 0) : 0, source: "D1 (quotes table)" },
+  );
+
   return jsonResponse({
-    schema_version: "1.0",
+    schema_version: "1.1",
     slug: "midwestcnc",
     last_updated: new Date().toISOString(),
     data_as_of: meta.data_as_of || null,
@@ -1008,47 +1029,73 @@ async function handleCaseStudyJson(env) {
       service_area_states: 7,
       website: "https://midwestcncservices.com",
       launched: "2026-07-06",
+      bing_portfolio_topic: {
+        primary: meta.bing_topic_primary || null,
+        volume_range: meta.bing_topic_volume_range || null,
+        queries_range: meta.bing_topic_queries_range || null,
+        sites_range: meta.bing_topic_sites_range || null,
+      },
     },
-    headline_stats: [
-      { label: "Google clicks, last 90d", value: gsc.last90.clicks, delta_pct: gsc.delta.clicks_pct },
-      { label: "AI citations, last 30d", value: aiSummary.last30.citations, delta_pct: aiSummary.delta.citations_pct },
-      { label: "Avg Google rank, last 90d", value: round(gsc.last90.position, 1), delta: round(gsc.last90.position - gsc.prior90.position, 1) },
-      { label: "Total pages indexed", value: 297 },
-    ],
+    headline_stats: headline,
     google_search: {
-      window_days: 90,
-      clicks: gsc.last90.clicks,
-      impressions: gsc.last90.impressions,
-      avg_position: round(gsc.last90.position, 1),
-      queries_ranking: (queries.results || []).length,
-      prior_window: {
+      all_time: {
+        clicks: allTime.clicks,
+        impressions: allTime.impressions,
+        avg_position: round(allTime.position, 1),
+        days: dailyRows.length,
+        first_date: firstDate,
+        last_date: lastDate,
+      },
+      last_90d: {
+        clicks: gsc.last90.clicks,
+        impressions: gsc.last90.impressions,
+        avg_position: round(gsc.last90.position, 1),
+      },
+      prior_90d: {
         clicks: gsc.prior90.clicks,
         impressions: gsc.prior90.impressions,
         avg_position: round(gsc.prior90.position, 1),
       },
-      top_queries: (queries.results || []).slice(0, 10).map((q) => ({
+      delta_90d: {
+        clicks_pct: gsc.delta.clicks_pct,
+        impressions_pct: gsc.delta.impressions_pct,
+      },
+      queries_ranking: (queries.results || []).length,
+      top_queries: (queries.results || []).slice(0, 25).map((q) => ({
         query: q.query, clicks: q.clicks, position: round(q.position, 1),
       })),
-      top_pages: (pages.results || []).slice(0, 10).map((p) => ({
+      top_pages: (pages.results || []).slice(0, 25).map((p) => ({
         page: p.page, clicks: p.clicks, position: round(p.position, 1),
       })),
       daily: dailyRows.map((d) => ({ date: d.date, clicks: d.clicks, impressions: d.impressions })),
       source: "Google Search Console",
       updated: meta.gsc_updated || null,
+      last_error: meta.gsc_last_error || null,
     },
     ai_search: {
-      window_days: 30,
-      total_citations: aiSummary.last30.citations,
-      pages_cited: aiSummary.last30.pages,
+      all_time: {
+        total_citations: aiSummary.total,
+        days: aiRows.length,
+        first_date: aiRows.length ? aiRows[0].date : null,
+        last_date: aiRows.length ? aiRows[aiRows.length - 1].date : null,
+      },
+      last_30d: {
+        citations: aiSummary.last30.citations,
+        pages_cited: aiSummary.last30.pages,
+      },
+      prior_30d_citations: aiSummary.prior30,
+      delta_30d_pct: aiSummary.delta.citations_pct,
       best_day: aiSummary.best_day,
       monthly: aiSummary.monthly,
       daily: aiRows.map((d) => ({ date: d.date, citations: d.citations, cited_pages: d.cited_pages })),
-      source: "Google Search Console — AI Performance Overview",
+      source: "Bing — AI Performance Overview",
       updated: meta.ai_updated || null,
+      last_error: meta.ai_last_error || null,
     },
     leads: {
       total_submissions: leadRow ? (leadRow.total || 0) : 0,
       emails_delivered: leadRow ? (leadRow.delivered || 0) : 0,
+      delivery_rate_pct: leadRow && leadRow.total ? Math.round((leadRow.delivered / leadRow.total) * 100) : null,
       source: "Cloudflare D1 (quotes table)",
     },
     site_structure: {
@@ -1065,6 +1112,7 @@ async function handleCaseStudyJson(env) {
       "GitHub Actions weekly AI-drafted articles with 12 quality gates",
       "llms.txt + 442 FAQ Q&A pairs + 1,768 schema nodes",
       "Full form pipeline (Turnstile + Resend + D1 + Reply-To routing)",
+      "IndexNow protocol pings Bing/Yandex on every content refresh",
     ],
   });
 }
@@ -1116,7 +1164,9 @@ function totals(rows) {
 function summarizeAi(rows) {
   if (!rows.length) {
     return {
+      total: 0,
       last30: { citations: 0, pages: 0 },
+      prior30: 0,
       delta: { citations_pct: null },
       best_day: null,
       monthly: [],
@@ -1125,6 +1175,7 @@ function summarizeAi(rows) {
   const last30 = rows.slice(-30);
   const prior30 = rows.slice(-60, -30);
   const sumC = (rs) => rs.reduce((a, r) => a + r.citations, 0);
+  const total = sumC(rows);
   const l30 = sumC(last30);
   const p30 = sumC(prior30);
   const bestDay = rows.reduce((best, r) => (r.citations > (best?.citations || 0) ? r : best), null);
@@ -1136,7 +1187,9 @@ function summarizeAi(rows) {
     byMonth[m].days += 1;
   }
   return {
-    last30: { citations: l30, pages: Math.max(...last30.map((r) => r.cited_pages), 0) },
+    total,
+    last30: { citations: l30, pages: Math.max(0, ...last30.map((r) => r.cited_pages)) },
+    prior30: p30,
     delta: { citations_pct: p30 ? Math.round(((l30 - p30) / p30) * 100) : null },
     best_day: bestDay
       ? { date: bestDay.date, citations: bestDay.citations, cited_pages: bestDay.cited_pages }
@@ -1426,8 +1479,11 @@ async function pullGsc(env) {
   const sa = JSON.parse(env.GSC_SERVICE_ACCOUNT_JSON);
   const token = await mintGoogleAccessToken(sa, "https://www.googleapis.com/auth/webmasters.readonly");
 
+  // Pull the full 16-month window the GSC API allows (480 days to
+  // stay well under the 490-day ceiling). cs_gsc_daily upserts, so
+  // historic rows outside the window are preserved.
   const today = new Date();
-  const start = new Date(today.getTime() - 90 * 86400000);
+  const start = new Date(today.getTime() - 480 * 86400000);
   const fmt = (d) => d.toISOString().slice(0, 10);
   const startDate = fmt(start);
   const endDate = fmt(today);
