@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Siemens 840D (DMG Mori) | Midwest CNC Services"
+title: "Spindle Service on Siemens 840D (DMG Mori)"
 meta_description: "Siemens 840D control repair across the Midwest. Late 1990s through present (solutionline current). Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Siemens 840D (DMG Mori)"
 slug: "dmg-mori-spindle-siemens-840d"

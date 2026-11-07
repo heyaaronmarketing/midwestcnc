@@ -1,5 +1,5 @@
 ---
-title: "Amera-Seiki Spindle Repair | Midwest CNC Services"
+title: "Amera-Seiki Spindle Repair"
 meta_description: "Expert Amera-Seiki spindle repair across the Midwest. 3–4 weeks on most rebuilds. Experienced field technicians."
 h1: "Amera-Seiki Spindle Repair & Rebuilds"
 slug: "amera-seiki"

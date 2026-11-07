@@ -1,5 +1,5 @@
 ---
-title: "Doosan NHM / NHP / HC Horizontal Spindle Repair & Grinding | Midwest CNC Services"
+title: "Doosan NHM / NHP / HC Horizontal Spindle Repair & Grinding"
 meta_description: "Doosan NHM / NHP / HC repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan NHM / NHP / HC Horizontal Spindle Repair & Grinding"
 slug: "doosan-spindle-horizontals"

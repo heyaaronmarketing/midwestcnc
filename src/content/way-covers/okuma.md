@@ -1,5 +1,5 @@
 ---
-title: "Okuma CNC Way Covers | Midwest CNC Services"
+title: "Okuma CNC Way Covers"
 meta_description: "Expert Okuma way cover replacement across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Okuma CNC Way Cover Replacement"
 slug: "okuma"

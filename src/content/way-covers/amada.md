@@ -1,5 +1,5 @@
 ---
-title: "Amada CNC Way Covers | Midwest CNC Services"
+title: "Amada CNC Way Covers"
 meta_description: "Replacement Amada CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Amada CNC Way Cover Replacement"
 slug: "amada"

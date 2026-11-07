@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NHX / NH Horizontal Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori NHX / NH Horizontal Spindle Repair & Grinding"
 meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NHX / NH Horizontal Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-nhx-horizontals"

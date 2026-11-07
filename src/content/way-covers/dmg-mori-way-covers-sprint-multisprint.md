@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori SPRINT / MULTISPRINT Way Covers | Midwest CNC Services"
+title: "DMG Mori SPRINT / MULTISPRINT Way Covers"
 meta_description: "DMG Mori SPRINT / MULTISPRINT Swiss repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori SPRINT / MULTISPRINT Way Covers"
 slug: "dmg-mori-way-covers-sprint-multisprint"

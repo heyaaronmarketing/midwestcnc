@@ -1,5 +1,5 @@
 ---
-title: "Doosan DNM Vertical Machining Spindle Repair & Grinding | Midwest CNC Services"
+title: "Doosan DNM Vertical Machining Spindle Repair & Grinding"
 meta_description: "Doosan DNM Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan DNM Vertical Machining Spindle Repair & Grinding"
 slug: "doosan-spindle-dnm-verticals"

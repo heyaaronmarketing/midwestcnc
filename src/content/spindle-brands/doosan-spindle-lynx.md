@@ -1,5 +1,5 @@
 ---
-title: "Doosan Lynx Compact Turning Spindle Repair & Grinding | Midwest CNC Services"
+title: "Doosan Lynx Compact Turning Spindle Repair & Grinding"
 meta_description: "Doosan Lynx Compact Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Lynx Compact Turning Spindle Repair & Grinding"
 slug: "doosan-spindle-lynx"

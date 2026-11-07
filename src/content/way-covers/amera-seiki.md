@@ -1,5 +1,5 @@
 ---
-title: "Amera-Seiki CNC Way Covers | Midwest CNC Services"
+title: "Amera-Seiki CNC Way Covers"
 meta_description: "Replacement Amera-Seiki CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Amera-Seiki CNC Way Cover Replacement"
 slug: "amera-seiki"

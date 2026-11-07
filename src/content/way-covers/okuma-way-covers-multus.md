@@ -1,5 +1,5 @@
 ---
-title: "Okuma MULTUS Way Covers | Midwest CNC Services"
+title: "Okuma MULTUS Way Covers"
 meta_description: "Okuma MULTUS B-Axis Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma MULTUS Way Covers"
 slug: "okuma-way-covers-multus"

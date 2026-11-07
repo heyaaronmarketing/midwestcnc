@@ -1,5 +1,5 @@
 ---
-title: "Haas Spindle Repair | Midwest CNC Services"
+title: "Haas Spindle Repair"
 meta_description: "Expert Haas spindle repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Haas Spindle Repair & Rebuilds"
 slug: "haas"

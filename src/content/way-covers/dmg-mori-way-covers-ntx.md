@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NTX Way Covers | Midwest CNC Services"
+title: "DMG Mori NTX Way Covers"
 meta_description: "DMG Mori NTX Integrated Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NTX Way Covers"
 slug: "dmg-mori-way-covers-ntx"

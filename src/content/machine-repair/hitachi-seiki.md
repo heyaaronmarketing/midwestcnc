@@ -1,5 +1,5 @@
 ---
-title: "Hitachi Seiki CNC Machine Repair | Midwest CNC Services"
+title: "Hitachi Seiki CNC Machine Repair"
 meta_description: "Expert Hitachi Seiki CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Hitachi Seiki CNC Repair"
 slug: "hitachi-seiki"

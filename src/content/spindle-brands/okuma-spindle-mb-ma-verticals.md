@@ -1,5 +1,5 @@
 ---
-title: "Okuma MB / MA Vertical Spindle Repair & Grinding | Midwest CNC Services"
+title: "Okuma MB / MA Vertical Spindle Repair & Grinding"
 meta_description: "Okuma MB / MA Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma MB / MA Vertical Spindle Repair & Grinding"
 slug: "okuma-spindle-mb-ma-verticals"

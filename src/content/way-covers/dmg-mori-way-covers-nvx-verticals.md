@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NVX / NV / NVD Way Covers | Midwest CNC Services"
+title: "DMG Mori NVX / NV / NVD Way Covers"
 meta_description: "DMG Mori NVX / NV / NVD Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NVX / NV / NVD Way Covers"
 slug: "dmg-mori-way-covers-nvx-verticals"

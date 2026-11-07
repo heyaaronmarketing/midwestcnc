@@ -1,5 +1,5 @@
 ---
-title: "Okuma MU 5-Axis / MCR Bridge Spindle Repair & Grinding | Midwest CNC Services"
+title: "Okuma MU 5-Axis / MCR Bridge Spindle Repair & Grinding"
 meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma MU 5-Axis / MCR Bridge Spindle Repair & Grinding"
 slug: "okuma-spindle-v-bridge-mills"

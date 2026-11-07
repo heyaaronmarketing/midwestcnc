@@ -1,5 +1,5 @@
 ---
-title: "Mazak VTC + VCN Way Covers | Midwest CNC Services"
+title: "Mazak VTC + VCN Way Covers"
 meta_description: "Mazak VTC + VCN Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak VTC + VCN Way Covers"
 slug: "mazak-way-covers-vertical-machining-centers"

@@ -1,5 +1,5 @@
 ---
-title: "Mazak HCN Horizontal Spindle Repair & Grinding | Midwest CNC Services"
+title: "Mazak HCN Horizontal Spindle Repair & Grinding"
 meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak HCN Horizontal Spindle Repair & Grinding"
 slug: "mazak-spindle-hcn-horizontal"

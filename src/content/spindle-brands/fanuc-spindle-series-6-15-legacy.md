@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Fanuc Series 6 / 10 / 11 / 12 / 15 | Midwest CNC Services"
+title: "Spindle Service on Fanuc Series 6 / 10 / 11 / 12 / 15"
 meta_description: "Series 6 through 15 control repair across the Midwest. 1980s through 2000s. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Fanuc Series 6 / 10 / 11 / 12 / 15"
 slug: "fanuc-spindle-series-6-15-legacy"

@@ -1,5 +1,5 @@
 ---
-title: "Haas VF Series Way Covers | Midwest CNC Services"
+title: "Haas VF Series Way Covers"
 meta_description: "Haas VF Series Vertical Mills repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas VF Series Way Covers"
 slug: "haas-way-covers-vf-series"

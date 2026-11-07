@@ -1,5 +1,5 @@
 ---
-title: "Haas UMC Series Spindle Repair & Grinding | Midwest CNC Services"
+title: "Haas UMC Series Spindle Repair & Grinding"
 meta_description: "Haas UMC Universal 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas UMC Series Spindle Repair & Grinding"
 slug: "haas-spindle-umc-series"

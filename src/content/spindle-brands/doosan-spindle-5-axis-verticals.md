@@ -1,5 +1,5 @@
 ---
-title: "Doosan DVF / FM 5-Axis Vertical Spindle Repair & Grinding | Midwest CNC Services"
+title: "Doosan DVF / FM 5-Axis Vertical Spindle Repair & Grinding"
 meta_description: "Doosan DVF / FM 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan DVF / FM 5-Axis Vertical Spindle Repair & Grinding"
 slug: "doosan-spindle-5-axis-verticals"

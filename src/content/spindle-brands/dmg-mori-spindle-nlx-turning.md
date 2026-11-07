@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
 meta_description: "DMG Mori NLX / ALX repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-nlx-turning"

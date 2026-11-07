@@ -1,5 +1,5 @@
 ---
-title: "Mazak VTC + VCN Spindle Repair & Grinding | Midwest CNC Services"
+title: "Mazak VTC + VCN Spindle Repair & Grinding"
 meta_description: "Mazak VTC + VCN Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak VTC + VCN Spindle Repair & Grinding"
 slug: "mazak-spindle-vertical-machining-centers"

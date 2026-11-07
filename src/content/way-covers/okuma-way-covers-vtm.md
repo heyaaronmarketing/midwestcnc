@@ -1,5 +1,5 @@
 ---
-title: "Okuma VTM Way Covers | Midwest CNC Services"
+title: "Okuma VTM Way Covers"
 meta_description: "Okuma VTM Vertical Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma VTM Way Covers"
 slug: "okuma-way-covers-vtm"

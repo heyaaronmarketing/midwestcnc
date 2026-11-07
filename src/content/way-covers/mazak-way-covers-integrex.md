@@ -1,5 +1,5 @@
 ---
-title: "Mazak Integrex Way Covers | Midwest CNC Services"
+title: "Mazak Integrex Way Covers"
 meta_description: "Mazak Integrex Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Integrex Way Covers"
 slug: "mazak-way-covers-integrex"

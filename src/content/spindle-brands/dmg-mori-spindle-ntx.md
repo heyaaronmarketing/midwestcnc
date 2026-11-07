@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NTX Integrated Mill-Turn Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori NTX Integrated Mill-Turn Spindle Repair & Grinding"
 meta_description: "DMG Mori NTX Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NTX Integrated Mill-Turn Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-ntx"

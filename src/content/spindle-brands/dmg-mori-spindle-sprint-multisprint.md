@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
 meta_description: "DMG Mori SPRINT / MULTISPRINT repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-sprint-multisprint"

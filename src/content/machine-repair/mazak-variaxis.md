@@ -1,5 +1,5 @@
 ---
-title: "Mazak Variaxis Repair & Service | Midwest CNC Services"
+title: "Mazak Variaxis Repair & Service"
 meta_description: "Mazak 5-axis trunnion verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Variaxis Repair & Service"
 slug: "mazak-variaxis"

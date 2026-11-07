@@ -1,5 +1,5 @@
 ---
-title: "Okuma MULTUS B-Axis Multitasking Spindle Repair & Grinding | Midwest CNC Services"
+title: "Okuma MULTUS B-Axis Multitasking Spindle Repair & Grinding"
 meta_description: "Okuma MULTUS Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma MULTUS B-Axis Multitasking Spindle Repair & Grinding"
 slug: "okuma-spindle-multus"

@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Okuma OSP-P200 | Midwest CNC Services"
+title: "Spindle Service on Okuma OSP-P200"
 meta_description: "OSP-P200 control repair across the Midwest. Roughly 2003 through 2012. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Okuma OSP-P200"
 slug: "okuma-spindle-osp-p200"

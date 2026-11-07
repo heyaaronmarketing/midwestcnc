@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Heidenhain TNC (DMG Mori) | Midwest CNC Services"
+title: "Spindle Service on Heidenhain TNC (DMG Mori)"
 meta_description: "Heidenhain TNC control repair across the Midwest. iTNC 530 from ~2001, TNC 640 from 2012. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Heidenhain TNC (DMG Mori)"
 slug: "dmg-mori-spindle-heidenhain-tnc"

@@ -1,5 +1,5 @@
 ---
-title: "Doosan Puma MX / SMX Way Covers | Midwest CNC Services"
+title: "Doosan Puma MX / SMX Way Covers"
 meta_description: "Doosan Puma MX / SMX Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Puma MX / SMX Way Covers"
 slug: "doosan-way-covers-puma-mx-smx"

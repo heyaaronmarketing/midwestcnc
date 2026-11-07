@@ -1,5 +1,5 @@
 ---
-title: "Hitachi Seiki CNC Way Covers | Midwest CNC Services"
+title: "Hitachi Seiki CNC Way Covers"
 meta_description: "Replacement Hitachi Seiki CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Hitachi Seiki CNC Way Cover Replacement"
 slug: "hitachi-seiki"

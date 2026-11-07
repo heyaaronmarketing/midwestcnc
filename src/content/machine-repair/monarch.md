@@ -1,5 +1,5 @@
 ---
-title: "Monarch CNC Machine Repair | Midwest CNC Services"
+title: "Monarch CNC Machine Repair"
 meta_description: "Expert Monarch CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Monarch CNC Machine Repair & Service"
 slug: "monarch"

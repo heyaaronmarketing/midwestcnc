@@ -1,5 +1,5 @@
 ---
-title: "Makino Spindle Repair | Midwest CNC Services"
+title: "Makino Spindle Repair"
 meta_description: "Expert Makino spindle repair across the Midwest. 4–6 weeks on most rebuilds. Experienced field technicians."
 h1: "Makino Spindle Repair & Rebuilds"
 slug: "makino"

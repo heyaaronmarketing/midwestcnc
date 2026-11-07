@@ -1,5 +1,5 @@
 ---
-title: "Way Covers for Haas Classic Control Era Machines | Midwest CNC Services"
+title: "Way Covers for Haas Classic Control Era Machines"
 meta_description: "Haas Classic Control control repair across the Midwest. Through roughly 2014. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Haas Classic Control Era Machines"
 slug: "haas-way-covers-haas-classic-control"

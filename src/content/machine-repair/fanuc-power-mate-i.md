@@ -1,5 +1,5 @@
 ---
-title: "Fanuc Power Mate i Repair | Midwest CNC Services"
+title: "Fanuc Power Mate i Repair"
 meta_description: "Power Mate i control repair across the Midwest. 2000 through present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Fanuc Power Mate i Repair"
 slug: "fanuc-power-mate-i"

@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on OSP Legacy (5000 / 7000 / U10 / U100) | Midwest CNC Services"
+title: "Spindle Service on OSP Legacy (5000 / 7000 / U10 / U100)"
 meta_description: "OSP Legacy control repair across the Midwest. Pre-2003. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on OSP Legacy (5000 / 7000 / U10 / U100)"
 slug: "okuma-spindle-osp-legacy"

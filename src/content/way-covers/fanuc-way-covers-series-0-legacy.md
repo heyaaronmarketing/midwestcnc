@@ -1,5 +1,5 @@
 ---
-title: "Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines | Midwest CNC Services"
+title: "Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines"
 meta_description: "Series 0 Legacy control repair across the Midwest. 1980s through 1990s. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Series 0 / 0M / 0T (Pre-i Legacy) Era Machines"
 slug: "fanuc-way-covers-series-0-legacy"

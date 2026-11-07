@@ -1,5 +1,5 @@
 ---
-title: "Haas CNC Machine Repair | Midwest CNC Services"
+title: "Haas CNC Machine Repair"
 meta_description: "Expert Haas CNC machine repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Haas CNC Machine Repair & Service"
 slug: "haas"

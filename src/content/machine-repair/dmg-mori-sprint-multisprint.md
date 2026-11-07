@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair | Midwest CNC Services"
+title: "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair"
 meta_description: "DMG Mori SPRINT / MULTISPRINT Swiss-Production repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori SPRINT and MULTISPRINT Swiss/Production Turning Repair"
 slug: "dmg-mori-sprint-multisprint"

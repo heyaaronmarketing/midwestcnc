@@ -1,5 +1,5 @@
 ---
-title: "Okuma Twin-Spindle / Twin-Turret Way Covers | Midwest CNC Services"
+title: "Okuma Twin-Spindle / Twin-Turret Way Covers"
 meta_description: "Okuma Twin-Spindle / Twin-Turret repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma Twin-Spindle / Twin-Turret Way Covers"
 slug: "okuma-way-covers-twin-spindle-twin-turret"

@@ -1,5 +1,5 @@
 ---
-title: "Haas EC Series Horizontal Spindle Repair & Grinding | Midwest CNC Services"
+title: "Haas EC Series Horizontal Spindle Repair & Grinding"
 meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas EC Series Horizontal Spindle Repair & Grinding"
 slug: "haas-spindle-ec-series"

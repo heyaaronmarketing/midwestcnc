@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Haas Classic Control (Pre-NGC) | Midwest CNC Services"
+title: "Spindle Service on Haas Classic Control (Pre-NGC)"
 meta_description: "Haas Classic Control control repair across the Midwest. Through roughly 2014. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Haas Classic Control (Pre-NGC)"
 slug: "haas-spindle-haas-classic-control"

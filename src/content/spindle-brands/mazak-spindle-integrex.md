@@ -1,5 +1,5 @@
 ---
-title: "Mazak Integrex Spindle Repair & Grinding | Midwest CNC Services"
+title: "Mazak Integrex Spindle Repair & Grinding"
 meta_description: "Mazak Integrex Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Integrex Spindle Repair & Grinding"
 slug: "mazak-spindle-integrex"

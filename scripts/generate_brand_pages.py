@@ -278,10 +278,10 @@ def make_h1_and_eyebrow(brand):
 
 def _alt_title(brand):
     if brand["slug"] == "amada":
-        return "Amada Press Brake & Punch Service | Midwest CNC Services"
+        return "Amada Press Brake & Punch Service"
     if brand["slug"] == "trumpf":
-        return "Trumpf Laser & Punch Service | Midwest CNC Services"
-    return f"{brand['brand_display_name']} Service | Midwest CNC Services"
+        return "Trumpf Laser & Punch Service"
+    return f"{brand['brand_display_name']} Service"
 
 
 def _alt_breadcrumb(brand):
@@ -1131,7 +1131,7 @@ def render_cnc_spindle(brand, g, brands_by_slug, brand_index):
     h1_text, eyebrow_text = make_h1_and_eyebrow(brand)
     fm = front_matter(
         brand,
-        title=f"{name} Spindle Repair | Midwest CNC Services",
+        title=f"{name} Spindle Repair",
         h1=h1_text,
         meta_description=meta_desc,
         service_type=service_type,
@@ -1331,7 +1331,7 @@ def render_amada(brand, g, brands_by_slug, brand_index):
     h1_text, eyebrow_text = make_h1_and_eyebrow(brand)
     fm = front_matter(
         brand,
-        title="Amada Press Brake & Punch Service | Midwest CNC Services",
+        title="Amada Press Brake & Punch Service",
         h1=h1_text,
         meta_description=meta_desc,
         service_type="Amada Press Brake and Turret Punch Service",
@@ -1429,7 +1429,7 @@ def render_trumpf(brand, g, brands_by_slug, brand_index):
     h1_text, eyebrow_text = make_h1_and_eyebrow(brand)
     fm = front_matter(
         brand,
-        title="Trumpf Laser & Punch Service | Midwest CNC Services",
+        title="Trumpf Laser & Punch Service",
         h1=h1_text,
         meta_description=meta_desc,
         service_type="Trumpf Laser and Punch Press Service",
@@ -3010,7 +3010,7 @@ def render_series_spoke(spoke_data, brand_display_name, brand_hub_url, brand_slu
 
     fm_lines = [
         '---',
-        f'title: "{s["title"]} | Midwest CNC Services"',
+        f'title: "{s["title"]}"',
         f'meta_description: "{html.escape(brand_display_name)} {s["subtitle"]} repair across the Midwest. Models, common failure patterns, and the control generations they ship on."',
         f'h1: "{s["title"]}"',
         f'slug: "{s["slug"]}"',
@@ -3089,7 +3089,7 @@ def render_control_spoke(spoke_data, brand_display_name, brand_hub_url):
 
     fm_lines = [
         '---',
-        f'title: "{s["title"]} | Midwest CNC Services"',
+        f'title: "{s["title"]}"',
         f'meta_description: "{s["subtitle"]} control repair across the Midwest. {s["era"]}. Common faults, parts availability, and battery/memory/parameter recovery."',
         f'h1: "{s["title"]}"',
         f'slug: "{s["slug"]}"',
@@ -3269,7 +3269,7 @@ def render_brand_way_covers_hub(brand, g, brand_index):
 
     fm = front_matter(
         brand,
-        title=f"{name} CNC Way Covers | Midwest CNC Services",
+        title=f"{name} CNC Way Covers",
         h1=h1_text,
         meta_description=meta_desc,
         service_type=f"{name} CNC Way Cover Manufacturing",
@@ -3423,7 +3423,7 @@ def render_brand_spindle_hub(brand, g, brands_by_slug, brand_index):
 
     fm = front_matter(
         brand,
-        title=f"{name} Spindle Repair | Midwest CNC Services",
+        title=f"{name} Spindle Repair",
         h1=h1_text,
         meta_description=meta_desc,
         service_type=f"{name} CNC Spindle Repair and Grinding",
@@ -3575,7 +3575,7 @@ def render_brand_hub(brand, g, brand_index):
 
     fm = front_matter(
         brand,
-        title=f"{name} CNC Machine Repair | Midwest CNC Services",
+        title=f"{name} CNC Machine Repair",
         h1=h1_text,
         meta_description=meta_desc,
         service_type=f"{name} CNC Machine Repair and Service",
@@ -3767,7 +3767,7 @@ def render_machine_repair(brand, g, brand_index):
 
     fm = front_matter(
         brand,
-        title=f"{name} CNC Machine Repair | Midwest CNC Services",
+        title=f"{name} CNC Machine Repair",
         h1=h1_text,
         meta_description=meta_desc,
         service_type=f"{name} CNC Machine Repair and Service",
@@ -3927,7 +3927,7 @@ def render_way_covers(brand, g, brand_index):
 
     fm = front_matter(
         brand,
-        title=f"{name} CNC Way Covers | Midwest CNC Services",
+        title=f"{name} CNC Way Covers",
         h1=h1_text,
         meta_description=meta_desc,
         service_type=f"{name} CNC Way Cover Manufacturing",

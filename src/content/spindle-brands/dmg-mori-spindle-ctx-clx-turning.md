@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori CTX / CLX Turning + TC Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori CTX / CLX Turning + TC Spindle Repair & Grinding"
 meta_description: "DMG Mori CTX / CLX (incl. TC variants) repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori CTX / CLX Turning + TC Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-ctx-clx-turning"

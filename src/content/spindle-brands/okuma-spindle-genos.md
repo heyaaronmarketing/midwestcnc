@@ -1,5 +1,5 @@
 ---
-title: "Okuma Genos L / Genos M Spindle Repair & Grinding | Midwest CNC Services"
+title: "Okuma Genos L / Genos M Spindle Repair & Grinding"
 meta_description: "Okuma Genos repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma Genos L / Genos M Spindle Repair & Grinding"
 slug: "okuma-spindle-genos"

@@ -1,5 +1,5 @@
 ---
-title: "Okuma OSP-P300 Repair | Midwest CNC Services"
+title: "Okuma OSP-P300 Repair"
 meta_description: "OSP-P300 control repair across the Midwest. Roughly 2012 through 2020. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Okuma OSP-P300 Repair"
 slug: "okuma-osp-p300"

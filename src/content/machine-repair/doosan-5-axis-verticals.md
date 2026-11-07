@@ -1,5 +1,5 @@
 ---
-title: "Doosan DVF / FM 5-Axis Vertical Repair | Midwest CNC Services"
+title: "Doosan DVF / FM 5-Axis Vertical Repair"
 meta_description: "Doosan DVF / FM 5-Axis Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan DVF / FM 5-Axis Vertical Repair"
 slug: "doosan-5-axis-verticals"

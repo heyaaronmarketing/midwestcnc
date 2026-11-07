@@ -1,5 +1,5 @@
 ---
-title: "Fadal CNC Way Covers | Midwest CNC Services"
+title: "Fadal CNC Way Covers"
 meta_description: "Replacement Fadal CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Fadal CNC Way Cover Replacement"
 slug: "fadal"

@@ -1,5 +1,5 @@
 ---
-title: "Amada Press Brake & Punch Service | Midwest CNC Services"
+title: "Amada Press Brake & Punch Service"
 meta_description: "Amada press brake and turret punch service across the Midwest. Hydraulic service, ram alignment, backgauge calibration, and tooling-related troubleshooting. Experienced field technicians."
 h1: "Amada Press Brake & Punch Service"
 slug: "amada"

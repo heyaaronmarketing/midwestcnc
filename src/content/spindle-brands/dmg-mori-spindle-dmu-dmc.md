@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori DMU / DMC 5-Axis Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori DMU / DMC 5-Axis Spindle Repair & Grinding"
 meta_description: "DMG Mori DMU / DMC 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori DMU / DMC 5-Axis Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-dmu-dmc"

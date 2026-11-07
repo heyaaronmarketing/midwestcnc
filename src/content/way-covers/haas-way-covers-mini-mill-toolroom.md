@@ -1,5 +1,5 @@
 ---
-title: "Haas Mini Mill / Toolroom / DT / DM / VM Way Covers | Midwest CNC Services"
+title: "Haas Mini Mill / Toolroom / DT / DM / VM Way Covers"
 meta_description: "Haas Compact + Toolroom Family repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas Mini Mill / Toolroom / DT / DM / VM Way Covers"
 slug: "haas-way-covers-mini-mill-toolroom"

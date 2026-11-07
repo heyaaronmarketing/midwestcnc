@@ -1,5 +1,5 @@
 ---
-title: "Okuma LB / LU Lathe Spindle Repair & Grinding | Midwest CNC Services"
+title: "Okuma LB / LU Lathe Spindle Repair & Grinding"
 meta_description: "Okuma LB / LU Horizontal Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma LB / LU Lathe Spindle Repair & Grinding"
 slug: "okuma-spindle-lb-lu-lathes"

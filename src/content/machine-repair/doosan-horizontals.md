@@ -1,5 +1,5 @@
 ---
-title: "Doosan Horizontal Repair (NHM / NHP / HC) | Midwest CNC Services"
+title: "Doosan Horizontal Repair (NHM / NHP / HC)"
 meta_description: "Doosan NHM / NHP / HC Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Horizontal Repair (NHM / NHP / HC)"
 slug: "doosan-horizontals"

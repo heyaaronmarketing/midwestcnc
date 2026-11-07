@@ -1,5 +1,5 @@
 ---
-title: "Johnford CNC Machine Repair | Midwest CNC Services"
+title: "Johnford CNC Machine Repair"
 meta_description: "Expert Johnford CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Johnford CNC Machine Repair & Service"
 slug: "johnford"

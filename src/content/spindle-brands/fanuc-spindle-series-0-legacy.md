@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Fanuc Series 0 / 0M / 0T (Pre-i Legacy) | Midwest CNC Services"
+title: "Spindle Service on Fanuc Series 0 / 0M / 0T (Pre-i Legacy)"
 meta_description: "Series 0 Legacy control repair across the Midwest. 1980s through 1990s. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Fanuc Series 0 / 0M / 0T (Pre-i Legacy)"
 slug: "fanuc-spindle-series-0-legacy"

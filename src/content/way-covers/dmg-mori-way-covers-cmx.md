@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori CMX / CMX U Way Covers | Midwest CNC Services"
+title: "DMG Mori CMX / CMX U Way Covers"
 meta_description: "DMG Mori CMX Entry & 5-Sided repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori CMX / CMX U Way Covers"
 slug: "dmg-mori-way-covers-cmx"

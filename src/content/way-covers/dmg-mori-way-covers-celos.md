@@ -1,5 +1,5 @@
 ---
-title: "Way Covers for CELOS Era Machines | Midwest CNC Services"
+title: "Way Covers for CELOS Era Machines"
 meta_description: "CELOS HMI control repair across the Midwest. CELOS from 2014, CELOS X current. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for CELOS Era Machines"
 slug: "dmg-mori-way-covers-celos"

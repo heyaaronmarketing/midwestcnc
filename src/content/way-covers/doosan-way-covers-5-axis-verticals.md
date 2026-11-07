@@ -1,5 +1,5 @@
 ---
-title: "Doosan DVF / FM Way Covers | Midwest CNC Services"
+title: "Doosan DVF / FM Way Covers"
 meta_description: "Doosan DVF / FM 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan DVF / FM Way Covers"
 slug: "doosan-way-covers-5-axis-verticals"

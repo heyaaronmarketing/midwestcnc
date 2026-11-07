@@ -1,5 +1,5 @@
 ---
-title: "Haas EC Series Way Covers | Midwest CNC Services"
+title: "Haas EC Series Way Covers"
 meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas EC Series Way Covers"
 slug: "haas-way-covers-ec-series"

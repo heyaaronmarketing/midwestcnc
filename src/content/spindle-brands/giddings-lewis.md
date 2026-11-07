@@ -1,5 +1,5 @@
 ---
-title: "Giddings & Lewis Spindle Repair | Midwest CNC Services"
+title: "Giddings & Lewis Spindle Repair"
 meta_description: "Expert Giddings & Lewis spindle repair across the Midwest. 6–8 weeks on most rebuilds. Experienced field technicians."
 h1: "Giddings & Lewis Spindle Repair"
 slug: "giddings-lewis"

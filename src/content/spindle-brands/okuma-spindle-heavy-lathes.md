@@ -1,5 +1,5 @@
 ---
-title: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair & Grinding | Midwest CNC Services"
+title: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair & Grinding"
 meta_description: "Okuma LAW / LFS Heavy repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma Heavy Lathes (LAW / LFS) Spindle Repair & Grinding"
 slug: "okuma-spindle-heavy-lathes"

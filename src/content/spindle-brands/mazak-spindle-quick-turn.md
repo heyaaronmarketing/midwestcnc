@@ -1,5 +1,5 @@
 ---
-title: "Mazak Quick Turn Spindle Repair & Grinding | Midwest CNC Services"
+title: "Mazak Quick Turn Spindle Repair & Grinding"
 meta_description: "Mazak Quick Turn / QTN repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Quick Turn Spindle Repair & Grinding"
 slug: "mazak-spindle-quick-turn"

@@ -1,5 +1,5 @@
 ---
-title: "Haas Toolroom Lathe Spindle Repair (TL / CL) | Midwest CNC Services"
+title: "Haas Toolroom Lathe Spindle Repair (TL / CL)"
 meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas Toolroom Lathe Spindle Repair (TL / CL)"
 slug: "haas-spindle-toolroom-lathes"

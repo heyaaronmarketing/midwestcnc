@@ -1,5 +1,5 @@
 ---
-title: "Doosan Swiss-Type / DST Way Covers | Midwest CNC Services"
+title: "Doosan Swiss-Type / DST Way Covers"
 meta_description: "Doosan Swiss-Type / DST repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Swiss-Type / DST Way Covers"
 slug: "doosan-way-covers-swiss-turning"

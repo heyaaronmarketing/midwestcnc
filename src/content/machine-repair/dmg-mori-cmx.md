@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori CMX / CMX U Repair | Midwest CNC Services"
+title: "DMG Mori CMX / CMX U Repair"
 meta_description: "DMG Mori CMX Entry and 5-Sided repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori CMX / CMX U Repair"
 slug: "dmg-mori-cmx"

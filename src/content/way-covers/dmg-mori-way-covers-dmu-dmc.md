@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori DMU / DMC 5-Axis Way Covers | Midwest CNC Services"
+title: "DMG Mori DMU / DMC 5-Axis Way Covers"
 meta_description: "DMG Mori DMU / DMC 5-Axis Universal & Cube repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori DMU / DMC 5-Axis Way Covers"
 slug: "dmg-mori-way-covers-dmu-dmc"

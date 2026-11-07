@@ -1,5 +1,5 @@
 ---
-title: "Mazak Turning Legacy Spindle Repair & Grinding | Midwest CNC Services"
+title: "Mazak Turning Legacy Spindle Repair & Grinding"
 meta_description: "Mazak Slant Turn / Multiplex / Megaturn / HQR repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Turning Legacy Spindle Repair & Grinding"
 slug: "mazak-spindle-turning-legacy"

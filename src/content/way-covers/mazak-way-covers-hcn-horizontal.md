@@ -1,5 +1,5 @@
 ---
-title: "Mazak HCN Horizontal Way Covers | Midwest CNC Services"
+title: "Mazak HCN Horizontal Way Covers"
 meta_description: "Mazak HCN Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak HCN Horizontal Way Covers"
 slug: "mazak-way-covers-hcn-horizontal"

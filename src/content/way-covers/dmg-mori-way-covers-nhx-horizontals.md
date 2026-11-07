@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NHX / NH Way Covers | Midwest CNC Services"
+title: "DMG Mori NHX / NH Way Covers"
 meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NHX / NH Way Covers"
 slug: "dmg-mori-way-covers-nhx-horizontals"

@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori DMP / Milltap Compact Production Spindle Repair & Grinding | Midwest CNC Services"
+title: "DMG Mori DMP / Milltap Compact Production Spindle Repair & Grinding"
 meta_description: "DMG Mori DMP / Milltap repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori DMP / Milltap Compact Production Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-dmp-milltap"

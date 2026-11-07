@@ -1,5 +1,5 @@
 ---
-title: "Mazak Quick Turn Way Covers | Midwest CNC Services"
+title: "Mazak Quick Turn Way Covers"
 meta_description: "Mazak Quick Turn / QTN repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Quick Turn Way Covers"
 slug: "mazak-way-covers-quick-turn"

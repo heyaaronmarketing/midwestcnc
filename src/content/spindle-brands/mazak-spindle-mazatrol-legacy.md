@@ -1,5 +1,5 @@
 ---
-title: "Spindle Service on Mazatrol Legacy (M-Plus / Fusion 640) | Midwest CNC Services"
+title: "Spindle Service on Mazatrol Legacy (M-Plus / Fusion 640)"
 meta_description: "Mazatrol Legacy control repair across the Midwest. Roughly 1981 through 2005. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Mazatrol Legacy (M-Plus / Fusion 640)"
 slug: "mazak-spindle-mazatrol-legacy"
