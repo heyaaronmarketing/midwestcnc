@@ -1,6 +1,6 @@
 ---
-title: "Mazak Variaxis Way Covers"
-meta_description: "Replacement way covers for the Mazak Variaxis 5-Axis. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Mazak Variaxis Way Covers | Midwest CNC Services"
+meta_description: "Mazak Variaxis 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Variaxis Way Covers"
 slug: "mazak-way-covers-variaxis"
 page_type: "cnc_spindle"

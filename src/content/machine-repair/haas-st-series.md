@@ -1,5 +1,5 @@
 ---
-title: "Haas ST Series Lathe Repair & Service"
+title: "Haas ST Series Lathe Repair & Service | Midwest CNC Services"
 meta_description: "Haas ST Series Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas ST Series Lathe Repair & Service"
 slug: "haas-st-series"

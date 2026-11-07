@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori Spindle Repair"
+title: "DMG Mori Spindle Repair | Midwest CNC Services"
 meta_description: "Expert DMG Mori spindle repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "DMG Mori Spindle Repair & Rebuilds"
 slug: "dmg-mori"

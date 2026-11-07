@@ -1,6 +1,6 @@
 ---
-title: "Okuma MU 5-Axis / MCR Bridge Way Covers"
-meta_description: "Replacement way covers for the Okuma MU 5-Axis / MCR Bridge. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Okuma MU 5-Axis / MCR Bridge Way Covers | Midwest CNC Services"
+meta_description: "Okuma MU 5-Axis / MCR Bridge repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma MU 5-Axis / MCR Bridge Way Covers"
 slug: "okuma-way-covers-v-bridge-mills"
 page_type: "cnc_spindle"

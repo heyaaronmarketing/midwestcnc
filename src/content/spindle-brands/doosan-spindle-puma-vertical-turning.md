@@ -1,6 +1,6 @@
 ---
-title: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the Doosan Puma V / VT / VTR. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "Doosan Puma V / VT / VTR repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Puma V / VT / VTR Vertical Turning Spindle Repair & Grinding"
 slug: "doosan-spindle-puma-vertical-turning"
 page_type: "cnc_spindle"

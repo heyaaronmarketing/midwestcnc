@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for OSP Legacy Era Machines"
-meta_description: "Replacement way covers across the Midwest. OSP Legacy control repair across the Midwest. Pre-2003. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for OSP Legacy Era Machines | Midwest CNC Services"
+meta_description: "OSP Legacy control repair across the Midwest. Pre-2003. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for OSP Legacy Era Machines"
 slug: "okuma-way-covers-osp-legacy"
 page_type: "cnc_spindle"

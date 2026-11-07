@@ -1,5 +1,5 @@
 ---
-title: "Mazak Spindle Repair"
+title: "Mazak Spindle Repair | Midwest CNC Services"
 meta_description: "Expert Mazak spindle repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Mazak Spindle Repair & Rebuilds"
 slug: "mazak"

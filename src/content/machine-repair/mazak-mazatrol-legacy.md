@@ -1,5 +1,5 @@
 ---
-title: "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)"
+title: "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640) | Midwest CNC Services"
 meta_description: "Mazatrol M-2, M-32, M-Plus, Fusion 640 control repair across the Midwest. Roughly 1981 through 2005. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Mazatrol Legacy Control Repair (M-2 / M-32 / M-Plus / Fusion 640)"
 slug: "mazak-mazatrol-legacy"

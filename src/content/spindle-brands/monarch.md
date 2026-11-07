@@ -1,5 +1,5 @@
 ---
-title: "Monarch Spindle Repair"
+title: "Monarch Spindle Repair | Midwest CNC Services"
 meta_description: "Expert Monarch spindle repair across the Midwest — keeping legacy machines running. 4–6 weeks on most rebuilds. Experienced field technicians."
 h1: "Monarch Spindle Repair & Rebuilds"
 slug: "monarch"
@@ -212,6 +212,14 @@ Experienced field technicians with hands-on time across the major CNC OEM platfo
 <h2 id="faq">Frequently Asked Questions</h2>
 <div class="faq-list">
 <details class="faq-item">
+  <summary>Where can I get Monarch spindle repair near me?</summary>
+  <div class="faq-answer"><p>Midwest CNC Services rebuilds Monarch spindles from our Waterloo, Iowa shop and ships finished work to any continental US destination. Direct service covers Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Call 319-610-4341 to scope the job.</p></div>
+</details>
+<details class="faq-item">
+  <summary>How much does a Monarch spindle rebuild cost?</summary>
+  <div class="faq-answer"><p>Monarch spindle rebuild cost depends on the failure mode — bearing-pack replacement, taper damage, preload loss, and crash recovery all scope differently. We quote after reviewing the symptoms, model, and photos where available. Most quotes go out within one business day with a lead time and parts breakdown.</p></div>
+</details>
+<details class="faq-item">
   <summary>What&#x27;s the typical lead time on a Monarch spindle rebuild?</summary>
   <div class="faq-answer"><p>4–6 weeks. Each job is scoped during the quote — bearing-pack damage, parts availability, and crash-related work all shift the window.</p></div>
 </details>
@@ -234,6 +242,22 @@ Experienced field technicians with hands-on time across the major CNC OEM platfo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I get Monarch spindle repair near me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Midwest CNC Services rebuilds Monarch spindles from our Waterloo, Iowa shop and ships finished work to any continental US destination. Direct service covers Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Call 319-610-4341 to scope the job."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a Monarch spindle rebuild cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Monarch spindle rebuild cost depends on the failure mode — bearing-pack replacement, taper damage, preload loss, and crash recovery all scope differently. We quote after reviewing the symptoms, model, and photos where available. Most quotes go out within one business day with a lead time and parts breakdown."
+      }
+    },
     {
       "@type": "Question",
       "name": "What's the typical lead time on a Monarch spindle rebuild?",

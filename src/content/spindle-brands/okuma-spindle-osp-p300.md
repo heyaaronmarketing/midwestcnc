@@ -1,6 +1,6 @@
 ---
-title: "Spindle Service on Okuma OSP-P300"
-meta_description: "Spindle rebuild and regrind across the Midwest. OSP-P300 control repair across the Midwest. Roughly 2012 through 2020. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Spindle Service on Okuma OSP-P300 | Midwest CNC Services"
+meta_description: "OSP-P300 control repair across the Midwest. Roughly 2012 through 2020. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Okuma OSP-P300"
 slug: "okuma-spindle-osp-p300"
 page_type: "cnc_spindle"

@@ -1,5 +1,5 @@
 ---
-title: "Fanuc Series 0i Repair (Model A through F)"
+title: "Fanuc Series 0i Repair (Model A through F) | Midwest CNC Services"
 meta_description: "Series 0i (A/B/C/D/F) control repair across the Midwest. 2003 through present (0i-F current). Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Fanuc Series 0i Repair (Model A through F)"
 slug: "fanuc-series-0i"

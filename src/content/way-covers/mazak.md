@@ -1,5 +1,5 @@
 ---
-title: "Mazak CNC Way Covers"
+title: "Mazak CNC Way Covers | Midwest CNC Services"
 meta_description: "Expert Mazak way cover replacement across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Mazak CNC Way Cover Replacement"
 slug: "mazak"

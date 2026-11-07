@@ -1,6 +1,6 @@
 ---
-title: "Mazak Turning Legacy Way Covers"
-meta_description: "Replacement way covers for the Mazak Slant Turn / Multiplex / Megaturn. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Mazak Turning Legacy Way Covers | Midwest CNC Services"
+meta_description: "Mazak Slant Turn / Multiplex / Megaturn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Turning Legacy Way Covers"
 slug: "mazak-way-covers-turning-legacy"
 page_type: "cnc_spindle"

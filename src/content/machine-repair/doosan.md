@@ -1,5 +1,5 @@
 ---
-title: "Doosan CNC Machine Repair"
+title: "Doosan CNC Machine Repair | Midwest CNC Services"
 meta_description: "Expert Doosan CNC machine repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Doosan CNC Machine Repair & Service"
 slug: "doosan"

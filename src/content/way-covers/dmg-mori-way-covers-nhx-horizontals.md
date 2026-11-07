@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori NHX / NH Way Covers"
-meta_description: "Replacement way covers for the DMG Mori NHX / NH Horizontals. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "DMG Mori NHX / NH Way Covers | Midwest CNC Services"
+meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NHX / NH Way Covers"
 slug: "dmg-mori-way-covers-nhx-horizontals"
 page_type: "cnc_spindle"

@@ -1,5 +1,5 @@
 ---
-title: "Fanuc Series 0 / 0M / 0T Repair (Pre-i Legacy)"
+title: "Fanuc Series 0 / 0M / 0T Repair (Pre-i Legacy) | Midwest CNC Services"
 meta_description: "Fanuc Series 0 / 0M / 0T control repair across the Midwest. 1980s through 1990s. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Fanuc Series 0 / 0M / 0T Repair (Pre-i Legacy)"
 slug: "fanuc-series-0-legacy"

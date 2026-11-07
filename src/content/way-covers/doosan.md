@@ -1,5 +1,5 @@
 ---
-title: "Doosan CNC Way Covers"
+title: "Doosan CNC Way Covers | Midwest CNC Services"
 meta_description: "Expert Doosan way cover replacement across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Doosan CNC Way Cover Replacement"
 slug: "doosan"

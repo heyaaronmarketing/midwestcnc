@@ -1,6 +1,6 @@
 ---
-title: "Haas Toolroom Lathe Spindle Repair (TL / CL)"
-meta_description: "Spindle rebuild and regrind for the Haas TL and CL Toolroom Lathes. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Haas Toolroom Lathe Spindle Repair (TL / CL) | Midwest CNC Services"
+meta_description: "Haas TL and CL Toolroom Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas Toolroom Lathe Spindle Repair (TL / CL)"
 slug: "haas-spindle-toolroom-lathes"
 page_type: "cnc_spindle"

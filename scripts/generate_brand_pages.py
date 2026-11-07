@@ -810,6 +810,23 @@ def brand_faq_section(brand, ki, service_kind):
     qa_pairs = []
 
     if service_kind == "spindle":
+        # Q0: geo-intent "near me" query (answer-first for AEO)
+        qa_pairs.append((
+            f"Where can I get {name} spindle repair near me?",
+            f"Midwest CNC Services rebuilds {name} spindles from our Waterloo, "
+            f"Iowa shop and ships finished work to any continental US destination. "
+            f"Direct service covers Iowa, Illinois, Wisconsin, Minnesota, Nebraska, "
+            f"Missouri, and Texas. Call 319-610-4341 to scope the job.",
+        ))
+        # Q0b: cost intent
+        qa_pairs.append((
+            f"How much does a {name} spindle rebuild cost?",
+            f"{name} spindle rebuild cost depends on the failure mode — "
+            f"bearing-pack replacement, taper damage, preload loss, and crash "
+            f"recovery all scope differently. We quote after reviewing the "
+            f"symptoms, model, and photos where available. Most quotes go out "
+            f"within one business day with a lead time and parts breakdown.",
+        ))
         # Q1: lead time
         if lead_time:
             qa_pairs.append((
@@ -844,6 +861,24 @@ def brand_faq_section(brand, ki, service_kind):
             ))
 
     elif service_kind == "machine_repair":
+        # Q0: geo-intent "near me"
+        qa_pairs.append((
+            f"Where can I find {name} CNC machine repair near me?",
+            f"Midwest CNC Services repairs {name} CNC machines across seven "
+            f"Midwest states — Iowa, Illinois, Wisconsin, Minnesota, Nebraska, "
+            f"Missouri, and Texas. Field service for drivable Midwest routes; "
+            f"ship-in work for the rest. Call 319-610-4341 or request a quote "
+            f"at midwestcncservices.com/get-a-quote.",
+        ))
+        # Q0b: cost intent
+        qa_pairs.append((
+            f"How much does {name} CNC machine repair cost?",
+            f"{name} CNC machine repair cost varies by what's actually broken — "
+            f"spindle work, control-board diagnostics, ATC rebuilds, and way "
+            f"alignment all scope differently. We don't quote without scoping "
+            f"the actual work. Most quotes go out within one business day of "
+            f"receiving the model and symptoms.",
+        ))
         qa_pairs.append((
             f"What can you fix on a {name} CNC machine?",
             f"Spindle, control, ATC, drive systems, and way alignment are the "
@@ -875,6 +910,24 @@ def brand_faq_section(brand, ki, service_kind):
             ))
 
     elif service_kind == "way_covers":
+        # Q0: geo-intent "near me"
+        qa_pairs.append((
+            f"Where can I buy {name} way covers near me?",
+            f"Midwest CNC Services builds replacement {name} way covers at our "
+            f"Waterloo, Iowa shop and ships to any continental US destination. "
+            f"Direct sales to shops across Iowa, Illinois, Wisconsin, Minnesota, "
+            f"Nebraska, Missouri, and Texas. Most orders ship in 2–4 weeks. "
+            f"Call 319-610-4341 to discuss your machine.",
+        ))
+        # Q0b: price intent
+        qa_pairs.append((
+            f"How much do replacement {name} way covers cost?",
+            f"Replacement {name} way cover pricing depends on dimensions, style "
+            f"(bellows, telescoping steel, or roll-up), and material. We quote "
+            f"from your measurements, drawings, or the original cover. Most "
+            f"quotes include freight to major Midwest metros and go out within "
+            f"one business day.",
+        ))
         qa_pairs.append((
             f"What way-cover styles do you build for {name} machines?",
             f"Three styles — bellows, telescoping steel, and roll-up — selected "

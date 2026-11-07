@@ -1,5 +1,5 @@
 ---
-title: "Doosan Spindle Repair"
+title: "Doosan Spindle Repair | Midwest CNC Services"
 meta_description: "Expert Doosan spindle repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "Doosan Spindle Repair & Rebuilds"
 slug: "doosan"

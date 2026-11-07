@@ -1,6 +1,6 @@
 ---
-title: "Spindle Service on Haas Next Generation Control (NGC)"
-meta_description: "Spindle rebuild and regrind across the Midwest. Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Spindle Service on Haas Next Generation Control (NGC) | Midwest CNC Services"
+meta_description: "Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Haas Next Generation Control (NGC)"
 slug: "haas-spindle-haas-ngc"
 page_type: "cnc_spindle"

@@ -1,5 +1,5 @@
 ---
-title: "Okuma OSP-P200 Repair"
+title: "Okuma OSP-P200 Repair | Midwest CNC Services"
 meta_description: "OSP-P200 control repair across the Midwest. Roughly 2003 through 2012. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Okuma OSP-P200 Repair"
 slug: "okuma-osp-p200"

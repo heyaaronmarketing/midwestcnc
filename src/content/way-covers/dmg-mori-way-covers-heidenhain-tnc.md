@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Heidenhain TNC Era Machines"
-meta_description: "Replacement way covers across the Midwest. Heidenhain TNC control repair across the Midwest. iTNC 530 from ~2001, TNC 640 from 2012. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Heidenhain TNC Era Machines | Midwest CNC Services"
+meta_description: "Heidenhain TNC control repair across the Midwest. iTNC 530 from ~2001, TNC 640 from 2012. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Heidenhain TNC Era Machines"
 slug: "dmg-mori-way-covers-heidenhain-tnc"
 page_type: "cnc_spindle"

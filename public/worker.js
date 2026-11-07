@@ -431,9 +431,12 @@ async function handleAdmin(request, env, url) {
   if (path === "/admin/case-study/refresh") {
     if (method !== "POST") return new Response("Method not allowed", { status: 405 });
     const result = await runCaseStudyRefresh(env, { source: "manual" });
+    const q = result.skipped
+      ? `?rate_limited=${encodeURIComponent(result.retry_after_min + " min")}`
+      : "?refreshed=1";
     return new Response(null, {
       status: 303,
-      headers: { Location: new URL(`/admin/case-study?refreshed=1`, url).toString() },
+      headers: { Location: new URL(`/admin/case-study${q}`, url).toString() },
     });
   }
   const detailMatch = path.match(/^\/admin\/quote\/(\d+)$/);
@@ -1391,6 +1394,26 @@ async function runCaseStudyRefresh(env, meta = {}) {
   await ensureCaseStudySchema(env);
   const results = { source: meta.source || "manual", started: new Date().toISOString() };
 
+  // Rate-limit guard: refuse to refresh if we ran successfully in the
+  // last 60 minutes. Prevents Bing ThrottleIP + IndexNow 429 errors
+  // from someone clicking "Refresh now" repeatedly. Cron trigger
+  // bypasses this (source === "cron") since it fires weekly.
+  if (meta.source !== "cron") {
+    const lastRow = await env.DB.prepare(
+      "SELECT v FROM cs_meta WHERE k = 'last_refresh_ok_at'"
+    ).first();
+    if (lastRow && lastRow.v) {
+      const lastMs = Date.parse(lastRow.v);
+      const ageMin = Math.floor((Date.now() - lastMs) / 60000);
+      if (ageMin < 60) {
+        results.skipped = `rate-limited: last successful refresh was ${ageMin} min ago (60 min minimum)`;
+        results.retry_after_min = 60 - ageMin;
+        results.finished = new Date().toISOString();
+        return results;
+      }
+    }
+  }
+
   try {
     const g = await pullGsc(env);
     results.gsc = g;
@@ -1425,6 +1448,11 @@ async function runCaseStudyRefresh(env, meta = {}) {
   }
 
   await setMeta(env, "data_as_of", new Date().toISOString());
+  // Only mark a successful refresh when GSC actually pulled (the money
+  // source). Bing or IndexNow throttles don't block subsequent retries.
+  if (results.gsc && !results.gsc.error) {
+    await setMeta(env, "last_refresh_ok_at", new Date().toISOString());
+  }
   results.finished = new Date().toISOString();
   return results;
 }

@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Series 16i / 18i / 21i Era Machines"
-meta_description: "Replacement way covers across the Midwest. Series 16i / 18i / 21i control repair across the Midwest. Roughly 1995 through 2010. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Series 16i / 18i / 21i Era Machines | Midwest CNC Services"
+meta_description: "Series 16i / 18i / 21i control repair across the Midwest. Roughly 1995 through 2010. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Series 16i / 18i / 21i Era Machines"
 slug: "fanuc-way-covers-series-16i-18i-21i"
 page_type: "cnc_spindle"

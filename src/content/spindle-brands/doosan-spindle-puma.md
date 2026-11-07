@@ -1,6 +1,6 @@
 ---
-title: "Doosan Puma Horizontal Turning Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the Doosan Puma Horizontal Turning. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Doosan Puma Horizontal Turning Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "Doosan Puma Horizontal Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Puma Horizontal Turning Spindle Repair & Grinding"
 slug: "doosan-spindle-puma"
 page_type: "cnc_spindle"

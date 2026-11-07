@@ -1,6 +1,6 @@
 ---
-title: "Okuma LB / LU Lathes Way Covers"
-meta_description: "Replacement way covers for the Okuma LB / LU Horizontal Lathes. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Okuma LB / LU Lathes Way Covers | Midwest CNC Services"
+meta_description: "Okuma LB / LU Horizontal Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma LB / LU Lathes Way Covers"
 slug: "okuma-way-covers-lb-lu-lathes"
 page_type: "cnc_spindle"

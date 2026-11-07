@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori NHX / NH Horizontal Repair"
+title: "DMG Mori NHX / NH Horizontal Repair | Midwest CNC Services"
 meta_description: "DMG Mori NHX / NH Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NHX / NH Horizontal Repair"
 slug: "dmg-mori-nhx-horizontals"

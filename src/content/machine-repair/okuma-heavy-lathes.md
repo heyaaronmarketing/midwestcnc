@@ -1,5 +1,5 @@
 ---
-title: "Okuma Heavy Lathe Repair (LAW / LFS)"
+title: "Okuma Heavy Lathe Repair (LAW / LFS) | Midwest CNC Services"
 meta_description: "Okuma LAW / LFS Heavy Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma Heavy Lathe Repair (LAW / LFS)"
 slug: "okuma-heavy-lathes"

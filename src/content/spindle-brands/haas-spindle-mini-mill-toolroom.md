@@ -1,6 +1,6 @@
 ---
-title: "Haas Mini Mill, Toolroom, DT, DM, VM Spindle Repair"
-meta_description: "Spindle rebuild and regrind for the Haas Mini Mill / Toolroom / DT / DM / VM. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Haas Mini Mill, Toolroom, DT, DM, VM Spindle Repair | Midwest CNC Services"
+meta_description: "Haas Mini Mill / Toolroom / DT / DM / VM repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas Mini Mill, Toolroom, DT, DM, VM Spindle Repair"
 slug: "haas-spindle-mini-mill-toolroom"
 page_type: "cnc_spindle"

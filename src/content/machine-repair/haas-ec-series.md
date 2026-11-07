@@ -1,5 +1,5 @@
 ---
-title: "Haas EC Series Horizontal Repair & Service"
+title: "Haas EC Series Horizontal Repair & Service | Midwest CNC Services"
 meta_description: "Haas EC Series Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas EC Series Horizontal Repair & Service"
 slug: "haas-ec-series"

@@ -1,5 +1,5 @@
 ---
-title: "Okuma MULTUS B-Axis Multitasking Repair"
+title: "Okuma MULTUS B-Axis Multitasking Repair | Midwest CNC Services"
 meta_description: "Okuma MULTUS B-Axis Multitasking repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma MULTUS B-Axis Multitasking Repair"
 slug: "okuma-multus"

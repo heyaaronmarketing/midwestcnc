@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori DMP / Milltap Way Covers"
-meta_description: "Replacement way covers for the DMG Mori DMP / Milltap Compact Production. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "DMG Mori DMP / Milltap Way Covers | Midwest CNC Services"
+meta_description: "DMG Mori DMP / Milltap Compact Production repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori DMP / Milltap Way Covers"
 slug: "dmg-mori-way-covers-dmp-milltap"
 page_type: "cnc_spindle"

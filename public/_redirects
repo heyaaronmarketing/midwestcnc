@@ -1,48 +1,25 @@
 # Brand page URL relocations — Amada and Trumpf aren't spindle work
-/spindle-grinding/amada-spindle-repair/                                                    /repairs/amada-press-brake-service/               301
-/spindle-grinding/trumpf-spindle-repair/                                                   /repairs/trumpf-laser-service/                    301
+/spindle-grinding/amada-spindle-repair/          /repairs/amada-press-brake-service/               301
+/spindle-grinding/trumpf-spindle-repair/         /repairs/trumpf-laser-service/                    301
 
 # /spindles-repair/ URLs duplicate the spindle-grinding / repairs pages
-/spindles-repair/amada-spindle-repair/                                                     /repairs/amada-press-brake-service/               301
-/spindles-repair/amera-seiki-spindle-repair/                                               /spindle-grinding/amera-seiki-spindle-repair/     301
-/spindles-repair/brother-spindle-repair/                                                   /spindle-grinding/brother-spindle-repair/         301
-/spindles-repair/dmg-mori-spindle-repair/                                                  /spindle-grinding/dmg-mori-spindle-repair/        301
-/spindles-repair/doosan-spindle-repair/                                                    /spindle-grinding/doosan-spindle-repair/          301
-/spindles-repair/fadal-spindle-repair/                                                     /spindle-grinding/fadal-spindle-repair/           301
-/spindles-repair/fanuc-spindle-repair/                                                     /spindle-grinding/fanuc-spindle-repair/           301
-/spindles-repair/giddings-lewis-spindle-repair/                                            /spindle-grinding/giddings-lewis-spindle-repair/  301
-/spindles-repair/haas-spindle-repair/                                                      /spindle-grinding/haas-spindle-repair/            301
-/spindles-repair/hitachi-seiki-spindle-repair/                                             /spindle-grinding/hitachi-seiki-spindle-repair/   301
-/spindles-repair/hurco-spindle-repair/                                                     /spindle-grinding/hurco-spindle-repair/           301
-/spindles-repair/johnford-spindle-repair/                                                  /spindle-grinding/johnford-spindle-repair/        301
-/spindles-repair/makino-spindle-repair/                                                    /spindle-grinding/makino-spindle-repair/          301
-/spindles-repair/mazak-spindle-repair/                                                     /spindle-grinding/mazak-spindle-repair/           301
-/spindles-repair/monarch-spindle-repair/                                                   /spindle-grinding/monarch-spindle-repair/         301
-/spindles-repair/mori-seiki-spindle-repair/                                                /spindle-grinding/mori-seiki-spindle-repair/      301
-/spindles-repair/niigata-spindle-repair/                                                   /spindle-grinding/niigata-spindle-repair/         301
-/spindles-repair/okuma-spindle-repair/                                                     /spindle-grinding/okuma-spindle-repair/           301
-/spindles-repair/toyoda-spindle-repair/                                                    /spindle-grinding/toyoda-spindle-repair/          301
-/spindles-repair/trumpf-spindle-repair/                                                    /repairs/trumpf-laser-service/                    301
-
-# Phase 2/3: Illinois URL typo fixes (Durable used 'ilinois')
-/service-area/rockford-ilinois/                                                            /service-area/rockford-illinois/                  301
-/service-area/peoria-ilinois/                                                              /service-area/peoria-illinois/                    301
-/service-area/springfield-ilinois/                                                         /service-area/springfield-illinois/               301
-
-# Phase 6: CONSOLIDATE-marked city pages → state pages
-/service-area/iowa-city-iowa/                                                              /service-area/iowa/                               301
-/service-area/springfield-illinois/                                                        /service-area/illinois/                           301
-/service-area/bellevue-nebraska/                                                           /service-area/nebraska/                           301
-/service-area/columbia-missouri/                                                           /service-area/missouri/                           301
-
-# Phase 5: deferred content sections (blog/guides/customer-stories)
-/blog/precision-cnc-machining--how-it-drives-efficiency-in-manufacturing/                  /repairs/                                         301
-/blog/understanding-the-true-cost--usa-made-way-covers-vs--overseas-options/               /way-covers/                                      301
-/blog/choosing-the-right-way-covers-for-your-cnc-machines--a-comprehensive-buyer-s-guide/  /way-covers/                                      301
-/blog/emergency-cnc-repair--quick-steps-to-restore-your-machine/                           /repairs/                                         301
-/blog/*                                                                                    /                                                 301
-/blog                                                                                      /                                                 301
-/guides/*                                                                                  /                                                 301
-/guides                                                                                    /                                                 301
-/customer-stories/*                                                                        /                                                 301
-/customer-stories                                                                          /                                                 301
+/spindles-repair/amada-spindle-repair/           /repairs/amada-press-brake-service/               301
+/spindles-repair/amera-seiki-spindle-repair/     /spindle-grinding/amera-seiki-spindle-repair/     301
+/spindles-repair/brother-spindle-repair/         /spindle-grinding/brother-spindle-repair/         301
+/spindles-repair/dmg-mori-spindle-repair/        /spindle-grinding/dmg-mori-spindle-repair/        301
+/spindles-repair/doosan-spindle-repair/          /spindle-grinding/doosan-spindle-repair/          301
+/spindles-repair/fadal-spindle-repair/           /spindle-grinding/fadal-spindle-repair/           301
+/spindles-repair/fanuc-spindle-repair/           /spindle-grinding/fanuc-spindle-repair/           301
+/spindles-repair/giddings-lewis-spindle-repair/  /spindle-grinding/giddings-lewis-spindle-repair/  301
+/spindles-repair/haas-spindle-repair/            /spindle-grinding/haas-spindle-repair/            301
+/spindles-repair/hitachi-seiki-spindle-repair/   /spindle-grinding/hitachi-seiki-spindle-repair/   301
+/spindles-repair/hurco-spindle-repair/           /spindle-grinding/hurco-spindle-repair/           301
+/spindles-repair/johnford-spindle-repair/        /spindle-grinding/johnford-spindle-repair/        301
+/spindles-repair/makino-spindle-repair/          /spindle-grinding/makino-spindle-repair/          301
+/spindles-repair/mazak-spindle-repair/           /spindle-grinding/mazak-spindle-repair/           301
+/spindles-repair/monarch-spindle-repair/         /spindle-grinding/monarch-spindle-repair/         301
+/spindles-repair/mori-seiki-spindle-repair/      /spindle-grinding/mori-seiki-spindle-repair/      301
+/spindles-repair/niigata-spindle-repair/         /spindle-grinding/niigata-spindle-repair/         301
+/spindles-repair/okuma-spindle-repair/           /spindle-grinding/okuma-spindle-repair/           301
+/spindles-repair/toyoda-spindle-repair/          /spindle-grinding/toyoda-spindle-repair/          301
+/spindles-repair/trumpf-spindle-repair/          /repairs/trumpf-laser-service/                    301

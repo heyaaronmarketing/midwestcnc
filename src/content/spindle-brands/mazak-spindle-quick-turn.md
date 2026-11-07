@@ -1,6 +1,6 @@
 ---
-title: "Mazak Quick Turn Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the Mazak Quick Turn / QTN. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Mazak Quick Turn Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "Mazak Quick Turn / QTN repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Quick Turn Spindle Repair & Grinding"
 slug: "mazak-spindle-quick-turn"
 page_type: "cnc_spindle"

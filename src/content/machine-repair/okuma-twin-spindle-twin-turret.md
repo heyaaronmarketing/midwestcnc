@@ -1,5 +1,5 @@
 ---
-title: "Okuma Twin-Spindle / Twin-Turret Repair (MacTurn / 2SP / LT)"
+title: "Okuma Twin-Spindle / Twin-Turret Repair (MacTurn / 2SP / LT) | Midwest CNC Services"
 meta_description: "Okuma Twin-Spindle / Twin-Turret repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma Twin-Spindle / Twin-Turret Repair (MacTurn / 2SP / LT)"
 slug: "okuma-twin-spindle-twin-turret"

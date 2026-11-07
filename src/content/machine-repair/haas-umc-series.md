@@ -1,5 +1,5 @@
 ---
-title: "Haas UMC Series Repair & Service"
+title: "Haas UMC Series Repair & Service | Midwest CNC Services"
 meta_description: "Haas UMC Series Universal 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas UMC Series Repair & Service"
 slug: "haas-umc-series"

@@ -1,6 +1,6 @@
 ---
-title: "Mazak Quick Turn Way Covers"
-meta_description: "Replacement way covers for the Mazak Quick Turn / QTN. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Mazak Quick Turn Way Covers | Midwest CNC Services"
+meta_description: "Mazak Quick Turn / QTN repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Quick Turn Way Covers"
 slug: "mazak-way-covers-quick-turn"
 page_type: "cnc_spindle"

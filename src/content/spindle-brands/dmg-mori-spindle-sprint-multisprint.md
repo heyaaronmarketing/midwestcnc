@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the DMG Mori SPRINT / MULTISPRINT. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "DMG Mori SPRINT / MULTISPRINT repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori SPRINT / MULTISPRINT Swiss Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-sprint-multisprint"
 page_type: "cnc_spindle"

@@ -1,6 +1,6 @@
 ---
-title: "Haas ST Series Way Covers"
-meta_description: "Replacement way covers for the Haas ST Series Lathes. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Haas ST Series Way Covers | Midwest CNC Services"
+meta_description: "Haas ST Series Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Haas ST Series Way Covers"
 slug: "haas-way-covers-st-series"
 page_type: "cnc_spindle"

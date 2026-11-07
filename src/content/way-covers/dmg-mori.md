@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori CNC Way Covers"
+title: "DMG Mori CNC Way Covers | Midwest CNC Services"
 meta_description: "Expert DMG Mori way cover replacement across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "DMG Mori CNC Way Cover Replacement"
 slug: "dmg-mori"

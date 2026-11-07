@@ -1,6 +1,6 @@
 ---
-title: "Spindle Service on Mazatrol Smooth (SmoothX / G / Ai)"
-meta_description: "Spindle rebuild and regrind across the Midwest. Mazatrol Smooth control repair across the Midwest. 2013 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Spindle Service on Mazatrol Smooth (SmoothX / G / Ai) | Midwest CNC Services"
+meta_description: "Mazatrol Smooth control repair across the Midwest. 2013 through present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Spindle Service on Mazatrol Smooth (SmoothX / G / Ai)"
 slug: "mazak-spindle-smooth-control"
 page_type: "cnc_spindle"

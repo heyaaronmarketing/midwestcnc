@@ -1,6 +1,6 @@
 ---
-title: "Mazak VTC + VCN Way Covers"
-meta_description: "Replacement way covers for the Mazak VTC + VCN Verticals. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Mazak VTC + VCN Way Covers | Midwest CNC Services"
+meta_description: "Mazak VTC + VCN Verticals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak VTC + VCN Way Covers"
 slug: "mazak-way-covers-vertical-machining-centers"
 page_type: "cnc_spindle"

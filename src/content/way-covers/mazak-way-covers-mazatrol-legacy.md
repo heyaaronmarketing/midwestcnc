@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Mazatrol Legacy Era Machines"
-meta_description: "Replacement way covers across the Midwest. Mazatrol Legacy control repair across the Midwest. Roughly 1981 through 2005. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Mazatrol Legacy Era Machines | Midwest CNC Services"
+meta_description: "Mazatrol Legacy control repair across the Midwest. Roughly 1981 through 2005. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Mazatrol Legacy Era Machines"
 slug: "mazak-way-covers-mazatrol-legacy"
 page_type: "cnc_spindle"

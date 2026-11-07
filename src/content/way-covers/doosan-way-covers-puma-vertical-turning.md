@@ -1,6 +1,6 @@
 ---
-title: "Doosan Puma V / VT / VTR Way Covers"
-meta_description: "Replacement way covers for the Doosan Puma Vertical Turning. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Doosan Puma V / VT / VTR Way Covers | Midwest CNC Services"
+meta_description: "Doosan Puma Vertical Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Puma V / VT / VTR Way Covers"
 slug: "doosan-way-covers-puma-vertical-turning"
 page_type: "cnc_spindle"

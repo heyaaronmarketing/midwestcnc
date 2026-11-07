@@ -1,5 +1,5 @@
 ---
-title: "Fanuc Series 16i / 18i / 21i Repair (Model A & B)"
+title: "Fanuc Series 16i / 18i / 21i Repair (Model A & B) | Midwest CNC Services"
 meta_description: "Series 16i / 18i / 21i control repair across the Midwest. Roughly 1995 through 2010. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Fanuc Series 16i / 18i / 21i Repair (Model A & B)"
 slug: "fanuc-series-16i-18i-21i"

@@ -1,6 +1,6 @@
 ---
-title: "Okuma LB / LU Lathe Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the Okuma LB / LU Horizontal Lathes. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Okuma LB / LU Lathe Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "Okuma LB / LU Horizontal Lathes repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma LB / LU Lathe Spindle Repair & Grinding"
 slug: "okuma-spindle-lb-lu-lathes"
 page_type: "cnc_spindle"

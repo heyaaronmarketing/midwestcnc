@@ -1,6 +1,6 @@
 ---
-title: "Mazak Integrex Way Covers"
-meta_description: "Replacement way covers for the Mazak Integrex Mill-Turn. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Mazak Integrex Way Covers | Midwest CNC Services"
+meta_description: "Mazak Integrex Mill-Turn repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Integrex Way Covers"
 slug: "mazak-way-covers-integrex"
 page_type: "cnc_spindle"

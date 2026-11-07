@@ -1,5 +1,5 @@
 ---
-title: "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)"
+title: "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100) | Midwest CNC Services"
 meta_description: "OSP Legacy control repair across the Midwest. Pre-2003. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Okuma OSP Legacy Control Repair (OSP 5000 / 7000 / U10 / U100)"
 slug: "okuma-osp-legacy"

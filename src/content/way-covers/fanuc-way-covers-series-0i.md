@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for Series 0i (A/B/C/D/F) Era Machines"
-meta_description: "Replacement way covers across the Midwest. Series 0i control repair across the Midwest. 2003 through present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for Series 0i (A/B/C/D/F) Era Machines | Midwest CNC Services"
+meta_description: "Series 0i control repair across the Midwest. 2003 through present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for Series 0i (A/B/C/D/F) Era Machines"
 slug: "fanuc-way-covers-series-0i"
 page_type: "cnc_spindle"

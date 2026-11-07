@@ -1,6 +1,6 @@
 ---
-title: "Mazak Variaxis Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the Mazak Variaxis 5-Axis. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Mazak Variaxis Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "Mazak Variaxis 5-Axis repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Mazak Variaxis Spindle Repair & Grinding"
 slug: "mazak-spindle-variaxis"
 page_type: "cnc_spindle"

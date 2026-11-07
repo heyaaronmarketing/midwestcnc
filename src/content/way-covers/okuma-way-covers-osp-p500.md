@@ -1,6 +1,6 @@
 ---
-title: "Way Covers for OSP-P500 Era Machines"
-meta_description: "Replacement way covers across the Midwest. OSP-P500 control repair across the Midwest. 2020 to present. Common faults, parts availability, and battery/memory/parameter recovery."
+title: "Way Covers for OSP-P500 Era Machines | Midwest CNC Services"
+meta_description: "OSP-P500 control repair across the Midwest. 2020 to present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Way Covers for OSP-P500 Era Machines"
 slug: "okuma-way-covers-osp-p500"
 page_type: "cnc_spindle"

@@ -1,5 +1,5 @@
 ---
-title: "Monarch CNC Way Covers"
+title: "Monarch CNC Way Covers | Midwest CNC Services"
 meta_description: "Replacement Monarch CNC way covers manufactured to spec. Bellows, telescoping steel, and roll-up styles. 2–4 week lead time on most orders."
 h1: "Monarch CNC Way Cover Replacement"
 slug: "monarch"
@@ -201,6 +201,14 @@ Experienced field technicians with hands-on time across the major CNC OEM platfo
 <h2 id="faq">Frequently Asked Questions</h2>
 <div class="faq-list">
 <details class="faq-item">
+  <summary>Where can I buy Monarch way covers near me?</summary>
+  <div class="faq-answer"><p>Midwest CNC Services builds replacement Monarch way covers at our Waterloo, Iowa shop and ships to any continental US destination. Direct sales to shops across Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Most orders ship in 2–4 weeks. Call 319-610-4341 to discuss your machine.</p></div>
+</details>
+<details class="faq-item">
+  <summary>How much do replacement Monarch way covers cost?</summary>
+  <div class="faq-answer"><p>Replacement Monarch way cover pricing depends on dimensions, style (bellows, telescoping steel, or roll-up), and material. We quote from your measurements, drawings, or the original cover. Most quotes include freight to major Midwest metros and go out within one business day.</p></div>
+</details>
+<details class="faq-item">
   <summary>What way-cover styles do you build for Monarch machines?</summary>
   <div class="faq-answer"><p>Three styles — bellows, telescoping steel, and roll-up — selected based on machine design, debris environment, and clearance constraints. We measure from your original or build to drawing.</p></div>
 </details>
@@ -223,6 +231,22 @@ Experienced field technicians with hands-on time across the major CNC OEM platfo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I buy Monarch way covers near me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Midwest CNC Services builds replacement Monarch way covers at our Waterloo, Iowa shop and ships to any continental US destination. Direct sales to shops across Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Most orders ship in 2–4 weeks. Call 319-610-4341 to discuss your machine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do replacement Monarch way covers cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Replacement Monarch way cover pricing depends on dimensions, style (bellows, telescoping steel, or roll-up), and material. We quote from your measurements, drawings, or the original cover. Most quotes include freight to major Midwest metros and go out within one business day."
+      }
+    },
     {
       "@type": "Question",
       "name": "What way-cover styles do you build for Monarch machines?",

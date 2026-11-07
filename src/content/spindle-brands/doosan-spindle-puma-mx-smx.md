@@ -1,6 +1,6 @@
 ---
-title: "Doosan Puma MX / SMX Multitasking Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the Doosan Puma MX / SMX. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "Doosan Puma MX / SMX Multitasking Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "Doosan Puma MX / SMX repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan Puma MX / SMX Multitasking Spindle Repair & Grinding"
 slug: "doosan-spindle-puma-mx-smx"
 page_type: "cnc_spindle"

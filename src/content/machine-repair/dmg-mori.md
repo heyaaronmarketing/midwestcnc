@@ -1,5 +1,5 @@
 ---
-title: "DMG Mori CNC Machine Repair"
+title: "DMG Mori CNC Machine Repair | Midwest CNC Services"
 meta_description: "Expert DMG Mori CNC machine repair across the Midwest. Browse by series, by control generation, or by service. Find your model with our machine lookup."
 h1: "DMG Mori CNC Machine Repair & Service"
 slug: "dmg-mori"

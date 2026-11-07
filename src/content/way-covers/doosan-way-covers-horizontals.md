@@ -1,6 +1,6 @@
 ---
-title: "Doosan NHM / NHP / HC Way Covers"
-meta_description: "Replacement way covers for the Doosan NHM / NHP / HC Horizontals. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Doosan NHM / NHP / HC Way Covers | Midwest CNC Services"
+meta_description: "Doosan NHM / NHP / HC Horizontals repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Doosan NHM / NHP / HC Way Covers"
 slug: "doosan-way-covers-horizontals"
 page_type: "cnc_spindle"

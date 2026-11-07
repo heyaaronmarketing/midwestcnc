@@ -1,6 +1,6 @@
 ---
-title: "Okuma VTM Way Covers"
-meta_description: "Replacement way covers for the Okuma VTM Vertical Turning. Telescoping, bellows, and roll-up styles built to spec for Midwest shops."
+title: "Okuma VTM Way Covers | Midwest CNC Services"
+meta_description: "Okuma VTM Vertical Turning repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "Okuma VTM Way Covers"
 slug: "okuma-way-covers-vtm"
 page_type: "cnc_spindle"

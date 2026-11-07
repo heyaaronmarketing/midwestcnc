@@ -1973,8 +1973,12 @@ def repairs_hub_body(brands):
 
     body.append(trust_block_html())
 
-    # FAQ
+    # FAQ — Q&As phrased to match common SERP queries verbatim for AEO
     qa = [
+        ("Where can I find CNC repair near me?",
+         "Midwest CNC Services is based in Waterloo, Iowa and provides CNC machine repair across seven Midwest states — Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Field service covers drivable Midwest routes; ship-in work handles the rest. Call 319-610-4341 or use the quote form to start."),
+        ("How much does CNC machine repair cost?",
+         "CNC machine repair cost depends on the diagnosis — bearing-pack replacement, control board rework, spindle regrind, and way alignment all scope differently. We don't quote without scoping the actual work. Most quotes go out within one business day of receiving the machine, model, and symptom description. Rebuild quotes come with a lead time and a parts breakdown."),
         ("What does a typical CNC machine repair cost?",
          "Pricing depends on the diagnostic — we don't quote without scoping the actual work. Most quotes go out within one business day of getting the machine, model, and symptom description. Expect rebuild quotes to come with a lead time and a parts breakdown."),
         ("Do you service older machines from defunct manufacturers?",
@@ -2043,6 +2047,15 @@ def spindle_hub_body(brands):
         "Toyoda, Doosan), automotive supply chain (broad coverage), and "
         "legacy CNC platforms still in production (Fadal, Hitachi Seiki, "
         "Monarch) across our seven-state Midwest service area.</p>"
+    )
+
+    body.append(
+        '<p>Beyond spindle work, we handle full '
+        '<a href="/repairs/">CNC machine repair</a> — control boards, ATC '
+        'systems, drive diagnostics, and way alignment. Shops looking for '
+        '<a href="/repairs/">CNC repair near me</a> across Iowa, Illinois, '
+        'Wisconsin, Minnesota, Nebraska, Missouri, or Texas can call '
+        '319-610-4341 or <a href="/get-a-quote/">request a quote</a>.</p>'
     )
 
     body.append(trust_block_html())
@@ -2123,9 +2136,22 @@ def way_covers_hub_body(brands):
         "drop-in replacements that match the original.</p>"
     )
 
+    body.append(
+        '<p>Beyond new covers, we handle full '
+        '<a href="/repairs/">CNC machine repair</a> and '
+        '<a href="/spindle-grinding/">spindle rebuild work</a>. Shops looking '
+        'for <a href="/repairs/">CNC repair near me</a> or '
+        '<a href="/way-covers/haas-cnc-way-covers/">Haas way covers</a> can '
+        'reach us at 319-610-4341.</p>'
+    )
+
     body.append(trust_block_html())
 
     qa = [
+        ("Where can I find way cover repair near me?",
+         "Midwest CNC Services manufactures replacement way covers from our Waterloo, Iowa shop and ships to any continental US destination. Serving shops directly in Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas — and shipping the rest. Most way-cover orders go out in 2–4 weeks."),
+        ("Do you make Haas way covers?",
+         "Yes. We build replacement way covers for the full Haas lineup — VF-series, UMC, ST-series, DT, Mini Mill, Super Mini Mill, and the VR-series. Covers are built to match the original or to drawing, in bellows, telescoping steel, or roll-up styles depending on the chip and coolant environment."),
         ("What way-cover styles do you build?",
          "Three styles: bellows for protected ways with limited debris, telescoping steel for heavier chip and coolant environments, and roll-up for retrofits and specific clearance constraints. We match the original or build to drawing."),
         ("Can you build for older machines whose OEM covers are discontinued?",

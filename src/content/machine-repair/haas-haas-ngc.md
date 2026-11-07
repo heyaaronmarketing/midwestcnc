@@ -1,5 +1,5 @@
 ---
-title: "Haas Next Generation Control (NGC) Repair"
+title: "Haas Next Generation Control (NGC) Repair | Midwest CNC Services"
 meta_description: "Haas NGC control repair across the Midwest. 2014 to present. Common faults, parts availability, and battery/memory/parameter recovery."
 h1: "Haas Next Generation Control (NGC) Repair"
 slug: "haas-haas-ngc"

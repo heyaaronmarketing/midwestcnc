@@ -1,6 +1,6 @@
 ---
-title: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
-meta_description: "Spindle rebuild and regrind for the DMG Mori NLX / ALX. Bearing packs, balancing, and tolerance checks from Waterloo, IA."
+title: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding | Midwest CNC Services"
+meta_description: "DMG Mori NLX / ALX repair across the Midwest. Models, common failure patterns, and the control generations they ship on."
 h1: "DMG Mori NLX / ALX Universal Turning Spindle Repair & Grinding"
 slug: "dmg-mori-spindle-nlx-turning"
 page_type: "cnc_spindle"

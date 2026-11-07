@@ -1,5 +1,5 @@
 ---
-title: "Brother CNC Machine Repair"
+title: "Brother CNC Machine Repair | Midwest CNC Services"
 meta_description: "Expert Brother CNC machine repair across the Midwest. Spindle, control, ATC, drive, and alignment work. Experienced field technicians."
 h1: "Brother CNC Machine Repair & Service"
 slug: "brother"
@@ -74,6 +74,14 @@ Experienced field technicians with hands-on time across the major CNC OEM platfo
 <h2 id="faq">Frequently Asked Questions</h2>
 <div class="faq-list">
 <details class="faq-item">
+  <summary>Where can I find Brother CNC machine repair near me?</summary>
+  <div class="faq-answer"><p>Midwest CNC Services repairs Brother CNC machines across seven Midwest states — Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Field service for drivable Midwest routes; ship-in work for the rest. Call 319-610-4341 or request a quote at midwestcncservices.com/get-a-quote.</p></div>
+</details>
+<details class="faq-item">
+  <summary>How much does Brother CNC machine repair cost?</summary>
+  <div class="faq-answer"><p>Brother CNC machine repair cost varies by what&#x27;s actually broken — spindle work, control-board diagnostics, ATC rebuilds, and way alignment all scope differently. We don&#x27;t quote without scoping the actual work. Most quotes go out within one business day of receiving the model and symptoms.</p></div>
+</details>
+<details class="faq-item">
   <summary>What can you fix on a Brother CNC machine?</summary>
   <div class="faq-answer"><p>Spindle, control, ATC, drive systems, and way alignment are the routine work. We diagnose before we quote — sometimes what looks like a spindle problem is something cheaper.</p></div>
 </details>
@@ -96,6 +104,22 @@ Experienced field technicians with hands-on time across the major CNC OEM platfo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I find Brother CNC machine repair near me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Midwest CNC Services repairs Brother CNC machines across seven Midwest states — Iowa, Illinois, Wisconsin, Minnesota, Nebraska, Missouri, and Texas. Field service for drivable Midwest routes; ship-in work for the rest. Call 319-610-4341 or request a quote at midwestcncservices.com/get-a-quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Brother CNC machine repair cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brother CNC machine repair cost varies by what's actually broken — spindle work, control-board diagnostics, ATC rebuilds, and way alignment all scope differently. We don't quote without scoping the actual work. Most quotes go out within one business day of receiving the model and symptoms."
+      }
+    },
     {
       "@type": "Question",
       "name": "What can you fix on a Brother CNC machine?",
