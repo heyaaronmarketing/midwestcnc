@@ -4,121 +4,121 @@
 
 ## Status
 
-- **Published:** 17
+- **Published:** 18
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -15
+- **Unscheduled backlog:** -16
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ## Calendar
 
-### Week of Jun 1, 2026
+### Week of Jun 1, 2026 &mdash; *past*
 
 - **Tue Jun 2** &mdash; *CNC Control Systems* &mdash; [Mazatrol Matrix vs. Smooth: When to Upgrade](../src/content/insights/cnc-control-systems/mazatrol-matrix-vs-smooth.md) ✓
 - **Thu Jun 4** &mdash; *Way Covers Engineering* &mdash; [Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins](../src/content/insights/way-covers-engineering/telescoping-vs-bellows-vs-rollup.md)
 
-### Week of Jun 8, 2026
+### Week of Jun 8, 2026 &mdash; *past*
 
 - **Tue Jun 9** &mdash; *Field Service & Logistics (Midwest)* &mdash; [The 4-Hour Drive Radius: What Iowa Shops Get](../src/content/insights/field-service-logistics/iowa-four-hour-radius.md)
 - **Thu Jun 11** &mdash; *Buying & Owning Used CNC* &mdash; [Used VMC Inspection Checklist: What We Actually Check](../src/content/insights/buying-owning-used-cnc/used-vmc-inspection-checklist.md)
 
-### Week of Jun 15, 2026
+### Week of Jun 15, 2026 &mdash; *past*
 
 - **Tue Jun 16** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Bearing Failure Modes: Cage, Race, Ball, Retainer](../src/content/insights/spindle-diagnostics/spindle-bearing-failure-modes.md) ✓
 - **Thu Jun 18** &mdash; *CNC Control Systems* &mdash; [Fanuc Alarm 401: Causes and Recovery](../src/content/insights/cnc-control-systems/fanuc-alarm-401.md)
 
-### Week of Jun 22, 2026
+### Week of Jun 22, 2026 &mdash; *past*
 
 - **Tue Jun 23** &mdash; *Way Covers Engineering* &mdash; [Measuring for Way Cover Replacement: The Field Method](../src/content/insights/way-covers-engineering/measure-for-cover-replacement.md)
 - **Thu Jun 25** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Ship the Machine vs. On-Site Work: How We Decide](../src/content/insights/field-service-logistics/ship-machine-vs-onsite.md)
 
-### Week of Jun 29, 2026
+### Week of Jun 29, 2026 &mdash; *past*
 
 - **Tue Jun 30** &mdash; *Buying & Owning Used CNC* &mdash; [Used Mazak Buying Guide: Era-by-Era](../src/content/insights/buying-owning-used-cnc/used-mazak-by-era.md)
 - **Thu Jul 2** &mdash; *CNC Control Systems* &mdash; [Heidenhain TNC Retrofit: When It's Worth It](../src/content/insights/cnc-control-systems/heidenhain-tnc-retrofit.md)
 
-### Week of Jul 6, 2026
+### Week of Jul 6, 2026 &mdash; *past*
 
 - **Tue Jul 7** &mdash; *Way Covers Engineering* &mdash; [OEM-Spec vs. Custom Way Covers: Cost and Lead Time](../src/content/insights/way-covers-engineering/oem-vs-custom-way-covers.md)
 - **Thu Jul 9** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Multi-State Spindle Logistics: Shipping from Texas](../src/content/insights/field-service-logistics/multi-state-spindle-logistics.md)
 
-### Week of Jul 13, 2026
+### Week of Jul 13, 2026 &mdash; *past*
 
 - **Tue Jul 14** &mdash; *Buying & Owning Used CNC* &mdash; [Used Haas Buying: Classic Control vs. NGC](../src/content/insights/buying-owning-used-cnc/used-haas-classic-vs-ngc.md)
 - **Thu Jul 16** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Runout: Causes, Measurement, and When to Act](../src/content/insights/spindle-diagnostics/spindle-runout-measurement.md) ✓
 
-### Week of Jul 20, 2026
+### Week of Jul 20, 2026 &mdash; *past*
 
 - **Tue Jul 21** &mdash; *CNC Control Systems* &mdash; [Siemens 840D vs. 840Dsl: What's Different](../src/content/insights/cnc-control-systems/siemens-840d-vs-840dsl.md)
 - **Thu Jul 23** &mdash; *Way Covers Engineering* &mdash; [Pallet-Changer Interface Sealing: A Particular Challenge](../src/content/insights/way-covers-engineering/pallet-changer-interface-sealing.md)
 
-### Week of Jul 27, 2026
+### Week of Jul 27, 2026 &mdash; *past*
 
-- **Tue Jul 28** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Pre-Call Diagnostic: Questions That Save You Money](../src/content/insights/field-service-logistics/pre-call-diagnostic-questions.md)
+- **Tue Jul 28** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Pre-Call Diagnostic: Questions That Save You Money](../src/content/insights/field-service-logistics/pre-call-diagnostic-questions.md) ✓
 - **Thu Jul 30** &mdash; *Buying & Owning Used CNC* &mdash; [Used DMG Mori: Identifying Post-Merger Machines](../src/content/insights/buying-owning-used-cnc/used-dmg-mori-post-merger.md)
 
-### Week of Aug 3, 2026
+### Week of Aug 3, 2026 &mdash; *past*
 
 - **Tue Aug 4** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Cold-Start Spindle Noise: Normal vs. Failure](../src/content/insights/spindle-diagnostics/cold-start-spindle-noise.md) ✓
 - **Thu Aug 6** &mdash; *CNC Control Systems* &mdash; [Okuma OSP-P200 to P300: Practical Impact](../src/content/insights/cnc-control-systems/okuma-osp-p200-to-p300.md)
 
-### Week of Aug 10, 2026
+### Week of Aug 10, 2026 &mdash; *past*
 
 - **Tue Aug 11** &mdash; *Way Covers Engineering* &mdash; [Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win](../src/content/insights/way-covers-engineering/trunnion-bellows-on-5-axis.md)
 - **Thu Aug 13** &mdash; *Field Service & Logistics (Midwest)* &mdash; [What We Bring on a Field Call (and What We Don't)](../src/content/insights/field-service-logistics/what-service-truck-carries.md)
 
-### Week of Aug 17, 2026
+### Week of Aug 17, 2026 &mdash; *past*
 
 - **Tue Aug 18** &mdash; *Buying & Owning Used CNC* &mdash; [Used Doosan/Daewoo: Parts Continuity Across the Rename](../src/content/insights/buying-owning-used-cnc/used-doosan-daewoo-parts.md)
 - **Thu Aug 20** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Taper Damage: When It Can Be Salvaged](../src/content/insights/spindle-diagnostics/spindle-taper-damage.md) ✓
 
-### Week of Aug 24, 2026
+### Week of Aug 24, 2026 &mdash; *past*
 
 - **Tue Aug 25** &mdash; *CNC Control Systems* &mdash; [Legacy CNC Control Parts: What's NLA in 2026](../src/content/insights/cnc-control-systems/legacy-control-parts-availability.md)
 - **Thu Aug 27** &mdash; *Way Covers Engineering* &mdash; [Chip Load and Cover Life: The Connection](../src/content/insights/way-covers-engineering/chip-load-and-cover-life.md)
 
-### Week of Aug 31, 2026
+### Week of Aug 31, 2026 &mdash; *past*
 
 - **Tue Sep 1** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Travel Time Reality: Nebraska, Missouri, Texas](../src/content/insights/field-service-logistics/travel-time-reality-nebraska-missouri-texas.md)
 - **Thu Sep 3** &mdash; *Buying & Owning Used CNC* &mdash; [Used Okuma: OSP Era and Resale](../src/content/insights/buying-owning-used-cnc/used-okuma-osp-era-impact.md)
 
-### Week of Sep 7, 2026
+### Week of Sep 7, 2026 &mdash; *past*
 
 - **Tue Sep 8** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [ATC Rattle vs. True Spindle Failure: How to Tell](../src/content/insights/spindle-diagnostics/atc-rattle-vs-spindle-failure.md) ✓
 - **Thu Sep 10** &mdash; *CNC Control Systems* &mdash; [Mazatrol Legacy Screen Failure: Replacement Options](../src/content/insights/cnc-control-systems/mazatrol-legacy-screen-failure.md)
 
-### Week of Sep 14, 2026
+### Week of Sep 14, 2026 &mdash; *past*
 
 - **Tue Sep 15** &mdash; *Way Covers Engineering* &mdash; [Coolant Compatibility for Cover Seals](../src/content/insights/way-covers-engineering/coolant-compatibility-cover-seals.md)
 - **Thu Sep 17** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Coordinating a Multi-Day On-Site Service Trip](../src/content/insights/field-service-logistics/multi-day-onsite-coordination.md)
 
-### Week of Sep 21, 2026
+### Week of Sep 21, 2026 &mdash; *past*
 
 - **Tue Sep 22** &mdash; *Buying & Owning Used CNC* &mdash; [Used Fanuc-Controlled Machines: Control vs. Iron Value](../src/content/insights/buying-owning-used-cnc/used-fanuc-machines-control-vs-iron.md)
 - **Thu Sep 24** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Surface Finish Degradation: Spindle or Fixture?](../src/content/insights/spindle-diagnostics/surface-finish-degradation.md) ✓
 
-### Week of Sep 28, 2026
+### Week of Sep 28, 2026 &mdash; *past*
 
 - **Tue Sep 29** &mdash; *CNC Control Systems* &mdash; [CNC Battery Backup Loss: Data Recovery Procedure](../src/content/insights/cnc-control-systems/battery-backup-data-loss.md)
 - **Thu Oct 1** &mdash; *Way Covers Engineering* &mdash; [Mounting Hardware Availability by Machine Generation](../src/content/insights/way-covers-engineering/mounting-hardware-by-generation.md)
 
-### Week of Oct 5, 2026
+### Week of Oct 5, 2026 &mdash; *past*
 
 - **Tue Oct 6** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Production Downtime Cost: Framing the Urgency](../src/content/insights/field-service-logistics/production-downtime-cost-framing.md)
 - **Thu Oct 8** &mdash; *Buying & Owning Used CNC* &mdash; [Legacy Fadal: Still Viable, with Caveats](../src/content/insights/buying-owning-used-cnc/legacy-fadal-viability.md)
 
-### Week of Oct 12, 2026
+### Week of Oct 12, 2026 &mdash; *past*
 
 - **Tue Oct 13** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Thermal Growth: Drift, Compensation, and Faults](../src/content/insights/spindle-diagnostics/spindle-thermal-growth.md) ✓
 - **Thu Oct 15** &mdash; *CNC Control Systems* &mdash; [Servo Drive vs. CNC Controller Faults: How to Distinguish](../src/content/insights/cnc-control-systems/servo-drive-vs-controller-fault.md)
 
-### Week of Oct 19, 2026
+### Week of Oct 19, 2026 &mdash; *past*
 
 - **Tue Oct 20** &mdash; *Way Covers Engineering* &mdash; [Cover Replacement Lead Time: What Drives It](../src/content/insights/way-covers-engineering/cover-replacement-lead-time.md)
 - **Thu Oct 22** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Five-State Weather Impact on Service Schedule](../src/content/insights/field-service-logistics/weather-impact-on-service.md)
 
-### Week of Oct 26, 2026
+### Week of Oct 26, 2026 &mdash; *past*
 
 - **Tue Oct 27** &mdash; *Buying & Owning Used CNC* &mdash; [Hitachi Seiki Legacy: The Parts Reality](../src/content/insights/buying-owning-used-cnc/hitachi-seiki-legacy-parts.md)
 - **Thu Oct 29** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Coolant Intrusion in Spindles: Prevention and Recovery](../src/content/insights/spindle-diagnostics/coolant-intrusion-damage.md) ✓
@@ -263,12 +263,12 @@ _0 published &middot; 15 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_0 published &middot; 15 scheduled &middot; 0 unscheduled (of 15 total)._
+_1 published &middot; 14 scheduled &middot; 0 unscheduled (of 15 total)._
 
+- ✓ **2026-07-28** &mdash; ~~Pre-Call Diagnostic: Questions That Save You Money~~ (published)
 - ◯ `2026-06-09` &mdash; The 4-Hour Drive Radius: What Iowa Shops Get
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-09` &mdash; Multi-State Spindle Logistics: Shipping from Texas
-- ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
 - ◯ `2026-08-13` &mdash; What We Bring on a Field Call (and What We Don't)
 - ◯ `2026-09-01` &mdash; Travel Time Reality: Nebraska, Missouri, Texas
 - ◯ `2026-09-17` &mdash; Coordinating a Multi-Day On-Site Service Trip
