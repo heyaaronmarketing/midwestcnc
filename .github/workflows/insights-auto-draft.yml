@@ -189,16 +189,31 @@ jobs:
           PR_URL=$(gh pr view "$BRANCH" --json url --jq .url)
           echo "PR opened: $PR_URL"
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
-
-          # Enable auto-merge on the PR. The 12-gate validator in
-          # scripts/insights_validators.py already ran before this PR was
-          # opened — if we got here, the article passed every gate. Auto-
-          # merge (squash) means it ships the moment GitHub's required
-          # status checks (if any) pass. No required checks configured =
-          # merges within seconds.
-          gh pr merge "$BRANCH" --auto --squash --delete-branch \
-            || echo "⚠ auto-merge enable failed (check repo settings)"
+          echo "pr_number=$(gh pr view $BRANCH --json number --jq .number)" >> "$GITHUB_OUTPUT"
+          echo "article_slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "article_title=$TITLE" >> "$GITHUB_OUTPUT"
+          echo "article_path=$ARTICLE_PATH" >> "$GITHUB_OUTPUT"
         id: pr
+
+      - name: Email article to Muse for review (hello@aaron.chat)
+        # Muse is the email-connected AI reviewer. She filters her inbox
+        # for the fixed subject prefix "[REVIEW] Insights: ..." — see the
+        # SUBJECT_PREFIX in .github/workflows/_review_email.py.
+        #
+        # On review, Muse either (a) adds the label "muse-approved" to
+        # the PR (handled by muse-approve.yml which merges) or (b) opens
+        # a PR review with change requests which blocks merge.
+        if: success() && inputs.dry_run != true
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REVIEW_TO: ${{ vars.MUSE_REVIEW_TO || 'hello@aaron.chat' }}
+          REVIEW_FROM: ${{ vars.MUSE_REVIEW_FROM || 'Midwest CNC Insights <insights@midwestcncservices.com>' }}
+          PR_URL: ${{ steps.pr.outputs.pr_url }}
+          PR_NUMBER: ${{ steps.pr.outputs.pr_number }}
+          ARTICLE_SLUG: ${{ steps.pr.outputs.article_slug }}
+          ARTICLE_TITLE: ${{ steps.pr.outputs.article_title }}
+          ARTICLE_PATH: ${{ steps.pr.outputs.article_path }}
+        run: python3 .github/workflows/_review_email.py
 
       - name: Summarize run in Actions UI
         if: always()

@@ -1,0 +1,54 @@
+name: Muse approval → squash-merge PR
+
+# Fires when Muse (or any human) adds the label "muse-approved" to an
+# auto-draft PR. Squash-merges, deletes the branch, Cloudflare auto-
+# deploys within ~90 seconds.
+#
+# Also fires on removal of the label (e.g. Muse added it by accident) —
+# no-op in that case, the merge has already happened.
+
+on:
+  pull_request:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    # Only act on the muse-approved label; ignore every other label event
+    if: github.event.label.name == 'muse-approved'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Confirm this is an auto-draft PR
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          LABELS=$(gh pr view "$PR_NUMBER" --repo "${{ github.repository }}" --json labels --jq '[.labels[].name] | join(",")')
+          echo "PR labels: $LABELS"
+          # Must have BOTH 'insights-auto-draft' AND 'muse-approved' to merge
+          if echo "$LABELS" | grep -q "insights-auto-draft"; then
+            echo "is_eligible=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_eligible=false" >> "$GITHUB_OUTPUT"
+            echo "⏭  Not an insights-auto-draft PR — skipping merge."
+          fi
+
+      - name: Squash-merge + delete branch
+        if: steps.check.outputs.is_eligible == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          REPO="${{ github.repository }}"
+          gh pr merge "$PR_NUMBER" --repo "$REPO" --squash --delete-branch
+          echo "✓ PR #$PR_NUMBER merged."
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "## ✅ Muse-approved PR #$PR_NUMBER merged" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Cloudflare auto-deploy fires within ~90 seconds." >> "$GITHUB_STEP_SUMMARY"
