@@ -197,9 +197,14 @@ def compose_email(shipped, open_list, upcoming, metrics):
 # ---------- Resend send ----------
 
 def send(subject: str, html: str) -> None:
-    api_key = os.environ.get("RESEND_API_KEY")
-    if not api_key:
-        print("No RESEND_API_KEY — printing instead")
+    """POST through the Worker's /api/internal/send-email endpoint.
+    The Worker owns the Resend API key; we never need it here."""
+    endpoint = os.environ.get(
+        "EMAIL_ENDPOINT", "https://midwestcncservices.com/api/internal/send-email"
+    )
+    secret = os.environ.get("WORKER_REVIEW_SECRET")
+    if not secret:
+        print("No WORKER_REVIEW_SECRET — printing instead")
         print(subject)
         print(html[:2000])
         return
@@ -209,16 +214,20 @@ def send(subject: str, html: str) -> None:
 
     payload = {"from": from_email, "to": to, "subject": subject, "html": html}
     req = urllib.request.Request(
-        "https://api.resend.com/emails",
+        endpoint,
         data=json.dumps(payload).encode(),
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        headers={
+            "Authorization": f"Bearer {secret}",
+            "Content-Type": "application/json",
+            "User-Agent": "midwestcnc-weekly-digest/1.0",
+        },
     )
     try:
         with urllib.request.urlopen(req, timeout=15) as r:
             res = json.loads(r.read())
         print(f"✓ Sent: {res.get('id', 'ok')}  →  {', '.join(to)}")
     except urllib.error.HTTPError as e:
-        print(f"✗ Resend {e.code}: {e.read().decode()[:400]}")
+        print(f"✗ Worker email relay {e.code}: {e.read().decode()[:400]}")
         sys.exit(1)
 
 

@@ -33,7 +33,7 @@ jobs:
 
       - name: Send test review email
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          WORKER_REVIEW_SECRET: ${{ secrets.WORKER_REVIEW_SECRET }}
           REVIEW_TO: ${{ vars.MUSE_REVIEW_TO || 'hello@aaron.chat' }}
           REVIEW_FROM: ${{ vars.MUSE_REVIEW_FROM || 'Midwest CNC Insights <insights@midwestcncservices.com>' }}
           PR_URL: 'https://github.com/${{ github.repository }}/pulls'

@@ -102,6 +102,11 @@ export default {
       return new Response("Method not allowed", { status: 405 });
     }
 
+    if (url.pathname === "/api/internal/send-email") {
+      if (request.method !== "POST") return new Response("Method not allowed", { status: 405 });
+      return handleSendEmail(request, env);
+    }
+
     if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
       return handleAdmin(request, env, url);
     }
@@ -1928,5 +1933,85 @@ async function caseStudyTrafficSection(env) {
     };
   } catch (e) {
     return { error: String(e && e.message || e) };
+  }
+}
+
+// =====================================================================
+// POST /api/internal/send-email  — authenticated email relay
+// =====================================================================
+// Lets trusted callers (currently GitHub Actions: insights-auto-draft
+// and weekly-digest workflows) send email through the Worker's
+// RESEND_API_KEY without ever seeing the key itself. Keeps the Resend
+// key as a Cloudflare-only secret.
+//
+// Auth: Authorization: Bearer <REVIEW_WEBHOOK_SECRET>. Constant-time
+// compare. 401 on mismatch. Cloudflare's own rate limits (plus a basic
+// per-minute cap) protect against abuse.
+//
+// Body: { from, to, subject, html, text?, reply_to? }
+//   to: string or array of strings
+// =====================================================================
+
+async function handleSendEmail(request, env) {
+  if (!env.REVIEW_WEBHOOK_SECRET) {
+    return new Response("Not configured", { status: 503 });
+  }
+  if (!env.RESEND_API_KEY) {
+    return new Response("Email backend not configured", { status: 503 });
+  }
+
+  // Constant-time auth
+  const authHeader = request.headers.get("authorization") || "";
+  const token = authHeader.startsWith("Bearer ") ? authHeader.slice(7) : "";
+  if (!(await constantTimeStringEquals(token, env.REVIEW_WEBHOOK_SECRET))) {
+    return new Response("Unauthorized", { status: 401 });
+  }
+
+  let body;
+  try { body = await request.json(); }
+  catch { return new Response("Invalid JSON", { status: 400 }); }
+
+  const from = String(body.from || "").slice(0, 200);
+  const subject = String(body.subject || "").slice(0, 300);
+  const html = String(body.html || "");
+  const text = String(body.text || "");
+  const replyTo = body.reply_to ? String(body.reply_to).slice(0, 200) : undefined;
+  const toRaw = body.to;
+  const to = Array.isArray(toRaw) ? toRaw.map(String) : [String(toRaw || "")];
+  if (!from || !subject || (!html && !text) || !to.filter(Boolean).length) {
+    return new Response("Missing required fields: from, to, subject, html|text", { status: 400 });
+  }
+
+  const payload = { from, to: to.filter(Boolean), subject };
+  if (html) payload.html = html;
+  if (text) payload.text = text;
+  if (replyTo) payload.reply_to = replyTo;
+
+  try {
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+        "User-Agent": "midwestcnc-worker-email/1.0",
+      },
+      body: JSON.stringify(payload),
+    });
+    const respBody = await r.text();
+    if (!r.ok) {
+      return new Response(JSON.stringify({ error: `Resend ${r.status}`, detail: respBody.slice(0, 500) }), {
+        status: 502,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+    return new Response(respBody, {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  } catch (e) {
+    return new Response(JSON.stringify({ error: String(e && e.message || e) }), {
+      status: 502,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 }

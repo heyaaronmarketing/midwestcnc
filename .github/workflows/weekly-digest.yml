@@ -32,7 +32,7 @@ jobs:
 
       - name: Build + send digest
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          WORKER_REVIEW_SECRET: ${{ secrets.WORKER_REVIEW_SECRET }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'ken@midwestcncservices.com,hello@aaron.chat' }}
           DIGEST_FROM: ${{ vars.DIGEST_FROM || 'Midwest CNC Insights <insights@midwestcncservices.com>' }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

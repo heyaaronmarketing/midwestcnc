@@ -112,7 +112,18 @@ def compose_html(title, slug, pr_url, pr_number, fm, body):
 
 
 def send(subject: str, html: str, text_fallback: str):
-    api_key = os.environ["RESEND_API_KEY"]
+    """POST through the Worker's /api/internal/send-email endpoint.
+    The Worker owns the Resend API key; we never need it here. Auth is
+    a shared bearer token (WORKER_REVIEW_SECRET on GH Actions side,
+    REVIEW_WEBHOOK_SECRET on the Worker side)."""
+    endpoint = os.environ.get(
+        "EMAIL_ENDPOINT", "https://midwestcncservices.com/api/internal/send-email"
+    )
+    secret = os.environ.get("WORKER_REVIEW_SECRET")
+    if not secret:
+        print("✗ WORKER_REVIEW_SECRET not set — can't auth to the email relay")
+        sys.exit(1)
+
     to_raw = os.environ.get("REVIEW_TO", "hello@aaron.chat")
     to = [t.strip() for t in to_raw.split(",") if t.strip()]
     from_email = os.environ.get("REVIEW_FROM",
@@ -129,14 +140,11 @@ def send(subject: str, html: str, text_fallback: str):
         "reply_to": "hello@aaron.chat",
     }
     req = urllib.request.Request(
-        "https://api.resend.com/emails",
+        endpoint,
         data=json.dumps(payload).encode(),
         headers={
-            "Authorization": f"Bearer {api_key}",
+            "Authorization": f"Bearer {secret}",
             "Content-Type": "application/json",
-            # Cloudflare's bot protection blocks requests with Python's
-            # default User-Agent (error code 1010). A plain descriptive
-            # UA passes.
             "User-Agent": "midwestcnc-insights-review/1.0",
         },
     )
@@ -146,7 +154,7 @@ def send(subject: str, html: str, text_fallback: str):
         print(f"✓ Sent email id={res.get('id')} to {', '.join(to)}")
         print(f"  Subject: {subject}")
     except urllib.error.HTTPError as e:
-        print(f"✗ Resend {e.code}: {e.read().decode()[:400]}")
+        print(f"✗ Worker email relay {e.code}: {e.read().decode()[:400]}")
         sys.exit(1)
 
 
