@@ -189,31 +189,19 @@ jobs:
           PR_URL=$(gh pr view "$BRANCH" --json url --jq .url)
           echo "PR opened: $PR_URL"
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
-          echo "pr_number=$(gh pr view $BRANCH --json number --jq .number)" >> "$GITHUB_OUTPUT"
-          echo "article_slug=$SLUG" >> "$GITHUB_OUTPUT"
-          echo "article_title=$TITLE" >> "$GITHUB_OUTPUT"
-          echo "article_path=$ARTICLE_PATH" >> "$GITHUB_OUTPUT"
-        id: pr
 
-      - name: Email article to Muse for review (hello@aaron.chat)
-        # Muse is the email-connected AI reviewer. She filters her inbox
-        # for the fixed subject prefix "[REVIEW] Insights: ..." — see the
-        # SUBJECT_PREFIX in .github/workflows/_review_email.py.
-        #
-        # On review, Muse either (a) adds the label "muse-approved" to
-        # the PR (handled by muse-approve.yml which merges) or (b) opens
-        # a PR review with change requests which blocks merge.
-        if: success() && inputs.dry_run != true
-        env:
-          WORKER_REVIEW_SECRET: ${{ secrets.WORKER_REVIEW_SECRET }}
-          REVIEW_TO: ${{ vars.MUSE_REVIEW_TO || 'hello@aaron.chat' }}
-          REVIEW_FROM: ${{ vars.MUSE_REVIEW_FROM || 'Midwest CNC Insights <insights@midwestcncservices.com>' }}
-          PR_URL: ${{ steps.pr.outputs.pr_url }}
-          PR_NUMBER: ${{ steps.pr.outputs.pr_number }}
-          ARTICLE_SLUG: ${{ steps.pr.outputs.article_slug }}
-          ARTICLE_TITLE: ${{ steps.pr.outputs.article_title }}
-          ARTICLE_PATH: ${{ steps.pr.outputs.article_path }}
-        run: python3 .github/workflows/_review_email.py
+          # Trust-the-gates auto-merge. If the 12-gate validator passed
+          # (which it did or we wouldn't be here), the article ships
+          # straight to main. The weekly digest email on Monday mornings
+          # is the review loop — you see what shipped last week + what's
+          # scheduled next, and can edit or revert anything that looks
+          # off AFTER the fact.
+          gh pr merge "$BRANCH" --squash --delete-branch || {
+            echo "⚠ Direct merge failed — PR left open for manual review"
+            exit 0
+          }
+          echo "✓ Merged + branch deleted"
+        id: pr
 
       - name: Summarize run in Actions UI
         if: always()
