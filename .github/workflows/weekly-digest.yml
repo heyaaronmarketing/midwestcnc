@@ -1,0 +1,39 @@
+name: Weekly Insights Digest Email
+
+# Monday 6:00 AM Central (12:00 UTC) — one email a week summarizing:
+# - What shipped last week (merged insight articles + any content PRs)
+# - What's open for review (unmerged auto-draft branches)
+# - Next week's scheduled articles (what the auto-draft bot will try next)
+# - Topline SEO/AEO metrics from /api/case-study.json
+#
+# Sends via the same Resend API key used by the quote form, to
+# aaron@midwestcncservices.com (or RESEND_DIGEST_TO env override).
+
+on:
+  schedule:
+    # 12:00 UTC Monday = 6 AM Central (CST) / 7 AM Central (CDT)
+    - cron: '0 12 * * 1'
+  workflow_dispatch:  # manual trigger for testing
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # need history for "merged last week" query
+
+      - name: Build + send digest
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_TO: ${{ vars.DIGEST_TO || 'ken@midwestcncservices.com,hello@aaron.chat' }}
+          DIGEST_FROM: ${{ vars.DIGEST_FROM || 'Midwest CNC Insights <insights@midwestcncservices.com>' }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/workflows/_weekly_digest.py
