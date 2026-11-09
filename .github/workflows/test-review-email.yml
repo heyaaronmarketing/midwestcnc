@@ -1,0 +1,44 @@
+name: Test — Review email to Muse
+
+# Manual-only. Sends a test review email with an existing published
+# article to hello@aaron.chat so Muse's filter / rendering can be
+# verified before real auto-drafts start triggering.
+#
+# Usage: Actions tab → "Test — Review email to Muse" → Run workflow
+# OR: gh workflow run test-review-email.yml -f slug=<existing-slug>
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug of an existing insights article to use as the test content'
+        required: false
+        type: string
+        default: 'pre-call-diagnostic-questions'
+      pillar:
+        description: 'Pillar directory containing the article'
+        required: false
+        type: string
+        default: 'field-service-logistics'
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send test review email
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REVIEW_TO: ${{ vars.MUSE_REVIEW_TO || 'hello@aaron.chat' }}
+          REVIEW_FROM: ${{ vars.MUSE_REVIEW_FROM || 'Midwest CNC Insights <insights@midwestcncservices.com>' }}
+          PR_URL: 'https://github.com/${{ github.repository }}/pulls'
+          PR_NUMBER: 'TEST'
+          ARTICLE_SLUG: ${{ inputs.slug }}
+          ARTICLE_TITLE: 'TEST — Pre-Call Diagnostic: Questions That Save You Money'
+          ARTICLE_PATH: 'src/content/insights/${{ inputs.pillar }}/${{ inputs.slug }}.md'
+        run: python3 .github/workflows/_review_email.py

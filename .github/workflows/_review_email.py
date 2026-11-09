@@ -131,7 +131,14 @@ def send(subject: str, html: str, text_fallback: str):
     req = urllib.request.Request(
         "https://api.resend.com/emails",
         data=json.dumps(payload).encode(),
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            # Cloudflare's bot protection blocks requests with Python's
+            # default User-Agent (error code 1010). A plain descriptive
+            # UA passes.
+            "User-Agent": "midwestcnc-insights-review/1.0",
+        },
     )
     try:
         with urllib.request.urlopen(req, timeout=15) as r:
