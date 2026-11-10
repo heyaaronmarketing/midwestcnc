@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 18
+- **Published:** 24
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -16
+- **Unscheduled backlog:** -22
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -20,28 +20,28 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Jun 8, 2026 &mdash; *past*
 
-- **Tue Jun 9** &mdash; *Field Service & Logistics (Midwest)* &mdash; [The 4-Hour Drive Radius: What Iowa Shops Get](../src/content/insights/field-service-logistics/iowa-four-hour-radius.md)
+- **Tue Jun 9** &mdash; *Field Service & Logistics (Midwest)* &mdash; [The 4-Hour Drive Radius: What Iowa Shops Get](../src/content/insights/field-service-logistics/iowa-four-hour-radius.md) ✓
 - **Thu Jun 11** &mdash; *Buying & Owning Used CNC* &mdash; [Used VMC Inspection Checklist: What We Actually Check](../src/content/insights/buying-owning-used-cnc/used-vmc-inspection-checklist.md)
 
 ### Week of Jun 15, 2026 &mdash; *past*
 
 - **Tue Jun 16** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Bearing Failure Modes: Cage, Race, Ball, Retainer](../src/content/insights/spindle-diagnostics/spindle-bearing-failure-modes.md) ✓
-- **Thu Jun 18** &mdash; *CNC Control Systems* &mdash; [Fanuc Alarm 401: Causes and Recovery](../src/content/insights/cnc-control-systems/fanuc-alarm-401.md)
+- **Thu Jun 18** &mdash; *CNC Control Systems* &mdash; [Fanuc Alarm 401: Causes and Recovery](../src/content/insights/cnc-control-systems/fanuc-alarm-401.md) ✓
 
 ### Week of Jun 22, 2026 &mdash; *past*
 
-- **Tue Jun 23** &mdash; *Way Covers Engineering* &mdash; [Measuring for Way Cover Replacement: The Field Method](../src/content/insights/way-covers-engineering/measure-for-cover-replacement.md)
+- **Tue Jun 23** &mdash; *Way Covers Engineering* &mdash; [Measuring for Way Cover Replacement: The Field Method](../src/content/insights/way-covers-engineering/measure-for-cover-replacement.md) ✓
 - **Thu Jun 25** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Ship the Machine vs. On-Site Work: How We Decide](../src/content/insights/field-service-logistics/ship-machine-vs-onsite.md)
 
 ### Week of Jun 29, 2026 &mdash; *past*
 
 - **Tue Jun 30** &mdash; *Buying & Owning Used CNC* &mdash; [Used Mazak Buying Guide: Era-by-Era](../src/content/insights/buying-owning-used-cnc/used-mazak-by-era.md)
-- **Thu Jul 2** &mdash; *CNC Control Systems* &mdash; [Heidenhain TNC Retrofit: When It's Worth It](../src/content/insights/cnc-control-systems/heidenhain-tnc-retrofit.md)
+- **Thu Jul 2** &mdash; *CNC Control Systems* &mdash; [Heidenhain TNC Retrofit: When It's Worth It](../src/content/insights/cnc-control-systems/heidenhain-tnc-retrofit.md) ✓
 
 ### Week of Jul 6, 2026 &mdash; *past*
 
 - **Tue Jul 7** &mdash; *Way Covers Engineering* &mdash; [OEM-Spec vs. Custom Way Covers: Cost and Lead Time](../src/content/insights/way-covers-engineering/oem-vs-custom-way-covers.md)
-- **Thu Jul 9** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Multi-State Spindle Logistics: Shipping from Texas](../src/content/insights/field-service-logistics/multi-state-spindle-logistics.md)
+- **Thu Jul 9** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Multi-State Spindle Logistics: Shipping from Texas](../src/content/insights/field-service-logistics/multi-state-spindle-logistics.md) ✓
 
 ### Week of Jul 13, 2026 &mdash; *past*
 
@@ -65,7 +65,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Aug 10, 2026 &mdash; *past*
 
-- **Tue Aug 11** &mdash; *Way Covers Engineering* &mdash; [Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win](../src/content/insights/way-covers-engineering/trunnion-bellows-on-5-axis.md)
+- **Tue Aug 11** &mdash; *Way Covers Engineering* &mdash; [Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win](../src/content/insights/way-covers-engineering/trunnion-bellows-on-5-axis.md) ✓
 - **Thu Aug 13** &mdash; *Field Service & Logistics (Midwest)* &mdash; [What We Bring on a Field Call (and What We Don't)](../src/content/insights/field-service-logistics/what-service-truck-carries.md)
 
 ### Week of Aug 17, 2026 &mdash; *past*
@@ -123,7 +123,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 - **Tue Oct 27** &mdash; *Buying & Owning Used CNC* &mdash; [Hitachi Seiki Legacy: The Parts Reality](../src/content/insights/buying-owning-used-cnc/hitachi-seiki-legacy-parts.md)
 - **Thu Oct 29** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Coolant Intrusion in Spindles: Prevention and Recovery](../src/content/insights/spindle-diagnostics/coolant-intrusion-damage.md) ✓
 
-### Week of Nov 2, 2026
+### Week of Nov 2, 2026 &mdash; *past*
 
 - **Tue Nov 3** &mdash; *CNC Control Systems* &mdash; [Control or Mechanical? The Diagnostic Logic](../src/content/insights/cnc-control-systems/control-vs-mechanical-diagnostic.md)
 - **Thu Nov 5** &mdash; *Way Covers Engineering* &mdash; [The Hidden Cost of Running with Damaged Covers](../src/content/insights/way-covers-engineering/hidden-cost-damaged-covers.md)
@@ -223,11 +223,11 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_1 published &middot; 14 scheduled &middot; 0 unscheduled (of 15 total)._
+_3 published &middot; 12 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
-- ◯ `2026-06-18` &mdash; Fanuc Alarm 401: Causes and Recovery
-- ◯ `2026-07-02` &mdash; Heidenhain TNC Retrofit: When It's Worth It
+- ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
+- ✓ **2026-07-02** &mdash; ~~Heidenhain TNC Retrofit: When It's Worth It~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
 - ◯ `2026-08-25` &mdash; Legacy CNC Control Parts: What's NLA in 2026
@@ -243,13 +243,13 @@ _1 published &middot; 14 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_1 published &middot; 14 scheduled &middot; 0 unscheduled (of 15 total)._
+_3 published &middot; 12 scheduled &middot; 0 unscheduled (of 15 total)._
 
+- ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
+- ✓ **2026-08-11** &mdash; ~~Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
-- ◯ `2026-06-23` &mdash; Measuring for Way Cover Replacement: The Field Method
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-08-11` &mdash; Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win
 - ◯ `2026-08-27` &mdash; Chip Load and Cover Life: The Connection
 - ◯ `2026-09-15` &mdash; Coolant Compatibility for Cover Seals
 - ◯ `2026-10-01` &mdash; Mounting Hardware Availability by Machine Generation
@@ -263,11 +263,11 @@ _1 published &middot; 14 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_0 published &middot; 15 scheduled &middot; 0 unscheduled (of 15 total)._
+_2 published &middot; 13 scheduled &middot; 0 unscheduled (of 15 total)._
 
-- ◯ `2026-06-09` &mdash; The 4-Hour Drive Radius: What Iowa Shops Get
+- ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
+- ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
-- ◯ `2026-07-09` &mdash; Multi-State Spindle Logistics: Shipping from Texas
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
 - ◯ `2026-08-13` &mdash; What We Bring on a Field Call (and What We Don't)
 - ◯ `2026-09-01` &mdash; Travel Time Reality: Nebraska, Missouri, Texas
