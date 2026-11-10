@@ -188,6 +188,20 @@ def pick_next_article() -> Optional[dict]:
 
 # ---------- Link suggester ----------
 
+# Evergreen hub URLs — always valid to link to from any article.
+# Padded into the suggestion list when the semantic suggester returns
+# fewer than 8 (guarantees Opus has ≥5 real targets to weave in).
+_EVERGREEN_HUB_LINKS = [
+    {"url": "/repairs/",          "suggested_anchor": "CNC machine repair"},
+    {"url": "/spindle-grinding/", "suggested_anchor": "spindle rebuild and grinding"},
+    {"url": "/way-covers/",       "suggested_anchor": "replacement way covers"},
+    {"url": "/service-area/",     "suggested_anchor": "our 7-state service area"},
+    {"url": "/insights/",         "suggested_anchor": "technical insights"},
+    {"url": "/get-a-quote/",      "suggested_anchor": "request a quote"},
+    {"url": "/about/",            "suggested_anchor": "about Midwest CNC"},
+]
+
+
 def get_link_suggestions(query: str) -> list:
     rc, out, err = run([
         "python3", "scripts/insights_link_suggester.py",
@@ -198,9 +212,21 @@ def get_link_suggestions(query: str) -> list:
     if rc != 0:
         fail(f"link suggester failed:\n{err}")
     try:
-        return json.loads(out)
+        links = json.loads(out)
     except json.JSONDecodeError:
         fail(f"link suggester returned non-JSON:\n{out}")
+
+    # Always pad with evergreen hub URLs so the article has ≥8 options
+    # even for topics where the semantic suggester finds nothing close.
+    # De-dupe by URL to avoid repeats when the suggester already picked a hub.
+    seen = {L["url"] for L in links}
+    for hub in _EVERGREEN_HUB_LINKS:
+        if hub["url"] not in seen:
+            links.append(hub)
+            seen.add(hub["url"])
+        if len(links) >= 10:
+            break
+    return links
 
 
 # ---------- Prompt construction ----------
@@ -332,12 +358,38 @@ def build_user_prompt(article: dict, links: list, attempt: int,
         for f in gate_failures:
             lines.append(f"- {f}")
         lines.append("")
+
+        # Detect internal_links failure — the most common gate failure and
+        # the one Opus consistently under-addresses with the generic hint.
+        # Give an explicit markdown-link example + require literal format.
+        if any("internal_links" in str(f) for f in gate_failures):
+            lines.append("### ⚠ CRITICAL: internal_links gate failed")
+            lines.append("")
+            lines.append("The validator requires **AT LEAST 5 in-body markdown links** to other pages on this site. "
+                        "Your previous draft did not include them.")
+            lines.append("")
+            lines.append("**Mandatory format** — each link must be a full markdown link syntax woven into a sentence:")
+            lines.append("")
+            lines.append("    ... for context on rebuild timelines, see our [spindle grinding hub](/spindle-grinding/). ...")
+            lines.append("    ... teardown costs are documented on the [machine repair hub](/repairs/). ...")
+            lines.append("")
+            lines.append("**Minimum requirements for this rewrite:**")
+            lines.append(f"1. At least 5 links from the \"Internal-link targets\" list above.")
+            lines.append("2. Each link appears as a FULL markdown anchor: `[anchor text](url)` — NOT as a bare URL, NOT as a \"Related Posts\" footer.")
+            lines.append("3. Links are woven into body prose, one per H2 section where contextually natural.")
+            lines.append("4. The evergreen hub URLs (/repairs/, /spindle-grinding/, /way-covers/) are always safe to link to — use them if the semantic suggestions don't fit.")
+            lines.append("")
+            lines.append("If you cannot naturally weave 5 links into the current article structure, "
+                        "restructure the article — add a sentence per H2 that references a related page. "
+                        "This is non-negotiable. Draft WILL fail validation without it.")
+            lines.append("")
+
         lines.append("Rewrite the entire article addressing these issues. Common fixes:")
         lines.append("- **flesch** → shorter sentences, fewer compound clauses, plainer words")
         lines.append("- **cosine_similarity** → reduce vocabulary overlap with existing pages; differentiate by focusing on the unique angle this article addresses")
         lines.append("- **definitional_h2** → rewrite the flagged H2's first sentence as a declarative statement")
         lines.append("- **proprietary_signal** → either add the declared signal_signature phrases verbatim, OR update signal_signature to phrases that ARE in the body (keeping them specific and falsifiable)")
-        lines.append("- **internal_links** → add more in-body markdown links from the suggester list")
+        lines.append("- **internal_links** → see CRITICAL section above")
         lines.append("- **first_300_words** → add specific numbers and named entities to the lede")
         lines.append("- **ban_list** / **hype_words** / **exclamations** → remove the offending phrases")
         lines.append("")

@@ -917,8 +917,9 @@
             "actual truck inventory",
             "what we never carry and why"
           ],
-          "status": "planned",
-          "target_publish_date": "2026-08-13"
+          "status": "skipped",
+          "target_publish_date": "2026-08-13",
+          "skip_reason": "2026-11-10: 3 draft attempts failed internal_links gate. Field service-logistics has thin internal link targets; cluster abandoned pending content plan refresh."
         },
         {
           "slug": "travel-time-reality-nebraska-missouri-texas",
