@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 26
+- **Published:** 27
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -24
+- **Unscheduled backlog:** -25
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -75,7 +75,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Aug 24, 2026 &mdash; *past*
 
-- **Tue Aug 25** &mdash; *CNC Control Systems* &mdash; [Legacy CNC Control Parts: What's NLA in 2026](../src/content/insights/cnc-control-systems/legacy-control-parts-availability.md)
+- **Tue Aug 25** &mdash; *CNC Control Systems* &mdash; [Legacy CNC Control Parts: What's NLA in 2026](../src/content/insights/cnc-control-systems/legacy-control-parts-availability.md) ✓
 - **Thu Aug 27** &mdash; *Way Covers Engineering* &mdash; [Chip Load and Cover Life: The Connection](../src/content/insights/way-covers-engineering/chip-load-and-cover-life.md)
 
 ### Week of Aug 31, 2026 &mdash; *past*
@@ -223,14 +223,14 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_3 published &middot; 12 scheduled &middot; 0 unscheduled (of 15 total)._
+_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
 - ✓ **2026-07-02** &mdash; ~~Heidenhain TNC Retrofit: When It's Worth It~~ (published)
+- ✓ **2026-08-25** &mdash; ~~Legacy CNC Control Parts: What's NLA in 2026~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-08-25` &mdash; Legacy CNC Control Parts: What's NLA in 2026
 - ◯ `2026-09-10` &mdash; Mazatrol Legacy Screen Failure: Replacement Options
 - ◯ `2026-09-29` &mdash; CNC Battery Backup Loss: Data Recovery Procedure
 - ◯ `2026-10-15` &mdash; Servo Drive vs. CNC Controller Faults: How to Distinguish
