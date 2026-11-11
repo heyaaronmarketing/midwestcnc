@@ -1194,8 +1194,9 @@
             "the rename timeline",
             "parts-availability continuity"
           ],
-          "status": "planned",
-          "target_publish_date": "2026-08-18"
+          "status": "skipped",
+          "target_publish_date": "2026-08-18",
+          "skip_reason": "2026-11-11: 3 draft attempts failed. Topic overlaps too heavily with the existing machine-repair/doosan.md page (cosine ~0.30 vs ceiling 0.30). Also hit flesch floor + warranty ban_list word on retries. Cluster should be re-scoped around a narrower, non-overlapping angle (e.g., 'identifying rebadged Daewoo controls on Doosan machines') before it can be drafted."
         },
         {
           "slug": "used-okuma-osp-era-impact",

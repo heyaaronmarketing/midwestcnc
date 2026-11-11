@@ -384,6 +384,56 @@ def build_user_prompt(article: dict, links: list, attempt: int,
                         "This is non-negotiable. Draft WILL fail validation without it.")
             lines.append("")
 
+        # ban_list specific CRITICAL block — Opus sometimes reaches for
+        # these words when searching for differentiation. Make it explicit.
+        if any("ban_list" in str(f) for f in gate_failures):
+            lines.append("### ⚠ CRITICAL: ban_list gate failed")
+            lines.append("")
+            lines.append("Your previous draft contained one or more of these BANNED phrases. They are not "
+                        "allowed anywhere in the article — not even in quoted material, examples, or hedges:")
+            lines.append("")
+            lines.append("- `warranty` / `warranties` (we don't offer warranty — don't reference the concept)")
+            lines.append("- `guaranteed` / `guarantee`")
+            lines.append("- `same-day`")
+            lines.append("- `24/7`")
+            lines.append("- `ISO 9001`, `ISO certif*`")
+            lines.append("- `flat-rate`, `transparent pricing`")
+            lines.append("- `photo-verified`, `factory-trained`, `factory-certified`")
+            lines.append("")
+            lines.append("If you need to talk about warranties or guarantees, REWORD. Examples:")
+            lines.append("- 'warranty' → 'return period' or 'the manufacturer's coverage window'")
+            lines.append("- 'guaranteed' → 'reliably' or 'consistently' (or just delete the hedge)")
+            lines.append("- 'same-day' → 'within the day' or 'on the day of the call'")
+            lines.append("")
+            lines.append("Grep your draft for each banned phrase before submitting. Draft WILL fail validation if ANY appear.")
+            lines.append("")
+
+        # cosine_similarity specific CRITICAL block — most common structural
+        # failure mode when the cluster topic overlaps with an existing page.
+        if any("cosine_similarity" in str(f) for f in gate_failures):
+            lines.append("### ⚠ CRITICAL: cosine_similarity gate failed")
+            lines.append("")
+            lines.append("Your previous draft shares too much vocabulary with an existing published page "
+                        "(similarity ≥ 0.30). Rewrite to differentiate — pick a NARROWER angle this article "
+                        "owns that the existing page does NOT cover.")
+            lines.append("")
+            lines.append("**Strategies that actually move the cosine score:**")
+            lines.append("1. **Narrow the scope.** Instead of 'Used Doosan Buying Guide', focus on "
+                        "'Rebadged Daewoo Controls on Pre-2012 Doosan Machines' — a sub-topic the existing "
+                        "page doesn't go into.")
+            lines.append("2. **Change the perspective.** If the existing page is 'what we do,' make this "
+                        "'how you evaluate before you buy' — different buyer intent, different vocabulary.")
+            lines.append("3. **Introduce entities the existing page lacks.** Specific model names, "
+                        "serial-number ranges, control-generation cutoff years. Those words don't appear in "
+                        "the existing page, so they LOWER the cosine score.")
+            lines.append("4. **Drop generic vocabulary.** Words like 'quality', 'service', 'repair' appear "
+                        "everywhere; swap for specific technical terms.")
+            lines.append("")
+            lines.append("If no narrower angle exists that genuinely differentiates from the existing page, "
+                        "write the best differentiated version you can — the orchestrator will promote the "
+                        "latest attempt if the next rewrite reduces cosine below 0.30.")
+            lines.append("")
+
         lines.append("Rewrite the entire article addressing these issues. Common fixes:")
         lines.append("- **flesch** → shorter sentences, fewer compound clauses, plainer words")
         lines.append("- **cosine_similarity** → reduce vocabulary overlap with existing pages; differentiate by focusing on the unique angle this article addresses")
