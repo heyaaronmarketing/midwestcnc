@@ -177,6 +177,12 @@ def pick_next_article() -> Optional[dict]:
             continue
         if remote_branch_exists(c["slug"]):
             continue
+        # Honor explicit status: skipped clusters (set by hand when a
+        # cluster's topic is unviable — overlaps too much with an existing
+        # page, or needs re-scoping). Force via AUTO_DRAFT_SLUG bypasses
+        # this check (already handled earlier).
+        if c.get("status") == "skipped":
+            continue
         candidates_with_date.append((dt, c))
 
     if not candidates_with_date:
