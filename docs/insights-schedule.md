@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 27
+- **Published:** 28
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -25
+- **Unscheduled backlog:** -26
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -76,7 +76,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Aug 24, 2026 &mdash; *past*
 
 - **Tue Aug 25** &mdash; *CNC Control Systems* &mdash; [Legacy CNC Control Parts: What's NLA in 2026](../src/content/insights/cnc-control-systems/legacy-control-parts-availability.md) ✓
-- **Thu Aug 27** &mdash; *Way Covers Engineering* &mdash; [Chip Load and Cover Life: The Connection](../src/content/insights/way-covers-engineering/chip-load-and-cover-life.md)
+- **Thu Aug 27** &mdash; *Way Covers Engineering* &mdash; [Chip Load and Cover Life: The Connection](../src/content/insights/way-covers-engineering/chip-load-and-cover-life.md) ✓
 
 ### Week of Aug 31, 2026 &mdash; *past*
 
@@ -243,14 +243,14 @@ _4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_3 published &middot; 12 scheduled &middot; 0 unscheduled (of 15 total)._
+_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
 - ✓ **2026-08-11** &mdash; ~~Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win~~ (published)
+- ✓ **2026-08-27** &mdash; ~~Chip Load and Cover Life: The Connection~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-08-27` &mdash; Chip Load and Cover Life: The Connection
 - ◯ `2026-09-15` &mdash; Coolant Compatibility for Cover Seals
 - ◯ `2026-10-01` &mdash; Mounting Hardware Availability by Machine Generation
 - ◯ `2026-10-20` &mdash; Cover Replacement Lead Time: What Drives It
