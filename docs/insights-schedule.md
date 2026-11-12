@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 28
+- **Published:** 29
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -26
+- **Unscheduled backlog:** -27
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -80,7 +80,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Aug 31, 2026 &mdash; *past*
 
-- **Tue Sep 1** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Travel Time Reality: Nebraska, Missouri, Texas](../src/content/insights/field-service-logistics/travel-time-reality-nebraska-missouri-texas.md)
+- **Tue Sep 1** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Travel Time Reality: Nebraska, Missouri, Texas](../src/content/insights/field-service-logistics/travel-time-reality-nebraska-missouri-texas.md) ✓
 - **Thu Sep 3** &mdash; *Buying & Owning Used CNC* &mdash; [Used Okuma: OSP Era and Resale](../src/content/insights/buying-owning-used-cnc/used-okuma-osp-era-impact.md)
 
 ### Week of Sep 7, 2026 &mdash; *past*
@@ -263,14 +263,14 @@ _4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_3 published &middot; 12 scheduled &middot; 0 unscheduled (of 15 total)._
+_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
 - ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
 - ✓ **2026-08-13** &mdash; ~~What We Bring on a Field Call (and What We Don't)~~ (published)
+- ✓ **2026-09-01** &mdash; ~~Travel Time Reality: Nebraska, Missouri, Texas~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
-- ◯ `2026-09-01` &mdash; Travel Time Reality: Nebraska, Missouri, Texas
 - ◯ `2026-09-17` &mdash; Coordinating a Multi-Day On-Site Service Trip
 - ◯ `2026-10-06` &mdash; Production Downtime Cost: Framing the Urgency
 - ◯ `2026-10-22` &mdash; Five-State Weather Impact on Service Schedule
