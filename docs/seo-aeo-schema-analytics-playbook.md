@@ -468,7 +468,59 @@ Last item has no `item` URL — it's the current page.
 }
 ```
 
-### 3.8 Validate every schema block
+### 3.8 Review — editorial reviews of products/services
+
+For pages that review a single third-party product or service (software,
+a lead platform, a tool). Editorial reviews of things you do NOT sell can
+carry `Review` + `reviewRating` legitimately — star-snippet eligible and a
+clean structured verdict AI engines quote directly. Map an honest verdict to
+the rating; never inflate it.
+
+```json
+{
+  "@type": "Review",
+  "name": "Jobber Review (2026): Honest Pricing, Pros & Cons",
+  "itemReviewed": {"@type": "SoftwareApplication", "name": "Jobber"},
+  "author": {"@type": "Organization", "name": "Booked Job"},
+  "reviewRating": {"@type": "Rating", "ratingValue": 4.5, "bestRating": 5, "worstRating": 1},
+  "reviewBody": "Best first software for a small shop...",
+  "datePublished": "2026-11-10"
+}
+```
+
+- **`itemReviewed` type matters:** `SoftwareApplication` for apps, `Service`
+  for lead/answering services, `Product` for physical goods.
+- **ONLY on single-item review pages.** Category round-ups, "best X" guides,
+  and "A vs B" comparisons are NOT single reviews — leave them Article-only,
+  or Google ignores (or penalizes) the markup.
+- **Never self-serving:** don't put `Review`/`aggregateRating` on your OWN
+  product/service pages — Google strips those. Third-party editorial only.
+
+### 3.9 VideoObject — the single biggest video-AEO move
+
+AI engines can't watch video; they read the transcript. A self-hosted or
+embedded clip earns nothing until it has `VideoObject` + an on-page transcript.
+
+```json
+{
+  "@type": "VideoObject",
+  "name": "AI receptionist mishears the address and books the wrong job",
+  "description": "A dramatization of the transcription failure...",
+  "thumbnailUrl": "https://domain.com/reels/clip.jpg",
+  "contentUrl": "https://domain.com/reels/clip.mp4",
+  "uploadDate": "2026-11-10",
+  "duration": "PT14S",
+  "transcript": "Customer: leak at 14 Oak Street... AI bot: Booked! 40 Elm Street, Sunday 2 AM..."
+}
+```
+
+- **Always ship the transcript twice:** in the `transcript` property AND as
+  real on-page text (a `<details>` block counts — it's in the DOM). The on-page
+  copy is what gets cited; the property makes it video-rich-result eligible.
+- **Poster frame** (`thumbnailUrl`) via one ffmpeg frame-grab at ~35% in.
+- **`duration` is ISO-8601** (`PT14S`, `PT6M30S`), not seconds.
+
+### 3.10 Validate every schema block
 
 - **Google Rich Results Test:** [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
 - **Schema.org validator:** [validator.schema.org](https://validator.schema.org)
@@ -619,6 +671,14 @@ GA4 → **Explore** → **Free form** template:
   }
   ```
 - Google doesn't participate; this is Bing + Yandex + Seznam + Naver.
+- **Bing (and `api.indexnow.org`) return `403 UserForbiddedToAccessSite`
+  until the host is claimed in Bing Webmaster Tools** — even with a valid,
+  served key file. This is an ownership check, NOT a code bug. **Yandex
+  accepts regardless and fans the URLs across the IndexNow network**, so
+  submit to `yandex.com/indexnow` first and treat the Bing 403 as expected
+  noise until someone verifies the site in Bing WMT (a one-time manual step).
+- Submit the key with a consistent `host` — apex vs `www` must match the
+  host in your submitted URLs and the `keyLocation`, or the engine 403s.
 
 ---
 
@@ -757,6 +817,17 @@ rediscover them:
     (Cloudflare error 1010) when calling external APIs like Resend from
     Python scripts. Set a custom `User-Agent: client-name/version`.
 
+12. **GA4 `gtag` snippet inside a Python f-string template crashes the
+    renderer.** `function gtag(){dataLayer.push(arguments);}` has literal
+    `{}` that an f-string reads as fields → `SyntaxError: f-string: invalid
+    syntax`, so the module won't import and the whole generator silently dies.
+    Escape them: `function gtag(){{dataLayer.push(arguments);}}`. (Killed a
+    blog pipeline for ~8 runs before anyone noticed — it only shows at import.)
+
+13. **IndexNow `403 UserForbiddedToAccessSite` is a Bing ownership check,
+    not a bug** — see Part 4.6. Yandex still fans out; claim the host in Bing
+    Webmaster Tools to unlock Bing direct.
+
 ---
 
 ## Reference implementation
@@ -786,6 +857,6 @@ measure.
 
 ---
 
-**Document version**: 1.0 — 2026-11-10
+**Document version**: 1.1 — 2026-11-12  (added 3.8 Review + 3.9 VideoObject schema; IndexNow Bing-WMT gotcha; gotchas 12-13)
 **Reference client**: Midwest CNC Services
 **Maintainer**: Hey Aaron! Marketing
