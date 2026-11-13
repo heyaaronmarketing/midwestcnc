@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 29
+- **Published:** 30
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -27
+- **Unscheduled backlog:** -28
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -81,7 +81,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Aug 31, 2026 &mdash; *past*
 
 - **Tue Sep 1** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Travel Time Reality: Nebraska, Missouri, Texas](../src/content/insights/field-service-logistics/travel-time-reality-nebraska-missouri-texas.md) ✓
-- **Thu Sep 3** &mdash; *Buying & Owning Used CNC* &mdash; [Used Okuma: OSP Era and Resale](../src/content/insights/buying-owning-used-cnc/used-okuma-osp-era-impact.md)
+- **Thu Sep 3** &mdash; *Buying & Owning Used CNC* &mdash; [Used Okuma: OSP Era and Resale](../src/content/insights/buying-owning-used-cnc/used-okuma-osp-era-impact.md) ✓
 
 ### Week of Sep 7, 2026 &mdash; *past*
 
@@ -283,14 +283,14 @@ _4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Buying & Owning Used CNC
 
-_1 published &middot; 14 scheduled &middot; 0 unscheduled (of 15 total)._
+_2 published &middot; 13 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-07-30** &mdash; ~~Used DMG Mori: Identifying Post-Merger Machines~~ (published)
+- ✓ **2026-09-03** &mdash; ~~Used Okuma: OSP Era and Resale~~ (published)
 - ◯ `2026-06-11` &mdash; Used VMC Inspection Checklist: What We Actually Check
 - ◯ `2026-06-30` &mdash; Used Mazak Buying Guide: Era-by-Era
 - ◯ `2026-07-14` &mdash; Used Haas Buying: Classic Control vs. NGC
 - ◯ `2026-08-18` &mdash; Used Doosan/Daewoo: Parts Continuity Across the Rename
-- ◯ `2026-09-03` &mdash; Used Okuma: OSP Era and Resale
 - ◯ `2026-09-22` &mdash; Used Fanuc-Controlled Machines: Control vs. Iron Value
 - ◯ `2026-10-08` &mdash; Legacy Fadal: Still Viable, with Caveats
 - ◯ `2026-10-27` &mdash; Hitachi Seiki Legacy: The Parts Reality
