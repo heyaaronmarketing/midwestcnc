@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 30
+- **Published:** 31
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -28
+- **Unscheduled backlog:** -29
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -86,7 +86,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Sep 7, 2026 &mdash; *past*
 
 - **Tue Sep 8** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [ATC Rattle vs. True Spindle Failure: How to Tell](../src/content/insights/spindle-diagnostics/atc-rattle-vs-spindle-failure.md) ✓
-- **Thu Sep 10** &mdash; *CNC Control Systems* &mdash; [Mazatrol Legacy Screen Failure: Replacement Options](../src/content/insights/cnc-control-systems/mazatrol-legacy-screen-failure.md)
+- **Thu Sep 10** &mdash; *CNC Control Systems* &mdash; [Mazatrol Legacy Screen Failure: Replacement Options](../src/content/insights/cnc-control-systems/mazatrol-legacy-screen-failure.md) ✓
 
 ### Week of Sep 14, 2026 &mdash; *past*
 
@@ -223,15 +223,15 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
+_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
 - ✓ **2026-07-02** &mdash; ~~Heidenhain TNC Retrofit: When It's Worth It~~ (published)
 - ✓ **2026-08-25** &mdash; ~~Legacy CNC Control Parts: What's NLA in 2026~~ (published)
+- ✓ **2026-09-10** &mdash; ~~Mazatrol Legacy Screen Failure: Replacement Options~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-09-10` &mdash; Mazatrol Legacy Screen Failure: Replacement Options
 - ◯ `2026-09-29` &mdash; CNC Battery Backup Loss: Data Recovery Procedure
 - ◯ `2026-10-15` &mdash; Servo Drive vs. CNC Controller Faults: How to Distinguish
 - ◯ `2026-11-03` &mdash; Control or Mechanical? The Diagnostic Logic
