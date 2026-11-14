@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 31
+- **Published:** 32
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -29
+- **Unscheduled backlog:** -30
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -90,7 +90,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Sep 14, 2026 &mdash; *past*
 
-- **Tue Sep 15** &mdash; *Way Covers Engineering* &mdash; [Coolant Compatibility for Cover Seals](../src/content/insights/way-covers-engineering/coolant-compatibility-cover-seals.md)
+- **Tue Sep 15** &mdash; *Way Covers Engineering* &mdash; [Coolant Compatibility for Cover Seals](../src/content/insights/way-covers-engineering/coolant-compatibility-cover-seals.md) ✓
 - **Thu Sep 17** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Coordinating a Multi-Day On-Site Service Trip](../src/content/insights/field-service-logistics/multi-day-onsite-coordination.md)
 
 ### Week of Sep 21, 2026 &mdash; *past*
@@ -243,15 +243,15 @@ _5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
+_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
 - ✓ **2026-08-11** &mdash; ~~Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win~~ (published)
 - ✓ **2026-08-27** &mdash; ~~Chip Load and Cover Life: The Connection~~ (published)
+- ✓ **2026-09-15** &mdash; ~~Coolant Compatibility for Cover Seals~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-09-15` &mdash; Coolant Compatibility for Cover Seals
 - ◯ `2026-10-01` &mdash; Mounting Hardware Availability by Machine Generation
 - ◯ `2026-10-20` &mdash; Cover Replacement Lead Time: What Drives It
 - ◯ `2026-11-05` &mdash; The Hidden Cost of Running with Damaged Covers
