@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 32
+- **Published:** 33
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -30
+- **Unscheduled backlog:** -31
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -91,7 +91,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Sep 14, 2026 &mdash; *past*
 
 - **Tue Sep 15** &mdash; *Way Covers Engineering* &mdash; [Coolant Compatibility for Cover Seals](../src/content/insights/way-covers-engineering/coolant-compatibility-cover-seals.md) ✓
-- **Thu Sep 17** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Coordinating a Multi-Day On-Site Service Trip](../src/content/insights/field-service-logistics/multi-day-onsite-coordination.md)
+- **Thu Sep 17** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Coordinating a Multi-Day On-Site Service Trip](../src/content/insights/field-service-logistics/multi-day-onsite-coordination.md) ✓
 
 ### Week of Sep 21, 2026 &mdash; *past*
 
@@ -263,15 +263,15 @@ _5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
+_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
 - ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
 - ✓ **2026-08-13** &mdash; ~~What We Bring on a Field Call (and What We Don't)~~ (published)
 - ✓ **2026-09-01** &mdash; ~~Travel Time Reality: Nebraska, Missouri, Texas~~ (published)
+- ✓ **2026-09-17** &mdash; ~~Coordinating a Multi-Day On-Site Service Trip~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
-- ◯ `2026-09-17` &mdash; Coordinating a Multi-Day On-Site Service Trip
 - ◯ `2026-10-06` &mdash; Production Downtime Cost: Framing the Urgency
 - ◯ `2026-10-22` &mdash; Five-State Weather Impact on Service Schedule
 - ◯ `2026-11-10` &mdash; When Your Shop's Lift Is the Bottleneck
