@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 34
+- **Published:** 35
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -32
+- **Unscheduled backlog:** -33
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -100,7 +100,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Sep 28, 2026 &mdash; *past*
 
-- **Tue Sep 29** &mdash; *CNC Control Systems* &mdash; [CNC Battery Backup Loss: Data Recovery Procedure](../src/content/insights/cnc-control-systems/battery-backup-data-loss.md)
+- **Tue Sep 29** &mdash; *CNC Control Systems* &mdash; [CNC Battery Backup Loss: Data Recovery Procedure](../src/content/insights/cnc-control-systems/battery-backup-data-loss.md) ✓
 - **Thu Oct 1** &mdash; *Way Covers Engineering* &mdash; [Mounting Hardware Availability by Machine Generation](../src/content/insights/way-covers-engineering/mounting-hardware-by-generation.md)
 
 ### Week of Oct 5, 2026 &mdash; *past*
@@ -128,7 +128,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 - **Tue Nov 3** &mdash; *CNC Control Systems* &mdash; [Control or Mechanical? The Diagnostic Logic](../src/content/insights/cnc-control-systems/control-vs-mechanical-diagnostic.md)
 - **Thu Nov 5** &mdash; *Way Covers Engineering* &mdash; [The Hidden Cost of Running with Damaged Covers](../src/content/insights/way-covers-engineering/hidden-cost-damaged-covers.md)
 
-### Week of Nov 9, 2026
+### Week of Nov 9, 2026 &mdash; *past*
 
 - **Tue Nov 10** &mdash; *Field Service & Logistics (Midwest)* &mdash; [When Your Shop's Lift Is the Bottleneck](../src/content/insights/field-service-logistics/shop-lift-as-bottleneck.md)
 - **Thu Nov 12** &mdash; *Buying & Owning Used CNC* &mdash; [Total Cost of Ownership: Used vs. New](../src/content/insights/buying-owning-used-cnc/tco-math-used-vs-new.md)
@@ -223,16 +223,16 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
+_6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
 - ✓ **2026-07-02** &mdash; ~~Heidenhain TNC Retrofit: When It's Worth It~~ (published)
 - ✓ **2026-08-25** &mdash; ~~Legacy CNC Control Parts: What's NLA in 2026~~ (published)
 - ✓ **2026-09-10** &mdash; ~~Mazatrol Legacy Screen Failure: Replacement Options~~ (published)
+- ✓ **2026-09-29** &mdash; ~~CNC Battery Backup Loss: Data Recovery Procedure~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-09-29` &mdash; CNC Battery Backup Loss: Data Recovery Procedure
 - ◯ `2026-10-15` &mdash; Servo Drive vs. CNC Controller Faults: How to Distinguish
 - ◯ `2026-11-03` &mdash; Control or Mechanical? The Diagnostic Logic
 - ◯ `2026-11-19` &mdash; Fanuc Series 0 to 0i: Upgrade Reality
