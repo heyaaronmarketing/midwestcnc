@@ -4,11 +4,11 @@ Scanned every `<a href>` in every HTML file under `public/` and resolved each li
 
 ## Totals
 
-- **Total `<a href>` links scanned:** 21498
-- **Resolved to a real file:** 18238
+- **Total `<a href>` links scanned:** 21567
+- **Resolved to a real file:** 18299
 - **Resolved via `_redirects` (301):** 0
-- **External links (skipped from broken-check):** 631
-- **Other non-http (tel:/mailto:/anchor/etc.):** 2629
+- **External links (skipped from broken-check):** 633
+- **Other non-http (tel:/mailto:/anchor/etc.):** 2635
 
 ## Broken internal links
 

@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 35
+- **Published:** 36
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -33
+- **Unscheduled backlog:** -34
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -101,7 +101,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Sep 28, 2026 &mdash; *past*
 
 - **Tue Sep 29** &mdash; *CNC Control Systems* &mdash; [CNC Battery Backup Loss: Data Recovery Procedure](../src/content/insights/cnc-control-systems/battery-backup-data-loss.md) ✓
-- **Thu Oct 1** &mdash; *Way Covers Engineering* &mdash; [Mounting Hardware Availability by Machine Generation](../src/content/insights/way-covers-engineering/mounting-hardware-by-generation.md)
+- **Thu Oct 1** &mdash; *Way Covers Engineering* &mdash; [Mounting Hardware Availability by Machine Generation](../src/content/insights/way-covers-engineering/mounting-hardware-by-generation.md) ✓
 
 ### Week of Oct 5, 2026 &mdash; *past*
 
@@ -243,16 +243,16 @@ _6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
+_6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
 - ✓ **2026-08-11** &mdash; ~~Trunnion-Adjacent Covers on 5-Axis: Why Bellows Win~~ (published)
 - ✓ **2026-08-27** &mdash; ~~Chip Load and Cover Life: The Connection~~ (published)
 - ✓ **2026-09-15** &mdash; ~~Coolant Compatibility for Cover Seals~~ (published)
+- ✓ **2026-10-01** &mdash; ~~Mounting Hardware Availability by Machine Generation~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-10-01` &mdash; Mounting Hardware Availability by Machine Generation
 - ◯ `2026-10-20` &mdash; Cover Replacement Lead Time: What Drives It
 - ◯ `2026-11-05` &mdash; The Hidden Cost of Running with Damaged Covers
 - ◯ `2026-11-24` &mdash; Z-Axis Covers: Gravity, Drag, and Design Choices
