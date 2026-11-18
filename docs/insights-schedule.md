@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 37
+- **Published:** 38
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -35
+- **Unscheduled backlog:** -36
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -106,7 +106,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Oct 5, 2026 &mdash; *past*
 
 - **Tue Oct 6** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Production Downtime Cost: Framing the Urgency](../src/content/insights/field-service-logistics/production-downtime-cost-framing.md) ✓
-- **Thu Oct 8** &mdash; *Buying & Owning Used CNC* &mdash; [Legacy Fadal: Still Viable, with Caveats](../src/content/insights/buying-owning-used-cnc/legacy-fadal-viability.md)
+- **Thu Oct 8** &mdash; *Buying & Owning Used CNC* &mdash; [Legacy Fadal: Still Viable, with Caveats](../src/content/insights/buying-owning-used-cnc/legacy-fadal-viability.md) ✓
 
 ### Week of Oct 12, 2026 &mdash; *past*
 
@@ -283,16 +283,16 @@ _6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Buying & Owning Used CNC
 
-_3 published &middot; 12 scheduled &middot; 0 unscheduled (of 15 total)._
+_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-07-30** &mdash; ~~Used DMG Mori: Identifying Post-Merger Machines~~ (published)
 - ✓ **2026-09-03** &mdash; ~~Used Okuma: OSP Era and Resale~~ (published)
 - ✓ **2026-09-22** &mdash; ~~Used Fanuc-Controlled Machines: Control vs. Iron Value~~ (published)
+- ✓ **2026-10-08** &mdash; ~~Legacy Fadal: Still Viable, with Caveats~~ (published)
 - ◯ `2026-06-11` &mdash; Used VMC Inspection Checklist: What We Actually Check
 - ◯ `2026-06-30` &mdash; Used Mazak Buying Guide: Era-by-Era
 - ◯ `2026-07-14` &mdash; Used Haas Buying: Classic Control vs. NGC
 - ◯ `2026-08-18` &mdash; Used Doosan/Daewoo: Parts Continuity Across the Rename
-- ◯ `2026-10-08` &mdash; Legacy Fadal: Still Viable, with Caveats
 - ◯ `2026-10-27` &mdash; Hitachi Seiki Legacy: The Parts Reality
 - ◯ `2026-11-12` &mdash; Total Cost of Ownership: Used vs. New
 - ◯ `2026-12-01` &mdash; Retrofit ROI on Legacy Iron: When It Pencils
