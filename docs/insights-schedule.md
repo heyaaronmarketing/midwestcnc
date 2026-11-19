@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 38
+- **Published:** 39
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -36
+- **Unscheduled backlog:** -37
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -111,7 +111,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Oct 12, 2026 &mdash; *past*
 
 - **Tue Oct 13** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Thermal Growth: Drift, Compensation, and Faults](../src/content/insights/spindle-diagnostics/spindle-thermal-growth.md) ✓
-- **Thu Oct 15** &mdash; *CNC Control Systems* &mdash; [Servo Drive vs. CNC Controller Faults: How to Distinguish](../src/content/insights/cnc-control-systems/servo-drive-vs-controller-fault.md)
+- **Thu Oct 15** &mdash; *CNC Control Systems* &mdash; [Servo Drive vs. CNC Controller Faults: How to Distinguish](../src/content/insights/cnc-control-systems/servo-drive-vs-controller-fault.md) ✓
 
 ### Week of Oct 19, 2026 &mdash; *past*
 
@@ -223,7 +223,7 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
+_7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
@@ -231,9 +231,9 @@ _6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-08-25** &mdash; ~~Legacy CNC Control Parts: What's NLA in 2026~~ (published)
 - ✓ **2026-09-10** &mdash; ~~Mazatrol Legacy Screen Failure: Replacement Options~~ (published)
 - ✓ **2026-09-29** &mdash; ~~CNC Battery Backup Loss: Data Recovery Procedure~~ (published)
+- ✓ **2026-10-15** &mdash; ~~Servo Drive vs. CNC Controller Faults: How to Distinguish~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-10-15` &mdash; Servo Drive vs. CNC Controller Faults: How to Distinguish
 - ◯ `2026-11-03` &mdash; Control or Mechanical? The Diagnostic Logic
 - ◯ `2026-11-19` &mdash; Fanuc Series 0 to 0i: Upgrade Reality
 - ◯ `2026-12-08` &mdash; Encoder Feedback Faults: Control or Mechanical?
