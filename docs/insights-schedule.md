@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 39
+- **Published:** 40
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -37
+- **Unscheduled backlog:** -38
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -115,7 +115,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Oct 19, 2026 &mdash; *past*
 
-- **Tue Oct 20** &mdash; *Way Covers Engineering* &mdash; [Cover Replacement Lead Time: What Drives It](../src/content/insights/way-covers-engineering/cover-replacement-lead-time.md)
+- **Tue Oct 20** &mdash; *Way Covers Engineering* &mdash; [Cover Replacement Lead Time: What Drives It](../src/content/insights/way-covers-engineering/cover-replacement-lead-time.md) ✓
 - **Thu Oct 22** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Five-State Weather Impact on Service Schedule](../src/content/insights/field-service-logistics/weather-impact-on-service.md)
 
 ### Week of Oct 26, 2026 &mdash; *past*
@@ -243,7 +243,7 @@ _7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
+_7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
@@ -251,9 +251,9 @@ _6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-08-27** &mdash; ~~Chip Load and Cover Life: The Connection~~ (published)
 - ✓ **2026-09-15** &mdash; ~~Coolant Compatibility for Cover Seals~~ (published)
 - ✓ **2026-10-01** &mdash; ~~Mounting Hardware Availability by Machine Generation~~ (published)
+- ✓ **2026-10-20** &mdash; ~~Cover Replacement Lead Time: What Drives It~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-10-20` &mdash; Cover Replacement Lead Time: What Drives It
 - ◯ `2026-11-05` &mdash; The Hidden Cost of Running with Damaged Covers
 - ◯ `2026-11-24` &mdash; Z-Axis Covers: Gravity, Drag, and Design Choices
 - ◯ `2026-12-10` &mdash; Field Measurement Checklist for Cover Replacement
