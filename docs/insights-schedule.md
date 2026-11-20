@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 40
+- **Published:** 41
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -38
+- **Unscheduled backlog:** -39
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -116,7 +116,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Oct 19, 2026 &mdash; *past*
 
 - **Tue Oct 20** &mdash; *Way Covers Engineering* &mdash; [Cover Replacement Lead Time: What Drives It](../src/content/insights/way-covers-engineering/cover-replacement-lead-time.md) ✓
-- **Thu Oct 22** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Five-State Weather Impact on Service Schedule](../src/content/insights/field-service-logistics/weather-impact-on-service.md)
+- **Thu Oct 22** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Five-State Weather Impact on Service Schedule](../src/content/insights/field-service-logistics/weather-impact-on-service.md) ✓
 
 ### Week of Oct 26, 2026 &mdash; *past*
 
@@ -263,7 +263,7 @@ _7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
+_7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
 - ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
@@ -271,9 +271,9 @@ _6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-09-01** &mdash; ~~Travel Time Reality: Nebraska, Missouri, Texas~~ (published)
 - ✓ **2026-09-17** &mdash; ~~Coordinating a Multi-Day On-Site Service Trip~~ (published)
 - ✓ **2026-10-06** &mdash; ~~Production Downtime Cost: Framing the Urgency~~ (published)
+- ✓ **2026-10-22** &mdash; ~~Five-State Weather Impact on Service Schedule~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
-- ◯ `2026-10-22` &mdash; Five-State Weather Impact on Service Schedule
 - ◯ `2026-11-10` &mdash; When Your Shop's Lift Is the Bottleneck
 - ◯ `2026-11-26` &mdash; North Platte and Western Nebraska: Longest-Haul Work
 - ◯ `2026-12-15` &mdash; Greater Chicago: Wisconsin/Illinois Coordination
