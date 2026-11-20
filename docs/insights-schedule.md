@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 41
+- **Published:** 42
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -39
+- **Unscheduled backlog:** -40
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -120,7 +120,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Oct 26, 2026 &mdash; *past*
 
-- **Tue Oct 27** &mdash; *Buying & Owning Used CNC* &mdash; [Hitachi Seiki Legacy: The Parts Reality](../src/content/insights/buying-owning-used-cnc/hitachi-seiki-legacy-parts.md)
+- **Tue Oct 27** &mdash; *Buying & Owning Used CNC* &mdash; [Hitachi Seiki Legacy: The Parts Reality](../src/content/insights/buying-owning-used-cnc/hitachi-seiki-legacy-parts.md) ✓
 - **Thu Oct 29** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Coolant Intrusion in Spindles: Prevention and Recovery](../src/content/insights/spindle-diagnostics/coolant-intrusion-damage.md) ✓
 
 ### Week of Nov 2, 2026 &mdash; *past*
@@ -283,17 +283,17 @@ _7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Buying & Owning Used CNC
 
-_4 published &middot; 11 scheduled &middot; 0 unscheduled (of 15 total)._
+_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-07-30** &mdash; ~~Used DMG Mori: Identifying Post-Merger Machines~~ (published)
 - ✓ **2026-09-03** &mdash; ~~Used Okuma: OSP Era and Resale~~ (published)
 - ✓ **2026-09-22** &mdash; ~~Used Fanuc-Controlled Machines: Control vs. Iron Value~~ (published)
 - ✓ **2026-10-08** &mdash; ~~Legacy Fadal: Still Viable, with Caveats~~ (published)
+- ✓ **2026-10-27** &mdash; ~~Hitachi Seiki Legacy: The Parts Reality~~ (published)
 - ◯ `2026-06-11` &mdash; Used VMC Inspection Checklist: What We Actually Check
 - ◯ `2026-06-30` &mdash; Used Mazak Buying Guide: Era-by-Era
 - ◯ `2026-07-14` &mdash; Used Haas Buying: Classic Control vs. NGC
 - ◯ `2026-08-18` &mdash; Used Doosan/Daewoo: Parts Continuity Across the Rename
-- ◯ `2026-10-27` &mdash; Hitachi Seiki Legacy: The Parts Reality
 - ◯ `2026-11-12` &mdash; Total Cost of Ownership: Used vs. New
 - ◯ `2026-12-01` &mdash; Retrofit ROI on Legacy Iron: When It Pencils
 - ◯ `2026-12-17` &mdash; Used Machine Inspection: Spindle Red Flags
