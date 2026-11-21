@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 42
+- **Published:** 43
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -40
+- **Unscheduled backlog:** -41
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -125,7 +125,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Nov 2, 2026 &mdash; *past*
 
-- **Tue Nov 3** &mdash; *CNC Control Systems* &mdash; [Control or Mechanical? The Diagnostic Logic](../src/content/insights/cnc-control-systems/control-vs-mechanical-diagnostic.md)
+- **Tue Nov 3** &mdash; *CNC Control Systems* &mdash; [Control or Mechanical? The Diagnostic Logic](../src/content/insights/cnc-control-systems/control-vs-mechanical-diagnostic.md) ✓
 - **Thu Nov 5** &mdash; *Way Covers Engineering* &mdash; [The Hidden Cost of Running with Damaged Covers](../src/content/insights/way-covers-engineering/hidden-cost-damaged-covers.md)
 
 ### Week of Nov 9, 2026 &mdash; *past*
@@ -223,7 +223,7 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
+_8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
@@ -232,9 +232,9 @@ _7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-09-10** &mdash; ~~Mazatrol Legacy Screen Failure: Replacement Options~~ (published)
 - ✓ **2026-09-29** &mdash; ~~CNC Battery Backup Loss: Data Recovery Procedure~~ (published)
 - ✓ **2026-10-15** &mdash; ~~Servo Drive vs. CNC Controller Faults: How to Distinguish~~ (published)
+- ✓ **2026-11-03** &mdash; ~~Control or Mechanical? The Diagnostic Logic~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-11-03` &mdash; Control or Mechanical? The Diagnostic Logic
 - ◯ `2026-11-19` &mdash; Fanuc Series 0 to 0i: Upgrade Reality
 - ◯ `2026-12-08` &mdash; Encoder Feedback Faults: Control or Mechanical?
 - ◯ `2026-12-24` &mdash; PLC Ladder Logic Faults in CNC Machines
