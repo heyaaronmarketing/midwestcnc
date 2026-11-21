@@ -1,13 +1,13 @@
 # Launch Readiness Audit
 
-Audited **323 HTML files** under `public/` plus the `assets/` tree. Run this any time before deploy to catch regressions.
+Audited **324 HTML files** under `public/` plus the `assets/` tree. Run this any time before deploy to catch regressions.
 
 ## Summary
 
-- Total HTML files in `public/`: **323**
-- Sitemap URLs:                  **319**
+- Total HTML files in `public/`: **324**
+- Sitemap URLs:                  **320**
   (3 expected exclusions: 404 page + draft way-cover pages)
-- Internal links scanned:         **22046**
+- Internal links scanned:         **22114**
 - Broken internal links:          **0**
 - Ban-list findings:              **0** unauthorized, **3** Aaron-authorized exceptions
 - Schema issues:                  **0**
@@ -26,11 +26,11 @@ Audited **323 HTML files** under `public/` plus the `assets/` tree. Run this any
 
 ## a) Link audit
 
-- Total `<a href>` scanned: 22046
-- Resolved to file:        18722
+- Total `<a href>` scanned: 22114
+- Resolved to file:        18782
 - Resolved via redirect:   0
-- External (skipped):      647
-- Non-http skipped:        2677
+- External (skipped):      649
+- Non-http skipped:        2683
 - **Broken:**              **0**
 
 ## d) Claim-audit ban-list scan
@@ -42,7 +42,7 @@ Audited **323 HTML files** under `public/` plus the `assets/` tree. Run this any
 
 ## e) Schema validation
 
-- Pages with BreadcrumbList: 321 / 321 (excluding homepage and 404)
+- Pages with BreadcrumbList: 322 / 322 (excluding homepage and 404)
 - No structural schema issues found.
 
 ## f) Image alt-text audit
@@ -61,11 +61,11 @@ Every page has `<meta name="viewport" content="width=device-width, initial-scale
   - `public/repairs/amera-seiki-cnc-machine-repair/index.html`
   - `public/repairs/brother-cnc-machine-repair/index.html`
   - *…and 260 more*
-- `f2994f3b9491` — 60 pages
+- `f2994f3b9491` — 61 pages
   - `public/404.html`
   - `public/about/index.html`
   - `public/get-a-quote/index.html`
-  - *…and 57 more*
+  - *…and 58 more*
 
 ## i) Asset directory size
 
@@ -84,6 +84,6 @@ Breakdown by subdirectory:
 
 ## b/c) Sitemap composition
 
-- Total `<loc>` entries: 319
-- HTML files in `public/`: 323
+- Total `<loc>` entries: 320
+- HTML files in `public/`: 324
 - Difference: 4 (404 page + drafts — expected)
