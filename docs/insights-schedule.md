@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 44
+- **Published:** 45
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -42
+- **Unscheduled backlog:** -43
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -130,7 +130,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Nov 9, 2026 &mdash; *past*
 
-- **Tue Nov 10** &mdash; *Field Service & Logistics (Midwest)* &mdash; [When Your Shop's Lift Is the Bottleneck](../src/content/insights/field-service-logistics/shop-lift-as-bottleneck.md)
+- **Tue Nov 10** &mdash; *Field Service & Logistics (Midwest)* &mdash; [When Your Shop's Lift Is the Bottleneck](../src/content/insights/field-service-logistics/shop-lift-as-bottleneck.md) ✓
 - **Thu Nov 12** &mdash; *Buying & Owning Used CNC* &mdash; [Total Cost of Ownership: Used vs. New](../src/content/insights/buying-owning-used-cnc/tco-math-used-vs-new.md)
 
 ### Week of Nov 16, 2026
@@ -263,7 +263,7 @@ _8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
+_8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
 - ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
@@ -272,9 +272,9 @@ _7 published &middot; 8 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-09-17** &mdash; ~~Coordinating a Multi-Day On-Site Service Trip~~ (published)
 - ✓ **2026-10-06** &mdash; ~~Production Downtime Cost: Framing the Urgency~~ (published)
 - ✓ **2026-10-22** &mdash; ~~Five-State Weather Impact on Service Schedule~~ (published)
+- ✓ **2026-11-10** &mdash; ~~When Your Shop's Lift Is the Bottleneck~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
-- ◯ `2026-11-10` &mdash; When Your Shop's Lift Is the Bottleneck
 - ◯ `2026-11-26` &mdash; North Platte and Western Nebraska: Longest-Haul Work
 - ◯ `2026-12-15` &mdash; Greater Chicago: Wisconsin/Illinois Coordination
 - ◯ `2026-12-31` &mdash; Texas Freight Realities for CNC Service
