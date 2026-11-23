@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 45
+- **Published:** 46
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -43
+- **Unscheduled backlog:** -44
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -131,7 +131,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Nov 9, 2026 &mdash; *past*
 
 - **Tue Nov 10** &mdash; *Field Service & Logistics (Midwest)* &mdash; [When Your Shop's Lift Is the Bottleneck](../src/content/insights/field-service-logistics/shop-lift-as-bottleneck.md) ✓
-- **Thu Nov 12** &mdash; *Buying & Owning Used CNC* &mdash; [Total Cost of Ownership: Used vs. New](../src/content/insights/buying-owning-used-cnc/tco-math-used-vs-new.md)
+- **Thu Nov 12** &mdash; *Buying & Owning Used CNC* &mdash; [Total Cost of Ownership: Used vs. New](../src/content/insights/buying-owning-used-cnc/tco-math-used-vs-new.md) ✓
 
 ### Week of Nov 16, 2026
 
@@ -283,18 +283,18 @@ _8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Buying & Owning Used CNC
 
-_5 published &middot; 10 scheduled &middot; 0 unscheduled (of 15 total)._
+_6 published &middot; 9 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-07-30** &mdash; ~~Used DMG Mori: Identifying Post-Merger Machines~~ (published)
 - ✓ **2026-09-03** &mdash; ~~Used Okuma: OSP Era and Resale~~ (published)
 - ✓ **2026-09-22** &mdash; ~~Used Fanuc-Controlled Machines: Control vs. Iron Value~~ (published)
 - ✓ **2026-10-08** &mdash; ~~Legacy Fadal: Still Viable, with Caveats~~ (published)
 - ✓ **2026-10-27** &mdash; ~~Hitachi Seiki Legacy: The Parts Reality~~ (published)
+- ✓ **2026-11-12** &mdash; ~~Total Cost of Ownership: Used vs. New~~ (published)
 - ◯ `2026-06-11` &mdash; Used VMC Inspection Checklist: What We Actually Check
 - ◯ `2026-06-30` &mdash; Used Mazak Buying Guide: Era-by-Era
 - ◯ `2026-07-14` &mdash; Used Haas Buying: Classic Control vs. NGC
 - ◯ `2026-08-18` &mdash; Used Doosan/Daewoo: Parts Continuity Across the Rename
-- ◯ `2026-11-12` &mdash; Total Cost of Ownership: Used vs. New
 - ◯ `2026-12-01` &mdash; Retrofit ROI on Legacy Iron: When It Pencils
 - ◯ `2026-12-17` &mdash; Used Machine Inspection: Spindle Red Flags
 - ◯ `2027-01-05` &mdash; Used Machine Inspection: Way and Ballscrew Red Flags
