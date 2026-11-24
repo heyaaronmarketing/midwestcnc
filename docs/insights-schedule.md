@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 46
+- **Published:** 47
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -44
+- **Unscheduled backlog:** -45
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -133,10 +133,10 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 - **Tue Nov 10** &mdash; *Field Service & Logistics (Midwest)* &mdash; [When Your Shop's Lift Is the Bottleneck](../src/content/insights/field-service-logistics/shop-lift-as-bottleneck.md) ✓
 - **Thu Nov 12** &mdash; *Buying & Owning Used CNC* &mdash; [Total Cost of Ownership: Used vs. New](../src/content/insights/buying-owning-used-cnc/tco-math-used-vs-new.md) ✓
 
-### Week of Nov 16, 2026
+### Week of Nov 16, 2026 &mdash; *past*
 
 - **Tue Nov 17** &mdash; *Spindle Diagnostics & Repair Decisions* &mdash; [Spindle Drawbar Diagnostics: Hold-Down Force Decay](../src/content/insights/spindle-diagnostics/spindle-drawbar-diagnostics.md) ✓
-- **Thu Nov 19** &mdash; *CNC Control Systems* &mdash; [Fanuc Series 0 to 0i: Upgrade Reality](../src/content/insights/cnc-control-systems/fanuc-series-0-to-0i-upgrade.md)
+- **Thu Nov 19** &mdash; *CNC Control Systems* &mdash; [Fanuc Series 0 to 0i: Upgrade Reality](../src/content/insights/cnc-control-systems/fanuc-series-0-to-0i-upgrade.md) ✓
 
 ### Week of Nov 23, 2026
 
@@ -223,7 +223,7 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
+_9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
@@ -233,9 +233,9 @@ _8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-09-29** &mdash; ~~CNC Battery Backup Loss: Data Recovery Procedure~~ (published)
 - ✓ **2026-10-15** &mdash; ~~Servo Drive vs. CNC Controller Faults: How to Distinguish~~ (published)
 - ✓ **2026-11-03** &mdash; ~~Control or Mechanical? The Diagnostic Logic~~ (published)
+- ✓ **2026-11-19** &mdash; ~~Fanuc Series 0 to 0i: Upgrade Reality~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-11-19` &mdash; Fanuc Series 0 to 0i: Upgrade Reality
 - ◯ `2026-12-08` &mdash; Encoder Feedback Faults: Control or Mechanical?
 - ◯ `2026-12-24` &mdash; PLC Ladder Logic Faults in CNC Machines
 - ◯ `2027-01-12` &mdash; Heidenhain iTNC 530 vs. TNC640: Real-World Differences
