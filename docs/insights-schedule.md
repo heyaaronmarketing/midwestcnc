@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 48
+- **Published:** 49
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -46
+- **Unscheduled backlog:** -47
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -141,7 +141,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Nov 23, 2026
 
 - **Tue Nov 24** &mdash; *Way Covers Engineering* &mdash; [Z-Axis Covers: Gravity, Drag, and Design Choices](../src/content/insights/way-covers-engineering/z-axis-cover-design.md) ✓
-- **Thu Nov 26** &mdash; *Field Service & Logistics (Midwest)* &mdash; [North Platte and Western Nebraska: Longest-Haul Work](../src/content/insights/field-service-logistics/north-platte-regional-context.md)
+- **Thu Nov 26** &mdash; *Field Service & Logistics (Midwest)* &mdash; [North Platte and Western Nebraska: Longest-Haul Work](../src/content/insights/field-service-logistics/north-platte-regional-context.md) ✓
 
 ### Week of Nov 30, 2026
 
@@ -263,7 +263,7 @@ _9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
+_9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
 - ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
@@ -273,9 +273,9 @@ _8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-10-06** &mdash; ~~Production Downtime Cost: Framing the Urgency~~ (published)
 - ✓ **2026-10-22** &mdash; ~~Five-State Weather Impact on Service Schedule~~ (published)
 - ✓ **2026-11-10** &mdash; ~~When Your Shop's Lift Is the Bottleneck~~ (published)
+- ✓ **2026-11-26** &mdash; ~~North Platte and Western Nebraska: Longest-Haul Work~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
-- ◯ `2026-11-26` &mdash; North Platte and Western Nebraska: Longest-Haul Work
 - ◯ `2026-12-15` &mdash; Greater Chicago: Wisconsin/Illinois Coordination
 - ◯ `2026-12-31` &mdash; Texas Freight Realities for CNC Service
 - ◯ `2027-01-19` &mdash; Service-Window Planning: Aligning with Your Shop
