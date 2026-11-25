@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 47
+- **Published:** 48
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -45
+- **Unscheduled backlog:** -46
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -140,7 +140,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Nov 23, 2026
 
-- **Tue Nov 24** &mdash; *Way Covers Engineering* &mdash; [Z-Axis Covers: Gravity, Drag, and Design Choices](../src/content/insights/way-covers-engineering/z-axis-cover-design.md)
+- **Tue Nov 24** &mdash; *Way Covers Engineering* &mdash; [Z-Axis Covers: Gravity, Drag, and Design Choices](../src/content/insights/way-covers-engineering/z-axis-cover-design.md) ✓
 - **Thu Nov 26** &mdash; *Field Service & Logistics (Midwest)* &mdash; [North Platte and Western Nebraska: Longest-Haul Work](../src/content/insights/field-service-logistics/north-platte-regional-context.md)
 
 ### Week of Nov 30, 2026
@@ -243,7 +243,7 @@ _9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
+_9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
@@ -253,9 +253,9 @@ _8 published &middot; 7 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-10-01** &mdash; ~~Mounting Hardware Availability by Machine Generation~~ (published)
 - ✓ **2026-10-20** &mdash; ~~Cover Replacement Lead Time: What Drives It~~ (published)
 - ✓ **2026-11-05** &mdash; ~~The Hidden Cost of Running with Damaged Covers~~ (published)
+- ✓ **2026-11-24** &mdash; ~~Z-Axis Covers: Gravity, Drag, and Design Choices~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-11-24` &mdash; Z-Axis Covers: Gravity, Drag, and Design Choices
 - ◯ `2026-12-10` &mdash; Field Measurement Checklist for Cover Replacement
 - ◯ `2026-12-29` &mdash; When Custom Fabrication Wins Over OEM
 - ◯ `2027-01-14` &mdash; Cover Retrofit on Legacy Iron: Feasibility
