@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 50
+- **Published:** 51
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -48
+- **Unscheduled backlog:** -49
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -150,7 +150,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Dec 7, 2026
 
-- **Tue Dec 8** &mdash; *CNC Control Systems* &mdash; [Encoder Feedback Faults: Control or Mechanical?](../src/content/insights/cnc-control-systems/encoder-feedback-faults.md)
+- **Tue Dec 8** &mdash; *CNC Control Systems* &mdash; [Encoder Feedback Faults: Control or Mechanical?](../src/content/insights/cnc-control-systems/encoder-feedback-faults.md) ✓
 - **Thu Dec 10** &mdash; *Way Covers Engineering* &mdash; [Field Measurement Checklist for Cover Replacement](../src/content/insights/way-covers-engineering/field-measurement-checklist.md)
 
 ### Week of Dec 14, 2026
@@ -223,7 +223,7 @@ _16 published &middot; 0 scheduled &middot; 0 unscheduled (of 16 total)._
 
 ### CNC Control Systems
 
-_9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
+_10 published &middot; 5 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-02** &mdash; ~~Mazatrol Matrix vs. Smooth: When to Upgrade~~ (published)
 - ✓ **2026-06-18** &mdash; ~~Fanuc Alarm 401: Causes and Recovery~~ (published)
@@ -234,9 +234,9 @@ _9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-10-15** &mdash; ~~Servo Drive vs. CNC Controller Faults: How to Distinguish~~ (published)
 - ✓ **2026-11-03** &mdash; ~~Control or Mechanical? The Diagnostic Logic~~ (published)
 - ✓ **2026-11-19** &mdash; ~~Fanuc Series 0 to 0i: Upgrade Reality~~ (published)
+- ✓ **2026-12-08** &mdash; ~~Encoder Feedback Faults: Control or Mechanical?~~ (published)
 - ◯ `2026-07-21` &mdash; Siemens 840D vs. 840Dsl: What's Different
 - ◯ `2026-08-06` &mdash; Okuma OSP-P200 to P300: Practical Impact
-- ◯ `2026-12-08` &mdash; Encoder Feedback Faults: Control or Mechanical?
 - ◯ `2026-12-24` &mdash; PLC Ladder Logic Faults in CNC Machines
 - ◯ `2027-01-12` &mdash; Heidenhain iTNC 530 vs. TNC640: Real-World Differences
 - ◯ `2027-01-28` &mdash; Why Your Control May Be the Limiting Factor
