@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 51
+- **Published:** 52
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -49
+- **Unscheduled backlog:** -50
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -151,7 +151,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 ### Week of Dec 7, 2026
 
 - **Tue Dec 8** &mdash; *CNC Control Systems* &mdash; [Encoder Feedback Faults: Control or Mechanical?](../src/content/insights/cnc-control-systems/encoder-feedback-faults.md) ✓
-- **Thu Dec 10** &mdash; *Way Covers Engineering* &mdash; [Field Measurement Checklist for Cover Replacement](../src/content/insights/way-covers-engineering/field-measurement-checklist.md)
+- **Thu Dec 10** &mdash; *Way Covers Engineering* &mdash; [Field Measurement Checklist for Cover Replacement](../src/content/insights/way-covers-engineering/field-measurement-checklist.md) ✓
 
 ### Week of Dec 14, 2026
 
@@ -243,7 +243,7 @@ _10 published &middot; 5 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Way Covers Engineering
 
-_9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
+_10 published &middot; 5 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-23** &mdash; ~~Measuring for Way Cover Replacement: The Field Method~~ (published)
 - ✓ **2026-07-23** &mdash; ~~Pallet-Changer Interface Sealing: A Particular Challenge~~ (published)
@@ -254,9 +254,9 @@ _9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-10-20** &mdash; ~~Cover Replacement Lead Time: What Drives It~~ (published)
 - ✓ **2026-11-05** &mdash; ~~The Hidden Cost of Running with Damaged Covers~~ (published)
 - ✓ **2026-11-24** &mdash; ~~Z-Axis Covers: Gravity, Drag, and Design Choices~~ (published)
+- ✓ **2026-12-10** &mdash; ~~Field Measurement Checklist for Cover Replacement~~ (published)
 - ◯ `2026-06-04` &mdash; Telescoping Steel vs. Bellows vs. Roll-Up: When Each Wins
 - ◯ `2026-07-07` &mdash; OEM-Spec vs. Custom Way Covers: Cost and Lead Time
-- ◯ `2026-12-10` &mdash; Field Measurement Checklist for Cover Replacement
 - ◯ `2026-12-29` &mdash; When Custom Fabrication Wins Over OEM
 - ◯ `2027-01-14` &mdash; Cover Retrofit on Legacy Iron: Feasibility
 - ◯ `2027-02-02` &mdash; Multi-Axis Cover Sets on Multitasking Machines
