@@ -4,9 +4,9 @@
 
 ## Status
 
-- **Published:** 52
+- **Published:** 53
 - **Scheduled (not yet drafted):** 74
-- **Unscheduled backlog:** -50
+- **Unscheduled backlog:** -51
 - **Total planned across all pillars:** 76
 
 First scheduled date: `2026-06-02`. Last: `2027-02-11`.
@@ -155,7 +155,7 @@ First scheduled date: `2026-06-02`. Last: `2027-02-11`.
 
 ### Week of Dec 14, 2026
 
-- **Tue Dec 15** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Greater Chicago: Wisconsin/Illinois Coordination](../src/content/insights/field-service-logistics/chicago-area-coordinations.md)
+- **Tue Dec 15** &mdash; *Field Service & Logistics (Midwest)* &mdash; [Greater Chicago: Wisconsin/Illinois Coordination](../src/content/insights/field-service-logistics/chicago-area-coordinations.md) ✓
 - **Thu Dec 17** &mdash; *Buying & Owning Used CNC* &mdash; [Used Machine Inspection: Spindle Red Flags](../src/content/insights/buying-owning-used-cnc/inspection-spindle-red-flags.md)
 
 ### Week of Dec 21, 2026
@@ -263,7 +263,7 @@ _10 published &middot; 5 scheduled &middot; 0 unscheduled (of 15 total)._
 
 ### Field Service & Logistics (Midwest)
 
-_9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
+_10 published &middot; 5 scheduled &middot; 0 unscheduled (of 15 total)._
 
 - ✓ **2026-06-09** &mdash; ~~The 4-Hour Drive Radius: What Iowa Shops Get~~ (published)
 - ✓ **2026-07-09** &mdash; ~~Multi-State Spindle Logistics: Shipping from Texas~~ (published)
@@ -274,9 +274,9 @@ _9 published &middot; 6 scheduled &middot; 0 unscheduled (of 15 total)._
 - ✓ **2026-10-22** &mdash; ~~Five-State Weather Impact on Service Schedule~~ (published)
 - ✓ **2026-11-10** &mdash; ~~When Your Shop's Lift Is the Bottleneck~~ (published)
 - ✓ **2026-11-26** &mdash; ~~North Platte and Western Nebraska: Longest-Haul Work~~ (published)
+- ✓ **2026-12-15** &mdash; ~~Greater Chicago: Wisconsin/Illinois Coordination~~ (published)
 - ◯ `2026-06-25` &mdash; Ship the Machine vs. On-Site Work: How We Decide
 - ◯ `2026-07-28` &mdash; Pre-Call Diagnostic: Questions That Save You Money
-- ◯ `2026-12-15` &mdash; Greater Chicago: Wisconsin/Illinois Coordination
 - ◯ `2026-12-31` &mdash; Texas Freight Realities for CNC Service
 - ◯ `2027-01-19` &mdash; Service-Window Planning: Aligning with Your Shop
 - ◯ `2027-02-04` &mdash; Ag-Implement Freight-In Service: A Western Pattern
